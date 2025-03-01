@@ -12,13 +12,16 @@ from std_msgs.msg import Int16MultiArray
 
 import time
 
+FULL_POWER_FORWARD = 127
+FULL_POWER_BACKWARD = 0
+MOTOR_STOP = 64
+
 class HOPPER_STATE(enumerate):
   """Enum to keep track of the current hopper state."""
   RESTING = 0
   EXTENDING = 1
   DUMPING = 2
   RETRACTING = 3
-  
   
 class Tibalt(Node):
   """The node class for all the main Tibalt logic. This contains the functionality
@@ -31,6 +34,9 @@ class Tibalt(Node):
       # For example, if the excavation button gets pressed, the state is excavation,
       # so we should spin the excavation wheel in our control logic
     self.hopper_state = HOPPER_STATE.REST
+    self.hopper_timer = 0
+    self.hopper_vibration_motor = MOTOR_STOP
+    self.hopper_actuator_speed = MOTOR_STOP
 
     # This creates a Rate object that we will use to sleep the system at the specified frequency (in Hz)
     # We need this to make sure the node's don't publish data too quickly
@@ -63,32 +69,35 @@ class Tibalt(Node):
 
     # TODO: hopper logic (1 linear actuator to lift bin, 1 servo to open hatch, 1 vibration motor on bottom)
     
+    
     if self.hopper_state == HOPPER_STATE.EXTENDING:
-      """
-      if actuator is extending:
-        motor speed = full speed forward
-      elif fully extended
-        state = RESTING
-      """
+      if time.time() - self.hopper_timer < 10:
+        self.hopper_actuator_speed = FULL_POWER_FORWARD
+      elif tiem.time() - self.hopper_timer > 10:
+        self.hopper_state = HOPPER_STATE.RESTING
     elif self.hopper_state == HOPPER_STATE.RETRACTING:
-      """
-      if actuator not fully retracted:
-        full speed backwards
-      elif fully retracted:
-        vibration motor off
-        lock latch
-        state = RESTING
-      """
+      if time.time() - self.hopper_timer < 10:
+        self.hopper_actuator_speed = FULL_POWER_BACKWARD
+      elif time.time() - self.hopper_timer > 10:
+        self.hopper_vibration_motor = MOTOR_STOP
+        # Lock latch (PLACEHOLDER)
+        latch_state = 0
+        self.hopper_state = HOPPER_STATE.RESTING
     elif self.hopper_state == HOPPER_STATE.RESTING:
-      """
-      if extend button is pressed:
-        unlock latch 
-        start vibration motor
-        change state to EXTENDING
-      elif retract button is pressed:
-        change state to RETRACTING
-      """
-          
+      # If extend button is pressed (PLACEHOLDER)
+      if joystick.buttons[0] == 0:
+        # Unlock latch (PLACEHOLDER)
+        latch_state = 0
+        self.hopper_vibration_motor = FULL_POWER_FORWARD
+        self.hopper_timer = time.time()
+        self.hopper_state = HOPPER_STATE.EXTENDING
+      # If retract button is pressed (PLACEHOLDER)
+      elif joystick.buttons[0] == 0:
+        self.hopper_timer = time.time()
+        self.hopper_state = HOPPER_STATE.RETRACTING
+      else:
+        self.hopper_state = HOPPER_STATE.RESTING
+        
     # TODO: publish all motor speeds here (need to decide on order based on total amount of motors for each system)
     motor_speeds = Int16MultiArray()
     # [dtLeft, dtRight, exTurn, exActuator, hopperActuator, hopperHatch, hopperVibe] (variable names can change but this is the order for the motors)
