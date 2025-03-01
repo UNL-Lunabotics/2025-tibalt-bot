@@ -11,7 +11,7 @@ from std_msgs.msg import Int16
 from std_msgs.msg import Int16MultiArray
 
 
-class TIBALT(enumerate):
+class TIBALT_STATE(enumerate):
   """Enum to keep track of the current robot state. Does NOT include drivetrain states."""
   REST = 0
   DIGGING = 1
