@@ -137,7 +137,7 @@ class Tibalt(Node):
         self.hopper_actuator_motor = MOTOR_STOP
         self.hopper_vibration_motor = MOTOR_STOP
         # TODO: Lock latch
-        
+
         self.hopper_state = HOPPER_STATE.RESTING
         
     # TODO: publish all motor speeds here (need to decide on order based on total amount of motors for each system)
@@ -153,14 +153,15 @@ def main(args=None):
   try:
     with rclpy.init(args=args):
       tibalt = Tibalt()
-    while rclpy.ok(): # Ensures that the code runs continuously until shutdown
+      
+      while rclpy.ok(): # Ensures that the code runs continuously until shutdown
 
-      # This will allow the node to process pending callback requests once before
-      # continuing to run this loop. This allows us to control the callback rate
-      rclpy.spin_once(tibalt)  
+        # This will allow the node to process pending callback requests once before
+        # continuing to run this loop. This allows us to control the callback rate
+        rclpy.spin_once(tibalt)  
 
-      # Sleep the node for 10Hz without blocking the entire system
-      tibalt.loop_rate.sleep()
+        # Sleep the node for 10Hz without blocking the entire system
+        tibalt.loop_rate.sleep()
   except (KeyboardInterrupt, ExternalShutdownException):
     # Shuts down if a KeyboardInterrupt or ExternalShutdownException is detected
     # i.e. if Ctrl+C is pressed or if ROS2 is shutdown externally
