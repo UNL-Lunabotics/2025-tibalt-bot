@@ -1,0 +1,2 @@
+tobias
+-DCATKIN_DEVEL_PREFIX=/home/unllunar/Documents/2024-tobias-bot/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/unllunar/Documents/2024-tobias-bot/catkin_ws/install -G Unix Makefiles
