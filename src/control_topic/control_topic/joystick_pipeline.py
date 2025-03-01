@@ -4,6 +4,7 @@ from rclpy.node import Node
 from sensor_msgs.msg import Joy
 from rclpy.executors import ExternalShutdownException
 
+
 class Joystick(Node):
   """This class is just here to update joystick data."""
 
@@ -29,6 +30,7 @@ class Joystick(Node):
     """Literally all this node does is publish the joystick data."""
 
     self.publisher.publish(joystick)
+
 
 def main(args=None):
   """Initializes Joystick and starts the control loop."""
