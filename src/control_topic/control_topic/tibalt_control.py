@@ -23,14 +23,6 @@ class Tibalt(Node):
   def __init__(self):
     super().__init__('tibalt') # Initializes this as a node with the name 'tibalt'
 
-    # This parameter will be used to keep track of the current state of Tibalt
-      # For example, if the excavation button gets pressed, the state is excavation,
-      # so we should spin the excavation wheel in our control logic
-    self.declare_parameter(
-      name='tibalt_state',
-      value=TIBALT_STATE.REST
-    )
-
     # This node will publish the motor speeds we want the Arduino to set things to
     self.publisher = self.create_publisher(
       msg_type=Int16MultiArray,
@@ -67,8 +59,16 @@ def main(args=None):
 
   try:
     with rclpy.init(args=args):
-      tibalt = Tibalt() # Create tibalt
-      rclpy.spin(tibalt)  # Ensures that the code runs continuously until shutdown
+      tibalt = Tibalt()
+      
+      while rclpy.ok(): # Ensures that the code runs continuously until shutdown
+
+        # This will allow the node to process pending callback requests once before
+        # continuing to run this loop. This allows us to control the callback rate
+        rclpy.spin_once(tibalt)  
+
+        # Sleep the node for 10Hz without blocking the entire system
+        tibalt.loop_rate.sleep()
   except (KeyboardInterrupt, ExternalShutdownException):
     # Shuts down if a KeyboardInterrupt or ExternalShutdownException is detected
     # i.e. if Ctrl+C is pressed or if ROS2 is shutdown externally
