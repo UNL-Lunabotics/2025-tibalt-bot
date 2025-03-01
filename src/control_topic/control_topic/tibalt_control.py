@@ -64,6 +64,26 @@ class Tibalt(Node):
 
     # TODO: hopper logic (1 linear actuator to lift bin, 1 servo to open hatch, 1 vibration motor on bottom)
     
+    # Bin Lit Logic
+    # TODO: Set BIN_LIFT_AXIS to the joystick.axes index corresponding to the linear actuator
+    BIN_LIFT_AXIS = "PLACEHOLDER"
+    bin_lift_speed = int(joystick.axes[BIN_LIFT_AXIS] * 100) # Speed scales from -100 to 100
+    
+    # TODO: Set hatch button variables to joystick.buttons index values corresponding to hatch control
+    HATCH_OPEN_BUTTON = "PLACEHOLDER"
+    HATCH_CLOSED_BUTTON = "PLACEHOLDER"
+    # TODO: Implement States
+    if joystick.buttons[HATCH_OPEN_BUTTON] == 1: #
+      hopper_hatch_position = HATCH_OPEN
+    elif joystick.buttons[HATCH_CLOSED_BUTTON] == 1:
+      hopper_hatch_position = HATCH_CLOSED
+    
+    # TODO: Implement States
+    if hopper_hatch_position == HATCH_OPEN:
+      hopper_vibration_speed = VIBRATION_ON
+    else:
+      hopper_vibration_speed = VIBRATION_OFF
+        
     # TODO: publish all motor speeds here (need to decide on order based on total amount of motors for each system)
     motor_speeds = Int16MultiArray()
     # [dtLeft, dtRight, exTurn, exActuator, hopperActuator, hopperHatch, hopperVibe] (variable names can change but this is the order for the motors)
