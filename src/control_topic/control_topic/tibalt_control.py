@@ -11,10 +11,12 @@ from std_msgs.msg import Int16
 from std_msgs.msg import Int16MultiArray
 
 
-class TIBALT_STATE(enumerate):
-  """Enum to keep track of the current robot state. Does NOT include drivetrain states."""
+class HOPPER_STATE(enumerate):
+  """Enum to keep track of the current hopper state."""
   REST = 0
-  DIGGING = 1
+  VIBRATING = 1
+  OPEN_HATCH = 2
+  CLOSE_HATCH = 3
 
 class Tibalt(Node):
   """The node class for all the main Tibalt logic. This contains the functionality
@@ -33,7 +35,7 @@ class Tibalt(Node):
 
     # This creates a Rate object that we will use to sleep the system at the specified frequency (in Hz)
     # We need this to make sure the node's don't publish data too quickly
-    self.loop_rate = self.create_rate(
+    self.rate = self.create_rate(
       frequency=10,
       clock=self.get_clock()
     )
@@ -80,7 +82,7 @@ def main(args=None):
       rclpy.spin(tibalt)  # Ensures that the code runs continuously until shutdown
 
       # Should sleep the node for 10Hz without blocking the entire system (may not work)
-      tibalt.loop_rate.sleep() # Experimental equivalent of rate.sleep(). It may or may not work
+      tibalt.rate.sleep() # Experimental equivalent of rate.sleep(). It may or may not work
   except (KeyboardInterrupt, ExternalShutdownException):
     # Shuts down if a KeyboardInterrupt or ExternalShutdownException is detected
     # i.e. if Ctrl+C is pressed or if ROS2 is shutdown externally

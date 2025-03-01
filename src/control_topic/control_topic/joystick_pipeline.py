@@ -13,7 +13,7 @@ class Joystick(Node):
 
     # This creates a Rate object that we will use to sleep the system at the specified frequency (in Hz)
     # We need this to make sure the node's don't publish data too quickly
-    self.loop_rate = self.create_rate(
+    self.rate = self.create_rate(
       frequency=20,
       clock=self.get_clock()
     )
@@ -50,7 +50,7 @@ def main(args=None):
       rclpy.spin(joystick_pipeline)  # Ensures that the code runs continuously until shutdown
 
       # Should sleep the node for 10Hz without blocking the entire system (may not work)
-      joystick_pipeline.loop_rate.sleep() # Experimental equivalent of rate.sleep(). It may or may not work
+      joystick_pipeline.rate.sleep() # Experimental equivalent of rate.sleep(). It may or may not work
   except (KeyboardInterrupt, ExternalShutdownException):
     # Shuts down if a KeyboardInterrupt or ExternalShutdownException is detected
     # i.e. if Ctrl+C is pressed or if ROS2 is shutdown externally
