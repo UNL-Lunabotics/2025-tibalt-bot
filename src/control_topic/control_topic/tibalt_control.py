@@ -12,9 +12,18 @@ from std_msgs.msg import Int16MultiArray
 
 import time
 
-FULL_POWER_FORWARD = 127
-FULL_POWER_BACKWARD = 0
+# Motor speed constants to help make the code more readable
+# They range from 0-127, with 0 as full power backward, 64 as stop, and 127 as full power forward
+MOTOR_FORWARDS = 127
+MOTOR_BACKWARDS = 0
 MOTOR_STOP = 64
+
+# Hopper constants that should not change during the program
+HOPPER_EXTEND_AND_RETRACT_PERIOD = 10 # This is how long it should take to extend/retract the hopper linear actuators
+                                      # In seconds
+
+HOPPER_PAUSE_PERIOD = 5 # This is how long the hopper should pause when fully extended before retracting
+                        # In seconds
 
 class HOPPER_STATE(enumerate):
   """Enum to keep track of the current hopper state."""
@@ -30,13 +39,13 @@ class Tibalt(Node):
   def __init__(self):
     super().__init__('tibalt') # Initializes this as a node with the name 'tibalt'
 
-    # This parameter will be used to keep track of the current state of Tibalt
-      # For example, if the excavation button gets pressed, the state is excavation,
-      # so we should spin the excavation wheel in our control logic
+    # This is where we will put the hopper class variables that will change during the program
     self.hopper_state = HOPPER_STATE.REST
     self.hopper_timer = 0
     self.hopper_vibration_motor = MOTOR_STOP
-    self.hopper_actuator_speed = MOTOR_STOP
+    self.hopper_actuator_motor = MOTOR_STOP
+
+    # There should be other class variables for excavation and drivetrain
 
     # This creates a Rate object that we will use to sleep the system at the specified frequency (in Hz)
     # We need this to make sure the node's don't publish data too quickly
@@ -69,33 +78,66 @@ class Tibalt(Node):
 
     # TODO: hopper logic (1 linear actuator to lift bin, 1 servo to open hatch, 1 vibration motor on bottom)
     
-    
-    if self.hopper_state == HOPPER_STATE.EXTENDING:
-      if time.time() - self.hopper_timer < 10:
-        self.hopper_actuator_speed = FULL_POWER_FORWARD
-      elif tiem.time() - self.hopper_timer > 10:
-        self.hopper_state = HOPPER_STATE.RESTING
-    elif self.hopper_state == HOPPER_STATE.RETRACTING:
-      if time.time() - self.hopper_timer < 10:
-        self.hopper_actuator_speed = FULL_POWER_BACKWARD
-      elif time.time() - self.hopper_timer > 10:
-        self.hopper_vibration_motor = MOTOR_STOP
-        # Lock latch (PLACEHOLDER)
-        latch_state = 0
-        self.hopper_state = HOPPER_STATE.RESTING
-    elif self.hopper_state == HOPPER_STATE.RESTING:
-      # If extend button is pressed (PLACEHOLDER)
-      if joystick.buttons[0] == 0:
-        # Unlock latch (PLACEHOLDER)
-        latch_state = 0
-        self.hopper_vibration_motor = FULL_POWER_FORWARD
+    # If the hopper is not active
+    if self.hopper_state == HOPPER_STATE.RESTING:
+      # If the dumping process has bee initiated, continue to EXTENDING
+      if joystick.buttons[0] == 0: # TODO: Placeholder button
+        # TODO: Unlock latch
+        self.hopper_vibration_motor = MOTOR_FORWARDS
+        self.hopper_actuator_motor = MOTOR_FORWARDS
+
         self.hopper_timer = time.time()
+
         self.hopper_state = HOPPER_STATE.EXTENDING
-      # If retract button is pressed (PLACEHOLDER)
-      elif joystick.buttons[0] == 0:
+      else: # Do nothing
+        self.hopper_actuator_motor = MOTOR_STOP
+        self.hopper_vibration_motor = MOTOR_STOP
+
+    # If the linear actuators are currently extending
+    elif self.hopper_state == HOPPER_STATE.EXTENDING:
+      # If it hasn't been extending long enough, continue extending
+      if time.time() - self.hopper_timer < HOPPER_EXTEND_AND_RETRACT_PERIOD:
+        self.hopper_vibration_motor = MOTOR_FORWARDS
+        self.hopper_actuator_motor = MOTOR_FORWARDS
+      
+      # If it has been extending long enough, continue to DUMPING phase
+      elif time.time() - self.hopper_timer > HOPPER_EXTEND_AND_RETRACT_PERIOD:
+        self.hopper_vibration_motor = MOTOR_FORWARDS
+        self.hopper_actuator_motor = MOTOR_STOP
+
         self.hopper_timer = time.time()
+
+        self.hopper_state = HOPPER_STATE.DUMPING
+
+    # If the hopper has extended but is pausing at full extension to dump all the material
+    elif self.hopper_state == HOPPER_STATE.DUMPING:
+      # If it hasn't been paused long enough, continue vibrating
+      if time.time() - self.hopper_timer < HOPPER_PAUSE_PERIOD:
+        self.hopper_actuator_motor = MOTOR_STOP
+        self.hopper_vibration_motor = MOTOR_FORWARDS
+      
+      # If it has been paused long enough, continue to RETRACTING
+      elif time.time() - self.hopper_timer > HOPPER_PAUSE_PERIOD:
+        self.hopper_actuator_motor = MOTOR_BACKWARDS
+        self.hopper_vibration_motor = MOTOR_FORWARDS # Might as well keep this on until retraction is finished
+
+        self.hopper_timer = time.time()
+
         self.hopper_state = HOPPER_STATE.RETRACTING
-      else:
+
+    # If the linear actuators are retracting
+    elif self.hopper_state == HOPPER_STATE.RETRACTING:
+      # If they have not been retracting long enough, continue retracting
+      if time.time() - self.hopper_timer < HOPPER_EXTEND_AND_RETRACT_PERIOD:
+        self.hopper_actuator_motor = MOTOR_BACKWARDS
+        self.hopper_vibration_motor = MOTOR_FORWARDS
+      
+      # If it has been retracting long enough to be fully retracted, continue to RESTING
+      elif time.time() - self.hopper_timer > HOPPER_EXTEND_AND_RETRACT_PERIOD:
+        self.hopper_actuator_motor = MOTOR_STOP
+        self.hopper_vibration_motor = MOTOR_STOP
+        # TODO: Lock latch
+        
         self.hopper_state = HOPPER_STATE.RESTING
         
     # TODO: publish all motor speeds here (need to decide on order based on total amount of motors for each system)
@@ -108,15 +150,17 @@ class Tibalt(Node):
 def main(args=None):
   """Initializes Tibalt and starts the control loop."""
 
-  # I think this will loop by itself, but if it doesn't try while rclpy.ok()
-
   try:
     with rclpy.init(args=args):
-      tibalt = Tibalt() # Create tibalt
-      rclpy.spin(tibalt)  # Ensures that the code runs continuously until shutdown
+      tibalt = Tibalt()
+    while rclpy.ok(): # Ensures that the code runs continuously until shutdown
 
-      # Should sleep the node for 10Hz without blocking the entire system (may not work)
-      tibalt.rate.sleep() # Experimental equivalent of rate.sleep(). It may or may not work
+      # This will allow the node to process pending callback requests once before
+      # continuing to run this loop. This allows us to control the callback rate
+      rclpy.spin_once(tibalt)  
+
+      # Sleep the node for 10Hz without blocking the entire system
+      tibalt.loop_rate.sleep()
   except (KeyboardInterrupt, ExternalShutdownException):
     # Shuts down if a KeyboardInterrupt or ExternalShutdownException is detected
     # i.e. if Ctrl+C is pressed or if ROS2 is shutdown externally

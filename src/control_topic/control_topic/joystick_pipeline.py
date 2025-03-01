@@ -12,7 +12,7 @@ class Joystick(Node):
     super().__init__('joystick_pipeline') # Initializes this as a node
 
     # This creates a Rate object that we will use to sleep the system at the specified frequency (in Hz)
-    # We need this to make sure the node's don't publish data too quickly
+    # We need this to make sure the node's don't publish data too quickly and take up processing power
     self.rate = self.create_rate(
       frequency=20,
       clock=self.get_clock()
@@ -40,22 +40,25 @@ class Joystick(Node):
 
 
 def main(args=None):
-  """Initializes Joystick and starts the control loop."""
-
-  # I think this will loop by itself, but if it doesn't try while rclpy.ok()
+  """Initializes Tibalt and starts the control loop."""
 
   try:
     with rclpy.init(args=args):
-      joystick_pipeline = Joystick() # Create Joystick
-      rclpy.spin(joystick_pipeline)  # Ensures that the code runs continuously until shutdown
+      joystick_pipeline = Joystick()
+    while rclpy.ok(): # Ensures that the code runs continuously until shutdown
 
-      # Should sleep the node for 10Hz without blocking the entire system (may not work)
-      joystick_pipeline.rate.sleep() # Experimental equivalent of rate.sleep(). It may or may not work
+      # This will allow the node to process pending callback requests once before
+      # continuing to run this loop. This allows us to control the callback rate
+      rclpy.spin_once(joystick_pipeline)  
+
+      # Sleep the node for 20Hz without blocking the entire system
+      joystick_pipeline.loop_rate.sleep()
   except (KeyboardInterrupt, ExternalShutdownException):
     # Shuts down if a KeyboardInterrupt or ExternalShutdownException is detected
     # i.e. if Ctrl+C is pressed or if ROS2 is shutdown externally
 
     # This command cleans up ROS2 resources to shutdown gracefully
+    # TODO: make sure we test this with disconnects, closing terminal, etc
     rclpy.shutdown()
 
 if __name__ == '__main__':
