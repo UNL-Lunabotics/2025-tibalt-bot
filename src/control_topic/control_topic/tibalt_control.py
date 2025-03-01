@@ -11,7 +11,7 @@ from std_msgs.msg import Int16
 from std_msgs.msg import Int16MultiArray
 
 
-class TIBALT(enumerate):
+class TIBALT_STATE(enumerate):
   """Enum to keep track of the current robot state. Does NOT include drivetrain states."""
   REST = 0
   DIGGING = 1
@@ -29,6 +29,13 @@ class Tibalt(Node):
     self.declare_parameter(
       name='tibalt_state',
       value=TIBALT_STATE.REST
+    )
+
+    # This creates a Rate object that we will use to sleep the system at the specified frequency (in Hz)
+    # We need this to make sure the node's don't publish data too quickly
+    self.loop_rate = self.create_rate(
+      frequency=10,
+      clock=self.get_clock()
     )
 
     # This node will publish the motor speeds we want the Arduino to set things to
@@ -65,10 +72,15 @@ class Tibalt(Node):
 def main(args=None):
   """Initializes Tibalt and starts the control loop."""
 
+  # I think this will loop by itself, but if it doesn't try while rclpy.ok()
+
   try:
     with rclpy.init(args=args):
       tibalt = Tibalt() # Create tibalt
       rclpy.spin(tibalt)  # Ensures that the code runs continuously until shutdown
+
+      # Should sleep the node for 10Hz without blocking the entire system (may not work)
+      tibalt.loop_rate.sleep() # Experimental equivalent of rate.sleep(). It may or may not work
   except (KeyboardInterrupt, ExternalShutdownException):
     # Shuts down if a KeyboardInterrupt or ExternalShutdownException is detected
     # i.e. if Ctrl+C is pressed or if ROS2 is shutdown externally
