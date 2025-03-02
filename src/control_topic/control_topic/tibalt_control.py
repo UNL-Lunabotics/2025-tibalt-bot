@@ -83,7 +83,7 @@ class Tibalt(Node):
       # If the dumping process has bee initiated, continue to EXTENDING
       if joystick.buttons[0] == 0: # TODO: Placeholder button
         # TODO: Unlock latch
-        self.hopper_vibration_motor = MOTOR_FORWARDS
+        self.hopper_vibration_motor = MOTOR_STOP
         self.hopper_actuator_motor = MOTOR_FORWARDS
 
         self.hopper_timer = time.time()
@@ -97,12 +97,12 @@ class Tibalt(Node):
     elif self.hopper_state == HOPPER_STATE.EXTENDING:
       # If it hasn't been extending long enough, continue extending
       if time.time() - self.hopper_timer < HOPPER_EXTEND_AND_RETRACT_PERIOD:
-        self.hopper_vibration_motor = MOTOR_FORWARDS
+        self.hopper_vibration_motor = MOTOR_STOP
         self.hopper_actuator_motor = MOTOR_FORWARDS
       
       # If it has been extending long enough, continue to DUMPING phase
       elif time.time() - self.hopper_timer > HOPPER_EXTEND_AND_RETRACT_PERIOD:
-        self.hopper_vibration_motor = MOTOR_FORWARDS
+        self.hopper_vibration_motor = MOTOR_STOP
         self.hopper_actuator_motor = MOTOR_STOP
 
         self.hopper_timer = time.time()
@@ -113,15 +113,13 @@ class Tibalt(Node):
     elif self.hopper_state == HOPPER_STATE.DUMPING:
       # If it hasn't been paused long enough, continue vibrating
       if time.time() - self.hopper_timer < HOPPER_PAUSE_PERIOD:
-        self.hopper_actuator_motor = MOTOR_STOP
         self.hopper_vibration_motor = MOTOR_FORWARDS
+        self.hopper_actuator_motor = MOTOR_STOP
       
       # If it has been paused long enough, continue to RETRACTING
       elif time.time() - self.hopper_timer > HOPPER_PAUSE_PERIOD:
+        self.hopper_vibration_motor = MOTOR_STOP
         self.hopper_actuator_motor = MOTOR_BACKWARDS
-        self.hopper_vibration_motor = MOTOR_FORWARDS # Might as well keep this on until retraction is finished
-
-        self.hopper_timer = time.time()
 
         self.hopper_state = HOPPER_STATE.RETRACTING
 
@@ -129,13 +127,13 @@ class Tibalt(Node):
     elif self.hopper_state == HOPPER_STATE.RETRACTING:
       # If they have not been retracting long enough, continue retracting
       if time.time() - self.hopper_timer < HOPPER_EXTEND_AND_RETRACT_PERIOD:
+        self.hopper_vibration_motor = MOTOR_STOP
         self.hopper_actuator_motor = MOTOR_BACKWARDS
-        self.hopper_vibration_motor = MOTOR_FORWARDS
       
       # If it has been retracting long enough to be fully retracted, continue to RESTING
       elif time.time() - self.hopper_timer > HOPPER_EXTEND_AND_RETRACT_PERIOD:
-        self.hopper_actuator_motor = MOTOR_STOP
         self.hopper_vibration_motor = MOTOR_STOP
+        self.hopper_actuator_motor = MOTOR_STOP
         # TODO: Lock latch
 
         self.hopper_state = HOPPER_STATE.RESTING
