@@ -38,13 +38,16 @@ class Tibalt(Node):
                                       # a message is received from the topic
     )
   
-  def control_callback(self, joystick):
+  def control_callback(self, joystick) -> None:
     """This contains the main driver control code."""
 
     # TODO: drivetrain logic (2 motors)
-    
-    # TODO: excavation logic (1 motor for turning scoops, 1 linear actuator to push into ground and retract)
-
+    x_axis: float = joystick.axes[0]  # pos<-right, neg<-left
+    y_axis: float = joystick.axes[1]  # pos<-down, neg<-up
+    forward: int = int(x_axis * 63)
+    turn: int = int(y_axis * 63)
+    DtLeft: int = 64 + forward + turn
+    DtRight: int = 64 + forward - turn
     # TODO: hopper logic (1 linear actuator to lift bin, 1 servo to open hatch, 1 vibration motor on bottom)
     
     # TODO: publish all motor speeds here (need to decide on order based on total amount of motors for each system)
