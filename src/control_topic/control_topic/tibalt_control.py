@@ -11,10 +11,24 @@ from std_msgs.msg import Int16
 from std_msgs.msg import Int16MultiArray
 
 
+# Motor speed constants to help make the code more readable
+# They range from 0-127, with 0 as full power backward, 64 as stop, and 127 as full power forward
+MOTOR_FORWARDS = 127
+MOTOR_BACKWARDS = 0
+MOTOR_STOP = 64
+
+
 class TIBALT_STATE(enumerate):
   """Enum to keep track of the current robot state. Does NOT include drivetrain states."""
   REST = 0
   DIGGING = 1
+
+class EXCAV_STATE(enumerate):
+  """Enum to keep track of the excavation states"""
+  RESTING = 0
+  EXTENDING = 1
+  DIGGING = 2
+  RETRACTING = 4
 
 class Tibalt(Node):
   """The node class for all the main Tibalt logic. This contains the functionality
@@ -22,6 +36,19 @@ class Tibalt(Node):
 
   def __init__(self):
     super().__init__('tibalt') # Initializes this as a node with the name 'tibalt'
+
+ # This parameter will be used to keep track of the current state of Tibalt
+      # For example, if the excavation button gets pressed, the state is excavation,
+      # so we should spin the excavation wheel in our control logic
+    self.declare_parameter(
+      name='tibalt_state',
+      value=TIBALT_STATE.REST
+    )
+
+    # Excavation motor variables
+    self.excavation_state = EXCAV_STATE.RESTING
+    self.excavation_spin_motor == MOTOR_STOP
+    self.excavation_actuator_motor == MOTOR_STOP
 
     # This node will publish the motor speeds we want the Arduino to set things to
     self.publisher = self.create_publisher(
@@ -52,6 +79,50 @@ class Tibalt(Node):
     # [dtLeft, dtRight, exTurn, exActuator, hopperActuator, hopperHatch, hopperVibe] (variable names can change but this is the order for the motors)
     motor_speeds.data = []
     self.publisher.publish(motor_speeds)
+
+    # placeholder value for extending the linear actuator
+    # this pressing this button will also begin the spinning motor
+    # TODO: replace extend_button instances with the real value
+    extend_button = 2
+    # placeholder value for the retract button
+    # TODO: replace retract_button with the real value
+    retract_button = 3
+    # if not currently digging
+    if self.excavation_state == EXCAV_STATE.RESTING:
+      # if digging process has been initiated, continue to EXTENDING
+      if joystick.buttons[extend_button] == 1:
+
+        self.excavation_spin_motor = MOTOR_FORWARDS
+        self.excavation_actuator_motor = MOTOR_FORWARDS
+
+        self.excavation_state = EXCAV_STATE.EXTENDING
+      else: # do nothing
+        self.excavation_spin_motor = MOTOR_STOP
+        self.excavation_actuator_motor = MOTOR_STOP
+
+    # if the actuator is extending
+    if self.excavation_state == EXCAV_STATE.EXTENDING:
+      # keep spinning
+      self.excavation_spin_motor = MOTOR_FORWARDS
+      # if the extending button is still being pressed
+      if joystick.buttons[extend_button] == 1:
+        # keep extending the actuator
+        self.excavation_actuator_motor = MOTOR_FORWARDS
+      else:
+        self.excavation_actuator_motor = MOTOR_STOP
+        self.excavation_state = EXCAV_STATE.DIGGING
+    
+    # if the tibalt is digging (actuator is still)
+    if self.excavation_state == EXCAV_STATE.DIGGING:
+      self.excavation_spin_motor == MOTOR_FORWARDS
+      # if the extending button is pressed again
+      if joystick.buttons[extend_button] == 1:
+        self.excavation_actuator_motor == MOTOR_FORWARDS
+      elif joystick.buttons[retract_button] == 1:
+        self.excavation_actuator_motor == MOTOR_BACKWARDS
+        self.excavation_state = EXCAV_STATE.RETRACTING
+      else:
+        self.excavation_actuator_motor == MOTOR_STOP
 
 
 def main(args=None):
