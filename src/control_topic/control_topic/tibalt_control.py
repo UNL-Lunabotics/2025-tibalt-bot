@@ -10,6 +10,8 @@ from sensor_msgs.msg import Joy
 from std_msgs.msg import Int16
 from std_msgs.msg import Int16MultiArray
 
+import time
+
 
 # Motor speed constants to help make the code more readable
 # They range from 0-127, with 0 as full power backward, 64 as stop, and 127 as full power forward
@@ -30,6 +32,10 @@ class EXCAV_STATE(enumerate):
   DIGGING = 2
   RETRACTING = 4
 
+EXCAV_RETRACT_PERIOD = 10 # period of time (in seconds) for the linear atuator to retract to 0cm
+                          # the current value is a meaningless placeholder
+                          # TODO: find out how long this should take
+
 class Tibalt(Node):
   """The node class for all the main Tibalt logic. This contains the functionality
   for drive train and autonomy."""
@@ -47,6 +53,7 @@ class Tibalt(Node):
 
     # Excavation motor variables
     self.excavation_state = EXCAV_STATE.RESTING
+    self.excavation_timer = 0
     self.excavation_spin_motor == MOTOR_STOP
     self.excavation_actuator_motor == MOTOR_STOP
 
@@ -114,15 +121,35 @@ class Tibalt(Node):
     
     # if the tibalt is digging (actuator is still)
     if self.excavation_state == EXCAV_STATE.DIGGING:
+      # no matter what, during this stage the motor should be spinning
       self.excavation_spin_motor == MOTOR_FORWARDS
+
       # if the extending button is pressed again
       if joystick.buttons[extend_button] == 1:
         self.excavation_actuator_motor == MOTOR_FORWARDS
+
+      # was the retract button pressed
       elif joystick.buttons[retract_button] == 1:
         self.excavation_actuator_motor == MOTOR_BACKWARDS
+        # records when the excavator begins retracting
+        self.excavation_timer = time.time()
         self.excavation_state = EXCAV_STATE.RETRACTING
+
+      # if nether of the buttons are pressed, don't move the actuator
       else:
         self.excavation_actuator_motor == MOTOR_STOP
+
+    # if the linear actuator is retracting
+    if self.excavation_state == EXCAV_STATE.RETRACTING:
+
+      if time.time() - self.excavation_timer < EXCAV_RETRACT_PERIOD:
+        self.excavation_actuator_motor = MOTOR_BACKWARDS
+        self.excavation_spin_motor = MOTOR_FORWARDS
+
+      elif time.time() - self.excavation_timer > EXCAV_RETRACT_PERIOD:
+        self.excavation_actuator_motor = MOTOR_STOP
+        self.excavation_spin_motor = MOTOR_STOP
+        self.excavation_state = EXCAV_STATE.RESTING
 
 
 def main(args=None):
