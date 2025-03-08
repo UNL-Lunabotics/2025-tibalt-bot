@@ -30,7 +30,7 @@ class EXCAV_STATE(enumerate):
   RESTING = 0
   EXTENDING = 1
   DIGGING = 2
-  RETRACTING = 4
+  RETRACTING = 3
 
 EXCAV_RETRACT_PERIOD = 10 # period of time (in seconds) for the linear atuator to retract to 0cm
                           # the current value is a meaningless placeholder
