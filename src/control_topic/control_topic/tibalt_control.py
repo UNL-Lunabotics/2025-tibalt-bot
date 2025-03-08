@@ -57,6 +57,13 @@ class Tibalt(Node):
     self.excavation_spin_motor == MOTOR_STOP
     self.excavation_actuator_motor == MOTOR_STOP
 
+    # This creates a Rate object that we will use to sleep the system at the specified frequency (in Hz)
+    # We need this to make sure the node's don't publish data too quickly
+    self.rate = self.create_rate(
+      frequency=10,
+      clock=self.get_clock()
+    )
+
     # This node will publish the motor speeds we want the Arduino to set things to
     self.publisher = self.create_publisher(
       msg_type=Int16MultiArray,
@@ -80,12 +87,8 @@ class Tibalt(Node):
     # TODO: excavation logic (1 motor for turning scoops, 1 linear actuator to push into ground and retract)
 
     # TODO: hopper logic (1 linear actuator to lift bin, 1 servo to open hatch, 1 vibration motor on bottom)
-    
-    # TODO: publish all motor speeds here (need to decide on order based on total amount of motors for each system)
-    motor_speeds = Int16MultiArray()
-    # [dtLeft, dtRight, exTurn, exActuator, hopperActuator, hopperHatch, hopperVibe] (variable names can change but this is the order for the motors)
-    motor_speeds.data = []
-    self.publisher.publish(motor_speeds)
+
+    # EXCAVATION LOGIC
 
     # placeholder value for extending the linear actuator
     # this pressing this button will also begin the spinning motor
@@ -150,6 +153,12 @@ class Tibalt(Node):
         self.excavation_actuator_motor = MOTOR_STOP
         self.excavation_spin_motor = MOTOR_STOP
         self.excavation_state = EXCAV_STATE.RESTING
+
+    # TODO: publish all motor speeds here (need to decide on order based on total amount of motors for each system)
+    motor_speeds = Int16MultiArray()
+    # [dtLeft, dtRight, exTurn, exActuator, hopperActuator, hopperHatch, hopperVibe] (variable names can change but this is the order for the motors)
+    motor_speeds.data = []
+    self.publisher.publish(motor_speeds)
 
 
 def main(args=None):
