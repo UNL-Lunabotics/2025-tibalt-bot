@@ -99,47 +99,46 @@ class Tibalt(Node):
     retract_button = 3
 
     '''
-    While not excavating, check if any butons are pressed that initialize digging,
-    otherwise, do nothing
+    In the resting state, both motors are not moving. Check if the extend
+    button is pressed
     '''
     if self.excavation_state == EXCAV_STATE.RESTING:
+      # resting state motor status
       self.excavation_spin_motor = MOTOR_STOP
       self.excavation_actuator_motor = MOTOR_STOP
-      # if digging process has been initiated, continue to EXTENDING
+      # move on to extending
       if joystick.buttons[extend_button] == 1:
-        # in this moment, start extending, and digging
         self.excavation_state = EXCAV_STATE.EXTENDING
 
     '''
-    while extending, keep spinning the excavator and check if the extend button
-    is being held. If so, continue extending otherwise stop extending and change 
-    states
+    In the extending state, the actuator is extending while the excavator is spinning.
+    The motors are in this state as long as the extending button remains pressed.
+    check if the button is released
     '''
     if self.excavation_state == EXCAV_STATE.EXTENDING:
-      # keep spinning
+      # extending motor status
       self.excavation_spin_motor = MOTOR_FORWARDS
       self.excavation_actuator_motor = MOTOR_FORWARDS
-      # if the extending button is still being pressed
-      if joystick.buttons[extend_button] != 1:
+      # if the extending button is released move to digging
+      if joystick.buttons[extend_button] == 0:
         self.excavation_state = EXCAV_STATE.DIGGING
     
     '''
-    In the digging state, don't extend the actuator and continue spinning
-    the excavator. Check if the extending button is pressed again, in which case
-    return to the extending state. Check if the retract button is pressed, in
-    which case move to the retracting state.
+    In the digging state, the actuator is still while the excavator is still
+    spinning. Check if the extend button or the retract button is pressed.
+    Move to the extend or retract state accordingly
     '''
     if self.excavation_state == EXCAV_STATE.DIGGING:
-      # no matter what, during this stage the motor should be spinning
+      # digging state motor status
       self.excavation_spin_motor = MOTOR_FORWARDS
       self.excavation_actuator_motor = MOTOR_STOP
 
-      # if the extending button is pressed again
+      # can return to the extending state
       if joystick.buttons[extend_button] == 1:
         self.excavation_state = EXCAV_STATE.EXTENDING
 
-      # was the retract button pressed
       elif joystick.buttons[retract_button] == 1:
+        # records the time the retract button was pressed
         self.excavation_timer = time.time()
         self.excavation_state = EXCAV_STATE.RETRACTING
 
@@ -149,12 +148,12 @@ class Tibalt(Node):
     amount of time.
     '''
     if self.excavation_state == EXCAV_STATE.RETRACTING:
+      # retract state motor status
+      self.excavation_spin_motor = MOTOR_FORWARDS
+      self.excavation_actuator_motor = MOTOR_BACKWARDS
 
-      if time.time() - self.excavation_timer < EXCAV_RETRACT_PERIOD:
-        self.excavation_actuator_motor = MOTOR_BACKWARDS
-        self.excavation_spin_motor = MOTOR_FORWARDS
-
-      elif time.time() - self.excavation_timer > EXCAV_RETRACT_PERIOD:
+      # once the retract period has expired, go to resting
+      if time.time() - self.excavation_timer > EXCAV_RETRACT_PERIOD:
         self.excavation_state = EXCAV_STATE.RESTING
 
     # TODO: publish all motor speeds here (need to decide on order based on total amount of motors for each system)
