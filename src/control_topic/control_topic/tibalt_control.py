@@ -19,6 +19,8 @@ MOTOR_FORWARDS = 127
 MOTOR_BACKWARDS = 0
 MOTOR_STOP = 64
 
+MOTOR_INCREMENT = 10 # TODO: placeholder value
+
 
 class TIBALT_STATE(enumerate):
   """Enum to keep track of the current robot state. Does NOT include drivetrain states."""
@@ -35,6 +37,19 @@ class EXCAV_STATE(enumerate):
 EXCAV_RETRACT_PERIOD = 10 # period of time (in seconds) for the linear atuator to retract to 0cm
                           # the current value is a meaningless placeholder
                           # TODO: find out how long this should take
+
+def incrementMotor(motorSpeed, max):
+    if (motorSpeed + MOTOR_INCREMENT > max):
+        return max
+    else:
+        return motorSpeed + MOTOR_INCREMENT
+    
+def decrementMotor(motorSpeed, min):
+    if (motorSpeed - MOTOR_INCREMENT < min):
+      return min
+    else:
+      return motorSpeed - MOTOR_INCREMENT
+  
 
 class Tibalt(Node):
   """The node class for all the main Tibalt logic. This contains the functionality
@@ -78,7 +93,7 @@ class Tibalt(Node):
       callback=self.control_callback  # This function gets triggered every time
                                       # a message is received from the topic
     )
-  
+
   def control_callback(self, joystick):
     """This contains the main driver control code."""
 
@@ -117,8 +132,11 @@ class Tibalt(Node):
     '''
     if self.excavation_state == EXCAV_STATE.EXTENDING:
       # extending motor status
-      self.excavation_spin_motor = MOTOR_FORWARDS
-      self.excavation_actuator_motor = MOTOR_FORWARDS
+      #Increment values while under 127
+      self.excavation_spin_motor = incrementMotor(self.excavation_spin_motor, MOTOR_FORWARDS)
+
+      self.excavation_actuator_motor = incrementMotor(self.excavation_actuator_motor, MOTOR_FORWARDS)
+    
       # if the extending button is released move to digging
       if joystick.buttons[extend_button] == 0:
         self.excavation_state = EXCAV_STATE.DIGGING
@@ -130,8 +148,11 @@ class Tibalt(Node):
     '''
     if self.excavation_state == EXCAV_STATE.DIGGING:
       # digging state motor status
-      self.excavation_spin_motor = MOTOR_FORWARDS
-      self.excavation_actuator_motor = MOTOR_STOP
+
+      #Increment values while under 127(MOTOR_FORWARDS)
+      self.excavation_spin_motor = incrementMotor(self.excavation_spin_motor, MOTOR_FORWARDS)
+
+      self.excavation_actuator_motor = decrementMotor(self.excavation_actuator_motor, MOTOR_STOP)
 
       # can return to the extending state
       if joystick.buttons[extend_button] == 1:
@@ -149,8 +170,14 @@ class Tibalt(Node):
     '''
     if self.excavation_state == EXCAV_STATE.RETRACTING:
       # retract state motor status
-      self.excavation_spin_motor = MOTOR_FORWARDS
-      self.excavation_actuator_motor = MOTOR_BACKWARDS
+      self.excavation_spin_motor = incrementMotor(self.excavation_spin_motor, MOTOR_FORWARDS)
+
+      # incase the actuator is still moving forward
+      if (self.excavation_actuator_motor > MOTOR_STOP):
+        #sets it to the increment value so that it will be at MOTOR_STOP once decrementMotor() is called
+        self.excavation_actuator_motor = MOTOR_INCREMENT
+
+      self.excavation_actuator_motor = decrementMotor(self.excavation_actuator_motor, MOTOR_BACKWARDS)
 
       # once the retract period has expired, go to resting
       if time.time() - self.excavation_timer > EXCAV_RETRACT_PERIOD:
