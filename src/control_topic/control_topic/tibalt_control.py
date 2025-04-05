@@ -93,9 +93,40 @@ class Tibalt(Node):
       callback=self.control_callback  # This function gets triggered every time
                                       # a message is received from the topic
     )
+    
+    # Adds Subscriber for shutdown commands
+    # Uses Boolean messages on 'motor_shutdown' topic
+    # Queue size 10 ensures no missed commands during high load
+    self.create_subscription(
+      Bool,
+      'motor_shutdown'
+      self.shutdown_callback, # Called when messsage recieved
+      10
+    )
+    
+    # Shutdown state flag
+    # When True, all motor commands will be blocked
+    self.motor_shutdown = False
+  
+  # Handles Shutdown commands
+  # Args: msg (Bool): True triggers shutdown, False would re-enable (unused)
+  def shutdown_callback(self, msg):
+    if msg.data: # Only acts on True commands
+      self.motor_shutdown = True
+      
+      # creates and publish immediate stop command
+      stop_msg = Int16MultiArray()
+      stop_msg.data = [0] * 7 # Zero Speed for all 7 motors
+      self.publisher.publish(stop_msg)
 
   def control_callback(self, joystick):
     """This contains the main driver control code."""
+    
+    # Shutdown Check: Blocks all normal commands if active
+    if self.motor_shutdown:
+      self.get_logger().warn('System Shutdown')
+      return
+      
 
     # TODO: drivetrain logic (2 motors)
     
