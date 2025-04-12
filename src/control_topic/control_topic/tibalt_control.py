@@ -97,11 +97,11 @@ class Tibalt(Node):
     # Adds Subscriber for shutdown commands
     # Uses Boolean messages on 'motor_shutdown' topic
     # Queue size 10 ensures no missed commands during high load
-    self.create_subscription(
-      Bool,
-      'motor_shutdown'
-      self.shutdown_callback, # Called when messsage recieved
-      10
+    self.subscription = self.create_subscription(
+      msg_type = Bool,
+      topic = 'motor_shutdown'
+      callback = self.shutdown_callback, # Called when messsage recieved
+      10  
     )
     
     # Shutdown state flag
