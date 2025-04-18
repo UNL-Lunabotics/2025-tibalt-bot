@@ -1,69 +1,36 @@
-// sudo chmod 777 /dev/ttyACM0
-// if you get a port permission denied
+#include "RoboClaw.h"
 
-// 30 -> back drive
-// 90 -> stop drive
-// 150 -> forward drive 
+#define ROBOCLAW_ADDRESS 0x80
 
-#include <ros.h>
-#include <std_msgs/Int16MultiArray.h>
-#include <std_msgs/Int16.h>
-#include <Servo.h>
+SoftwareSerial serialTest(18, 19);  // TX=18, RX=19
+RoboClaw roboclaw(&serialTest, 10000);
 
-// All GPIO
-Servo FRWheel;
-Servo FLWheel;
-Servo BRWheel;
-Servo BLWheel;
-Servo DigMotor;
+bool runLoop = false;
 
-// 
-ros::NodeHandle node_handle;
-std_msgs::Int16 joy_num;
-std_msgs::Int16MultiArray joy_arr;
-
-// motor offsets
-int FRWheelOff = 5;
-int FLWheelOff = 0;
-int BRWheelOff = 5;
-int BLWheelOff = 0;
-int DigMotorOff = 0;
-
-
-void motor_update(const std_msgs::Int16MultiArray& joystick_arr) {
-  FRWheel.write(joy_arr.data[0] + FRWheelOff);
-  FLWheel.write(joy_arr.data[1] + FLWheelOff);
-  BRWheel.write(joy_arr.data[2] + BRWheelOff);
-  BLWheel.write(joy_arr.data[3] + BLWheelOff);
-  DigMotor.write(joy_arr.data[4] + DigMotorOff);
-}
-
-ros::Subscriber<std_msgs::Int16MultiArray> joy_subscriber("motor_speeds", &motor_update);
-
-/*
-This code will run once to initialize everything.
-*/
 void setup() {
-  Serial.begin(9600);
+  serialTest.begin(9600);
+  roboclaw.begin(38400);
+  Serial.begin(115200);  // Serial from Jetson or PC
 
-  FRWheel.attach(9); 
-  FLWheel.attach(10); 
-  BRWheel.attach(7);
-  BLWheel.attach(8); 
-  // TODO: add dig motor pin
+  // Wait until we get a "start" signal over Serial
+  while (!runLoop) {
+    if (Serial.available()) {
+      String input = Serial.readStringUntil('\n');
+      input.trim();
 
-  node_handle.initNode();
-  node_handle.subscribe(joy_subscriber);
-
-  FRWheel.write(90 + FRWheelOff);
-  FLWheel.write(90 + FLWheelOff);
-  BRWheel.write(90 + BRWheelOff);
-  BLWheel.write(90 + BLWheelOff);
-  DigMotor.write(90 + DigMotorOff);
+      if (input == "start") {
+        runLoop = true;
+        Serial.println("Starting autonomous loop.");
+        delay(100); // Optional short delay before starting
+      }
+    }
+    delay(100);
+  }
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  node_handle.spinOnce();
-  delay(100); 
+  if (runLoop) {
+    roboclaw.ForwardBackwardM2(ROBOCLAW_ADDRESS, 127);  // Full forward
+    delay(100); // Adjust delay to control loop rate if needed
+  }
 }
