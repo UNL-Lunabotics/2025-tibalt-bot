@@ -1,4 +1,5 @@
 #include "RoboClaw.h"
+#include <Servo.h>
 
 #define ROBOCLAW_ADDRESS 0x80
 
@@ -6,11 +7,9 @@
 // screen /dev/ttyACM0 115200
 // start
 
-SoftwareSerial serialDt(18, 19);  //TODO
-RoboClaw rcDt(&serialDt, 10000);
+Servo dt[4];
 
-SoftwareSerial serialHopLift(20, 21); //TODO
-RoboClaw rcHopLift(&serialHopLift, 10000);
+RoboClaw rcHopLift(&Serial2, 10000);
 
 //TODO: hopper servo latch
 
@@ -19,34 +18,45 @@ bool runLoop = false;
 void setup() {
   Serial.begin(9600);
 
-  rcDt.begin(38400);
-  rcDt.begin(38400);
+
+  dt[0].attach(2);
+  dt[1].attach(4);
+  dt[2].attach(6);
+  dt[3].attach(8);
+  int dtForward = 50 * 5 + 1500;
+  int dtBackward = -50 * 5 + 1500;
+  int dtStop = 0 * 5 + 1500;
+  rcHopLift.begin(38400);
 
 
   //TODO: just here for testing things idk
-  // rcDt.ForwardBackwardM1(ROBOCLAW_ADDRESS, 70);
-  // rcDt.ForwardBackwardM2(ROBOCLAW_ADDRESS, 48);
+  dt[0].writeMicroseconds(dtForward);
+  dt[1].writeMicroseconds(dtForward);
+  dt[2].writeMicroseconds(dtBackward);
+  dt[3].writeMicroseconds(dtBackward);
+  delay(10000);
+  dt[0].writeMicroseconds(dtBackward);
+  dt[1].writeMicroseconds(dtBackward);
+  dt[2].writeMicroseconds(dtForward);
+  dt[3].writeMicroseconds(dtForward);
+  delay(10000);
+  dt[0].writeMicroseconds(dtStop);
+  dt[1].writeMicroseconds(dtStop);
+  dt[2].writeMicroseconds(dtStop);
+  dt[3].writeMicroseconds(dtStop);
+  delay(10000);
+  rcHopLift.ForwardBackwardM2(ROBOCLAW_ADDRESS, 0);
+  delay(20000);
+  //TODO: open latch
   // delay(1000);
-  // rcDt.ForwardBackwardM1(ROBOCLAW_ADDRESS, 64);
-  // rcDt.ForwardBackwardM2(ROBOCLAW_ADDRESS, 64);
-  // delay(1000);
-  // rcHopLift.ForwardBackwardM1(ROBOCLAW_ADDRESS, 100);
-  // delay(1000);
-  // //TODO: open latch
-  // delay(1000);
-  // rcHopLift.ForwardBackwardM1(ROBOCLAW_ADDRESS, 28);
-  // delay(1000);
-  // //TODO: close latch
-  // delay(1000);
-  // rcHopLift.ForwardBackwardM1(ROBOCLAW_ADDRESS, 100);
-  // delay(1000);
-  // //TODO: open latch
-  // delay(1000);
-  // rcHopLift.ForwardBackwardM1(ROBOCLAW_ADDRESS, 28);
-  // delay(1000);
-  // //TODO: close latch
-  // delay(1000);
-  // rcHopLift.ForwardBackwardM1(ROBOCLAW_ADDRESS, 64);
+  rcHopLift.ForwardBackwardM2(ROBOCLAW_ADDRESS, 127);
+  delay(20000);
+
+  dt[0].writeMicroseconds(dtStop);
+  dt[1].writeMicroseconds(dtStop);
+  dt[2].writeMicroseconds(dtStop);
+  dt[3].writeMicroseconds(dtStop);
+  rcHopLift.ForwardBackwardM2(ROBOCLAW_ADDRESS, 64);
 
 
   // Wait until we get a "start" signal over Serial
@@ -57,6 +67,34 @@ void setup() {
       Serial.println(input);
 
       if (input == "start") {
+        dt[0].writeMicroseconds(dtForward);
+        dt[1].writeMicroseconds(dtForward);
+        dt[2].writeMicroseconds(dtBackward);
+        dt[3].writeMicroseconds(dtBackward);
+        delay(10000);
+        dt[0].writeMicroseconds(dtBackward);
+        dt[1].writeMicroseconds(dtBackward);
+        dt[2].writeMicroseconds(dtForward);
+        dt[3].writeMicroseconds(dtForward);
+        delay(10000);
+        dt[0].writeMicroseconds(dtStop);
+        dt[1].writeMicroseconds(dtStop);
+        dt[2].writeMicroseconds(dtStop);
+        dt[3].writeMicroseconds(dtStop);
+        delay(10000);
+        rcHopLift.ForwardBackwardM2(ROBOCLAW_ADDRESS, 0);
+        delay(20000);
+        //TODO: open latch
+        // delay(1000);
+        rcHopLift.ForwardBackwardM2(ROBOCLAW_ADDRESS, 127);
+        delay(20000);
+
+        dt[0].writeMicroseconds(dtStop);
+        dt[1].writeMicroseconds(dtStop);
+        dt[2].writeMicroseconds(dtStop);
+        dt[3].writeMicroseconds(dtStop);
+        rcHopLift.ForwardBackwardM2(ROBOCLAW_ADDRESS, 64);
+
         runLoop = true;
         Serial.println("Starting autonomous loop.");
         delay(100); // Optional short delay before starting
@@ -67,9 +105,5 @@ void setup() {
 }
 
 void loop() {
-  if (runLoop) {
-    rcDt.ForwardBackwardM1(ROBOCLAW_ADDRESS, 64);
-    rcDt.ForwardBackwardM2(ROBOCLAW_ADDRESS, 64);
-    rcHopLift.ForwardBackwardM1(ROBOCLAW_ADDRESS, 64);
-  }
+
 }
