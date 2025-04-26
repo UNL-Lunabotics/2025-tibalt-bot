@@ -10,11 +10,33 @@ from sensor_msgs.msg import Joy
 from std_msgs.msg import Int16
 from std_msgs.msg import Int16MultiArray
 
+import time
 
-class TIBALT_STATE(enumerate):
-  """Enum to keep track of the current robot state. Does NOT include drivetrain states."""
-  REST = 0
-  DIGGING = 1
+# Motor speed constants to help make the code more readable
+# They range from 0-127, with 0 as full power backward, 64 as stop, and 127 as full power forward
+MOTOR_FORWARDS = 127
+MOTOR_BACKWARDS = 0
+MOTOR_STOP = 64
+
+# Servo constants to help make the code more readable
+# It ranges from 0-180 degrees
+SERVO_FULL_CLOSE = 0
+SERVO_FULL_OPEN = 180
+
+# Hopper constants that should not change during the program
+HOPPER_EXTEND_AND_RETRACT_PERIOD = 10 # This is how long it should take to extend/retract the hopper linear actuators
+                                      # In seconds
+
+HOPPER_PAUSE_PERIOD = 5 # This is how long the hopper should pause when fully extended before retracting
+                        # In seconds
+
+
+class HOPPER_STATE(enumerate):
+  """Enum to keep track of the current hopper state."""
+  RESTING = 0
+  EXTENDING = 1
+  DUMPING = 2
+  RETRACTING = 3
 
 class Tibalt(Node):
   """The node class for all the main Tibalt logic. This contains the functionality
@@ -22,6 +44,20 @@ class Tibalt(Node):
 
   def __init__(self):
     super().__init__('tibalt') # Initializes this as a node with the name 'tibalt'
+
+    # Hopper class variables
+    self.hopper_state = HOPPER_STATE.RESTING
+    self.hopper_timer = 0
+    self.hopper_vibration_motor = MOTOR_STOP
+    self.hopper_actuator_motor = MOTOR_STOP
+    self.hopper_latch_servo = SERVO_FULL_CLOSE
+
+    # This creates a Rate object that we will use to sleep the system at the specified frequency (in Hz)
+    # We need this to make sure the node's don't publish data too quickly
+    self.rate = self.create_rate(
+      frequency=10,
+      clock=self.get_clock()
+    )
 
     # This node will publish the motor speeds we want the Arduino to set things to
     self.publisher = self.create_publisher(
@@ -45,7 +81,72 @@ class Tibalt(Node):
     
     # TODO: excavation logic (1 motor for turning scoops, 1 linear actuator to push into ground and retract)
 
-    # TODO: hopper logic (1 linear actuator to lift bin, 1 servo to open hatch, 1 vibration motor on bottom)
+    ########## HOPPER LOGIC ##########
+
+    # If the hopper is not active, all motors should be stopped and we should be monitoring
+    # for input to change the hopper state
+    if self.hopper_state == HOPPER_STATE.RESTING:
+      
+      # The driver has initiated hopper dumping, begin extending the hopper
+      # and then continue to EXTENDING
+      if joystick.buttons[0] == 0: # TODO: Placeholder button
+        self.hopper_vibration_motor = MOTOR_STOP
+        self.hopper_actuator_motor = MOTOR_FORWARDS
+        self.hopper_latch_servo = SERVO_FULL_OPEN
+
+        self.hopper_timer = time.time()
+
+        self.hopper_state = HOPPER_STATE.EXTENDING
+      else: # Do nothing
+        self.hopper_actuator_motor = MOTOR_STOP
+        self.hopper_vibration_motor = MOTOR_STOP
+
+    # If the hopper actuators are currently extending, we need to continue extending
+    # until the full extension time period is over, continue to DUMPING
+    elif self.hopper_state == HOPPER_STATE.EXTENDING:
+      # If it hasn't been extending long enough, continue extending
+      if time.time() - self.hopper_timer < HOPPER_EXTEND_AND_RETRACT_PERIOD:
+        self.hopper_vibration_motor = MOTOR_STOP
+        self.hopper_actuator_motor = MOTOR_FORWARDS
+      
+      # If it has been extending long enough, continue to DUMPING phase
+      elif time.time() - self.hopper_timer > HOPPER_EXTEND_AND_RETRACT_PERIOD:
+        self.hopper_vibration_motor = MOTOR_STOP
+        self.hopper_actuator_motor = MOTOR_STOP
+
+        self.hopper_timer = time.time()
+
+        self.hopper_state = HOPPER_STATE.DUMPING
+
+    # If the hopper is fully extended and the dumping phase is not over yet, continue
+    # dumping until the full dumping time period is over, continue to RETRACTING
+    elif self.hopper_state == HOPPER_STATE.DUMPING:
+      # If it hasn't been paused long enough, continue vibrating
+      if time.time() - self.hopper_timer < HOPPER_PAUSE_PERIOD:
+        self.hopper_vibration_motor = MOTOR_FORWARDS
+        self.hopper_actuator_motor = MOTOR_STOP
+      
+      # If it has been paused long enough, continue to RETRACTING
+      elif time.time() - self.hopper_timer > HOPPER_PAUSE_PERIOD:
+        self.hopper_vibration_motor = MOTOR_STOP
+        self.hopper_actuator_motor = MOTOR_BACKWARDS
+
+        self.hopper_state = HOPPER_STATE.RETRACTING
+
+    # If the linear actuators are retracting back into a resting state, then continue to RESTING
+    elif self.hopper_state == HOPPER_STATE.RETRACTING:
+      # If they have not been retracting long enough, continue retracting
+      if time.time() - self.hopper_timer < HOPPER_EXTEND_AND_RETRACT_PERIOD:
+        self.hopper_vibration_motor = MOTOR_STOP
+        self.hopper_actuator_motor = MOTOR_BACKWARDS
+      
+      # If it has been retracting long enough to be fully retracted, continue to RESTING
+      elif time.time() - self.hopper_timer > HOPPER_EXTEND_AND_RETRACT_PERIOD:
+        self.hopper_vibration_motor = MOTOR_STOP
+        self.hopper_actuator_motor = MOTOR_STOP
+        self.hopper_latch_servo = SERVO_FULL_CLOSE
+
+        self.hopper_state = HOPPER_STATE.RESTING
     
     # TODO: publish all motor speeds here (need to decide on order based on total amount of motors for each system)
     motor_speeds = Int16MultiArray()
