@@ -77,7 +77,15 @@ class Tibalt(Node):
   def control_callback(self, joystick):
     """This contains the main driver control code."""
 
-    # TODO: drivetrain logic (2 motors)
+    ########## DRIVETRAIN LOGIC ##########
+
+    # Don't understand the math? Me neither, accept that it works
+    x_axis: float = joystick.axes[0]  # pos<-right, neg<-left
+    y_axis: float = joystick.axes[1]  # pos<-down, neg<-up
+    forward: int = int(x_axis * 63)
+    turn: int = int(y_axis * 63)
+    DtLeft: int = 64 + forward + turn
+    DtRight: int = 64 + forward - turn
     
     # TODO: excavation logic (1 motor for turning scoops, 1 linear actuator to push into ground and retract)
 
