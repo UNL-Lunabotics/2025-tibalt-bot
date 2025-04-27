@@ -31,11 +31,18 @@ HOPPER_EXTEND_AND_RETRACT_PERIOD = 10 # This is how long it should take to exten
 HOPPER_PAUSE_PERIOD = 5 # This is how long the hopper should pause when fully extended before retracting
                         # In seconds
 
-EXCAVATION_MOTOR_INCREMENT = 10
-EXCAVATION_RETRACT_PERIOD = 10  # period of time (in seconds) for the linear atuator to retract to 0cm
+EXCAV_MOTOR_INCREMENT = 10
+EXCAV_RETRACT_PERIOD = 10  # period of time (in seconds) for the linear atuator to retract to 0cm
 
 '''CONTROL SCHEME'''
-
+# EXCAV_ROTATE_B = 0 # There also isn't support for this in the code as it is automatically decided
+                   # by state machine logic
+EXCAV_RETRACT_B = 0
+EXCAV_EXTEND_B = 0
+# HOPPER_RETRACT_B = 0 # We also don't currently need a retract button as we were told (by Juriah I think)
+                     # that just having it automatically start retracting after a while was good
+HOPPER_EXTEND_B = 0
+# Note we don't actually need a hopper latch button, it's coded automatically
 
 class HOPPER_STATE(enumerate):
   """Enum to keep track of the current hopper state."""
@@ -144,16 +151,16 @@ def excavation_logic(self, joystick: Joy):
   Returns: Nothing, it sets relevant class variables instead
   """
   def incrementMotor(motorSpeed, max):
-      if (motorSpeed + EXCAVATION_MOTOR_INCREMENT > max):
-          return max
-      else:
-          return motorSpeed + EXCAVATION_MOTOR_INCREMENT
+    if (motorSpeed + EXCAV_MOTOR_INCREMENT > max):
+      return max
+    else:
+      return motorSpeed + EXCAV_MOTOR_INCREMENT
     
   def decrementMotor(motorSpeed, min):
-      if (motorSpeed - EXCAVATION_MOTOR_INCREMENT < min):
-        return min
-      else:
-        return motorSpeed - EXCAVATION_MOTOR_INCREMENT
+    if (motorSpeed - EXCAV_MOTOR_INCREMENT < min):
+      return min
+    else:
+      return motorSpeed - EXCAV_MOTOR_INCREMENT
     
   # In the resting state, both motors are not moving. Check if the extend
   # button is pressed
@@ -162,7 +169,7 @@ def excavation_logic(self, joystick: Joy):
     self.excavation_actuator_motor = MOTOR_STOP
 
     # move on to extending
-    if joystick.buttons[extend_button] == 1:
+    if joystick.buttons[EXCAV_EXTEND_B] == 1:
       self.excavation_state = EXCAV_STATE.EXTENDING
 
   # In the extending state, the actuator is extending while the excavator is spinning.
@@ -175,7 +182,7 @@ def excavation_logic(self, joystick: Joy):
     self.excavation_actuator_motor = incrementMotor(self.excavation_actuator_motor, MOTOR_FORWARDS)
   
     # if the extending button is released move to digging
-    if joystick.buttons[extend_button] == 0:
+    if joystick.buttons[EXCAV_EXTEND_B] == 0:
       self.excavation_state = EXCAV_STATE.DIGGING
   
   # In the digging state, the actuator is still while the excavator is still
@@ -188,10 +195,10 @@ def excavation_logic(self, joystick: Joy):
     self.excavation_actuator_motor = decrementMotor(self.excavation_actuator_motor, MOTOR_STOP)
 
     # can return to the extending state
-    if joystick.buttons[extend_button] == 1:
+    if joystick.buttons[EXCAV_EXTEND_B] == 1:
       self.excavation_state = EXCAV_STATE.EXTENDING
 
-    elif joystick.buttons[retract_button] == 1:
+    elif joystick.buttons[EXCAV_RETRACT_B] == 1:
       # records the time the retract button was pressed
       self.excavation_timer = time.time()
       self.excavation_state = EXCAV_STATE.RETRACTING
@@ -206,12 +213,12 @@ def excavation_logic(self, joystick: Joy):
     # incase the actuator is still moving forward
     if (self.excavation_actuator_motor > MOTOR_STOP):
       #sets it to the increment value so that it will be at MOTOR_STOP once decrementMotor() is called
-      self.excavation_actuator_motor = EXCAVATION_MOTOR_INCREMENT
+      self.excavation_actuator_motor = EXCAV_MOTOR_INCREMENT
 
     self.excavation_actuator_motor = decrementMotor(self.excavation_actuator_motor, MOTOR_BACKWARDS)
 
     # once the retract period has expired, go to resting
-    if time.time() - self.excavation_timer > EXCAVATION_RETRACT_PERIOD:
+    if time.time() - self.excavation_timer > EXCAV_RETRACT_PERIOD:
       self.excavation_state = EXCAV_STATE.RESTING
 
 def hopper_logic(self, joystick: Joy):
@@ -230,7 +237,7 @@ def hopper_logic(self, joystick: Joy):
     
     # The driver has initiated hopper dumping, begin extending the hopper
     # and then continue to EXTENDING
-    if joystick.buttons[0] == 0: # TODO: Placeholder button
+    if joystick.buttons[HOPPER_EXTEND_B] == 1: # TODO: Placeholder button
       self.hopper_vibration_motor = MOTOR_STOP
       self.hopper_actuator_motor = MOTOR_FORWARDS
       self.hopper_latch_servo = SERVO_FULL_OPEN
