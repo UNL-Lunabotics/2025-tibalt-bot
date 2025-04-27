@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'control_topic'
+package_name = 'rover_control'
 
 setup(
     name=package_name,
