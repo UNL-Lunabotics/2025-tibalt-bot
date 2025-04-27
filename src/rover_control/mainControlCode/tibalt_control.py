@@ -22,31 +22,28 @@ MOTOR_STOP = 64
 SERVO_FULL_CLOSE = 0
 SERVO_FULL_OPEN = 180
 
+# The motor speed increment so the excavation system doesn't go from 0 to 100 speed at once
 EXCAV_MOTOR_INCREMENT = 10
-EXCAV_RETRACT_PERIOD = 10  # period of time (in seconds) for the linear atuator to retract to 0cm
 
 '''CONTROL SCHEME'''
-# EXCAV_ROTATE_B = 0 # There also isn't support for this in the code as it is automatically decided
-                   # by state machine logic
+EXCAV_DIG_B = 0
 EXCAV_RETRACT_B = 0
 EXCAV_EXTEND_B = 0
+HOPPER_LATCH_B = 0
 HOPPER_RETRACT_B = 0
 HOPPER_EXTEND_B = 0
-# Note we don't actually need a hopper latch button, it's coded automatically
 
 class HOPPER_STATE(enumerate):
   """Enum to keep track of the current hopper state."""
   RESTING = 0
   EXTENDING = 1
-  DUMPING = 2
-  RETRACTING = 3
+  RETRACTING = 2
 
 class EXCAV_STATE(enumerate):
   """Enum to keep track of the excavation states."""
   RESTING = 0
   EXTENDING = 1
-  DIGGING = 2
-  RETRACTING = 3
+  RETRACTING = 2
 
 class Tibalt(Node):
   """The node class for all the main Tibalt logic. This contains the functionality
@@ -60,6 +57,7 @@ class Tibalt(Node):
     self.hopper_vibration_motor = MOTOR_STOP
     self.hopper_actuator_motor = MOTOR_STOP
     self.hopper_latch_servo = SERVO_FULL_CLOSE
+    self.hopper_is_latched = True
 
     # Drivetrain class variables
     self.dt_left_motors = MOTOR_STOP
@@ -67,8 +65,9 @@ class Tibalt(Node):
 
     # Excavation motor variables
     self.excav_state = EXCAV_STATE.RESTING
-    self.excav_spin_motor = MOTOR_STOP
+    self.excav_dig_motor = MOTOR_STOP
     self.excav_actuator_motor = MOTOR_STOP
+    self.excav_is_digging = False
 
     # This creates a Rate object that we will use to sleep the system at the specified frequency (in Hz)
     # We need this to make sure the node's don't publish data too quickly
@@ -92,7 +91,7 @@ class Tibalt(Node):
                                       # a message is received from the topic
     )
   
-  def control_callback(self, joystick: Joy):
+  def control_callback(self, joystick: Joy) -> None:
     """This contains the main driver control code."""
 
     # Button check for excavation
@@ -100,28 +99,42 @@ class Tibalt(Node):
     elif joystick.buttons[EXCAV_RETRACT_B] == 1: self.excav_state = EXCAV_STATE.RETRACTING
     else:                                        self.excav_state = EXCAV_STATE.RESTING
 
+    # The dig motor follows a toggle control scheme
+    if joystick.buttons[EXCAV_DIG_B] == 1: self.excav_is_digging = not self.excav_is_digging
+
     # Button check for hopper
     if joystick.buttons[HOPPER_EXTEND_B] == 1:    self.hopper_state = HOPPER_STATE.EXTENDING
     elif joystick.buttons[HOPPER_RETRACT_B] == 1: self.hopper_state = HOPPER_STATE.RETRACTING
     else:                                         self.hopper_state = HOPPER_STATE.RESTING
 
+    # The latch motor is a toggle
+    if joystick.buttons[HOPPER_LATCH_B] == 1: self.hopper_is_latched = not self.hopper_is_latched
+
     drivetrain_logic(self=self, joystick=joystick)
     excavation_logic(self=self)
     hopper_logic(self=self)
 
-    # TODO: publish all motor speeds here (need to decide on order based on total amount of motors for each system)
     motor_speeds = Int16MultiArray()
     # [dtLeft, dtRight, exTurn, exActuator, hopperActuator, hopperHatch, hopperVibe] (variable names can change but this is the order for the motors)
-    motor_speeds.data = []
+    motor_speeds.data = [
+      self.dt_left_motors,
+      self.dt_right_motors,
+      self.excav_dig_motor,
+      self.excav_actuator_motor,
+      self.hopper_actuator_motor,
+      self.hopper_latch_servo,
+      self.hopper_vibration_motor
+      ]
+    
     self.publisher.publish(motor_speeds)
 
-def drivetrain_logic(self, joystick: Joy):
+def drivetrain_logic(self, joystick: Joy) -> None:
   """The logic for computing the motor speeds for the drivetrain.
   
   Parameters:
     self
     joystick, the Joy object representing joystick input from the driver
-  Returns: Nothing, it sets relevant class variables instead
+  Returns: None, it sets relevant class variables instead
   """
 
   # Don't understand the math? Me neither, accept that it works
@@ -137,92 +150,80 @@ def drivetrain_logic(self, joystick: Joy):
   self.dt_left_motors = DtLeft
   self.dt_right_motors = DtRight
 
-def excavation_logic(self):
+def excavation_logic(self) -> None:
   """The logic for computing the motor speeds for the excavation system.
   It contains the state machine that will do the necessary calculations.
   
   Parameters:
     self
     joystick, the Joy object representing joystick input from the driver
-  Returns: Nothing, it sets relevant class variables instead
+  Returns: None, it sets relevant class variables instead
   """
-  # These are helper functions to help mediate motor speeds
-  def incrementMotor(motorSpeed, max):
+  # These are helper functions to help incrementally change motor speeds
+  def incrementMotor(motorSpeed, max) -> int:
     if (motorSpeed + EXCAV_MOTOR_INCREMENT > max):
       return max
     else:
       return motorSpeed + EXCAV_MOTOR_INCREMENT
     
-  def decrementMotor(motorSpeed, min):
+  def decrementMotor(motorSpeed, min) -> int:
     if (motorSpeed - EXCAV_MOTOR_INCREMENT < min):
       return min
     else:
       return motorSpeed - EXCAV_MOTOR_INCREMENT
-    
-  # TODO what to do about digging? should we move while digging or no?
+  
+  # The digging motor is handled independently of the excavation state
+  if (self.excav_is_digging):
+    self.excav_dig_motor = MOTOR_FORWARDS
+  else:
+    self.excav_dig_motor = MOTOR_STOP
 
-  # In the resting state, both motors are not moving. Check if the extend
-  # button is pressed
-  if self.excavation_state == EXCAV_STATE.RESTING:
-    self.excavation_spin_motor = MOTOR_STOP
-    self.excavation_actuator_motor = MOTOR_STOP
+  # In the resting state, the linear actuator motors is not moving.
+  # Check if the extend button is pressed
+  if self.excav_state == EXCAV_STATE.RESTING:
+    self.excav_actuator_motor = MOTOR_STOP
 
   # In the extending state, the actuator is extending while the excavator is spinning.
   # The motors are in this state as long as the extending button remains pressed.
   # check if the button is released
-  elif self.excavation_state == EXCAV_STATE.EXTENDING:
+  elif self.excav_state == EXCAV_STATE.EXTENDING:
 
-    # Increment values while under 127
-    self.excavation_spin_motor = incrementMotor(self.excavation_spin_motor, MOTOR_FORWARDS)
-    self.excavation_actuator_motor = incrementMotor(self.excavation_actuator_motor, MOTOR_FORWARDS)
-  
-    # # if the extending button is released move to digging
-    # if joystick.buttons[EXCAV_EXTEND_B] == 0:
-    #   self.excavation_state = EXCAV_STATE.DIGGING
-  
-  # # In the digging state, the actuator is still while the excavator is still
-  # # spinning. Check if the extend button or the retract button is pressed.
-  # # Move to the extend or retract state accordingly
-  # if self.excavation_state == EXCAV_STATE.DIGGING:
+    # incase the actuator is still moving backwards
+    if (self.excav_actuator_motor < MOTOR_STOP):
+      #sets it to the increment value so that it will be at MOTOR_STOP once incrementMotor() is called
+      self.excav_actuator_motor = -EXCAV_MOTOR_INCREMENT
 
-  #   #Increment values while under 127(MOTOR_FORWARDS)
-  #   self.excavation_spin_motor = incrementMotor(self.excavation_spin_motor, MOTOR_FORWARDS)
-  #   self.excavation_actuator_motor = decrementMotor(self.excavation_actuator_motor, MOTOR_STOP)
-
-  #   # can return to the extending state
-  #   if joystick.buttons[EXCAV_EXTEND_B] == 1:
-  #     self.excavation_state = EXCAV_STATE.EXTENDING
-
-  #   elif joystick.buttons[EXCAV_RETRACT_B] == 1:
-  #     # records the time the retract button was pressed
-  #     self.excavation_timer = time.time()
-  #     self.excavation_state = EXCAV_STATE.RETRACTING
+    self.excav_actuator_motor = incrementMotor(self.excavation_actuator_motor, MOTOR_FORWARDS)
 
   # In the retracting state, the excavator is still spinning while the
   # actuator is retracting. Stays in the retracting state for a set
   # amount of time.
-  elif self.excavation_state == EXCAV_STATE.RETRACTING:
-    # retract state motor status
-    self.excavation_spin_motor = decrementMotor(self.excavation_spin_motor, MOTOR_FORWARDS)
+  elif self.excav_state == EXCAV_STATE.RETRACTING:
 
     # incase the actuator is still moving forward
-    if (self.excavation_actuator_motor > MOTOR_STOP):
+    if (self.excav_actuator_motor > MOTOR_STOP):
       #sets it to the increment value so that it will be at MOTOR_STOP once decrementMotor() is called
-      self.excavation_actuator_motor = EXCAV_MOTOR_INCREMENT
+      self.excav_actuator_motor = EXCAV_MOTOR_INCREMENT
 
-    self.excavation_actuator_motor = decrementMotor(self.excavation_actuator_motor, MOTOR_BACKWARDS)
+    self.excav_actuator_motor = decrementMotor(self.excavation_actuator_motor, MOTOR_BACKWARDS)
 
-def hopper_logic(self):
+def hopper_logic(self) -> None:
   """The logic for computing the motor speeds for the hopper system.
   It contains the state machine that will do the necessary calculations.
   
   Parameters:
     self
     joystick, the Joy object representing joystick input from the driver
-  Returns: Nothing, it sets relevant class variables instead
+  Returns: None, it sets relevant class variables instead
   """
 
-  # TODO How to do vibration motor and latch servo with this model?
+  # TODO figure out vibration motor if we decide to actually use it
+
+  # The latch servo is independent of the hopper state
+  if (self.hopper_is_latched):
+    self.hopper_latch_servo = SERVO_FULL_CLOSE
+  else:
+    self.hopper_latch_servo = SERVO_FULL_OPEN
 
   # If the extend button is currently being pressed
   if self.hopper_state == HOPPER_STATE.EXTENDING:
@@ -230,7 +231,7 @@ def hopper_logic(self):
     self.hopper_actuator_motor = MOTOR_FORWARDS
     self.hopper_latch_servo = SERVO_FULL_OPEN
 
-  # If the retracting button is curreltny being pressed
+  # If the retracting button is currently being pressed
   elif self.hopper_state == HOPPER_STATE.RETRACTING:
     self.hopper_vibration_motor = MOTOR_STOP
     self.hopper_actuator_motor = MOTOR_BACKWARDS
@@ -241,70 +242,7 @@ def hopper_logic(self):
     self.hopper_actuator_motor = MOTOR_STOP
     self.hopper_vibration_motor = MOTOR_STOP
 
-  # # If the hopper is not active, all motors should be stopped and we should be monitoring
-  # # for input to change the hopper state
-  # if self.hopper_state == HOPPER_STATE.RESTING:
-    
-  #   # The driver has initiated hopper dumping, begin extending the hopper
-  #   # and then continue to EXTENDING
-  #   if joystick.buttons[HOPPER_EXTEND_B] == 1:
-  #     self.hopper_vibration_motor = MOTOR_STOP
-  #     self.hopper_actuator_motor = MOTOR_FORWARDS
-  #     self.hopper_latch_servo = SERVO_FULL_OPEN
-
-  #     self.hopper_state = HOPPER_STATE.EXTENDING
-  #   else: # Do nothing
-  #     self.hopper_actuator_motor = MOTOR_STOP
-  #     self.hopper_vibration_motor = MOTOR_STOP
-
-  # # If the hopper actuators are currently extending, we need to continue extending
-  # # until the full extension time period is over, continue to DUMPING
-  # elif self.hopper_state == HOPPER_STATE.EXTENDING:
-  #   # If it hasn't been extending long enough, continue extending
-  #   if time.time() - self.hopper_timer < HOPPER_EXTEND_AND_RETRACT_PERIOD:
-  #     self.hopper_vibration_motor = MOTOR_STOP
-  #     self.hopper_actuator_motor = MOTOR_FORWARDS
-    
-  #   # If it has been extending long enough, continue to DUMPING phase
-  #   elif time.time() - self.hopper_timer > HOPPER_EXTEND_AND_RETRACT_PERIOD:
-  #     self.hopper_vibration_motor = MOTOR_STOP
-  #     self.hopper_actuator_motor = MOTOR_STOP
-
-  #     self.hopper_timer = time.time()
-
-  #     self.hopper_state = HOPPER_STATE.DUMPING
-
-  # # If the hopper is fully extended and the dumping phase is not over yet, continue
-  # # dumping until the full dumping time period is over, continue to RETRACTING
-  # elif self.hopper_state == HOPPER_STATE.DUMPING:
-  #   # If it hasn't been paused long enough, continue vibrating
-  #   if time.time() - self.hopper_timer < HOPPER_PAUSE_PERIOD:
-  #     self.hopper_vibration_motor = MOTOR_FORWARDS
-  #     self.hopper_actuator_motor = MOTOR_STOP
-    
-  #   # If it has been paused long enough, continue to RETRACTING
-  #   elif time.time() - self.hopper_timer > HOPPER_PAUSE_PERIOD:
-  #     self.hopper_vibration_motor = MOTOR_STOP
-  #     self.hopper_actuator_motor = MOTOR_BACKWARDS
-
-  #     self.hopper_state = HOPPER_STATE.RETRACTING
-
-  # # If the linear actuators are retracting back into a resting state, then continue to RESTING
-  # elif self.hopper_state == HOPPER_STATE.RETRACTING:
-  #   # If they have not been retracting long enough, continue retracting
-  #   if time.time() - self.hopper_timer < HOPPER_EXTEND_AND_RETRACT_PERIOD:
-  #     self.hopper_vibration_motor = MOTOR_STOP
-  #     self.hopper_actuator_motor = MOTOR_BACKWARDS
-    
-  #   # If it has been retracting long enough to be fully retracted, continue to RESTING
-  #   elif time.time() - self.hopper_timer > HOPPER_EXTEND_AND_RETRACT_PERIOD:
-  #     self.hopper_vibration_motor = MOTOR_STOP
-  #     self.hopper_actuator_motor = MOTOR_STOP
-  #     self.hopper_latch_servo = SERVO_FULL_CLOSE
-
-  #     self.hopper_state = HOPPER_STATE.RESTING
-
-def main(args=None):
+def main(args=None) -> None:
   """Initializes Tibalt and starts the control loop."""
 
   try:
