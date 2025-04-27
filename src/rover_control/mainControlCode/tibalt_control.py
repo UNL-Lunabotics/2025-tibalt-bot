@@ -227,20 +227,15 @@ def hopper_logic(self) -> None:
 
   # If the extend button is currently being pressed
   if self.hopper_state == HOPPER_STATE.EXTENDING:
-    self.hopper_vibration_motor = MOTOR_STOP
     self.hopper_actuator_motor = MOTOR_FORWARDS
-    self.hopper_latch_servo = SERVO_FULL_OPEN
 
   # If the retracting button is currently being pressed
   elif self.hopper_state == HOPPER_STATE.RETRACTING:
-    self.hopper_vibration_motor = MOTOR_STOP
     self.hopper_actuator_motor = MOTOR_BACKWARDS
-    self.hopper_latch_servo = SERVO_FULL_OPEN
   
   # If no hopper buttons are being pressed, do nothing
   elif self.hopper_state == HOPPER_STATE.RESTING:
     self.hopper_actuator_motor = MOTOR_STOP
-    self.hopper_vibration_motor = MOTOR_STOP
 
 def main(args=None) -> None:
   """Initializes Tibalt and starts the control loop."""
