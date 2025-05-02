@@ -1,5 +1,6 @@
 # This is the Python ROS2 library
 import rclpy
+from rclpy.qos import QoSProfile
 from rclpy.executors import ExternalShutdownException
 from rclpy.node import Node
 
@@ -79,16 +80,22 @@ class Tibalt(Node):
     # This node will publish the motor speeds we want the Arduino to set things to
     self.publisher = self.create_publisher(
       msg_type=Int16MultiArray,
-      topic='motor_speeds'
+      topic='motor_speeds',
+      qos_profile=QoSProfile(depth=10)
     )
+
+    start_speeds = Int16MultiArray()
+    start_speeds.data = [Int16(0), Int16(0), Int16(64), Int16(64), Int16(64), Int16(0), Int16(64)]
+    self.publisher.publish(start_speeds)
 
     # This node subscribes to 'joystick_data' (published from joystick_pipeline)
     # This Joy object gives the current axis and button input from the joystick
     self.subscription = self.create_subscription(
       msg_type=Joy,
       topic='joystick_data',
-      callback=self.control_callback  # This function gets triggered every time
+      callback=self.control_callback,  # This function gets triggered every time
                                       # a message is received from the topic
+       qos_profile=QoSProfile(depth=10)
     )
   
   def control_callback(self, joystick: Joy) -> None:
@@ -137,6 +144,20 @@ def drivetrain_logic(self, joystick: Joy) -> None:
   Returns: None, it sets relevant class variables instead
   """
 
+  #TODO: these aren't connected to roboclaws, want a percent from -100 to 100 instead, 0 is don't move
+    # Code I used at Iowa State
+    # x_axis = joystick.axes[0]  # pos<-right, neg<-left
+    # y_axis = joystick.axes[1]  # pos<-down, neg<-up
+    # left_motor = y_axis + x_axis
+    # right_motor = y_axis - x_axis
+    # max_mag = max(abs(left_motor), abs(right_motor))
+    # if max_mag > 1.0:
+    #     left_motor /= max_mag
+    #     right_motor /= max_mag
+    # # forward = int(x_axis * 63)
+    # # turn = int(y_axis * 63)
+    # dtLeft = int(left_motor * 100.0)
+    # dtRight = int(right_motor * 100.0)
   # Don't understand the math? Me neither, accept that it works
   x_axis: float = joystick.axes[0]  # pos<-right, neg<-left
   y_axis: float = joystick.axes[1]  # pos<-down, neg<-up
@@ -159,6 +180,7 @@ def excavation_logic(self) -> None:
     joystick, the Joy object representing joystick input from the driver
   Returns: None, it sets relevant class variables instead
   """
+  #TODO: incrementing and decrementing should probably be done in arduino code, this would publish a lot
   # These are helper functions to help incrementally change motor speeds
   def incrementMotor(motorSpeed, max) -> int:
     if (motorSpeed + EXCAV_MOTOR_INCREMENT > max):
