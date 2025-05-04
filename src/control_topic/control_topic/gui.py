@@ -1,5 +1,3 @@
-# TODO: update using code from last year
-# TODO: Testing code & Better comments (im bad at descriptions) 
 import tkinter as tk
 import cv2
 from PIL import Image, ImageTk
@@ -8,113 +6,128 @@ from PIL import Image, ImageTk
 #   var: Variable linked to the slider
 #   label: Label displaying the current percentage value
 def update_label(var, label):
+    # Update the label text with the current slider value followed by a percentage sign
     label.config(text=f"{var.get()}%")
     
 # Creates a slider with a name and live-updating percentage value 
-def create_slider(parent, name):\
-    
-    # Creates a frame to hold one slider and it's labels
+#   parent: The parent widget to contain the slider
+#   name: The name of the slider (used as the label text)
+def create_slider(parent, name):
+    # Create a frame to hold one slider and its labels
     slider_frame = tk.Frame(parent, padx=10, pady=10)
     
-    # Label to dispay slider's name
+    # Label displaying the name of the slider (e.g., "Hopper Actuator")
     label_name = tk.Label(slider_frame, text=name, font=("Arial", 12))
     label_name.pack()
     
-    # Variable for the slider's value
+    # Variable to store the current value of the slider (from 0 to 100)
     var = tk.IntVar()
     
-    # Horizontal slider (Scale)
+    # Create the slider (horizontal scale), with a range from 0 to 100
     slider = tk.Scale(
         slider_frame,
         from_=0,
         to=100,
-        orient="horizontal",
-        length=200,
-        width=15,
-        variable=var
+        orient="horizontal",  # Horizontal orientation
+        length=200,  # Length of the slider in pixels
+        width=15,  # Width of the slider's track
+        variable=var  # Link the slider to the variable `var`
     )
     slider.pack()
     
-    # Label to show current value
+    # Label to show the current slider value (initially 0%)
     label_value = tk.Label(slider_frame, text="0%", font=("Arial", 12))
     label_value.pack()
     
-    # Link value changes to table
+    # Trace changes to the slider variable `var`, update the label with the new value
     var.trace_add("write", lambda *args: update_label(var, label_value))
     
+    # Return the variable and frame so they can be used later
     return var, slider_frame
 
-# Main content frame
+# Main content frame of the application
 def main(args = None):
-    
-    # Creates the main GUI window
+    # Create the main GUI window
     app = tk.Tk()
-    app.title('Bot Control')
-    app.minsize(1200, 800)
+    app.title('Bot Control')  # Title of the window
+    app.minsize(1200, 800)  # Set minimum size of the window
     
-    # Initializes the three camera outputs
-    front_cam = cv2.VideoCapture(0)
-    back_cam = cv2.VideoCapture(0)
-    hopper_cam = cv2.VideoCapture(0)
+    # Define cleanup function when closing the app (stopping cameras, releasing resources)
+    def on_closing():
+        stop_cameras()  # Stop any camera feeds
+        front_cam.release()  # Release the front camera
+        back_cam.release()  # Release the back camera
+        hopper_cam.release()  # Release the hopper camera
+        app.destroy()  # Close the app window
+        
+    # Assign the on_closing function to run when the window is closed
+    app.protocol("WM_DELETE_WINDOW", on_closing)
     
-    # Sets the width and height of each video
+    # Initialize the three camera outputs (using the first camera for all)
+    front_cam = cv2.VideoCapture(0)  # Open front camera (camera 0)
+    back_cam = front_cam  # Temporarily set back camera to front camera
+    hopper_cam = front_cam  # Temporarily set hopper camera to front camera
+    
+    # Set the resolution (width and height) for each video feed
     width = 320
     height = 240
     for cam in (front_cam, back_cam, hopper_cam):
-        cam.set(cv2.CAP_PROP_FRAME_WIDTH, width)
-        cam.set(cv2.CAP_PROP_FRAME_HEIGHT, height)
+        cam.set(cv2.CAP_PROP_FRAME_WIDTH, width)  # Set width
+        cam.set(cv2.CAP_PROP_FRAME_HEIGHT, height)  # Set height
         
+    # Flag to indicate whether cameras are running
     camera_running = False
         
-    # Sets up the camera frames (holds everything camera-related)
+    # Container for camera frames (to hold all camera-related widgets)
     camera_container = tk.Frame(app, padx=10, pady=10, bg ="gray90", relief=tk.RIDGE, borderwidth=2)
     camera_container.pack(fill="both", expand=True, padx=10, pady=10)
         
-    # Top Row Frame
+    # Top Row Frame to hold front and back camera feeds
     top_frame = tk.Frame(camera_container, bg="gray90")
     top_frame.pack(fill="both", expand=True)
     
-    # Front Came Block
+    # Front Camera Block
     front_frame = tk.Frame(top_frame, padx=5, pady=5, bg="white", relief=tk.SUNKEN, borderwidth=2)
     front_label = tk.Label(front_frame, text="Front Cam", font=("Arial", 14), bg="white")
-    front_label.pack()
-    front_cam_display = tk.Label(front_frame, bg="black")
+    front_label.pack()  # Pack the front camera label
+    front_cam_display = tk.Label(front_frame, bg="black")  # Label to show front camera feed
     front_cam_display.pack()
     front_frame.pack(side="left", padx=10, pady=10, fill="both", expand=True)
     
-    # Back Came Block
+    # Back Camera Block (currently using the same feed as front)
     back_frame = tk.Frame(top_frame, padx=5, pady=5, bg="white", relief=tk.SUNKEN, borderwidth=2)
     back_label = tk.Label(back_frame, text="Back Cam", font=("Arial", 14), bg="white")
-    back_label.pack()
-    back_cam_display = tk.Label(back_frame, bg="black")
+    back_label.pack()  # Pack the back camera label
+    back_cam_display = tk.Label(back_frame, bg="black")  # Label to show back camera feed
     back_cam_display.pack()
     back_frame.pack(side="left", padx=10, pady=10, fill="both", expand=True)
     
-    # Bottom Row Frame
+    # Bottom Row Frame to hold the hopper camera feed
     bottom_frame = tk.Frame(camera_container, bg="gray90")
     bottom_frame.pack(fill="both", expand=True)
     
-    # Hopper Came Block
+    # Hopper Camera Block
     hopper_frame = tk.Frame(bottom_frame, padx=5, pady=5, bg="white", relief=tk.SUNKEN, borderwidth=2)
     hopper_label = tk.Label(hopper_frame, text="Hopper Cam", font=("Arial", 14), bg="white")
-    hopper_label.pack()
-    hopper_cam_display = tk.Label(hopper_frame, bg="black")
+    hopper_label.pack()  # Pack the hopper camera label
+    hopper_cam_display = tk.Label(hopper_frame, bg="black")  # Label to show hopper camera feed
     hopper_cam_display.pack()
     hopper_frame.pack(padx=10, pady=10, fill="both", expand=True)
     
+    # Function to update camera frames in the window
     def update_frames():
-        if not camera_running:
+        if not camera_running:  # If cameras are not running, exit the function
             return
 
-        # Front Cam
-        ret1, frame1 = front_cam.read()
-        if ret1:
-            image1 = cv2.cvtColor(frame1, cv2.COLOR_BGR2RGBA)
-            photo1 = ImageTk.PhotoImage(image=Image.fromarray(image1))
-            front_cam_display.photo_image = photo1
-            front_cam_display.configure(image=photo1)
+        # Update front camera feed
+        ret1, frame1 = front_cam.read()  # Read frame from front camera
+        if ret1:  # If successful, update the image
+            image1 = cv2.cvtColor(frame1, cv2.COLOR_BGR2RGBA)  # Convert to RGBA format
+            photo1 = ImageTk.PhotoImage(image=Image.fromarray(image1))  # Convert to ImageTk format
+            front_cam_display.photo_image = photo1  # Keep a reference to the image
+            front_cam_display.configure(image=photo1)  # Display the image
 
-        # Back Cam
+        # Update back camera feed (same as front camera here)
         ret2, frame2 = back_cam.read()
         if ret2:
             image2 = cv2.cvtColor(frame2, cv2.COLOR_BGR2RGBA)
@@ -122,7 +135,7 @@ def main(args = None):
             back_cam_display.photo_image = photo2
             back_cam_display.configure(image=photo2)
 
-        # Hopper Cam
+        # Update hopper camera feed
         ret3, frame3 = hopper_cam.read()
         if ret3:
             image3 = cv2.cvtColor(frame3, cv2.COLOR_BGR2RGBA)
@@ -130,54 +143,48 @@ def main(args = None):
             hopper_cam_display.photo_image = photo3
             hopper_cam_display.configure(image=photo3)
 
-        app.after(10, update_frames)
+        app.after(10, update_frames)  # Continuously update every 10 milliseconds
 
+    # Start the camera feeds
     def start_cameras():
         nonlocal camera_running
         if not camera_running:
             camera_running = True
-            update_frames()
+            update_frames()  # Start updating the frames
 
+    # Stop the camera feeds
     def stop_cameras():
         nonlocal camera_running
         camera_running = False
-        # Clear displays
+        # Clear the displays
         front_cam_display.configure(image='')
         back_cam_display.configure(image='')
         hopper_cam_display.configure(image='')
     
-# Sets up the entire GUI
-    # Button Container
-    button_frame = tk.Frame(app)
-    button_frame.pack(padx=10)
-    
-    # Creates the label on which the video will be displayed
+    # Create and pack the label widget for the video
     label_widget = tk.Label(app)
     label_widget.pack()
     
-    # Slider frame setup
+    # Set up sliders at the bottom of the window
     sliders_frame = tk.Frame(app, padx=10, pady=10)
     sliders_frame.pack(side="bottom", fill="x")
     
+    # Create sliders for hopper actuator, excavation actuator, and excavation spin
     hopper_acutator_slider, hopper_actuator_frame = create_slider(sliders_frame, "Hopper Actuator")
     excavation_actuator_slider, excavation_actuator_frame = create_slider(sliders_frame, "Excavation Actuator")
     excavation_spin_slider, excavation_spin_frame = create_slider(sliders_frame, "Excavation Spin")
     
+    # Pack the sliders into the frame
     hopper_actuator_frame.pack(side="left", expand=True)
     excavation_actuator_frame.pack(side="left", expand=True)
     excavation_spin_frame.pack(side="left", expand=True)
     
-    # Starts all the cameras
+    # Start the cameras
     start_cameras()
     
-    # Starts the GUI Event Loop
+    # Start the GUI event loop
     app.mainloop()
 
-    # Cleanup when window closes
-    front_cam.release()
-    back_cam.release()
-    hopper_cam.release()
-    
 # Entrypoint when run as a standalone script
 if __name__ == '__main__':
     main()
