@@ -2,254 +2,202 @@ import tkinter as tk
 import cv2
 from PIL import Image, ImageTk
 import numpy as np
+import pyrealsense2 as rs
 
-# Attempt to import the RealSense library; if it is not installed, set a flag to indicate its absence
-try:
-    import pyrealsense2 as rs
-    REALSENSE_AVAILABLE = True  # RealSense library is available
-except ImportError:
-    REALSENSE_AVAILABLE = False  # RealSense library is not available
-
-# This function updates the numeric value label next to each slider when the slider's value changes
 def update_label(slider_value_var, value_label):
-    # Update the value label to show the slider's current value as a percentage
     value_label.config(text=f"{slider_value_var.get()}%")
 
-# This function creates a labeled slider with a display for its current value
-# It returns the IntVar that tracks the slider's value and the frame containing the slider
 def create_slider(parent, name):
-    # Create a frame to contain the slider and its label
-    slider_frame = tk.Frame(parent, padx=10, pady=5)
-
-    # Create and pack a label showing the name of the actuator (e.g., "Hopper Actuator")
-    name_label = tk.Label(slider_frame, text=name, font=("Arial", 12))
-    name_label.pack()
-
-    # Create an IntVar to store the current value of the slider
+    frame = tk.Frame(parent)
+    tk.Label(frame, text=name, font=("Arial", 12)).pack(anchor='w')
+    
+    # Slider and input field
+    control_frame = tk.Frame(frame)
+    
     slider_value_var = tk.IntVar()
-
-    # Create the slider widget (horizontal orientation, range from 0 to 100)
     slider = tk.Scale(
-        slider_frame,
+        control_frame,
         from_=0,
         to=100,
         orient="horizontal",
-        length=200,
-        width=15,
-        variable=slider_value_var
+        variable=slider_value_var,
+        length=250,
+        width=20,
+        sliderlength=30,
+        font=("Arial", 10)
     )
-    slider.pack()
-
-    # Create and pack a label to show the current value of the slider (initially 0%)
-    value_label = tk.Label(slider_frame, text="0%", font=("Arial", 12))
-    value_label.pack()
-
-    # Set up a trace to update the label with the slider's value when it changes
-    slider_value_var.trace_add("write", lambda *args: update_label(slider_value_var, value_label))
-
-    # Return the variable tracking the slider's value and the frame containing the slider
-    return slider_value_var, slider_frame
-
-# This function creates a placeholder image to be displayed when a camera feed is not available
-# The placeholder is a solid gray image with a message
-def create_placeholder_image(width, height, text):
-    # Create a black image with specified width and height
-    image = np.zeros((height, width, 3), dtype=np.uint8)
-    image[:] = (50, 50, 50)  # Fill background with dark gray
-
-    # Add the specified text in the center of the image
-    font = cv2.FONT_HERSHEY_SIMPLEX
-    text_size = cv2.getTextSize(text, font, 0.8, 2)[0]
-    text_x = (width - text_size[0]) // 2  # Calculate the x-coordinate to center the text
-    text_y = (height + text_size[1]) // 2  # Calculate the y-coordinate to center the text
-    cv2.putText(image, text, (text_x, text_y), font, 0.8, (255, 255, 255), 2)
-
-    # Convert the image from OpenCV format to a PhotoImage object
-    return ImageTk.PhotoImage(image=Image.fromarray(image))
-
-# This class manages the initialization and frame retrieval for a RealSense camera
-# It handles situations where no camera is connected or an error occurs
-class RealSenseCamera:
-    def __init__(self):
-        self.pipeline = None
-        self.config = None
-        self.connected = False
-
-        if REALSENSE_AVAILABLE:
-            try:
-                # Attempt to initialize the RealSense camera
-                ctx = rs.context()
-                if len(ctx.devices) > 0:  # Check if there are any connected RealSense devices
-                    self.pipeline = rs.pipeline()
-                    self.config = rs.config()
-                    self.config.enable_stream(rs.stream.color, 640, 360, rs.format.bgr8, 30)  # Set the resolution and frame rate
-                    self.pipeline.start(self.config)  # Start the camera pipeline
-                    self.connected = True  # Set connected flag to True if camera initialized successfully
-            except Exception as e:
-                print(f"RealSense initialization error: {e}")  # Print error message if RealSense fails to initialize
-
-    # Captures and returns the latest color frame as a numpy array
-    def read(self):
-        if not self.connected:
-            return False, None  # Return False if the camera is not connected
-
+    slider.pack(side='left', padx=5)
+    
+    input_frame = tk.Frame(control_frame)
+    
+    # Entry widget with validation
+    entry_var = tk.StringVar()
+    entry = tk.Entry(
+        input_frame,
+        width=5,
+        textvariable=entry_var,
+        font=("Arial", 10),
+        validate="key",
+        validatecommand=(parent.register(lambda text: text.isdigit() or text == ""), '%P')
+    )
+    entry.pack(side='top')
+    tk.Label(input_frame, text="%", font=("Arial", 10)).pack(side='top')
+    
+    def on_enter(event):
         try:
-            # Retrieve frames from the pipeline and extract the color frame
-            frames = self.pipeline.wait_for_frames()
-            color_frame = frames.get_color_frame()
-            if not color_frame:
-                return False, None  # Return False if no color frame is available
+            value = int(entry_var.get())
+            if 0 <= value <= 100:
+                slider_value_var.set(value)
+        except ValueError:
+            pass  # Invalid input, do nothing
+    
+    entry.bind('<Return>', on_enter)
+    
+    input_frame.pack(side='left', padx=5)
+    control_frame.pack()
+    
+    value_label = tk.Label(frame, text="0%", font=("Arial", 12))
+    value_label.pack()
+    
+    slider_value_var.trace_add("write", lambda *_: update_label(slider_value_var, value_label))
+    return slider_value_var, frame
 
-            frame_array = np.asanyarray(color_frame.get_data())  # Convert the frame data to a numpy array
-            return True, frame_array  # Return True and the frame data if successful
-        except Exception as e:
-            print(f"RealSense read error: {e}")  # Print error message if reading the frame fails
-            return False, None
+def create_placeholder(width, height, text):
+    image = np.zeros((height, width, 3), dtype=np.uint8)
+    image[:] = (50, 50, 50)
+    cv2.putText(image, text, 
+               ((width - cv2.getTextSize(text, cv2.FONT_HERSHEY_SIMPLEX, 0.8, 2)[0][0]) // 2,
+               (height + cv2.getTextSize(text, cv2.FONT_HERSHEY_SIMPLEX, 0.8, 2)[0][1]) // 2),
+               cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 255, 255), 2)
+    return ImageTk.PhotoImage(Image.fromarray(image))
 
-    # Stops the camera pipeline to release hardware resources
+class CameraBase:
     def release(self):
-        if self.connected and self.pipeline:
-            self.pipeline.stop()  # Stop the camera pipeline
-            self.connected = False  # Set connected flag to False
+        if hasattr(self, 'connected') and self.connected:
+            getattr(self, 'cap', None) and self.cap.release()
+            getattr(self, 'pipeline', None) and self.pipeline.stop()
 
-# Main function that sets up the entire GUI, initializes cameras, and starts the frame update loop
-def main(args=None):
+class ArducamCamera(CameraBase):
+    def __init__(self, index):
+        self.cap = cv2.VideoCapture(index)
+        self.connected = self.cap.isOpened()
+        if self.connected:
+            self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
+            self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
+
+    def read(self):
+        if not self.connected: return False, None
+        ret, frame = self.cap.read()
+        if ret and len(frame.shape) == 2:
+            frame = cv2.cvtColor(frame, cv2.COLOR_GRAY2BGR)
+        return ret, frame
+
+class RealSenseCamera(CameraBase):
+    def __init__(self):
+        self.connected = False  # Don't initialize yet
+        self.pipeline = None
+        
+    def ensure_connected(self):
+        if not self.connected and not self.pipeline:
+            try:
+                self.pipeline = rs.pipeline()
+                self.config = rs.config()
+                self.config.enable_stream(rs.stream.color, 640, 360, rs.format.bgr8, 30)
+                self.pipeline.start(self.config)
+                self.connected = True
+            except:
+                self.connected = False
+
+    def read(self):
+        self.ensure_connected()  # Initialize on first read
+        if not self.connected: return False, None
+        frames = self.pipeline.wait_for_frames()
+        color_frame = frames.get_color_frame()
+        return color_frame, np.asanyarray(color_frame.get_data()) if color_frame else (False, None)
+
+def main():
     app = tk.Tk()
-    app.title('Bot Control')  # Set the window title
-    app.minsize(1200, 800)  # Set the minimum window size
-
-    # This function handles cleanup when the GUI window is closed
-    def on_closing():
-        stop_camera_update_loop()  # Stop the camera feed update loop
-        if front_camera.connected:
-            front_camera.release()  # Release the front camera if it was initialized
-        if back_camera.connected and back_camera != front_camera:
-            back_camera.release()  # Release the back camera if it is different from the front camera
-        app.destroy()  # Close the application window
-
-    app.protocol("WM_DELETE_WINDOW", on_closing)  # Set the function to be called when the window is closed
-
-    # Initialize front and back camera instances
-    front_camera = RealSenseCamera()
-    back_camera = RealSenseCamera() if REALSENSE_AVAILABLE else front_camera
-
-    # Create placeholder images to use if the cameras are not available
-    placeholder_front_camera = create_placeholder_image(640, 360, "Front Camera Not Available")
-    placeholder_back_camera = create_placeholder_image(640, 360, "Back Camera Not Available")
-    placeholder_hopper_camera = create_placeholder_image(512, 288, "Hopper Camera Placeholder")
-
-    # Flag to track whether camera feed update loop is running
-    camera_update_running = False
-
-    # Set up the main container that holds all interface components
-    main_container = tk.Frame(app)
-    main_container.pack(fill="both", expand=True)
-
-    # Create a container for the camera display sections
-    camera_display_container = tk.Frame(main_container)
-    camera_display_container.pack(fill="both", expand=True)
-
-    # Set up the front camera display section
-    front_camera_frame = tk.Frame(camera_display_container, padx=5, pady=5, bg="white", relief=tk.SUNKEN, borderwidth=2)
-    tk.Label(front_camera_frame, text="Front Cam", font=("Arial", 14), bg="white").pack()
-    front_camera_display_label = tk.Label(front_camera_frame, bg="black")
-    front_camera_display_label.pack()
-    front_camera_frame.pack(side="left", fill="both", expand=True, padx=10, pady=10)
-
-    # Set up the back camera display section
-    back_camera_frame = tk.Frame(camera_display_container, padx=5, pady=5, bg="white", relief=tk.SUNKEN, borderwidth=2)
-    tk.Label(back_camera_frame, text="Back Cam", font=("Arial", 14), bg="white").pack()
-    back_camera_display_label = tk.Label(back_camera_frame, bg="black")
-    back_camera_display_label.pack()
-    back_camera_frame.pack(side="left", fill="both", expand=True, padx=10, pady=10)
-
-    # Create a section for the hopper camera and actuator sliders
-    hopper_and_sliders_container = tk.Frame(main_container)
-    hopper_and_sliders_container.pack(fill="both", expand=True)
-
-    # Set up the hopper camera display section
-    hopper_camera_frame = tk.Frame(hopper_and_sliders_container, padx=5, pady=5, bg="white", relief=tk.SUNKEN, borderwidth=2)
-    tk.Label(hopper_camera_frame, text="Hopper Cam", font=("Arial", 14), bg="white").pack()
-    hopper_camera_display_label = tk.Label(hopper_camera_frame, bg="black", image=placeholder_hopper_camera)
-    hopper_camera_display_label.image = placeholder_hopper_camera  # Store the image to avoid garbage collection
-    hopper_camera_display_label.pack()
-    hopper_camera_frame.pack(side="left", fill="both", expand=True, padx=10, pady=10)
-
-    # Create sliders for controlling actuators (hopper, excavation, spin)
-    sliders_container = tk.Frame(hopper_and_sliders_container)
-    sliders_container.pack(side="left", fill="both", expand=True, padx=10, pady=10)
-
-    # Create sliders for each actuator
-    hopper_slider_value, hopper_slider_frame = create_slider(sliders_container, "Hopper Actuator")
-    hopper_slider_frame.pack(fill="x", pady=5)
-
-    excavator_slider_value, excavator_slider_frame = create_slider(sliders_container, "Excavation Actuator")
-    excavator_slider_frame.pack(fill="x", pady=5)
-
-    spin_slider_value, spin_slider_frame = create_slider(sliders_container, "Excavation Spin")
-    spin_slider_frame.pack(fill="x", pady=5)
-
-    # Function that continuously updates the displayed camera frames
-    def update_camera_frames():
-        if not camera_update_running:
-            return  # Exit if the update loop is not running
-
-        # Update the front camera feed
-        if front_camera.connected:
-            front_cam_success, front_frame_array = front_camera.read()  # Read the front camera frame
-            if front_cam_success:
-                # If successful, update the displayed image
-                front_image_tk = ImageTk.PhotoImage(image=Image.fromarray(front_frame_array))
-                front_camera_display_label.config(image=front_image_tk)
-                front_camera_display_label.photo_image = front_image_tk
-            else:
-                # If not successful, show the placeholder image
-                front_camera_display_label.config(image=placeholder_front_camera)
-                front_camera_display_label.photo_image = placeholder_front_camera
-        else:
-            # If no front camera is connected, show the placeholder image
-            front_camera_display_label.config(image=placeholder_front_camera)
-            front_camera_display_label.photo_image = placeholder_front_camera
-
-        # Update the back camera feed
-        if back_camera.connected and back_camera != front_camera:
-            back_cam_success, back_frame_array = back_camera.read()  # Read the back camera frame
-            if back_cam_success:
-                # If successful, update the displayed image
-                back_image_tk = ImageTk.PhotoImage(image=Image.fromarray(back_frame_array))
-                back_camera_display_label.config(image=back_image_tk)
-                back_camera_display_label.photo_image = back_image_tk
-            else:
-                # If not successful, show the placeholder image
-                back_camera_display_label.config(image=placeholder_back_camera)
-                back_camera_display_label.photo_image = placeholder_back_camera
-        else:
-            # If no back camera is connected, show the placeholder image
-            back_camera_display_label.config(image=placeholder_back_camera)
-            back_camera_display_label.photo_image = placeholder_back_camera
-
-        # Continue updating camera frames every 10ms
-        app.after(10, update_camera_frames)
-
-    # Starts the camera frame update loop
-    def start_camera_update_loop():
-        nonlocal camera_update_running
-        if not camera_update_running:
-            camera_update_running = True
-            update_camera_frames()
-
-    # Stops the camera frame update loop and clears images
-    def stop_camera_update_loop():
-        nonlocal camera_update_running
-        camera_update_running = False
-        front_camera_display_label.config(image='')
-        back_camera_display_label.config(image='')
-
-    # Start the frame update loop
-    start_camera_update_loop()
-
-    # Run the Tkinter event loop
+    app.title('Tibalt Control Panel')
+    app.minsize(1200, 800)
+    
+    front_cam = RealSenseCamera()
+    back_cam = RealSenseCamera()
+    hopper_cam = ArducamCamera(0)
+    
+    placeholders = {
+        'front': create_placeholder(640, 360, "Front Camera Not Available"),
+        'back': create_placeholder(640, 360, "Back Camera Not Available"),
+        'hopper': create_placeholder(512, 288, "Hopper Camera Not Available")
+    }
+    
+    def create_camera_frame(parent, title):
+        frame = tk.Frame(parent, relief=tk.SUNKEN, borderwidth=2)
+        tk.Label(frame, text=title).pack()
+        label = tk.Label(frame)
+        label.pack()
+        return frame, label
+    
+    main_frame = tk.Frame(app)
+    main_frame.pack(fill='both', expand=True)
+    
+    cam_display = tk.Frame(main_frame)
+    cam_display.pack(fill='both', expand=True)
+    
+    front_frame, front_label = create_camera_frame(cam_display, "Front Cam")
+    front_frame.pack(side='left', fill='both', expand=True, padx=10, pady=10)
+    
+    back_frame, back_label = create_camera_frame(cam_display, "Back Cam")
+    back_frame.pack(side='left', fill='both', expand=True, padx=10, pady=10)
+    
+    hopper_slider_frame = tk.Frame(main_frame)
+    hopper_slider_frame.pack(fill='both', expand=True)
+    
+    hopper_frame, hopper_label = create_camera_frame(hopper_slider_frame, "Hopper Cam")
+    hopper_frame.pack(side='left', fill='both', expand=True, padx=10, pady=10)
+    
+    sliders_frame = tk.Frame(hopper_slider_frame)
+    sliders_frame.pack(side='left', fill='both', expand=True, padx=10, pady=10)
+    
+    # Create sliders
+    slider_names = ["Hopper Actuator", "Excavation Actuator", "Excavation Spin"]
+    
+    for name in slider_names:
+        _, frame = create_slider(sliders_frame, name)
+        frame.pack(fill='x', pady=10)
+    
+    running = True
+    
+    def update():
+        if not running: return
+        
+        for cam, label, placeholder in [
+            (front_cam, front_label, placeholders['front']),
+            (back_cam, back_label, placeholders['back']),
+            (hopper_cam, hopper_label, placeholders['hopper'])
+        ]:
+            if cam and cam.connected:
+                success, frame = cam.read()
+                if success:
+                    if cam == hopper_cam: frame = cv2.resize(frame, (512, 288))
+                    img = ImageTk.PhotoImage(Image.fromarray(frame))
+                    label.config(image=img)
+                    label.image = img
+                    continue
+            label.config(image=placeholder)
+            label.image = placeholder
+        
+        app.after(10, update)
+    
+    def on_close():
+        nonlocal running
+        running = False
+        for cam in [front_cam, back_cam, hopper_cam]:
+            if cam: cam.release()
+        app.destroy()
+    
+    app.protocol("WM_DELETE_WINDOW", on_close)
+    update()
     app.mainloop()
 
 if __name__ == '__main__':
-    main()  # Run the main function to start the application
+    main()
