@@ -3,250 +3,223 @@ Tibalt's GUI code
 Please dont breath on this code wrong or the whole thing will break
 Tkinter is the worst :(
     
-TODO: Fix aspect ratio issues with resolution scaling
+TODO: Fix aspect ratio issues with resolution scaling 
+        (and the weird thing that happens when you exit fullscreen)
       Decide between this GUI and the simplified version.
       Set up Realsense cameras to feed into the GUI
       Find out what kind of camera Hopper bin uses
       Implement ROS2 functionality
       The simplified gui might need window scaling if it is going to be used
 '''
+
 import tkinter as tk
 from tkinter import ttk
 import cv2
 from PIL import Image, ImageTk
 import numpy as np
 
-# Try to import RealSense library, if available
+# Try to import the RealSense camera library.
 try:
     import pyrealsense2 as rs
-    REALSENSE_AVAILABLE = True  # Set flag if RealSense is available
+    REALSENSE_AVAILABLE = True  # RealSense is available if we can import the library.
 except ImportError:
-    REALSENSE_AVAILABLE = False  # Set flag if RealSense is not available
+    REALSENSE_AVAILABLE = False  # RealSense is not available if import fails.
 
-# Define color scheme and font settings for UI elements
-BG_COLOR = "#f2f2f2"
-FRAME_COLOR = "#ffffff"
-ACCENT_COLOR = "#3498db"
-TEXT_COLOR = "#2c3e50"
-SUCCESS_COLOR = "#2ecc71"
-WARNING_COLOR = "#e74c3c"
-HEADER_FONT = ("Roboto", 20, "bold")
-TITLE_FONT = ("Roboto", 14, "bold")
+# Set up colors and fonts for the GUI.
+BG_COLOR = "#f2f2f2"        # Light gray background color for the window
+FRAME_COLOR = "#ffffff"     # White color for frames around camera feeds and other sections
+ACCENT_COLOR = "#3498db"    # Blue color used for accent elements like header
+TEXT_COLOR = "#2c3e50"      # Dark gray text color for readability
+HEADER_FONT = ("Roboto", 20, "bold")  # Font style for the header
+TITLE_FONT = ("Roboto", 14, "bold")   # Font style for titles in the UI
 
 class CameraManager:
-    # Class to manage camera resources and feed handling
-    
     def __init__(self):
-        # Initialize the CameraManager object, including setting up RealSense if available
-        self.realsense_pipelines = []  # Store RealSense pipeline objects
-        self.hopper_cam_placeholder = self.create_placeholder("HOPPER CAM\nNO FEED AVAILABLE")  # Placeholder for hopper camera
+        # List to hold RealSense pipelines (each one connects to a camera)
+        self.realsense_pipelines = []
         
-        # Initialize RealSense camera pipelines if available
+        # Placeholder image for the hopper camera in case RealSense is not available
+        self.hopper_cam_placeholder = self.create_placeholder("HOPPER CAM\nNO FEED AVAILABLE")
+        
+        # Set up RealSense cameras if available, otherwise use placeholders
         if REALSENSE_AVAILABLE:
             self.setup_realsense()
         
-        # Create placeholders for front and rear cameras
+        # Placeholders for front and rear cameras if no RealSense is detected
         self.front_cam_placeholder = self.create_placeholder("FRONT CAM\nNO REALSENSE DETECTED")
         self.rear_cam_placeholder = self.create_placeholder("REAR CAM\nNO REALSENSE DETECTED")
     
     def create_placeholder(self, text):
-        # Create a placeholder image with custom text for a camera feed
-        width, height = 640, 360  # Placeholder dimensions
-        img = np.zeros((height, width, 3), dtype=np.uint8)  # Create a black placeholder image
-        lines = text.split('\n')  # Split the text into lines
-        
-        # Add the text to the placeholder image
+        # Create a blank black image with text to indicate no feed is available
+        width, height = 640, 360
+        img = np.zeros((height, width, 3), dtype=np.uint8)  # Black image
+        lines = text.split('\n')  # Split the placeholder text into multiple lines
         for i, line in enumerate(lines):
-            y_pos = height // 2 - 30 + (i * 40)  # Calculate Y position for each line
-            cv2.putText(img, line, (50, y_pos), 
-                        cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)  # Add text to the image
-        
-        return Image.fromarray(img)  # Convert numpy array to PIL Image
+            y_pos = height // 2 - 30 + (i * 40)  # Calculate vertical position for each line of text
+            cv2.putText(img, line, (50, y_pos),  # Put the text on the image at the calculated position
+                        cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)  # White text
+        return Image.fromarray(img)  # Convert the image to a PIL format for use in Tkinter
 
     def setup_realsense(self):
-        # Initialize the RealSense pipeline for connected devices
-        ctx = rs.context()  # Get RealSense context
-        devices = ctx.query_devices()  # Get all connected devices
-        
+        # Set up and start streaming from all connected RealSense devices
+        ctx = rs.context()  # Create a RealSense context to access devices
+        devices = ctx.query_devices()  # Query the connected RealSense devices
         for device in devices:
             try:
-                pipeline = rs.pipeline()  # Create a new pipeline for each device
-                config = rs.config()  # Set up the configuration for the pipeline
-                config.enable_device(device.get_info(rs.camera_info.serial_number))  # Enable the device with serial number
-                config.enable_stream(rs.stream.color, 640, 480, rs.format.bgr8, 30)  # Enable color stream at 640x480 resolution
-                pipeline.start(config)  # Start the pipeline with the configuration
-                self.realsense_pipelines.append(pipeline)  # Add pipeline to the list
+                pipeline = rs.pipeline()  # Create a pipeline for the device (camera)
+                config = rs.config()  # Configuration for the camera stream
+                config.enable_device(device.get_info(rs.camera_info.serial_number))  # Enable device using serial number
+                config.enable_stream(rs.stream.color, 640, 480, rs.format.bgr8, 30)  # Enable color stream at 640x480 resolution, 30 fps
+                pipeline.start(config)  # Start the pipeline to capture frames
+                self.realsense_pipelines.append(pipeline)  # Add the pipeline to the list
             except Exception as e:
-                print(f"RealSense error: {str(e)}")  # Handle errors during RealSense setup
+                print(f"RealSense error: {str(e)}")  # Print error message if setup fails
     
     def get_front_frame(self):
-        # Retrieve the current frame from the front RealSense camera
+        # Get the latest frame from the first RealSense camera (front camera)
         if len(self.realsense_pipelines) > 0:
             try:
-                frames = self.realsense_pipelines[0].wait_for_frames()  # Get frames from the first RealSense camera
+                frames = self.realsense_pipelines[0].wait_for_frames()  # Wait for the next available frame
                 color_frame = frames.get_color_frame()  # Get the color frame
                 if color_frame:
-                    return np.asanyarray(color_frame.get_data())  # Return frame as numpy array
+                    return np.asanyarray(color_frame.get_data())  # Convert the frame to a NumPy array
             except Exception as e:
-                print(f"RealSense error: {str(e)}")  # Handle errors during frame capture
+                print(f"RealSense error: {str(e)}")  # Print error message if frame retrieval fails
         return None  # Return None if no frame is available
     
     def get_rear_frame(self):
-        # Retrieve the current frame from the rear RealSense camera
+        # Get the latest frame from the second RealSense camera (rear camera)
         if len(self.realsense_pipelines) > 1:
             try:
-                frames = self.realsense_pipelines[1].wait_for_frames()  # Get frames from the second RealSense camera
+                frames = self.realsense_pipelines[1].wait_for_frames()  # Wait for the next available frame
                 color_frame = frames.get_color_frame()  # Get the color frame
                 if color_frame:
-                    return np.asanyarray(color_frame.get_data())  # Return frame as numpy array
+                    return np.asanyarray(color_frame.get_data())  # Convert the frame to a NumPy array
             except Exception as e:
-                print(f"RealSense error: {str(e)}")  # Handle errors during frame capture
+                print(f"RealSense error: {str(e)}")  # Print error message if frame retrieval fails
         return None  # Return None if no frame is available
     
     def release_resources(self):
-        # Release all camera resources and stop pipelines
+        # Stop all camera pipelines to release hardware resources when done
         for pipeline in self.realsense_pipelines:
             try:
-                pipeline.stop()  # Stop the RealSense pipeline
+                pipeline.stop()  # Stop the pipeline for each camera
             except:
-                pass  # Ignore errors during resource release
+                pass  # Ignore errors if stopping the pipeline fails
 
 def create_motor_slider(parent, motor_name):
-    # Create a vertical motor control slider with labels displaying the motor's name and value
-    frame = tk.Frame(parent, bg=FRAME_COLOR)  # Create a frame to hold the slider and labels
+    # Create a vertical slider for controlling a motor's position or speed
+    frame = tk.Frame(parent, bg=FRAME_COLOR)  # Create a frame for the motor control
+    name_lines = motor_name.split(" ")  # Split the motor name into multiple lines if needed
+    label_text = "\n".join(name_lines)  # Join the motor name lines with newline characters
+    tk.Label(frame, text=label_text, font=TITLE_FONT, bg=FRAME_COLOR, justify="center").pack()  # Add the label
     
-    # Split motor name into two parts if it's more than one word and create the label text
-    name_lines = motor_name.split(" ")
-    label_text = "\n".join(name_lines)  # Join the words with line breaks
-    
-    tk.Label(frame, text=label_text, font=TITLE_FONT, bg=FRAME_COLOR, justify="center").pack()  # Add label
-    
-    motor_var = tk.IntVar()  # Create a variable to store the slider value
+    motor_var = tk.IntVar()  # Create an integer variable to hold the slider value
     motor_slider = ttk.Scale(frame, from_=0, to=100, orient="vertical", variable=motor_var)  # Create the slider
-    motor_slider.pack(pady=5)  # Pack the slider
+    motor_slider.pack(pady=5)  # Add the slider to the frame with padding
     
-    value_label = tk.Label(frame, text="0%", font=("Roboto", 12), bg=FRAME_COLOR)  # Label to display current value
-    value_label.pack()  # Pack the value label
+    value_label = tk.Label(frame, text="0%", font=("Roboto", 12), bg=FRAME_COLOR)  # Label to display the slider value
+    value_label.pack()  # Add the value label to the frame
     
-    # Update value label when the slider changes
+    # Update the value label when the slider value changes
     motor_var.trace_add("write", lambda *_: value_label.config(text=f"{motor_var.get()}%"))
-    return frame  # Return the created slider frame
+    return frame  # Return the frame containing the slider and label
 
 def create_camera_frame(parent, cam_title):
-    # Create a frame for displaying a camera feed with a title
-    frame = tk.Frame(parent, bg=FRAME_COLOR, bd=1, relief=tk.RIDGE)  # Create a frame for the camera
-    tk.Label(frame, text=cam_title, font=TITLE_FONT, bg=FRAME_COLOR).pack(pady=5)  # Add camera title
-    
-    display_label = tk.Label(frame, bg="#e0e5ec")  # Create a label to display the camera feed
-    display_label.pack(expand=True, fill='both', padx=5, pady=5)  # Pack the display label
-    return frame, display_label  # Return the frame and label for later use
+    # Create a frame for displaying a camera feed with a title and display area
+    frame = tk.Frame(parent, bg=FRAME_COLOR, bd=1, relief=tk.RIDGE)  # Create a frame for the camera feed
+    tk.Label(frame, text=cam_title, font=TITLE_FONT, bg=FRAME_COLOR).pack(pady=5)  # Add a title label
+    display_label = tk.Label(frame, bg="#e0e5ec")  # Label to display the camera feed
+    display_label.pack(expand=True, fill='both', padx=5, pady=5)  # Pack the display label into the frame
+    return frame, display_label  # Return the frame and the display label
 
 def setup_ui():
-    # Set up the main application UI and create all widgets
-    app_window = tk.Tk()  # Create the main window
+    # Set up the full UI layout and return key parts for later updates
+    app_window = tk.Tk()  # Create the main window for the application
     app_window.title('Tibalt Control Panel')  # Set the window title
-    app_window.configure(bg=BG_COLOR)  # Set background color for the window
-    app_window.geometry("1200x800")  # Set the window size
+    app_window.configure(bg=BG_COLOR)  # Set the background color of the window
+    app_window.geometry("1200x800")  # Set the initial size of the window
     
-    # Create header with the title "TIBALT CONTROL PANEL"
-    header_frame = tk.Frame(app_window, bg=ACCENT_COLOR, height=80)  # Create header frame
-    header_frame.pack(fill='x')  # Pack the header frame to expand horizontally
+    # Header section
+    header_frame = tk.Frame(app_window, bg=ACCENT_COLOR, height=80)  # Create a header frame
+    header_frame.pack(fill='x')  # Pack the header frame horizontally
     tk.Label(header_frame, text="TIBALT CONTROL PANEL", font=HEADER_FONT,
-             bg=ACCENT_COLOR, fg="white").pack(side='left', padx=20)  # Add title label to header
+             bg=ACCENT_COLOR, fg="white").pack(side='left', padx=20)  # Add the header label
     
-    # Main content frame to hold camera and motor control sections
-    main_content_frame = tk.Frame(app_window, bg=BG_COLOR)
-    main_content_frame.pack(expand=True, fill='both', padx=15, pady=15)
+    main_content_frame = tk.Frame(app_window, bg=BG_COLOR)  # Create a frame for the main content
+    main_content_frame.pack(expand=True, fill='both', padx=15, pady=15)  # Pack the main content frame
     
-    # Top section for camera feeds (front and rear cameras)
-    top_camera_frame = tk.Frame(main_content_frame, bg=BG_COLOR)
-    top_camera_frame.pack(fill='both', expand=True)
+    # Top section with front and rear cameras
+    top_camera_frame = tk.Frame(main_content_frame, bg=BG_COLOR)  # Create a frame for the camera feeds
+    top_camera_frame.pack(fill='both', expand=True)  # Pack the top camera frame
     
-    # Front camera frame and display label
-    front_cam_frame, front_cam_display = create_camera_frame(top_camera_frame, "FRONT CAMERA")
-    front_cam_frame.pack(side='left', expand=True, fill='both', padx=10, pady=10)
+    front_cam_frame, front_cam_display = create_camera_frame(top_camera_frame, "FRONT CAMERA")  # Create a frame for the front camera feed
+    front_cam_frame.pack(side='left', expand=True, fill='both', padx=10, pady=10)  # Pack the front camera frame
     
-    # Rear camera frame and display label
-    rear_cam_frame, rear_cam_display = create_camera_frame(top_camera_frame, "REAR CAMERA")
-    rear_cam_frame.pack(side='left', expand=True, fill='both', padx=10, pady=10)
+    rear_cam_frame, rear_cam_display = create_camera_frame(top_camera_frame, "REAR CAMERA")  # Create a frame for the rear camera feed
+    rear_cam_frame.pack(side='left', expand=True, fill='both', padx=10, pady=10)  # Pack the rear camera frame
     
-    # Bottom section for hopper camera and motor controls
-    bottom_section_frame = tk.Frame(main_content_frame, bg=BG_COLOR)
-    bottom_section_frame.pack(fill='both', expand=True)
+    # Bottom section with hopper camera and motor controls
+    bottom_section_frame = tk.Frame(main_content_frame, bg=BG_COLOR)  # Create a frame for the bottom section
+    bottom_section_frame.pack(fill='both', expand=True)  # Pack the bottom section frame
     
-    # Hopper camera frame and display label
-    hopper_cam_frame, hopper_cam_display = create_camera_frame(bottom_section_frame, "HOPPER CAMERA")
-    hopper_cam_frame.pack(side='left', fill='both', expand=True, padx=10, pady=10)
+    hopper_cam_frame, hopper_cam_display = create_camera_frame(bottom_section_frame, "HOPPER CAMERA")  # Create a frame for the hopper camera feed
+    hopper_cam_frame.pack(side='left', fill='both', expand=True, padx=10, pady=10)  # Pack the hopper camera frame
     
-    # Motor control section with sliders for various actuators
-    motor_controls_frame = tk.Frame(bottom_section_frame, bg=FRAME_COLOR, bd=1, relief=tk.RIDGE)
-    motor_controls_frame.pack(side='left', fill='y', padx=10, pady=10)
+    motor_controls_frame = tk.Frame(bottom_section_frame, bg=FRAME_COLOR, bd=1, relief=tk.RIDGE)  # Create a frame for motor controls
+    motor_controls_frame.pack(side='left', fill='y', padx=10, pady=10)  # Pack the motor controls frame
     
-    # Label for motor control section
-    tk.Label(motor_controls_frame, text="MOTOR CONTROLS", font=TITLE_FONT).pack(pady=10)
+    tk.Label(motor_controls_frame, text="MOTOR CONTROLS", font=TITLE_FONT).pack(pady=10)  # Add a label for motor controls
     
-    # Frame to hold the motor sliders
-    sliders_frame = tk.Frame(motor_controls_frame, bg=FRAME_COLOR)
-    sliders_frame.pack(expand=True, pady=10)
+    sliders_frame = tk.Frame(motor_controls_frame, bg=FRAME_COLOR)  # Create a frame for the motor sliders
+    sliders_frame.pack(expand=True, pady=10)  # Pack the sliders frame
     
-    # Create sliders for hopper, excavator, and excavator spin controls
+    # Create individual sliders for different actuators
     hopper_slider = create_motor_slider(sliders_frame, "HOPPER ACTUATOR")
-    hopper_slider.pack(side='left', expand=True, padx=10)
-    
+    hopper_slider.pack(side='left', expand=True, padx=10)  # Pack the hopper slider
     excavator_slider = create_motor_slider(sliders_frame, "EXCAVATOR ACTUATOR")
-    excavator_slider.pack(side='left', expand=True, padx=10)
-    
+    excavator_slider.pack(side='left', expand=True, padx=10)  # Pack the excavator slider
     spin_slider = create_motor_slider(sliders_frame, "EXCAVATOR SPIN")
-    spin_slider.pack(side='left', expand=True, padx=10)
+    spin_slider.pack(side='left', expand=True, padx=10)  # Pack the excavator spin slider
     
-    return app_window, front_cam_display, rear_cam_display, hopper_cam_display  # Return UI components
+    return app_window, front_cam_display, rear_cam_display, hopper_cam_display  # Return key UI components
 
 def update_displays(camera_mgr, front_display, rear_display, hopper_display):
-    # Update the camera feed displays with the latest frames
-    # Update front camera feed
-    front_frame = camera_mgr.get_front_frame()  # Get front camera frame
+    # Update the camera displays with the latest frames or placeholders
+    front_frame = camera_mgr.get_front_frame()  # Get the latest frame from the front camera
     if front_frame is not None:
-        front_image = Image.fromarray(cv2.cvtColor(front_frame, cv2.COLOR_BGR2RGB))  # Convert to PIL Image
+        front_image = Image.fromarray(cv2.cvtColor(front_frame, cv2.COLOR_BGR2RGB))  # Convert the frame to an image
     else:
-        front_image = camera_mgr.front_cam_placeholder  # Use placeholder if no frame available
+        front_image = camera_mgr.front_cam_placeholder  # Use the placeholder if no frame is available
     
-    # Update rear camera feed
-    rear_frame = camera_mgr.get_rear_frame()  # Get rear camera frame
+    rear_frame = camera_mgr.get_rear_frame()  # Get the latest frame from the rear camera
     if rear_frame is not None:
-        rear_image = Image.fromarray(cv2.cvtColor(rear_frame, cv2.COLOR_BGR2RGB))  # Convert to PIL Image
+        rear_image = Image.fromarray(cv2.cvtColor(rear_frame, cv2.COLOR_BGR2RGB))  # Convert the frame to an image
     else:
-        rear_image = camera_mgr.rear_cam_placeholder  # Use placeholder if no frame available
+        rear_image = camera_mgr.rear_cam_placeholder  # Use the placeholder if no frame is available
     
-    # Hopper camera always uses placeholder
-    hopper_image = camera_mgr.hopper_cam_placeholder
+    hopper_image = camera_mgr.hopper_cam_placeholder  # Always use the hopper placeholder for now
     
-    # Resize and display images on the UI
-    display_width, display_height = front_display.winfo_width()-10, front_display.winfo_height()-50  # Get display size
-    for display_label, image in [(front_display, front_image), 
-                                 (rear_display, rear_image), 
+    display_width, display_height = front_display.winfo_width()-10, front_display.winfo_height()-50  # Get the display area size
+    for display_label, image in [(front_display, front_image),
+                                 (rear_display, rear_image),
                                  (hopper_display, hopper_image)]:
-        resized_image = image.resize((max(1, display_width), max(1, display_height)))  # Resize image to fit
-        photo_image = ImageTk.PhotoImage(image=resized_image)  # Convert to PhotoImage for tkinter
-        display_label.config(image=photo_image)  # Update display label with new image
-        display_label.image = photo_image  # Keep reference to avoid garbage collection
+        resized_image = image.resize((max(1, display_width), max(1, display_height)))  # Resize the image to fit the display area
+        photo_image = ImageTk.PhotoImage(image=resized_image)  # Convert the image to a Tkinter-compatible format
+        display_label.config(image=photo_image)  # Update the display label with the new image
+        display_label.image = photo_image  # Keep a reference to the image to avoid garbage collection
     
-    # Continue updating displays every 30ms
+    # Schedule the next update in about 33 milliseconds (30 FPS)
     front_display.master.after(30, update_displays, camera_mgr, front_display, rear_display, hopper_display)
 
 def main():
-    # Initialize the application and start the main event loop
-    camera_mgr = CameraManager()  # Create a CameraManager instance
-    app_window, front_display, rear_display, hopper_display = setup_ui()  # Set up the UI
-    
-    # Set initial window sizes and start updating the camera displays
-    app_window.update()
-    update_displays(camera_mgr, front_display, rear_display, hopper_display)
-    
-    # Set cleanup function on exit
-    app_window.protocol("WM_DELETE_WINDOW", lambda: [camera_mgr.release_resources(), app_window.destroy()])
-    
-    # Start the main application event loop
-    app_window.mainloop()
+    # Set up the camera manager and the UI, then start the Tkinter main loop
+    camera_mgr = CameraManager()  # Create a camera manager to handle camera operations
+    app_window, front_display, rear_display, hopper_display = setup_ui()  # Set up the user interface
+    app_window.update()  # Update the window to make sure layout calculations are done
+    update_displays(camera_mgr, front_display, rear_display, hopper_display)  # Start the display update loop
+    app_window.protocol("WM_DELETE_WINDOW", lambda: [camera_mgr.release_resources(), app_window.destroy()])  # Clean up resources when the window is closed
+    app_window.mainloop()  # Start the Tkinter main loop to keep the app running
 
 if __name__ == "__main__":
-    main()  # Run the main function when the script is executed
+    main()  # Run the main function to start the application
