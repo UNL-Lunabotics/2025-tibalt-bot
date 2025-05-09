@@ -25,14 +25,14 @@ def generate_launch_description():
         ),
 
         Node(
-            package='control_topic',
+            package='rover_control',
             executable='joystick_pipeline',
             name='joystick_pipeline',
             output='screen'
         ),
 
         Node(
-            package='control_topic',
+            package='rover_control',
             executable='terrence_control',
             name='terrence_control',
             output='screen'

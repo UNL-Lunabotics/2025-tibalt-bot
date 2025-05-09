@@ -3,6 +3,7 @@ import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Joy
 from rclpy.executors import ExternalShutdownException
+from rclpy.qos import QoSProfile
 
 
 class Joystick(Node):
@@ -14,7 +15,8 @@ class Joystick(Node):
     # This node will publish joystick data (axes position and buttons)
     self.publisher = self.create_publisher(
       msg_type=Joy,
-      topic='joystick_data'
+      topic='joystick_data',
+      qos_profile=QoSProfile(depth=10)
     )
 
     # This node subscribes to a topic built into the Joy library
@@ -22,8 +24,9 @@ class Joystick(Node):
     self.subscription = self.create_subscription(
       msg_type=Joy,
       topic='joy',
-      callback=self.joystick_callback # This function gets triggered every time
+      callback=self.joystick_callback, # This function gets triggered every time
                                       # a message is received from the topic
+      qos_profile=QoSProfile(depth=10)
     )
 
   def joystick_callback(self, joystick):

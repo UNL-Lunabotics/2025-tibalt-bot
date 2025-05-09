@@ -7,4 +7,4 @@ export ROS_DOMAIN_ID=0
 export ROS_LOCALHOST_ONLY=0
 
 echo "Launching main robot control..."
-ros2 launch control_topic topics_launch.py
+ros2 launch rover_control topics_launch.py

@@ -7,4 +7,4 @@ export ROS_DOMAIN_ID=0
 export ROS_LOCALHOST_ONLY=0
 
 echo "Launching joystick node..."
-ros2 launch control_topic joystick_launch.py
+ros2 launch rover_control joystick_launch.py
