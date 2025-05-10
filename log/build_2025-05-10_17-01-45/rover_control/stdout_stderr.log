@@ -1,0 +1,24 @@
+running develop
+running egg_info
+creating rover_control.egg-info
+writing rover_control.egg-info/PKG-INFO
+writing dependency_links to rover_control.egg-info/dependency_links.txt
+writing entry points to rover_control.egg-info/entry_points.txt
+writing requirements to rover_control.egg-info/requires.txt
+writing top-level names to rover_control.egg-info/top_level.txt
+writing manifest file 'rover_control.egg-info/SOURCES.txt'
+reading manifest file 'rover_control.egg-info/SOURCES.txt'
+writing manifest file 'rover_control.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/lunabotics/2025-tibalt-bot/install/rover_control/lib/python3.10/site-packages/rover-control.egg-link (link to .)
+Installing joystick_pipeline script to /home/lunabotics/2025-tibalt-bot/install/rover_control/lib/rover_control
+Installing tibalt_control script to /home/lunabotics/2025-tibalt-bot/install/rover_control/lib/rover_control
+
+Installed /home/lunabotics/2025-tibalt-bot/build/rover_control
+running symlink_data
+symbolically linking /home/lunabotics/2025-tibalt-bot/build/rover_control/package.xml -> /home/lunabotics/2025-tibalt-bot/install/rover_control/share/rover_control
+creating /home/lunabotics/2025-tibalt-bot/install/rover_control/share/rover_control/launch
+symbolically linking /home/lunabotics/2025-tibalt-bot/build/rover_control/launch/topics_launch.py -> /home/lunabotics/2025-tibalt-bot/install/rover_control/share/rover_control/launch
+symbolically linking /home/lunabotics/2025-tibalt-bot/build/rover_control/launch/joystick_launch.py -> /home/lunabotics/2025-tibalt-bot/install/rover_control/share/rover_control/launch
+creating /home/lunabotics/2025-tibalt-bot/install/rover_control/share/rover_control/config
+creating /home/lunabotics/2025-tibalt-bot/install/rover_control/share/rover_control/urdf

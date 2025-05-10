@@ -1,1 +1,1 @@
-/home/lunabotics/2025-tibalt-bot/agent/micro-ROS-Agent/install/micro_ros_agent:/home/lunabotics/2025-tibalt-bot/install/rover_control:/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs:/home/lunabotics/2025-terrence-bot/install/micro_ros_agent:/home/lunabotics/2025-terrence-bot/install/control_topic:/opt/ros/humble
+/opt/ros/humble:/home/lunabotics/2025-tibalt-bot/install/rover_control:/home/lunabotics/2025-tibalt-bot/install/micro_ros_agent:/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs

@@ -163,7 +163,7 @@ micro_ros_agent: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib/lib
 micro_ros_agent: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_introspection_cpp.so
 micro_ros_agent: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_cpp.so
 micro_ros_agent: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_generator_py.so
-micro_ros_agent: /home/lunabotics/2025-tibalt-bot/agent/micro-ROS-Agent/install/micro_ros_agent/lib/libmicroxrcedds_agent.so.2.4.2
+micro_ros_agent: /home/lunabotics/2025-tibalt-bot/install/micro_ros_agent/lib/libmicroxrcedds_agent.so.2.4.2
 micro_ros_agent: /opt/ros/humble/lib/libfastrtps.so.2.6.9
 micro_ros_agent: /opt/ros/humble/lib/librmw_dds_common__rosidl_typesupport_fastrtps_c.so
 micro_ros_agent: /opt/ros/humble/lib/librmw_dds_common__rosidl_typesupport_introspection_c.so

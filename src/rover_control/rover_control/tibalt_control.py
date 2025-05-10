@@ -73,11 +73,6 @@ class Tibalt(Node):
             qos_profile=QoSProfile(depth=10)
         )
 
-        start_speeds = Int16MultiArray()
-        # Drivetrain left, drivetrain right, excavation dig, excavation actuator, hopper actuator, hopper latch
-        start_speeds.data = [0, 0, MOTOR_STOP, MOTOR_STOP, MOTOR_STOP, SERVO_FULL_CLOSE]
-        self.publisher.publish(start_speeds)
-
         # This node subscribes to 'joy' (published from a built in library Joy)
         # This Joy object gives the current axis and button input from the joystick
         self.subscription = self.create_subscription(

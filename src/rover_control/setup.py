@@ -29,7 +29,6 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'joystick_pipeline = rover_control.joystick_pipeline:main',
             'tibalt_control = rover_control.tibalt_control:main',
         ],
     },

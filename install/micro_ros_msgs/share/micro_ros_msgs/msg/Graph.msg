@@ -1,1 +1,1 @@
-Node[] nodes
+/home/lunabotics/2025-tibalt-bot/src/micro_ros_msgs/msg/Graph.msg

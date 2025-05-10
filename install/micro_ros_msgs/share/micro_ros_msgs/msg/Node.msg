@@ -1,3 +1,1 @@
-string<=256 node_namespace
-string<=256 node_name
-Entity[] entities
+/home/lunabotics/2025-tibalt-bot/src/micro_ros_msgs/msg/Node.msg
