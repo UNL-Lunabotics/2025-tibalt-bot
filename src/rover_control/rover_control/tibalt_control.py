@@ -80,7 +80,7 @@ class Tibalt(Node):
 
         # This node subscribes to 'joy' (published from a built in library Joy)
         # This Joy object gives the current axis and button input from the joystick
-        self.subsciption = self.create_subscription(
+        self.subscription = self.create_subscription(
             msg_type=Joy,
             topic='joy',
             callback=self.control_callback, # This function gets called when message received
