@@ -32,12 +32,12 @@ if(error_code)
 endif()
 
 execute_process(
-  COMMAND "/usr/bin/git"  checkout v2.4.3 --
+  COMMAND "/usr/bin/git"  checkout v2.4.2 --
   WORKING_DIRECTORY "/home/lunabotics/2025-tibalt-bot/build/micro_ros_agent/agent/src/xrceagent"
   RESULT_VARIABLE error_code
   )
 if(error_code)
-  message(FATAL_ERROR "Failed to checkout tag: 'v2.4.3'")
+  message(FATAL_ERROR "Failed to checkout tag: 'v2.4.2'")
 endif()
 
 set(init_submodules TRUE)
