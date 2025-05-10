@@ -7,48 +7,46 @@ from PIL import Image, ImageTk
 def update_slider_label(slider_var, value_label, index, slider_values):
     value_label.config(text=f"{slider_var.get()}%")
     slider_values[index] = slider_var.get() 
-    
-# Creates a GUI slider with labels and an entry box to control an actuator
-# Each slider is labeled, has a horizontal slider bar, a manual entry box, and a percentage label
-def create_actuator_slider(parent, label_text, index, slider_values):
-    frame = tk.Frame(parent, padx=10, pady=10) # Container for one actuator slider
 
-    # Label describing what motor each slider controls
+# Creates an actuator slider widget with a label and associated entry field
+def create_actuator_slider(parent, label_text, index, slider_values, app):
+    frame = tk.Frame(parent, padx=10, pady=10)
+
     name_label = tk.Label(frame, text=label_text, font=("Consolas", 13))
     name_label.pack(side="top")
 
-    # Horizontal frame to place slider and entry side-by-side
-    slider_entry_frame = tk.Frame(frame)
-    slider_entry_frame.pack(side="top", pady=5)
+    slider_var = tk.IntVar()
 
-    slider_var = tk.IntVar()  # tkinter variable used to track slider value (integer)
+    # Frame for the slider and entry stacked vertically
+    slider_and_entry_frame = tk.Frame(frame)
+    slider_and_entry_frame.pack(side="top", pady=5)
 
-    # Slider bar itself, allowing values from 0 to 100
+    # Create the horizontal slider
     slider_widget = tk.Scale(
-        slider_entry_frame,
+        slider_and_entry_frame,
         from_=0,
         to=100,
-        orient="horizontal",  # slider moves left to right
-        length=400,           # pixel length of slider
-        sliderlength=40,      # size of the slider handle
-        width=20,             # thickness of the slider track
-        variable=slider_var   # link this slider to our tkinter IntVar
+        orient="horizontal",
+        length=400,
+        sliderlength=40,
+        width=20,
+        variable=slider_var
     )
-    slider_widget.pack(side="left")
+    slider_widget.pack(side="top")
 
-    # Entry field that allows the user to manually enter a value
-    entry = tk.Entry(slider_entry_frame, width=5, justify='center')
-    entry.pack(side="left", padx=5)
+    # Frame to hold Entry and % label side by side
+    entry_frame = tk.Frame(slider_and_entry_frame)
+    entry_frame.pack(side="top", pady=(5, 0))
 
-    # Label for displaying the current percentage value of the slider
-    value_label = tk.Label(frame, text="0%", font=("Consolas", 13))
-    value_label.pack()
+    # Entry box to manually input a value
+    entry = tk.Entry(entry_frame, width=5, justify='center', font=("Consolas", 13))
+    entry.pack(side="left")
 
-    # Updates motor value when the user presses ENTER inside manual input
-    # Attempts to convert entry to an integer
-    # Clamps value between 0 and 100
-    # Sets slider to that value
-    # If entry is not valid, reset entry to match slider.
+    # Static percentage sign label
+    percent_label = tk.Label(entry_frame, text="%", font=("Consolas", 13))
+    percent_label.pack(side="left", padx=(2, 0))
+
+    # Handles Enter key press in the Entry widget to update slider value
     def on_entry_return(event=None):
         try:
             value = int(entry.get())
@@ -57,24 +55,21 @@ def create_actuator_slider(parent, label_text, index, slider_values):
         except ValueError:
             entry.delete(0, tk.END)
             entry.insert(0, str(slider_var.get()))
-            
-    # Triggered when ENTER is pressed
+        app.focus_set()  # Remove focus from entry on Enter
+
     entry.bind("<Return>", on_entry_return)
 
-    # Updates motor value when slider is moved
-    # Updates Text label
-    # Updates manual entry box
-    # Updates slider_values array
+    # Syncs slider movement with entry field value
     def on_slider_change(*args):
-        value_label.config(text=f"{slider_var.get()}%")
-        entry.delete(0, tk.END)                    
+        entry.delete(0, tk.END)
         entry.insert(0, str(slider_var.get()))
-        slider_values[index] = slider_var.get()       
-        
-    # Binds function to slider movement
-    slider_var.trace_add("write", on_slider_change)  
-    
-    # Return the variable and the whole slider frame
+        slider_values[index] = slider_var.get()
+
+    slider_var.trace_add("write", on_slider_change)
+
+    # Initialize the entry with the default value
+    entry.insert(0, str(slider_var.get()))
+
     return slider_var, frame
 
 # Main function that sets up the entire GUI application
@@ -83,6 +78,15 @@ def main(args=None):
     app = tk.Tk()
     app.title('Tibalt Control Panel')
     app.minsize(1200, 800)
+    
+    # Clears focus from Entry widgets when clicking anywhere else
+    def clear_focus(event):
+        widget = event.widget
+        # Only clear focus if the clicked widget is not an Entry
+        if not isinstance(widget, tk.Entry):
+            app.focus_set()
+
+    app.bind_all("<Button-1>", clear_focus)
 
     # List to keep track of all three actuator slider values
     # Index 0 = Hopper, 1 = Excavator, 2 = Spin
@@ -127,16 +131,14 @@ def main(args=None):
 
     # Front Camera Preview
     front_cam_frame = tk.Frame(top_frame, padx=5, pady=5, bg="white", relief=tk.SUNKEN, borderwidth=2)
-    tk.Label(front_cam_frame, text="Front Camera", font=("Consolas", 15
-), bg="white").pack()
+    tk.Label(front_cam_frame, text="Front Camera", font=("Consolas", 15), bg="white").pack()
     front_camera_label = tk.Label(front_cam_frame, bg="black")
     front_camera_label.pack()
     front_cam_frame.pack(side="left", fill="both", expand=True, padx=10, pady=10)
 
     # Back camera preview
     back_cam_frame = tk.Frame(top_frame, padx=5, pady=5, bg="white", relief=tk.SUNKEN, borderwidth=2)
-    tk.Label(back_cam_frame, text="Back Camera", font=("Consolas", 15
-), bg="white").pack()
+    tk.Label(back_cam_frame, text="Back Camera", font=("Consolas", 15), bg="white").pack()
     back_camera_label = tk.Label(back_cam_frame, bg="black")
     back_camera_label.pack()
     back_cam_frame.pack(side="left", fill="both", expand=True, padx=10, pady=10)
@@ -147,8 +149,7 @@ def main(args=None):
 
     # Hopper camera preview
     hopper_cam_frame = tk.Frame(bottom_frame, padx=5, pady=5, bg="white", relief=tk.SUNKEN, borderwidth=2)
-    tk.Label(hopper_cam_frame, text="Hopper Camera", font=("Consolas", 15
-), bg="white").pack()
+    tk.Label(hopper_cam_frame, text="Hopper Camera", font=("Consolas", 15), bg="white").pack()
     hopper_camera_label = tk.Label(hopper_cam_frame, bg="black")
     hopper_camera_label.pack()
     hopper_cam_frame.pack(side="left", fill="both", expand=True, padx=10, pady=10)
@@ -158,13 +159,13 @@ def main(args=None):
     sliders_frame.pack(side="left", fill="both", expand=True, padx=10, pady=10)
 
     # Create all 3 actuator sliders and place them in the panel
-    hopper_slider_var, hopper_slider_widget = create_actuator_slider(sliders_frame, "Hopper Actuator", 0, slider_values)
+    hopper_slider_var, hopper_slider_widget = create_actuator_slider(sliders_frame, "Hopper Actuator", 0, slider_values, app)
     hopper_slider_widget.pack(fill="x", pady=5)
 
-    excavation_slider_var, excavation_slider_widget = create_actuator_slider(sliders_frame, "Excavation Actuator", 1, slider_values)
+    excavation_slider_var, excavation_slider_widget = create_actuator_slider(sliders_frame, "Excavation Actuator", 1, slider_values, app)
     excavation_slider_widget.pack(fill="x", pady=5)
 
-    spin_slider_var, spin_slider_widget = create_actuator_slider(sliders_frame, "Excavation Spin", 2, slider_values)
+    spin_slider_var, spin_slider_widget = create_actuator_slider(sliders_frame, "Excavation Spin", 2, slider_values, app)    
     spin_slider_widget.pack(fill="x", pady=5)
 
     # Recursive function for updating camera feeds
@@ -229,6 +230,7 @@ def main(args=None):
 
     # Start showing camera previews
     start_camera_streams()
+
     # Start the tkinter GUI event loop
     app.mainloop()
 
