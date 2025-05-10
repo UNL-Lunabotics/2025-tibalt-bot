@@ -4,12 +4,12 @@ from PIL import Image, ImageTk
 
 # Updates the text label showing the current value of the slider
 # Also stores the value in an array so it can be accessed elsewhere
-def update_slider_label(slider_var, value_label, index, slider_values):
+def update_slider_label(slider_var, value_label, index, motor_values):
     value_label.config(text=f"{slider_var.get()}%")
-    slider_values[index] = slider_var.get() 
+    motor_values[index] = slider_var.get() 
 
-# Creates an actuator slider widget with a label and associated entry field
-def create_actuator_slider(parent, label_text, index, slider_values, app):
+# Creates a slider widget with a label and menual-entry field
+def create_actuator_slider(parent, label_text, index, motor_values, app):
     frame = tk.Frame(parent, padx=10, pady=10)
 
     name_label = tk.Label(frame, text=label_text, font=("Consolas", 13))
@@ -17,11 +17,11 @@ def create_actuator_slider(parent, label_text, index, slider_values, app):
 
     slider_var = tk.IntVar()
 
-    # Frame for the slider and entry stacked vertically
+    # Frame for holding the slider and manual-entry field
     slider_and_entry_frame = tk.Frame(frame)
     slider_and_entry_frame.pack(side="top", pady=5)
 
-    # Create the horizontal slider
+    # Creates a horizontal slider
     slider_widget = tk.Scale(
         slider_and_entry_frame,
         from_=0,
@@ -34,11 +34,11 @@ def create_actuator_slider(parent, label_text, index, slider_values, app):
     )
     slider_widget.pack(side="top")
 
-    # Frame to hold Entry and % label side by side
+    # Frame for holding the manual entry field and a Percentage symbol
     entry_frame = tk.Frame(slider_and_entry_frame)
     entry_frame.pack(side="top", pady=(5, 0))
 
-    # Entry box to manually input a value
+    # Initializes the manual entry field
     entry = tk.Entry(entry_frame, width=5, justify='center', font=("Consolas", 13))
     entry.pack(side="left")
 
@@ -46,7 +46,7 @@ def create_actuator_slider(parent, label_text, index, slider_values, app):
     percent_label = tk.Label(entry_frame, text="%", font=("Consolas", 13))
     percent_label.pack(side="left", padx=(2, 0))
 
-    # Handles Enter key press in the Entry widget to update slider value
+    # Updates manual entry field and slider value on ENTER key press
     def on_entry_return(event=None):
         try:
             value = int(entry.get())
@@ -55,42 +55,44 @@ def create_actuator_slider(parent, label_text, index, slider_values, app):
         except ValueError:
             entry.delete(0, tk.END)
             entry.insert(0, str(slider_var.get()))
-        app.focus_set()  # Remove focus from entry on Enter
+        # Remove focus from manual entry field on ENTER key press (prevents accidental entries)
+        app.focus_set() 
 
     entry.bind("<Return>", on_entry_return)
 
-    # Syncs slider movement with entry field value
+    # Syncs slider movement with manual entry field
     def on_slider_change(*args):
         entry.delete(0, tk.END)
         entry.insert(0, str(slider_var.get()))
-        slider_values[index] = slider_var.get()
+        motor_values[index] = slider_var.get()
 
     slider_var.trace_add("write", on_slider_change)
 
-    # Initialize the entry with the default value
+    # Initialize the entry with the default value (0)
     entry.insert(0, str(slider_var.get()))
 
     return slider_var, frame
 
-# Main function that sets up the entire GUI application
+# Sets up entire GUI
 def main(args=None):
     # Create main application window
     app = tk.Tk()
     app.title('Tibalt Control Panel')
     app.minsize(1200, 800)
     
-    # Clears focus from Entry widgets when clicking anywhere else
+    # Clears focus from Entry widgets when clicking anywhere else (Prevents accidental entries)
     def clear_focus(event):
         widget = event.widget
-        # Only clear focus if the clicked widget is not an Entry
+        # Only clear focus if the clicked widget is not the manual entry field
         if not isinstance(widget, tk.Entry):
             app.focus_set()
 
+    # Binds clear_focus function to mouse click
     app.bind_all("<Button-1>", clear_focus)
 
     # List to keep track of all three actuator slider values
-    # Index 0 = Hopper, 1 = Excavator, 2 = Spin
-    slider_values = [0, 0, 0]
+    # Indexes: 0 = Hopper Acutator, 1 = Excavator Actuator, 2 = Excavator Spin
+    motor_values = [0, 0, 0]
 
     # Called when the window is closed (X button clicked)
     # Stops cameras
@@ -103,7 +105,7 @@ def main(args=None):
         if hopper_camera.isOpened() and hopper_camera != front_camera: hopper_camera.release()
         app.destroy()
 
-    # Binds the function to the window closing
+    # Binds the handle_closing function to the window closing
     app.protocol("WM_DELETE_WINDOW", handle_closing)
 
     # Open the 3 cameras by index (0 = front, 1 = back, 2 = hopper)
@@ -159,13 +161,13 @@ def main(args=None):
     sliders_frame.pack(side="left", fill="both", expand=True, padx=10, pady=10)
 
     # Create all 3 actuator sliders and place them in the panel
-    hopper_slider_var, hopper_slider_widget = create_actuator_slider(sliders_frame, "Hopper Actuator", 0, slider_values, app)
+    hopper_slider_var, hopper_slider_widget = create_actuator_slider(sliders_frame, "Hopper Actuator", 0, motor_values, app)
     hopper_slider_widget.pack(fill="x", pady=5)
 
-    excavation_slider_var, excavation_slider_widget = create_actuator_slider(sliders_frame, "Excavation Actuator", 1, slider_values, app)
+    excavation_slider_var, excavation_slider_widget = create_actuator_slider(sliders_frame, "Excavation Actuator", 1, motor_values, app)
     excavation_slider_widget.pack(fill="x", pady=5)
 
-    spin_slider_var, spin_slider_widget = create_actuator_slider(sliders_frame, "Excavation Spin", 2, slider_values, app)    
+    spin_slider_var, spin_slider_widget = create_actuator_slider(sliders_frame, "Excavation Spin", 2, motor_values, app)    
     spin_slider_widget.pack(fill="x", pady=5)
 
     # Recursive function for updating camera feeds
