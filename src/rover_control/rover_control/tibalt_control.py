@@ -23,13 +23,13 @@ MOTOR_STOP = 64
 SERVO_FULL_CLOSE = 0
 SERVO_FULL_OPEN = 180
 
-'''CONTROL SCHEME''' #TODO: add in button indices
+'''CONTROL SCHEME'''
 EXCAV_DIG_B = 0
-EXCAV_RETRACT_B = 0
-EXCAV_EXTEND_B = 0
-HOPPER_LATCH_B = 0
-HOPPER_RETRACT_B = 0
-HOPPER_EXTEND_B = 0
+EXCAV_RETRACT_B = 6
+EXCAV_EXTEND_B = 7
+HOPPER_LATCH_B = 8
+HOPPER_RETRACT_B = 10
+HOPPER_EXTEND_B = 11
 
 class LINEAR_ACTUATOR_STATE(enumerate):
     '''Enum to keep track of the current hopper state'''
@@ -79,7 +79,7 @@ class Tibalt(Node):
         start_speeds.data = [0, 0, MOTOR_STOP, MOTOR_STOP, MOTOR_STOP, SERVO_FULL_CLOSE]
         self.publisher.publish(start_speeds)
 
-        # This node subscribes to 'joystick_data' (published from joystick_pipeline)
+        # This node subscribes to 'joy' (published from a built in library Joy)
         # This Joy object gives the current axis and button input from the joystick
         self.subsciption = self.create_subscription(
             msg_type=Joy,
