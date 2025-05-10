@@ -1,0 +1,7 @@
+[submodule "src/src/micro_ros_msgs"]
+	path = src/src/micro_ros_msgs
+	url = https://github.com/micro-ROS/micro_ros_msgs.git
+[submodule "agent/micro-ROS-Agent"]
+	path = agent/micro-ROS-Agent
+	url = https://github.com/micro-ROS/micro-ROS-Agent.git
+	branch = humble
