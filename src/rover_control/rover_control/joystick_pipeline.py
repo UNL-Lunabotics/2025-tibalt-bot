@@ -12,6 +12,11 @@ class Joystick(Node):
   def __init__(self):
     super().__init__('joystick_pipeline') # Initializes this as a node
 
+    self.rate = self.create_rate(
+      frequency=10,
+      clock=self.get_clock()
+    )
+
     # This node will publish joystick data (axes position and buttons)
     self.publisher = self.create_publisher(
       msg_type=Joy,
