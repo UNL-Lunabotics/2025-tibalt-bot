@@ -6,7 +6,7 @@ from PIL import Image, ImageTk
 # Also stores the value in an array so it can be accessed elsewhere
 def update_slider_label(slider_var, value_label, index, motor_values):
     value_label.config(text=f"{slider_var.get()}%")
-    motor_values[index] = slider_var.get() 
+    motor_values[index] = slider_var.get()
 
 # Creates a slider widget with a label and menual-entry field
 def create_actuator_slider(parent, label_text, index, motor_values, app):
