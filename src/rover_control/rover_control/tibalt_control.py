@@ -76,7 +76,7 @@ class Tibalt(Node):
 
         start_speeds = Int16MultiArray()
         # Drivetrain left, drivetrain right, excavation dig, excavation actuator, hopper actuator, hopper latch
-        start_speeds.data = [Int16(0), Int16(0), Int16(MOTOR_STOP), Int16(MOTOR_STOP), Int16(MOTOR_STOP), Int16(SERVO_FULL_CLOSE)]
+        start_speeds.data = [0, 0, MOTOR_STOP, MOTOR_STOP, MOTOR_STOP, SERVO_FULL_CLOSE]
         self.publisher.publish(start_speeds)
 
         # This node subscribes to 'joystick_data' (published from joystick_pipeline)
@@ -159,12 +159,12 @@ class Tibalt(Node):
         # Put all of the motor values in an array and publish them
         motor_speeds = Int16MultiArray()
         motor_speeds.data = [
-            Int16(self.dt_left_motor),
-            Int16(self.dt_right_motor),
-            Int16(self.excav_dig_motor),
-            Int16(self.excav_actuator_motor),
-            Int16(self.hopper_actuator_motor),
-            Int16(self.hopper_latch_servo)
+            self.dt_left_motor,
+            self.dt_right_motor,
+            self.excav_dig_motor,
+            self.excav_actuator_motor,
+            self.hopper_actuator_motor,
+            self.hopper_latch_servo
         ]
         self.publisher.publish(motor_speeds)
 

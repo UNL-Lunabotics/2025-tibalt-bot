@@ -39,17 +39,17 @@ def main(args=None):
   """Initializes Tibalt and starts the control loop."""
 
   try:
-    with rclpy.init(args=args):
-      joystick_pipeline = Joystick()
-      
-      while rclpy.ok(): # Ensures that the code runs continuously until shutdown
+    rclpy.init(args=args)
+    joystick_pipeline = Joystick()
+    
+    while rclpy.ok(): # Ensures that the code runs continuously until shutdown
 
-        # This will allow the node to process pending callback requests once before
-        # continuing to run this loop. This allows us to control the callback rate
-        rclpy.spin_once(joystick_pipeline)  
+      # This will allow the node to process pending callback requests once before
+      # continuing to run this loop. This allows us to control the callback rate
+      rclpy.spin_once(joystick_pipeline)  
 
-        # Sleep the node for 10Hz without blocking the entire system
-        joystick_pipeline.loop_rate.sleep()
+      # Sleep the node for 10Hz without blocking the entire system
+      joystick_pipeline.loop_rate.sleep()
   except (KeyboardInterrupt, ExternalShutdownException):
     # Shuts down if a KeyboardInterrupt or ExternalShutdownException is detected
     # i.e. if Ctrl+C is pressed or if ROS2 is shutdown externally
