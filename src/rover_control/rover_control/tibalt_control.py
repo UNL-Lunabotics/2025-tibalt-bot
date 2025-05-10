@@ -19,9 +19,9 @@ MOTOR_BACKWARDS = 0
 MOTOR_STOP = 64
 
 # Servo constants to help make the code more readable
-# It ranges from 0-180 degrees
+# The range is in degrees
 SERVO_FULL_CLOSE = 0
-SERVO_FULL_OPEN = 180
+SERVO_FULL_OPEN = 60
 
 '''CONTROL SCHEME'''
 EXCAV_DIG_B = 0
@@ -58,7 +58,6 @@ class Tibalt(Node):
         self.excav_state = LINEAR_ACTUATOR_STATE.RESTING
         self.excav_dig_motor = MOTOR_STOP
         self.excav_actuator_motor = MOTOR_STOP
-        self.excav_is_digging = False
 
         # This creates a Rate object that we will use to sleep the system at the specified frequency (in Hz)
         # We need this to make sure the node's don't publish data too quickly
@@ -163,7 +162,6 @@ class Tibalt(Node):
             self.hopper_actuator_motor,
             self.hopper_latch_servo
         ]
-        print(f"Publishing: {motor_speeds.data}")
         self.publisher.publish(motor_speeds)
 
 
