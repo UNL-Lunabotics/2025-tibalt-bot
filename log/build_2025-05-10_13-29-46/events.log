@@ -1,0 +1,578 @@
+[0.000000] (-) TimerEvent: {}
+[0.001326] (micro_ros_msgs) JobQueued: {'identifier': 'micro_ros_msgs', 'dependencies': OrderedDict()}
+[0.001602] (rover_control) JobQueued: {'identifier': 'rover_control', 'dependencies': OrderedDict()}
+[0.001959] (micro_ros_agent) JobQueued: {'identifier': 'micro_ros_agent', 'dependencies': OrderedDict([('micro_ros_msgs', '/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs')])}
+[0.002631] (micro_ros_msgs) JobStarted: {'identifier': 'micro_ros_msgs'}
+[0.017998] (rover_control) JobStarted: {'identifier': 'rover_control'}
+[0.034401] (micro_ros_msgs) JobProgress: {'identifier': 'micro_ros_msgs', 'progress': 'cmake'}
+[0.035865] (micro_ros_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/lunabotics/2025-tibalt-bot/src/micro_ros_msgs', '-DCMAKE_INSTALL_PREFIX=/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs'], 'cwd': '/home/lunabotics/2025-tibalt-bot/build/micro_ros_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lunabotics'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib:/home/lunabotics/2025-tibalt-bot/install/micro_ros_agent/lib:/home/lunabotics/2025-terrence-bot/install/micro_ros_agent/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lunabotics'), ('OLDPWD', '/home/lunabotics/2025-tibalt-bot/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2387'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/lunabotics/2025-tibalt-bot/install:/home/lunabotics/2025-terrence-bot/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lunabotics'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lunabotics'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lunabotics:@/tmp/.ICE-unix/2359,unix/lunabotics:/tmp/.ICE-unix/2359'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3821d4a8_e631_46c2_aec2_f9fe6c20a7d0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.94'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lunabotics/2025-tibalt-bot/install/rover_control:/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs:/home/lunabotics/2025-terrence-bot/install/micro_ros_agent:/home/lunabotics/2025-terrence-bot/install/control_topic:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lunabotics/2025-tibalt-bot/build/micro_ros_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lunabotics/2025-tibalt-bot/install/rover_control/lib/python3.10/site-packages:/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/home/lunabotics/2025-terrence-bot/install/control_topic/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs:/home/lunabotics/2025-tibalt-bot/install/micro_ros_agent:/home/lunabotics/2025-terrence-bot/install/micro_ros_agent:/home/lunabotics/2025-tibalt-bot/install/rover_control:/home/lunabotics/2025-terrence-bot/install/control_topic:/opt/ros/humble')]), 'shell': False}
+[0.099876] (-) TimerEvent: {}
+[0.189575] (micro_ros_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.200001] (-) TimerEvent: {}
+[0.300941] (-) TimerEvent: {}
+[0.330081] (micro_ros_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.352877] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.401247] (-) TimerEvent: {}
+[0.502237] (-) TimerEvent: {}
+[0.537393] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.552216] (micro_ros_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.553262] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.553636] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.561004] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.602449] (-) TimerEvent: {}
+[0.703500] (-) TimerEvent: {}
+[0.775413] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.801110] (micro_ros_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.802083] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.803538] (-) TimerEvent: {}
+[0.804073] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.813318] (micro_ros_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.903826] (-) TimerEvent: {}
+[1.004788] (-) TimerEvent: {}
+[1.105789] (-) TimerEvent: {}
+[1.206744] (-) TimerEvent: {}
+[1.208144] (micro_ros_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.306957] (-) TimerEvent: {}
+[1.407961] (-) TimerEvent: {}
+[1.464711] (micro_ros_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.475406] (micro_ros_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.494165] (micro_ros_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.508094] (-) TimerEvent: {}
+[1.583116] (micro_ros_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.608267] (-) TimerEvent: {}
+[1.614909] (rover_control) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/rover_control', 'build', '--build-base', '/home/lunabotics/2025-tibalt-bot/build/rover_control/build', 'install', '--record', '/home/lunabotics/2025-tibalt-bot/build/rover_control/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/lunabotics/2025-tibalt-bot/src/rover_control', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'lunabotics', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib:/home/lunabotics/2025-tibalt-bot/install/micro_ros_agent/lib:/home/lunabotics/2025-terrence-bot/install/micro_ros_agent/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/lunabotics', 'OLDPWD': '/home/lunabotics/2025-tibalt-bot/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2387', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/lunabotics/2025-tibalt-bot/install:/home/lunabotics/2025-terrence-bot/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'lunabotics', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'lunabotics', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/lunabotics:@/tmp/.ICE-unix/2359,unix/lunabotics:/tmp/.ICE-unix/2359', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/3821d4a8_e631_46c2_aec2_f9fe6c20a7d0', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.94', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/lunabotics/2025-tibalt-bot/install/rover_control:/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs:/home/lunabotics/2025-terrence-bot/install/micro_ros_agent:/home/lunabotics/2025-terrence-bot/install/control_topic:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/lunabotics/2025-tibalt-bot/build/rover_control', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/lunabotics/2025-tibalt-bot/build/rover_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lunabotics/2025-tibalt-bot/install/rover_control/lib/python3.10/site-packages:/home/lunabotics/2025-tibalt-bot/install/rover_control/lib/python3.10/site-packages:/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/home/lunabotics/2025-terrence-bot/install/control_topic/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs:/home/lunabotics/2025-tibalt-bot/install/micro_ros_agent:/home/lunabotics/2025-terrence-bot/install/micro_ros_agent'}, 'shell': False}
+[1.656576] (micro_ros_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.708472] (-) TimerEvent: {}
+[1.809835] (-) TimerEvent: {}
+[1.910877] (-) TimerEvent: {}
+[2.011838] (-) TimerEvent: {}
+[2.112858] (-) TimerEvent: {}
+[2.200676] (rover_control) StdoutLine: {'line': b'running egg_info\n'}
+[2.202108] (rover_control) StdoutLine: {'line': b'creating ../../build/rover_control/rover_control.egg-info\n'}
+[2.202628] (rover_control) StdoutLine: {'line': b'writing ../../build/rover_control/rover_control.egg-info/PKG-INFO\n'}
+[2.203284] (rover_control) StdoutLine: {'line': b'writing dependency_links to ../../build/rover_control/rover_control.egg-info/dependency_links.txt\n'}
+[2.203635] (rover_control) StdoutLine: {'line': b'writing entry points to ../../build/rover_control/rover_control.egg-info/entry_points.txt\n'}
+[2.203954] (rover_control) StdoutLine: {'line': b'writing requirements to ../../build/rover_control/rover_control.egg-info/requires.txt\n'}
+[2.204233] (rover_control) StdoutLine: {'line': b'writing top-level names to ../../build/rover_control/rover_control.egg-info/top_level.txt\n'}
+[2.204555] (rover_control) StdoutLine: {'line': b"writing manifest file '../../build/rover_control/rover_control.egg-info/SOURCES.txt'\n"}
+[2.208565] (rover_control) StdoutLine: {'line': b"reading manifest file '../../build/rover_control/rover_control.egg-info/SOURCES.txt'\n"}
+[2.210195] (rover_control) StdoutLine: {'line': b"writing manifest file '../../build/rover_control/rover_control.egg-info/SOURCES.txt'\n"}
+[2.210660] (rover_control) StdoutLine: {'line': b'running build\n'}
+[2.210883] (rover_control) StdoutLine: {'line': b'running build_py\n'}
+[2.211119] (rover_control) StdoutLine: {'line': b'creating /home/lunabotics/2025-tibalt-bot/build/rover_control/build\n'}
+[2.211340] (rover_control) StdoutLine: {'line': b'creating /home/lunabotics/2025-tibalt-bot/build/rover_control/build/lib\n'}
+[2.211548] (rover_control) StdoutLine: {'line': b'creating /home/lunabotics/2025-tibalt-bot/build/rover_control/build/lib/mainControlCode\n'}
+[2.211744] (rover_control) StdoutLine: {'line': b'copying mainControlCode/gui.py -> /home/lunabotics/2025-tibalt-bot/build/rover_control/build/lib/mainControlCode\n'}
+[2.212049] (rover_control) StdoutLine: {'line': b'copying mainControlCode/joystick_pipeline.py -> /home/lunabotics/2025-tibalt-bot/build/rover_control/build/lib/mainControlCode\n'}
+[2.212344] (rover_control) StdoutLine: {'line': b'copying mainControlCode/tibalt_control.py -> /home/lunabotics/2025-tibalt-bot/build/rover_control/build/lib/mainControlCode\n'}
+[2.212688] (rover_control) StdoutLine: {'line': b'copying mainControlCode/__init__.py -> /home/lunabotics/2025-tibalt-bot/build/rover_control/build/lib/mainControlCode\n'}
+[2.212992] (-) TimerEvent: {}
+[2.213413] (rover_control) StdoutLine: {'line': b'running install\n'}
+[2.214077] (rover_control) StdoutLine: {'line': b'running install_lib\n'}
+[2.215839] (rover_control) StdoutLine: {'line': b'creating /home/lunabotics/2025-tibalt-bot/install/rover_control/lib/python3.10/site-packages/mainControlCode\n'}
+[2.216089] (rover_control) StdoutLine: {'line': b'copying /home/lunabotics/2025-tibalt-bot/build/rover_control/build/lib/mainControlCode/gui.py -> /home/lunabotics/2025-tibalt-bot/install/rover_control/lib/python3.10/site-packages/mainControlCode\n'}
+[2.216415] (rover_control) StdoutLine: {'line': b'copying /home/lunabotics/2025-tibalt-bot/build/rover_control/build/lib/mainControlCode/joystick_pipeline.py -> /home/lunabotics/2025-tibalt-bot/install/rover_control/lib/python3.10/site-packages/mainControlCode\n'}
+[2.216667] (rover_control) StdoutLine: {'line': b'copying /home/lunabotics/2025-tibalt-bot/build/rover_control/build/lib/mainControlCode/tibalt_control.py -> /home/lunabotics/2025-tibalt-bot/install/rover_control/lib/python3.10/site-packages/mainControlCode\n'}
+[2.216974] (rover_control) StdoutLine: {'line': b'copying /home/lunabotics/2025-tibalt-bot/build/rover_control/build/lib/mainControlCode/__init__.py -> /home/lunabotics/2025-tibalt-bot/install/rover_control/lib/python3.10/site-packages/mainControlCode\n'}
+[2.218757] (rover_control) StdoutLine: {'line': b'byte-compiling /home/lunabotics/2025-tibalt-bot/install/rover_control/lib/python3.10/site-packages/mainControlCode/gui.py to gui.cpython-310.pyc\n'}
+[2.223957] (rover_control) StdoutLine: {'line': b'byte-compiling /home/lunabotics/2025-tibalt-bot/install/rover_control/lib/python3.10/site-packages/mainControlCode/joystick_pipeline.py to joystick_pipeline.cpython-310.pyc\n'}
+[2.225054] (rover_control) StdoutLine: {'line': b'byte-compiling /home/lunabotics/2025-tibalt-bot/install/rover_control/lib/python3.10/site-packages/mainControlCode/tibalt_control.py to tibalt_control.cpython-310.pyc\n'}
+[2.226848] (rover_control) StdoutLine: {'line': b'byte-compiling /home/lunabotics/2025-tibalt-bot/install/rover_control/lib/python3.10/site-packages/mainControlCode/__init__.py to __init__.cpython-310.pyc\n'}
+[2.227230] (rover_control) StdoutLine: {'line': b'running install_data\n'}
+[2.227498] (rover_control) StdoutLine: {'line': b'creating /home/lunabotics/2025-tibalt-bot/install/rover_control/share/ament_index\n'}
+[2.227699] (rover_control) StdoutLine: {'line': b'creating /home/lunabotics/2025-tibalt-bot/install/rover_control/share/ament_index/resource_index\n'}
+[2.227892] (rover_control) StdoutLine: {'line': b'creating /home/lunabotics/2025-tibalt-bot/install/rover_control/share/ament_index/resource_index/packages\n'}
+[2.228078] (rover_control) StdoutLine: {'line': b'copying resource/rover_control -> /home/lunabotics/2025-tibalt-bot/install/rover_control/share/ament_index/resource_index/packages\n'}
+[2.228247] (rover_control) StdoutLine: {'line': b'copying package.xml -> /home/lunabotics/2025-tibalt-bot/install/rover_control/share/rover_control\n'}
+[2.228441] (rover_control) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.233327] (rover_control) StdoutLine: {'line': b'Copying ../../build/rover_control/rover_control.egg-info to /home/lunabotics/2025-tibalt-bot/install/rover_control/lib/python3.10/site-packages/rover_control-0.0.0-py3.10.egg-info\n'}
+[2.236136] (rover_control) StdoutLine: {'line': b'running install_scripts\n'}
+[2.293066] (rover_control) StdoutLine: {'line': b"writing list of installed files to '/home/lunabotics/2025-tibalt-bot/build/rover_control/install.log'\n"}
+[2.313184] (-) TimerEvent: {}
+[2.362091] (micro_ros_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[2.404985] (rover_control) CommandEnded: {'returncode': 0}
+[2.413300] (-) TimerEvent: {}
+[2.433931] (rover_control) JobEnded: {'identifier': 'rover_control', 'rc': 0}
+[2.513609] (-) TimerEvent: {}
+[2.614706] (-) TimerEvent: {}
+[2.715696] (-) TimerEvent: {}
+[2.816782] (-) TimerEvent: {}
+[2.858138] (micro_ros_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.917025] (-) TimerEvent: {}
+[3.017989] (-) TimerEvent: {}
+[3.119028] (-) TimerEvent: {}
+[3.219982] (-) TimerEvent: {}
+[3.320934] (-) TimerEvent: {}
+[3.421867] (-) TimerEvent: {}
+[3.494738] (micro_ros_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.522089] (-) TimerEvent: {}
+[3.557603] (micro_ros_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[3.561612] (micro_ros_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[3.622371] (-) TimerEvent: {}
+[3.637708] (micro_ros_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[3.638517] (micro_ros_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.638820] (micro_ros_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[3.639085] (micro_ros_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[3.697035] (micro_ros_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[3.722503] (-) TimerEvent: {}
+[3.801747] (micro_ros_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[3.808895] (micro_ros_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.813019] (micro_ros_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.822592] (-) TimerEvent: {}
+[3.826449] (micro_ros_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.898559] (micro_ros_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[3.921583] (micro_ros_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/lunabotics/2025-tibalt-bot/build/micro_ros_msgs\n'}
+[3.922676] (-) TimerEvent: {}
+[3.949068] (micro_ros_msgs) CommandEnded: {'returncode': 0}
+[3.951579] (micro_ros_msgs) JobProgress: {'identifier': 'micro_ros_msgs', 'progress': 'build'}
+[3.954363] (micro_ros_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lunabotics/2025-tibalt-bot/build/micro_ros_msgs', '--', '-j6', '-l6'], 'cwd': '/home/lunabotics/2025-tibalt-bot/build/micro_ros_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lunabotics'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib:/home/lunabotics/2025-tibalt-bot/install/micro_ros_agent/lib:/home/lunabotics/2025-terrence-bot/install/micro_ros_agent/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lunabotics'), ('OLDPWD', '/home/lunabotics/2025-tibalt-bot/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2387'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/lunabotics/2025-tibalt-bot/install:/home/lunabotics/2025-terrence-bot/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lunabotics'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lunabotics'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lunabotics:@/tmp/.ICE-unix/2359,unix/lunabotics:/tmp/.ICE-unix/2359'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3821d4a8_e631_46c2_aec2_f9fe6c20a7d0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.94'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lunabotics/2025-tibalt-bot/install/rover_control:/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs:/home/lunabotics/2025-terrence-bot/install/micro_ros_agent:/home/lunabotics/2025-terrence-bot/install/control_topic:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lunabotics/2025-tibalt-bot/build/micro_ros_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lunabotics/2025-tibalt-bot/install/rover_control/lib/python3.10/site-packages:/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/home/lunabotics/2025-terrence-bot/install/control_topic/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs:/home/lunabotics/2025-tibalt-bot/install/micro_ros_agent:/home/lunabotics/2025-terrence-bot/install/micro_ros_agent:/home/lunabotics/2025-tibalt-bot/install/rover_control:/home/lunabotics/2025-terrence-bot/install/control_topic:/opt/ros/humble')]), 'shell': False}
+[4.022959] (-) TimerEvent: {}
+[4.058265] (micro_ros_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[4.083208] (micro_ros_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[4.109221] (micro_ros_msgs) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_copy_micro_ros_msgs\n'}
+[4.123190] (-) TimerEvent: {}
+[4.224929] (-) TimerEvent: {}
+[4.325904] (-) TimerEvent: {}
+[4.426852] (-) TimerEvent: {}
+[4.527792] (-) TimerEvent: {}
+[4.628660] (-) TimerEvent: {}
+[4.714658] (micro_ros_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[4.716200] (micro_ros_msgs) StdoutLine: {'line': b'creating micro_ros_msgs.egg-info\n'}
+[4.716708] (micro_ros_msgs) StdoutLine: {'line': b'writing micro_ros_msgs.egg-info/PKG-INFO\n'}
+[4.717880] (micro_ros_msgs) StdoutLine: {'line': b'writing dependency_links to micro_ros_msgs.egg-info/dependency_links.txt\n'}
+[4.718333] (micro_ros_msgs) StdoutLine: {'line': b'writing top-level names to micro_ros_msgs.egg-info/top_level.txt\n'}
+[4.718908] (micro_ros_msgs) StdoutLine: {'line': b"writing manifest file 'micro_ros_msgs.egg-info/SOURCES.txt'\n"}
+[4.723736] (micro_ros_msgs) StdoutLine: {'line': b"reading manifest file 'micro_ros_msgs.egg-info/SOURCES.txt'\n"}
+[4.724978] (micro_ros_msgs) StdoutLine: {'line': b"writing manifest file 'micro_ros_msgs.egg-info/SOURCES.txt'\n"}
+[4.728712] (-) TimerEvent: {}
+[4.829490] (-) TimerEvent: {}
+[4.836341] (micro_ros_msgs) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_micro_ros_msgs_egg\n'}
+[4.929781] (-) TimerEvent: {}
+[5.025176] (micro_ros_msgs) StdoutLine: {'line': b'[  4%] Built target micro_ros_msgs__cpp\n'}
+[5.029985] (-) TimerEvent: {}
+[5.051867] (micro_ros_msgs) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.052907] (micro_ros_msgs) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.063912] (micro_ros_msgs) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[5.094470] (micro_ros_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/micro_ros_msgs/msg/detail/node__functions.c.o\x1b[0m\n'}
+[5.095435] (micro_ros_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/micro_ros_msgs/msg/detail/entity__functions.c.o\x1b[0m\n'}
+[5.095700] (micro_ros_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/micro_ros_msgs/msg/detail/graph__functions.c.o\x1b[0m\n'}
+[5.130231] (-) TimerEvent: {}
+[5.231308] (-) TimerEvent: {}
+[5.251379] (micro_ros_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32m\x1b[1mLinking C shared library libmicro_ros_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[5.331558] (-) TimerEvent: {}
+[5.354753] (micro_ros_msgs) StdoutLine: {'line': b'[ 19%] Built target micro_ros_msgs__rosidl_generator_c\n'}
+[5.382667] (micro_ros_msgs) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.385109] (micro_ros_msgs) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[5.385698] (micro_ros_msgs) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.431797] (-) TimerEvent: {}
+[5.532846] (-) TimerEvent: {}
+[5.633798] (-) TimerEvent: {}
+[5.734741] (-) TimerEvent: {}
+[5.835788] (-) TimerEvent: {}
+[5.850248] (micro_ros_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/micro_ros_msgs/msg/graph__type_support.cpp.o\x1b[0m\n'}
+[5.936020] (-) TimerEvent: {}
+[6.037679] (-) TimerEvent: {}
+[6.063482] (micro_ros_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/micro_ros_msgs/msg/detail/dds_fastrtps/graph__type_support.cpp.o\x1b[0m\n'}
+[6.105564] (micro_ros_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/micro_ros_msgs/msg/detail/graph__type_support.cpp.o\x1b[0m\n'}
+[6.137944] (-) TimerEvent: {}
+[6.239389] (-) TimerEvent: {}
+[6.247878] (micro_ros_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/micro_ros_msgs/msg/graph__type_support.cpp.o\x1b[0m\n'}
+[6.339736] (-) TimerEvent: {}
+[6.352229] (micro_ros_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/micro_ros_msgs/msg/node__type_support.cpp.o\x1b[0m\n'}
+[6.406356] (micro_ros_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/micro_ros_msgs/msg/detail/graph__type_support.c.o\x1b[0m\n'}
+[6.440093] (-) TimerEvent: {}
+[6.446177] (micro_ros_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/micro_ros_msgs/msg/entity__type_support.cpp.o\x1b[0m\n'}
+[6.522844] (micro_ros_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/micro_ros_msgs/msg/detail/node__type_support.c.o\x1b[0m\n'}
+[6.535356] (micro_ros_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32m\x1b[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[6.540333] (-) TimerEvent: {}
+[6.556985] (micro_ros_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/micro_ros_msgs/msg/detail/graph__type_support_c.cpp.o\x1b[0m\n'}
+[6.617723] (micro_ros_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/micro_ros_msgs/msg/node__type_support.cpp.o\x1b[0m\n'}
+[6.644224] (-) TimerEvent: {}
+[6.646567] (micro_ros_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/micro_ros_msgs/msg/detail/entity__type_support.c.o\x1b[0m\n'}
+[6.669353] (micro_ros_msgs) StdoutLine: {'line': b'[ 51%] Built target micro_ros_msgs__rosidl_typesupport_c\n'}
+[6.699087] (micro_ros_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/micro_ros_msgs/msg/detail/node__type_support_c.cpp.o\x1b[0m\n'}
+[6.744581] (-) TimerEvent: {}
+[6.761143] (micro_ros_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking C shared library libmicro_ros_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[6.844996] (-) TimerEvent: {}
+[6.854200] (micro_ros_msgs) StdoutLine: {'line': b'[ 55%] Built target micro_ros_msgs__rosidl_typesupport_introspection_c\n'}
+[6.895056] (micro_ros_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/micro_ros_msgs/msg/entity__type_support.cpp.o\x1b[0m\n'}
+[6.945798] (-) TimerEvent: {}
+[7.047701] (-) TimerEvent: {}
+[7.149034] (-) TimerEvent: {}
+[7.250291] (-) TimerEvent: {}
+[7.351632] (-) TimerEvent: {}
+[7.449500] (micro_ros_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/micro_ros_msgs/msg/detail/node__type_support.cpp.o\x1b[0m\n'}
+[7.451796] (-) TimerEvent: {}
+[7.515713] (micro_ros_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/micro_ros_msgs/msg/detail/dds_fastrtps/node__type_support.cpp.o\x1b[0m\n'}
+[7.552199] (-) TimerEvent: {}
+[7.580549] (micro_ros_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/micro_ros_msgs/msg/detail/entity__type_support_c.cpp.o\x1b[0m\n'}
+[7.652537] (-) TimerEvent: {}
+[7.688582] (micro_ros_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/micro_ros_msgs/msg/detail/dds_fastrtps/entity__type_support.cpp.o\x1b[0m\n'}
+[7.734834] (micro_ros_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/micro_ros_msgs/msg/detail/entity__type_support.cpp.o\x1b[0m\n'}
+[7.752928] (-) TimerEvent: {}
+[7.837603] (micro_ros_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[7.853201] (-) TimerEvent: {}
+[7.954312] (micro_ros_msgs) StdoutLine: {'line': b'[ 70%] Built target micro_ros_msgs__rosidl_typesupport_cpp\n'}
+[7.955115] (-) TimerEvent: {}
+[8.056372] (-) TimerEvent: {}
+[8.157693] (-) TimerEvent: {}
+[8.258876] (-) TimerEvent: {}
+[8.360089] (-) TimerEvent: {}
+[8.461384] (-) TimerEvent: {}
+[8.562670] (-) TimerEvent: {}
+[8.602434] (micro_ros_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[8.662985] (-) TimerEvent: {}
+[8.764686] (-) TimerEvent: {}
+[8.854125] (micro_ros_msgs) StdoutLine: {'line': b'[ 72%] Built target micro_ros_msgs__rosidl_typesupport_fastrtps_c\n'}
+[8.865433] (-) TimerEvent: {}
+[8.955463] (micro_ros_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[8.965593] (-) TimerEvent: {}
+[8.990837] (micro_ros_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[9.065919] (-) TimerEvent: {}
+[9.167114] (-) TimerEvent: {}
+[9.196369] (micro_ros_msgs) StdoutLine: {'line': b'[ 76%] Built target micro_ros_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[9.230247] (micro_ros_msgs) StdoutLine: {'line': b'[ 76%] Built target micro_ros_msgs__rosidl_typesupport_introspection_cpp\n'}
+[9.267305] (-) TimerEvent: {}
+[9.280278] (micro_ros_msgs) StdoutLine: {'line': b'[ 76%] Built target micro_ros_msgs\n'}
+[9.329219] (micro_ros_msgs) StdoutLine: {'line': b'[ 78%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[9.367478] (-) TimerEvent: {}
+[9.468294] (-) TimerEvent: {}
+[9.569054] (-) TimerEvent: {}
+[9.669786] (-) TimerEvent: {}
+[9.770678] (-) TimerEvent: {}
+[9.871481] (-) TimerEvent: {}
+[9.972094] (-) TimerEvent: {}
+[10.072768] (-) TimerEvent: {}
+[10.173389] (-) TimerEvent: {}
+[10.274107] (-) TimerEvent: {}
+[10.374686] (-) TimerEvent: {}
+[10.475400] (-) TimerEvent: {}
+[10.541459] (micro_ros_msgs) StdoutLine: {'line': b'[ 78%] Built target micro_ros_msgs__py\n'}
+[10.575679] (-) TimerEvent: {}
+[10.590716] (micro_ros_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/micro_ros_msgs/msg/_node_s.c.o\x1b[0m\n'}
+[10.591542] (micro_ros_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/micro_ros_msgs/msg/_graph_s.c.o\x1b[0m\n'}
+[10.591756] (micro_ros_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/micro_ros_msgs/msg/_entity_s.c.o\x1b[0m\n'}
+[10.675965] (-) TimerEvent: {}
+[10.777159] (-) TimerEvent: {}
+[10.858471] (micro_ros_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/micro_ros_msgs/libmicro_ros_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[10.877385] (-) TimerEvent: {}
+[10.956176] (micro_ros_msgs) StdoutLine: {'line': b'[ 87%] Built target micro_ros_msgs__rosidl_generator_py\n'}
+[10.977715] (-) TimerEvent: {}
+[11.006426] (micro_ros_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[11.007273] (micro_ros_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[11.007513] (micro_ros_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[11.077985] (-) TimerEvent: {}
+[11.179171] (-) TimerEvent: {}
+[11.250598] (micro_ros_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[11.251377] (micro_ros_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[11.260761] (micro_ros_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[11.279405] (-) TimerEvent: {}
+[11.335638] (micro_ros_msgs) StdoutLine: {'line': b'[100%] Built target micro_ros_msgs__rosidl_typesupport_c__pyext\n'}
+[11.336403] (micro_ros_msgs) StdoutLine: {'line': b'[100%] Built target micro_ros_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[11.345336] (micro_ros_msgs) StdoutLine: {'line': b'[100%] Built target micro_ros_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[11.377708] (micro_ros_msgs) CommandEnded: {'returncode': 0}
+[11.379411] (-) TimerEvent: {}
+[11.381054] (micro_ros_msgs) JobProgress: {'identifier': 'micro_ros_msgs', 'progress': 'install'}
+[11.403344] (micro_ros_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/lunabotics/2025-tibalt-bot/build/micro_ros_msgs'], 'cwd': '/home/lunabotics/2025-tibalt-bot/build/micro_ros_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lunabotics'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib:/home/lunabotics/2025-tibalt-bot/install/micro_ros_agent/lib:/home/lunabotics/2025-terrence-bot/install/micro_ros_agent/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lunabotics'), ('OLDPWD', '/home/lunabotics/2025-tibalt-bot/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2387'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/lunabotics/2025-tibalt-bot/install:/home/lunabotics/2025-terrence-bot/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lunabotics'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lunabotics'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lunabotics:@/tmp/.ICE-unix/2359,unix/lunabotics:/tmp/.ICE-unix/2359'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3821d4a8_e631_46c2_aec2_f9fe6c20a7d0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.94'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lunabotics/2025-tibalt-bot/install/rover_control:/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs:/home/lunabotics/2025-terrence-bot/install/micro_ros_agent:/home/lunabotics/2025-terrence-bot/install/control_topic:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lunabotics/2025-tibalt-bot/build/micro_ros_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lunabotics/2025-tibalt-bot/install/rover_control/lib/python3.10/site-packages:/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/home/lunabotics/2025-terrence-bot/install/control_topic/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs:/home/lunabotics/2025-tibalt-bot/install/micro_ros_agent:/home/lunabotics/2025-terrence-bot/install/micro_ros_agent:/home/lunabotics/2025-tibalt-bot/install/rover_control:/home/lunabotics/2025-terrence-bot/install/control_topic:/opt/ros/humble')]), 'shell': False}
+[11.428506] (micro_ros_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.429217] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/ament_index/resource_index/rosidl_interfaces/micro_ros_msgs\n'}
+[11.429472] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs\n'}
+[11.429786] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg\n'}
+[11.429984] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[11.430242] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/entity.h\n'}
+[11.430457] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail\n'}
+[11.430659] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__functions.h\n'}
+[11.430913] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__struct.h\n'}
+[11.431143] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__functions.c\n'}
+[11.431394] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__functions.c\n'}
+[11.431647] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__type_support.h\n'}
+[11.431880] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__type_support.h\n'}
+[11.432104] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__struct.h\n'}
+[11.432331] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__functions.h\n'}
+[11.432570] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__functions.c\n'}
+[11.432856] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__type_support.h\n'}
+[11.433116] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__functions.h\n'}
+[11.433354] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__struct.h\n'}
+[11.433610] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/node.h\n'}
+[11.433801] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/graph.h\n'}
+[11.434239] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/environment/library_path.sh\n'}
+[11.434536] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/environment/library_path.dsv\n'}
+[11.434942] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_generator_c.so\n'}
+[11.436195] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_generator_c.so" to ""\n'}
+[11.436401] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs\n'}
+[11.436617] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg\n'}
+[11.436755] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail\n'}
+[11.436936] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__rosidl_typesupport_fastrtps_c.h\n'}
+[11.437140] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__rosidl_typesupport_fastrtps_c.h\n'}
+[11.437299] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__rosidl_typesupport_fastrtps_c.h\n'}
+[11.437517] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[11.437831] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[11.438514] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[11.438684] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs\n'}
+[11.438885] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg\n'}
+[11.439018] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail\n'}
+[11.439144] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__type_support.c\n'}
+[11.439313] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__rosidl_typesupport_introspection_c.h\n'}
+[11.439476] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__type_support.c\n'}
+[11.439635] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__type_support.c\n'}
+[11.439882] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__rosidl_typesupport_introspection_c.h\n'}
+[11.440115] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__rosidl_typesupport_introspection_c.h\n'}
+[11.440336] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[11.440652] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_introspection_c.so\n'}
+[11.441299] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[11.441480] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_c.so\n'}
+[11.442003] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_c.so" to ""\n'}
+[11.442181] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs\n'}
+[11.442372] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg\n'}
+[11.442521] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/entity.hpp\n'}
+[11.442685] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/graph.hpp\n'}
+[11.442850] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/node.hpp\n'}
+[11.443018] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[11.443213] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail\n'}
+[11.443386] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__struct.hpp\n'}
+[11.443562] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__struct.hpp\n'}
+[11.443800] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__traits.hpp\n'}
+[11.444031] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__type_support.hpp\n'}
+[11.444268] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__traits.hpp\n'}
+[11.444494] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__traits.hpp\n'}
+[11.444720] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__builder.hpp\n'}
+[11.444976] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__builder.hpp\n'}
+[11.445190] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__type_support.hpp\n'}
+[11.445412] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__type_support.hpp\n'}
+[11.445639] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__builder.hpp\n'}
+[11.445870] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__struct.hpp\n'}
+[11.446173] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs\n'}
+[11.446353] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg\n'}
+[11.446518] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail\n'}
+[11.446679] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/dds_fastrtps\n'}
+[11.446830] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[11.446986] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[11.447143] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[11.447361] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[11.447690] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[11.448681] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[11.448929] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs\n'}
+[11.449127] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg\n'}
+[11.449260] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail\n'}
+[11.449424] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__rosidl_typesupport_introspection_cpp.hpp\n'}
+[11.449570] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__type_support.cpp\n'}
+[11.449737] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__type_support.cpp\n'}
+[11.449893] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__rosidl_typesupport_introspection_cpp.hpp\n'}
+[11.450099] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__rosidl_typesupport_introspection_cpp.hpp\n'}
+[11.450329] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__type_support.cpp\n'}
+[11.450672] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[11.451740] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[11.451916] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_cpp.so\n'}
+[11.452439] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[11.452607] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/environment/pythonpath.sh\n'}
+[11.452875] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/environment/pythonpath.dsv\n'}
+[11.453355] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs-5.0.2-py3.10.egg-info\n'}
+[11.453722] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs-5.0.2-py3.10.egg-info/top_level.txt\n'}
+[11.453963] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs-5.0.2-py3.10.egg-info/SOURCES.txt\n'}
+[11.454187] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs-5.0.2-py3.10.egg-info/PKG-INFO\n'}
+[11.454420] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs-5.0.2-py3.10.egg-info/dependency_links.txt\n'}
+[11.454715] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs\n'}
+[11.454909] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[11.455215] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/libmicro_ros_msgs__rosidl_generator_py.so\n'}
+[11.455553] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[11.455832] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[11.456097] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg\n'}
+[11.456267] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_entity_s.c\n'}
+[11.456529] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_node.py\n'}
+[11.456781] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_node_s.c\n'}
+[11.457062] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_graph.py\n'}
+[11.457309] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_entity.py\n'}
+[11.457562] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_graph_s.c\n'}
+[11.457809] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/__init__.py\n'}
+[11.458079] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[11.458353] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[11.458636] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[11.458910] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/__init__.py\n'}
+[11.479517] (-) TimerEvent: {}
+[11.550048] (micro_ros_msgs) StdoutLine: {'line': b"Listing '/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs'...\n"}
+[11.550712] (micro_ros_msgs) StdoutLine: {'line': b"Compiling '/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/__init__.py'...\n"}
+[11.550904] (micro_ros_msgs) StdoutLine: {'line': b"Listing '/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg'...\n"}
+[11.551055] (micro_ros_msgs) StdoutLine: {'line': b"Compiling '/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/__init__.py'...\n"}
+[11.551200] (micro_ros_msgs) StdoutLine: {'line': b"Compiling '/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_entity.py'...\n"}
+[11.551335] (micro_ros_msgs) StdoutLine: {'line': b"Compiling '/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_graph.py'...\n"}
+[11.551468] (micro_ros_msgs) StdoutLine: {'line': b"Compiling '/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_node.py'...\n"}
+[11.567600] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[11.568282] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[11.568585] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[11.569243] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[11.569637] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[11.570237] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[11.570426] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_generator_py.so\n'}
+[11.571085] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_generator_py.so" to ""\n'}
+[11.571404] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/msg/Graph.idl\n'}
+[11.571692] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/msg/Node.idl\n'}
+[11.571991] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/msg/Entity.idl\n'}
+[11.572286] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/msg/Graph.msg\n'}
+[11.572567] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/msg/Node.msg\n'}
+[11.572848] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/msg/Entity.msg\n'}
+[11.573295] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/ament_index/resource_index/package_run_dependencies/micro_ros_msgs\n'}
+[11.573677] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/ament_index/resource_index/parent_prefix_path/micro_ros_msgs\n'}
+[11.574018] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/environment/ament_prefix_path.sh\n'}
+[11.574310] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/environment/ament_prefix_path.dsv\n'}
+[11.574618] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/environment/path.sh\n'}
+[11.574907] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/environment/path.dsv\n'}
+[11.575195] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/local_setup.bash\n'}
+[11.575478] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/local_setup.sh\n'}
+[11.575775] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/local_setup.zsh\n'}
+[11.576056] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/local_setup.dsv\n'}
+[11.576333] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/package.dsv\n'}
+[11.576707] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/ament_index/resource_index/packages/micro_ros_msgs\n'}
+[11.577164] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_generator_cExport.cmake\n'}
+[11.577492] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[11.577824] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[11.578142] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[11.578485] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[11.578813] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[11.579137] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_cExport.cmake\n'}
+[11.579461] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[11.579601] (-) TimerEvent: {}
+[11.579982] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_generator_cppExport.cmake\n'}
+[11.580176] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[11.580444] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[11.580770] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[11.581135] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[11.581463] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[11.581784] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[11.582110] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_generator_pyExport.cmake\n'}
+[11.582736] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[11.583027] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[11.583329] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[11.583613] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[11.583924] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[11.584213] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[11.584498] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[11.584820] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[11.585145] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgsConfig.cmake\n'}
+[11.585390] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgsConfig-version.cmake\n'}
+[11.585673] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/package.xml\n'}
+[11.592663] (micro_ros_msgs) CommandEnded: {'returncode': 0}
+[11.648791] (micro_ros_msgs) JobEnded: {'identifier': 'micro_ros_msgs', 'rc': 0}
+[11.652309] (micro_ros_agent) JobStarted: {'identifier': 'micro_ros_agent'}
+[11.674999] (micro_ros_agent) JobProgress: {'identifier': 'micro_ros_agent', 'progress': 'cmake'}
+[11.676449] (micro_ros_agent) Command: {'cmd': ['/usr/bin/cmake', '/home/lunabotics/2025-tibalt-bot/agent/micro-ROS-Agent/micro_ros_agent', '-DCMAKE_INSTALL_PREFIX=/home/lunabotics/2025-tibalt-bot/install/micro_ros_agent'], 'cwd': '/home/lunabotics/2025-tibalt-bot/build/micro_ros_agent', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lunabotics'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib:/home/lunabotics/2025-tibalt-bot/install/micro_ros_agent/lib:/home/lunabotics/2025-terrence-bot/install/micro_ros_agent/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lunabotics'), ('OLDPWD', '/home/lunabotics/2025-tibalt-bot/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2387'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/lunabotics/2025-tibalt-bot/install:/home/lunabotics/2025-terrence-bot/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lunabotics'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lunabotics'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lunabotics:@/tmp/.ICE-unix/2359,unix/lunabotics:/tmp/.ICE-unix/2359'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3821d4a8_e631_46c2_aec2_f9fe6c20a7d0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.94'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lunabotics/2025-tibalt-bot/install/rover_control:/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs:/home/lunabotics/2025-terrence-bot/install/micro_ros_agent:/home/lunabotics/2025-terrence-bot/install/control_topic:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lunabotics/2025-tibalt-bot/build/micro_ros_agent'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lunabotics/2025-tibalt-bot/install/rover_control/lib/python3.10/site-packages:/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/home/lunabotics/2025-terrence-bot/install/control_topic/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs:/home/lunabotics/2025-tibalt-bot/install/micro_ros_agent:/home/lunabotics/2025-terrence-bot/install/micro_ros_agent:/home/lunabotics/2025-tibalt-bot/install/rover_control:/home/lunabotics/2025-terrence-bot/install/control_topic:/opt/ros/humble')]), 'shell': False}
+[11.681485] (-) TimerEvent: {}
+[11.782302] (-) TimerEvent: {}
+[11.823831] (micro_ros_agent) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[11.842076] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[11.882523] (-) TimerEvent: {}
+[11.983526] (-) TimerEvent: {}
+[12.022142] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[12.043898] (micro_ros_agent) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[12.044915] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[12.046244] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[12.083695] (-) TimerEvent: {}
+[12.176627] (micro_ros_agent) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[12.183801] (-) TimerEvent: {}
+[12.197726] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[12.284126] (-) TimerEvent: {}
+[12.385210] (-) TimerEvent: {}
+[12.393337] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[12.419485] (micro_ros_agent) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[12.420107] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[12.421449] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[12.485327] (-) TimerEvent: {}
+[12.507698] (micro_ros_agent) StdoutLine: {'line': b'-- Configuring done\n'}
+[12.516480] (micro_ros_agent) StdoutLine: {'line': b'-- Generating done\n'}
+[12.519953] (micro_ros_agent) StdoutLine: {'line': b'-- Build files have been written to: /home/lunabotics/2025-tibalt-bot/build/micro_ros_agent\n'}
+[12.534929] (micro_ros_agent) CommandEnded: {'returncode': 0}
+[12.537018] (micro_ros_agent) JobProgress: {'identifier': 'micro_ros_agent', 'progress': 'build'}
+[12.537791] (micro_ros_agent) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lunabotics/2025-tibalt-bot/build/micro_ros_agent', '--', '-j6', '-l6'], 'cwd': '/home/lunabotics/2025-tibalt-bot/build/micro_ros_agent', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lunabotics'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib:/home/lunabotics/2025-tibalt-bot/install/micro_ros_agent/lib:/home/lunabotics/2025-terrence-bot/install/micro_ros_agent/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lunabotics'), ('OLDPWD', '/home/lunabotics/2025-tibalt-bot/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2387'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/lunabotics/2025-tibalt-bot/install:/home/lunabotics/2025-terrence-bot/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lunabotics'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lunabotics'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lunabotics:@/tmp/.ICE-unix/2359,unix/lunabotics:/tmp/.ICE-unix/2359'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3821d4a8_e631_46c2_aec2_f9fe6c20a7d0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.94'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lunabotics/2025-tibalt-bot/install/rover_control:/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs:/home/lunabotics/2025-terrence-bot/install/micro_ros_agent:/home/lunabotics/2025-terrence-bot/install/control_topic:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lunabotics/2025-tibalt-bot/build/micro_ros_agent'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lunabotics/2025-tibalt-bot/install/rover_control/lib/python3.10/site-packages:/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/home/lunabotics/2025-terrence-bot/install/control_topic/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs:/home/lunabotics/2025-tibalt-bot/install/micro_ros_agent:/home/lunabotics/2025-terrence-bot/install/micro_ros_agent:/home/lunabotics/2025-tibalt-bot/install/rover_control:/home/lunabotics/2025-terrence-bot/install/control_topic:/opt/ros/humble')]), 'shell': False}
+[12.585532] (-) TimerEvent: {}
+[12.656794] (micro_ros_agent) StdoutLine: {'line': b"[  6%] \x1b[34m\x1b[1mCreating directories for 'xrceagent'\x1b[0m\n"}
+[12.685821] (-) TimerEvent: {}
+[12.786930] (-) TimerEvent: {}
+[12.833757] (micro_ros_agent) StdoutLine: {'line': b"[ 12%] \x1b[34m\x1b[1mPerforming download step (git clone) for 'xrceagent'\x1b[0m\n"}
+[12.881429] (micro_ros_agent) StderrLine: {'line': b"Cloning into 'xrceagent'...\n"}
+[12.886966] (-) TimerEvent: {}
+[12.987741] (-) TimerEvent: {}
+[13.088854] (-) TimerEvent: {}
+[13.189793] (-) TimerEvent: {}
+[13.290789] (-) TimerEvent: {}
+[13.391558] (-) TimerEvent: {}
+[13.492456] (-) TimerEvent: {}
+[13.593452] (-) TimerEvent: {}
+[13.694491] (-) TimerEvent: {}
+[13.795556] (-) TimerEvent: {}
+[13.896915] (-) TimerEvent: {}
+[13.997982] (-) TimerEvent: {}
+[14.099107] (-) TimerEvent: {}
+[14.200182] (-) TimerEvent: {}
+[14.206786] (micro_ros_agent) StderrLine: {'line': b'HEAD is now at 7362281 Release v2.4.3\n'}
+[14.300446] (-) TimerEvent: {}
+[14.329435] (micro_ros_agent) StdoutLine: {'line': b"[ 18%] \x1b[34m\x1b[1mPerforming update step for 'xrceagent'\x1b[0m\n"}
+[14.393393] (micro_ros_agent) StdoutLine: {'line': b"[ 25%] \x1b[34m\x1b[1mNo patch step for 'xrceagent'\x1b[0m\n"}
+[14.400639] (-) TimerEvent: {}
+[14.461655] (micro_ros_agent) StdoutLine: {'line': b"[ 31%] \x1b[34m\x1b[1mPerforming configure step for 'xrceagent'\x1b[0m\n"}
+[14.483549] (micro_ros_agent) StdoutLine: {'line': b'loading initial cache file /home/lunabotics/2025-tibalt-bot/build/micro_ros_agent/agent/tmp/xrceagent-cache-.cmake\n'}
+[14.500848] (-) TimerEvent: {}
+[14.601758] (-) TimerEvent: {}
+[14.603434] (micro_ros_agent) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[14.621919] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[14.702011] (-) TimerEvent: {}
+[14.797253] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[14.802084] (-) TimerEvent: {}
+[14.822160] (micro_ros_agent) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[14.823111] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[14.824451] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[14.902409] (-) TimerEvent: {}
+[14.953468] (micro_ros_agent) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[14.975737] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[15.002601] (-) TimerEvent: {}
+[15.103555] (-) TimerEvent: {}
+[15.175133] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[15.201024] (micro_ros_agent) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[15.202101] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[15.203601] (-) TimerEvent: {}
+[15.204122] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[15.217343] (micro_ros_agent) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[15.303927] (-) TimerEvent: {}
+[15.401279] (micro_ros_agent) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[15.402214] (micro_ros_agent) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[15.403990] (-) TimerEvent: {}
+[15.504790] (-) TimerEvent: {}
+[15.593417] (micro_ros_agent) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[15.596452] (micro_ros_agent) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[15.605032] (-) TimerEvent: {}
+[15.632239] (micro_ros_agent) StdoutLine: {'line': b'-- Configuring done\n'}
+[15.640390] (micro_ros_agent) StdoutLine: {'line': b'-- Generating done\n'}
+[15.642685] (micro_ros_agent) StdoutLine: {'line': b'-- Build files have been written to: /home/lunabotics/2025-tibalt-bot/build/micro_ros_agent/agent/src/xrceagent-build\n'}
+[15.700102] (micro_ros_agent) StdoutLine: {'line': b"[ 37%] \x1b[34m\x1b[1mPerforming build step for 'xrceagent'\x1b[0m\n"}
+[15.705188] (-) TimerEvent: {}
+[15.798954] (micro_ros_agent) StdoutLine: {'line': b"[ 12%] \x1b[34m\x1b[1mCreating directories for 'uagent'\x1b[0m\n"}
+[15.805318] (-) TimerEvent: {}
+[15.906141] (-) TimerEvent: {}
+[15.968690] (micro_ros_agent) StdoutLine: {'line': b"[ 25%] \x1b[34m\x1b[1mNo download step for 'uagent'\x1b[0m\n"}
+[16.006385] (-) TimerEvent: {}
+[16.029130] (micro_ros_agent) StdoutLine: {'line': b"[ 37%] \x1b[34m\x1b[1mNo update step for 'uagent'\x1b[0m\n"}
+[16.088780] (micro_ros_agent) StdoutLine: {'line': b"[ 50%] \x1b[34m\x1b[1mNo patch step for 'uagent'\x1b[0m\n"}
+[16.106595] (-) TimerEvent: {}
+[16.147325] (micro_ros_agent) StdoutLine: {'line': b"[ 62%] \x1b[34m\x1b[1mPerforming configure step for 'uagent'\x1b[0m\n"}
+[16.169900] (micro_ros_agent) StdoutLine: {'line': b'loading initial cache file /home/lunabotics/2025-tibalt-bot/build/micro_ros_agent/agent/src/xrceagent-build/uagent-prefix/tmp/uagent-cache-.cmake\n'}
+[16.180780] (micro_ros_agent) StdoutLine: {'line': b"-- Setting build type to 'Release' as none was specified.\n"}
+[16.203174] (micro_ros_agent) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:153 (find_package):\n'}
+[16.203734] (micro_ros_agent) StderrLine: {'line': b'  Could not find a configuration file for package "fastcdr" that is\n'}
+[16.203916] (micro_ros_agent) StderrLine: {'line': b'  compatible with requested version "2".\n'}
+[16.204062] (micro_ros_agent) StderrLine: {'line': b'\n'}
+[16.204197] (micro_ros_agent) StderrLine: {'line': b'  The following configuration files were considered but not accepted:\n'}
+[16.204325] (micro_ros_agent) StderrLine: {'line': b'\n'}
+[16.204451] (micro_ros_agent) StderrLine: {'line': b'    /opt/ros/humble/lib/cmake/fastcdr/fastcdr-config.cmake, version: 1.0.24\n'}
+[16.204580] (micro_ros_agent) StderrLine: {'line': b'\n'}
+[16.204702] (micro_ros_agent) StderrLine: {'line': b'\n'}
+[16.204859] (micro_ros_agent) StderrLine: {'line': b'\x1b[0m\n'}
+[16.204998] (micro_ros_agent) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[16.205157] (micro_ros_agent) StdoutLine: {'line': b'See also "/home/lunabotics/2025-tibalt-bot/build/micro_ros_agent/agent/src/xrceagent-build/CMakeFiles/CMakeOutput.log".\n'}
+[16.206661] (-) TimerEvent: {}
+[16.209903] (micro_ros_agent) StderrLine: {'line': b'gmake[5]: *** [CMakeFiles/uagent.dir/build.make:93: uagent-prefix/src/uagent-stamp/uagent-configure] Error 1\n'}
+[16.210719] (micro_ros_agent) StderrLine: {'line': b'gmake[4]: *** [CMakeFiles/Makefile2:83: CMakeFiles/uagent.dir/all] Error 2\n'}
+[16.211490] (micro_ros_agent) StderrLine: {'line': b'gmake[3]: *** [Makefile:91: all] Error 2\n'}
+[16.212831] (micro_ros_agent) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/xrceagent.dir/build.make:86: agent/src/xrceagent-stamp/xrceagent-build] Error 2\n'}
+[16.213541] (micro_ros_agent) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:85: CMakeFiles/xrceagent.dir/all] Error 2\n'}
+[16.214113] (micro_ros_agent) StderrLine: {'line': b'gmake: *** [Makefile:91: all] Error 2\n'}
+[16.220267] (micro_ros_agent) CommandEnded: {'returncode': 2}
+[16.238258] (micro_ros_agent) JobEnded: {'identifier': 'micro_ros_agent', 'rc': 2}
+[16.250425] (-) EventReactorShutdown: {}
