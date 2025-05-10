@@ -166,6 +166,7 @@ class Tibalt(Node):
             Int16(self.hopper_actuator_motor),
             Int16(self.hopper_latch_servo)
         ]
+        self.publisher.publish(motor_speeds)
 
 
 def main(args=None) -> None:
