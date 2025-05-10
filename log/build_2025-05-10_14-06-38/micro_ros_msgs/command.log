@@ -1,0 +1,1 @@
+Invoking command in '/home/lunabotics/2025-tibalt-bot/build/micro_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lunabotics/2025-tibalt-bot/install/rover_control:/home/lunabotics/2025-terrence-bot/install/control_topic:/opt/ros/humble /usr/bin/cmake --build /home/lunabotics/2025-tibalt-bot/build/micro_ros_msgs -- -j6 -l6

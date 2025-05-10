@@ -8,6 +8,8 @@ setup.py
 ../../build/rover_control/rover_control.egg-info/requires.txt
 ../../build/rover_control/rover_control.egg-info/top_level.txt
 ../../build/rover_control/rover_control.egg-info/zip-safe
+launch/joystick_launch.py
+launch/topics_launch.py
 mainControlCode/__init__.py
 mainControlCode/gui.py
 mainControlCode/joystick_pipeline.py
