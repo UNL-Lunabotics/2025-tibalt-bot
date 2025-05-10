@@ -62,7 +62,7 @@ class Tibalt(Node):
 
         # This creates a Rate object that we will use to sleep the system at the specified frequency (in Hz)
         # We need this to make sure the node's don't publish data too quickly
-        self.rate = self.create_rate(
+        self.loop_rate = self.create_rate(
             frequency=10,
             clock=self.get_clock()
         )
@@ -83,7 +83,7 @@ class Tibalt(Node):
         # This Joy object gives the current axis and button input from the joystick
         self.subsciption = self.create_subscription(
             msg_type=Joy,
-            topic='joystick_data',
+            topic='joy',
             callback=self.control_callback, # This function gets called when message received
             qos_profile=QoSProfile(depth=10)
         )
@@ -139,18 +139,15 @@ class Tibalt(Node):
     # Calls functions for each section of the rover when we receive new topic data
     def control_callback(self, joystick: Joy) -> None:
         self.drivetrain_logic(
-            self=self, 
             x_axis=joystick.axes[0], 
             y_axis=joystick.axes[1]
         )
         self.excavation_logic(
-            self=self, 
             linear_actuator_extend=joystick.buttons[EXCAV_EXTEND_B],
             linear_actuator_retract=joystick.buttons[EXCAV_RETRACT_B],
             dig=joystick.buttons[EXCAV_DIG_B]
         )
         self.hopper_logic(
-            self=self,
             linear_actuator_extend=joystick.buttons[HOPPER_EXTEND_B],
             linear_actuator_retract=joystick.buttons[HOPPER_RETRACT_B],
             servo_latch=joystick.buttons[HOPPER_LATCH_B]
@@ -166,6 +163,7 @@ class Tibalt(Node):
             self.hopper_actuator_motor,
             self.hopper_latch_servo
         ]
+        print(f"Publishing: {motor_speeds.data}")
         self.publisher.publish(motor_speeds)
 
 
@@ -176,20 +174,23 @@ def main(args=None) -> None:
         rclpy.init(args=args)
         tibalt = Tibalt()
 
-        while rclpy.ok(): # Ensures that the code runs continuously until shutdown
+        # while rclpy.ok(): # Ensures that the code runs continuously until shutdown
             
             # This will allow the node to process pending callback requests once before
             # continuing to run this loop. This allows us to control the callback rate
-            rclpy.spin_once(tibalt)
+            #rclpy.spin_once(tibalt)
 
             # Sleep the node for 10 Hz without blocking the entire system
-            tibalt.loop_rate.sleep()
+            # tibalt.loop_rate.sleep()
+        rclpy.spin(tibalt)
+
     except (KeyboardInterrupt, ExternalShutdownException):
         # Shuts down if a KeyboardInterrupt or ExternalShutdownException is detected
         # i.e. if Ctrl+C is pressed or if ROS2 is shutdown externally
         
         # This command cleans up ROS2 resources to shutdown gracefully
         rclpy.shutdown()
+        print("Shutdown happened")
 
 if __name__ == '__main__':
     main()

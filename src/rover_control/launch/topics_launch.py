@@ -26,13 +26,6 @@ def generate_launch_description():
 
         Node(
             package='rover_control',
-            executable='joystick_pipeline',
-            name='joystick_pipeline',
-            output='screen'
-        ),
-
-        Node(
-            package='rover_control',
             executable='tibalt_control',
             name='tibalt_control',
             output='screen'
