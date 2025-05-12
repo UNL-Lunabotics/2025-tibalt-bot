@@ -5,3 +5,7 @@
 	path = agent/micro-ROS-Agent
 	url = https://github.com/micro-ROS/micro-ROS-Agent.git
 	branch = humble
+[submodule "src/realsense2_camera"]
+	path = src/realsense2_camera
+	url = https://github.com/IntelRealSense/realsense-ros.git
+	branch = ros2-development
