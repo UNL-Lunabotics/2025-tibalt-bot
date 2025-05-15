@@ -1,8 +1,11 @@
-[submodule "agent/micro-ROS-Agent"]
-	path = agent/micro-ROS-Agent
-	url = https://github.com/micro-ROS/micro-ROS-Agent.git
-	branch = humble
 [submodule "src/realsense2_camera"]
 	path = src/realsense2_camera
 	url = https://github.com/IntelRealSense/realsense-ros.git
 	branch = ros2-development
+[submodule "src/micro_ros_msgs"]
+	path = src/micro_ros_msgs
+	url = git@github.com:micro-ROS/micro_ros_msgs.git
+[submodule "micro_ros_agent"]
+	path = micro_ros_agent
+	url = git@github.com:micro-ROS/micro-ROS-Agent.git
+	branch = humble
