@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Example using gpiochip4 line 0 (replace with your actual line)
+# Example using gpiochip1 line 4 (PIN16)
 CHIP=gpiochip1
 LINE=4
 
