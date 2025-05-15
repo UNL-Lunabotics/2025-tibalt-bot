@@ -1,0 +1,2 @@
+Invoking command in '/home/lunabotics/2025-tibalt-bot/build/micro_ros_msgs': /usr/bin/cmake /home/lunabotics/2025-tibalt-bot/src/micro_ros_msgs -DCMAKE_INSTALL_PREFIX=/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs
+Invoked command in '/home/lunabotics/2025-tibalt-bot/build/micro_ros_msgs' returned '1': /usr/bin/cmake /home/lunabotics/2025-tibalt-bot/src/micro_ros_msgs -DCMAKE_INSTALL_PREFIX=/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs

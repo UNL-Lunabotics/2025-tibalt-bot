@@ -1,0 +1,407 @@
+[0.047s] Invoking command in '/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs -- -j6 -l6
+[0.114s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.461s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.463s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.470s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.537s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.596s] -- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[0.635s] -- Found std_msgs: 4.8.0 (/opt/ros/humble/share/std_msgs/cmake)
+[0.672s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.644s] -- Found ament_cmake_cppcheck: 0.12.12 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)
+[1.647s] -- Found ament_cmake_cpplint: 0.12.12 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)
+[1.648s] -- Found ament_cmake_uncrustify: 0.12.12 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)
+[1.650s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.370s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.319s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.380s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.437s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.437s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.437s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[3.558s] -- Found ament_cmake_flake8: 0.12.12 (/opt/ros/humble/share/ament_cmake_flake8/cmake)
+[3.561s] -- Found ament_cmake_pep257: 0.12.12 (/opt/ros/humble/share/ament_cmake_pep257/cmake)
+[3.584s] -- Configuring done
+[3.737s] -- Generating done
+[3.778s] -- Build files have been written to: /home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs
+[3.869s] gmake[2]: Warning: File '/opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl' has modification time 1742937982 s in the future
+[3.906s] gmake[2]: Warning: File '/opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl' has modification time 1742937982 s in the future
+[3.911s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.928s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.993s] [  3%] Built target ament_cmake_python_copy_realsense2_camera_msgs
+[4.994s] running egg_info
+[4.997s] writing realsense2_camera_msgs.egg-info/PKG-INFO
+[4.998s] writing dependency_links to realsense2_camera_msgs.egg-info/dependency_links.txt
+[4.998s] writing top-level names to realsense2_camera_msgs.egg-info/top_level.txt
+[5.008s] reading manifest file 'realsense2_camera_msgs.egg-info/SOURCES.txt'
+[5.008s] writing manifest file 'realsense2_camera_msgs.egg-info/SOURCES.txt'
+[5.187s] [  3%] Built target ament_cmake_python_build_realsense2_camera_msgs_egg
+[5.992s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[6.061s] [  3%] Built target realsense2_camera_msgs__cpp
+[6.063s] [35m[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_generator_c[0m
+[6.081s] gmake[2]: Warning: File '/opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl' has modification time 1742937980 s in the future
+[6.087s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[6.088s] gmake[2]: Warning: File '/opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl' has modification time 1742937980 s in the future
+[6.101s] gmake[2]: Warning: File '/opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl' has modification time 1742937980 s in the future
+[6.109s] gmake[2]: Warning: File '/opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl' has modification time 1742937980 s in the future
+[6.128s] [  4%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[6.155s] [  6%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[6.159s] [  7%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[6.191s] [  7%] [34m[1mGenerating C code for ROS interfaces[0m
+[8.014s] [35m[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_typesupport_cpp[0m
+[8.039s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[8.061s] gmake[2]: Warning: File '/opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl' has modification time 1742937978 s in the future
+[8.150s] [  7%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[8.536s] [35m[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_typesupport_introspection_cpp[0m
+[8.591s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[8.611s] gmake[2]: Warning: File '/opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl' has modification time 1742937977 s in the future
+[8.683s] [  7%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[8.721s] [35m[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[8.776s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[8.792s] gmake[2]: Warning: File '/opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl' has modification time 1742937977 s in the future
+[8.861s] [  7%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[9.737s] [  9%] [32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/realsense2_camera_msgs/msg/detail/imu_info__functions.c.o[0m
+[9.771s] [ 11%] [32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/realsense2_camera_msgs/msg/detail/extrinsics__functions.c.o[0m
+[9.791s] [ 12%] [32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/realsense2_camera_msgs/msg/detail/metadata__functions.c.o[0m
+[10.100s] [ 14%] [32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/realsense2_camera_msgs/msg/detail/rgbd__functions.c.o[0m
+[10.105s] [ 15%] [32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/realsense2_camera_msgs/msg/imu_info__type_support.cpp.o[0m
+[10.292s] [ 17%] [32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/realsense2_camera_msgs/srv/detail/device_info__functions.c.o[0m
+[10.558s] [ 19%] [32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/realsense2_camera_msgs/msg/extrinsics__type_support.cpp.o[0m
+[10.621s] [ 20%] [32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/realsense2_camera_msgs/msg/metadata__type_support.cpp.o[0m
+[10.836s] [ 22%] [32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/msg/detail/imu_info__type_support.cpp.o[0m
+[10.858s] [ 23%] [32m[1mLinking C shared library librealsense2_camera_msgs__rosidl_generator_c.so[0m
+[11.138s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[11.239s] [ 23%] Built target realsense2_camera_msgs__rosidl_generator_c
+[11.317s] [ 25%] [32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/msg/detail/extrinsics__type_support.cpp.o[0m
+[11.567s] [ 26%] [32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/realsense2_camera_msgs/msg/rgbd__type_support.cpp.o[0m
+[12.082s] [ 28%] [32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/realsense2_camera_msgs/msg/detail/dds_fastrtps/imu_info__type_support.cpp.o[0m
+[12.271s] [ 30%] [32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/realsense2_camera_msgs/srv/device_info__type_support.cpp.o[0m
+[12.339s] [ 31%] [32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/realsense2_camera_msgs/msg/detail/dds_fastrtps/extrinsics__type_support.cpp.o[0m
+[13.117s] [ 33%] [32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/msg/detail/metadata__type_support.cpp.o[0m
+[13.486s] [ 34%] [32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/msg/detail/rgbd__type_support.cpp.o[0m
+[13.681s] [ 36%] [32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/srv/detail/device_info__type_support.cpp.o[0m
+[13.708s] [ 38%] [32m[1mLinking CXX shared library librealsense2_camera_msgs__rosidl_typesupport_cpp.so[0m
+[13.955s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[14.026s] [ 38%] Built target realsense2_camera_msgs__rosidl_typesupport_cpp
+[14.046s] gmake[2]: Warning: File '/opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl' has modification time 1742937972 s in the future
+[14.092s] [ 39%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[14.311s] [ 41%] [32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/realsense2_camera_msgs/msg/detail/dds_fastrtps/metadata__type_support.cpp.o[0m
+[14.568s] [ 42%] [32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/realsense2_camera_msgs/msg/detail/dds_fastrtps/rgbd__type_support.cpp.o[0m
+[14.583s] [ 44%] [32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/realsense2_camera_msgs/srv/detail/dds_fastrtps/device_info__type_support.cpp.o[0m
+[15.166s] gmake[2]: Warning: File '/opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl' has modification time 1742937971 s in the future
+[15.191s] [ 46%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[15.391s] [ 47%] [32m[1mLinking CXX shared library librealsense2_camera_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[15.835s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[15.888s] [ 47%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_cpp
+[15.901s] gmake[2]: Warning: File '/opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl' has modification time 1742937970 s in the future
+[15.933s] [ 49%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[16.025s] [35m[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c[0m
+[16.060s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[16.073s] gmake[2]: Warning: File '/opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl' has modification time 1742937970 s in the future
+[16.098s] [ 49%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[16.149s] [ 50%] [32m[1mLinking CXX shared library librealsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[16.391s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[16.415s] [ 50%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp
+[16.514s] [35m[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_typesupport_introspection_c[0m
+[16.522s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[16.527s] gmake[2]: Warning: File '/opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl' has modification time 1742937970 s in the future
+[16.549s] [ 50%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[16.886s] [35m[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_typesupport_c[0m
+[16.893s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[16.907s] gmake[2]: Warning: File '/opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl' has modification time 1742937969 s in the future
+[16.933s] [ 50%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[17.359s] [ 52%] [32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/msg/detail/imu_info__type_support_c.cpp.o[0m
+[17.393s] [ 53%] [32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/msg/detail/extrinsics__type_support_c.cpp.o[0m
+[17.415s] [ 55%] [32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/msg/detail/metadata__type_support_c.cpp.o[0m
+[17.437s] [ 57%] [32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/msg/detail/rgbd__type_support_c.cpp.o[0m
+[18.058s] [ 58%] [32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/realsense2_camera_msgs/msg/imu_info__type_support.cpp.o[0m
+[18.292s] [ 60%] [32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/realsense2_camera_msgs/msg/detail/imu_info__type_support.c.o[0m
+[18.401s] [ 61%] [32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/realsense2_camera_msgs/msg/extrinsics__type_support.cpp.o[0m
+[18.541s] [ 63%] [32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/realsense2_camera_msgs/msg/detail/extrinsics__type_support.c.o[0m
+[18.608s] [ 65%] [32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/realsense2_camera_msgs/msg/metadata__type_support.cpp.o[0m
+[18.704s] [ 66%] [32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/realsense2_camera_msgs/msg/rgbd__type_support.cpp.o[0m
+[18.723s] [ 68%] [32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/realsense2_camera_msgs/msg/detail/metadata__type_support.c.o[0m
+[18.730s] [ 69%] [32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/srv/detail/device_info__type_support_c.cpp.o[0m
+[18.749s] [ 71%] [32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/realsense2_camera_msgs/srv/device_info__type_support.cpp.o[0m
+[18.815s] [ 73%] [32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/realsense2_camera_msgs/msg/detail/rgbd__type_support.c.o[0m
+[18.857s] [ 74%] [32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/realsense2_camera_msgs/srv/detail/device_info__type_support.c.o[0m
+[18.883s] [ 76%] [32m[1mLinking CXX shared library librealsense2_camera_msgs__rosidl_typesupport_c.so[0m
+[18.975s] [ 77%] [32m[1mLinking C shared library librealsense2_camera_msgs__rosidl_typesupport_introspection_c.so[0m
+[18.978s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[18.999s] [ 77%] Built target realsense2_camera_msgs__rosidl_typesupport_c
+[19.041s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[19.065s] [ 77%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_c
+[19.791s] [ 79%] [32m[1mLinking CXX shared library librealsense2_camera_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[19.988s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[20.012s] [ 79%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c
+[20.047s] gmake[2]: Warning: File '/opt/ros/humble/share/builtin_interfaces/msg/Duration.idl' has modification time 1742933045 s in the future
+[20.048s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[20.068s] [ 79%] Built target realsense2_camera_msgs
+[20.108s] gmake[2]: Warning: File '/opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl' has modification time 1742937966 s in the future
+[20.129s] [ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[22.433s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[22.463s] [ 80%] Built target realsense2_camera_msgs__py
+[22.499s] [35m[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_generator_py[0m
+[22.522s] gmake[2]: Warning: File '/usr/include/stdc-predef.h' has modification time 1738092883 s in the future
+[22.551s] [ 82%] [32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/realsense2_camera_msgs/msg/_imu_info_s.c.o[0m
+[22.557s] [ 84%] [32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/realsense2_camera_msgs/msg/_metadata_s.c.o[0m
+[22.575s] [ 85%] [32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/realsense2_camera_msgs/msg/_extrinsics_s.c.o[0m
+[22.584s] [ 87%] [32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/realsense2_camera_msgs/msg/_rgbd_s.c.o[0m
+[22.603s] [ 88%] [32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/realsense2_camera_msgs/srv/_device_info_s.c.o[0m
+[23.139s] [ 90%] [32m[1mLinking C shared library rosidl_generator_py/realsense2_camera_msgs/librealsense2_camera_msgs__rosidl_generator_py.so[0m
+[23.245s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[23.271s] [ 90%] Built target realsense2_camera_msgs__rosidl_generator_py
+[23.309s] [35m[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[23.317s] [35m[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[23.317s] [35m[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_typesupport_c__pyext[0m
+[23.332s] gmake[2]: Warning: File '/usr/include/stdc-predef.h' has modification time 1738092882 s in the future
+[23.334s] gmake[2]: Warning: File '/usr/include/stdc-predef.h' has modification time 1738092882 s in the future
+[23.341s] gmake[2]: Warning: File '/usr/include/stdc-predef.h' has modification time 1738092882 s in the future
+[23.358s] [ 92%] [32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[23.398s] [ 93%] [32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[23.402s] [ 95%] [32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[23.732s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+[23.848s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so[0m
+[23.850s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[23.874s] [ 98%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c__pyext
+[23.940s] [100%] [32m[1mLinking C shared library rosidl_generator_py/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so[0m
+[23.954s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[23.975s] [100%] Built target realsense2_camera_msgs__rosidl_typesupport_c__pyext
+[24.055s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[24.082s] [100%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_c__pyext
+[24.130s] Invoked command in '/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs -- -j6 -l6
+[24.131s] Invoking command in '/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs
+[24.156s] -- Install configuration: ""
+[24.157s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/ament_index/resource_index/rosidl_interfaces/realsense2_camera_msgs
+[24.159s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs
+[24.160s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg
+[24.161s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rosidl_generator_c__visibility_control.h
+[24.161s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rgbd.h
+[24.162s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/imu_info.h
+[24.163s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/metadata.h
+[24.163s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/extrinsics.h
+[24.165s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail
+[24.166s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__functions.h
+[24.167s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__functions.h
+[24.167s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__struct.h
+[24.167s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__type_support.h
+[24.168s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__type_support.h
+[24.170s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__functions.c
+[24.170s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__type_support.h
+[24.170s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__type_support.h
+[24.174s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__functions.c
+[24.174s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__functions.h
+[24.174s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__struct.h
+[24.174s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__functions.c
+[24.175s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__struct.h
+[24.175s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__functions.c
+[24.175s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__functions.h
+[24.175s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__struct.h
+[24.175s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv
+[24.175s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail
+[24.176s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__functions.c
+[24.176s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__type_support.h
+[24.183s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__functions.h
+[24.184s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__struct.h
+[24.184s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/device_info.h
+[24.185s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/library_path.sh
+[24.185s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/library_path.dsv
+[24.185s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_generator_c.so
+[24.185s] -- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_generator_c.so" to ""
+[24.185s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs
+[24.186s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg
+[24.186s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail
+[24.186s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_fastrtps_c.h
+[24.186s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_fastrtps_c.h
+[24.186s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_fastrtps_c.h
+[24.186s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__rosidl_typesupport_fastrtps_c.h
+[24.187s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[24.187s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv
+[24.187s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail
+[24.187s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_fastrtps_c.h
+[24.187s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_fastrtps_c.so
+[24.188s] -- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[24.188s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs
+[24.188s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg
+[24.188s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail
+[24.188s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_introspection_c.h
+[24.189s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__type_support.c
+[24.189s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__type_support.c
+[24.189s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__type_support.c
+[24.189s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__type_support.c
+[24.189s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_introspection_c.h
+[24.190s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__rosidl_typesupport_introspection_c.h
+[24.190s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_introspection_c.h
+[24.190s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[24.190s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv
+[24.191s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail
+[24.192s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__type_support.c
+[24.192s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_introspection_c.h
+[24.193s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_introspection_c.so
+[24.193s] -- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_introspection_c.so" to ""
+[24.193s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_c.so
+[24.193s] -- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_c.so" to ""
+[24.193s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs
+[24.195s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg
+[24.195s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/extrinsics.hpp
+[24.195s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/imu_info.hpp
+[24.204s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[24.205s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rgbd.hpp
+[24.205s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail
+[24.205s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__type_support.hpp
+[24.205s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__struct.hpp
+[24.206s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__struct.hpp
+[24.206s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__builder.hpp
+[24.206s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__type_support.hpp
+[24.206s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__type_support.hpp
+[24.206s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__builder.hpp
+[24.207s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__traits.hpp
+[24.207s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__traits.hpp
+[24.207s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__struct.hpp
+[24.207s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__struct.hpp
+[24.208s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__builder.hpp
+[24.208s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__builder.hpp
+[24.208s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__type_support.hpp
+[24.208s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__traits.hpp
+[24.208s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__traits.hpp
+[24.209s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/metadata.hpp
+[24.209s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv
+[24.209s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail
+[24.209s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__builder.hpp
+[24.209s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__type_support.hpp
+[24.209s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__traits.hpp
+[24.210s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__struct.hpp
+[24.210s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/device_info.hpp
+[24.210s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs
+[24.210s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg
+[24.210s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail
+[24.221s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/dds_fastrtps
+[24.221s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_fastrtps_cpp.hpp
+[24.221s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_fastrtps_cpp.hpp
+[24.222s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__rosidl_typesupport_fastrtps_cpp.hpp
+[24.222s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_fastrtps_cpp.hpp
+[24.222s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[24.222s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv
+[24.222s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail
+[24.222s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/dds_fastrtps
+[24.223s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_fastrtps_cpp.hpp
+[24.223s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.so
+[24.223s] -- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[24.223s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs
+[24.223s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg
+[24.223s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail
+[24.224s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_introspection_cpp.hpp
+[24.224s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_introspection_cpp.hpp
+[24.224s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__rosidl_typesupport_introspection_cpp.hpp
+[24.224s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__type_support.cpp
+[24.225s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__type_support.cpp
+[24.225s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__type_support.cpp
+[24.225s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__type_support.cpp
+[24.225s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_introspection_cpp.hpp
+[24.225s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv
+[24.226s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail
+[24.226s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__type_support.cpp
+[24.226s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_introspection_cpp.hpp
+[24.226s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_introspection_cpp.so
+[24.226s] -- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[24.227s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_cpp.so
+[24.227s] -- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_cpp.so" to ""
+[24.227s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/pythonpath.sh
+[24.227s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/pythonpath.dsv
+[24.234s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs-4.55.1-py3.10.egg-info
+[24.235s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs-4.55.1-py3.10.egg-info/top_level.txt
+[24.235s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs-4.55.1-py3.10.egg-info/SOURCES.txt
+[24.235s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs-4.55.1-py3.10.egg-info/PKG-INFO
+[24.235s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs-4.55.1-py3.10.egg-info/dependency_links.txt
+[24.235s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs
+[24.236s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[24.236s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[24.236s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/librealsense2_camera_msgs__rosidl_generator_py.so
+[24.236s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[24.236s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[24.236s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[24.237s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg
+[24.237s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_rgbd_s.c
+[24.237s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_rgbd.py
+[24.237s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_extrinsics_s.c
+[24.237s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_extrinsics.py
+[24.238s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_imu_info.py
+[24.238s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_metadata_s.c
+[24.238s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_metadata.py
+[24.238s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/__init__.py
+[24.239s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_imu_info_s.c
+[24.239s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv
+[24.239s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/_device_info.py
+[24.241s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/_device_info_s.c
+[24.242s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/__init__.py
+[24.242s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/__init__.py
+[24.243s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_c.c
+[24.388s] Listing '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs'...
+[24.388s] Compiling '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/__init__.py'...
+[24.388s] Listing '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg'...
+[24.388s] Compiling '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/__init__.py'...
+[24.389s] Compiling '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_extrinsics.py'...
+[24.389s] Compiling '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_imu_info.py'...
+[24.389s] Compiling '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_metadata.py'...
+[24.389s] Compiling '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_rgbd.py'...
+[24.389s] Listing '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv'...
+[24.389s] Compiling '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/__init__.py'...
+[24.390s] Compiling '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/_device_info.py'...
+[24.415s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[24.416s] -- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""
+[24.416s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[24.416s] -- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""
+[24.417s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[24.417s] -- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""
+[24.418s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_generator_py.so
+[24.419s] -- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_generator_py.so" to ""
+[24.420s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/IMUInfo.idl
+[24.420s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Extrinsics.idl
+[24.420s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Metadata.idl
+[24.421s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/RGBD.idl
+[24.421s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo.idl
+[24.421s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/IMUInfo.msg
+[24.421s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Extrinsics.msg
+[24.422s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Metadata.msg
+[24.422s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/RGBD.msg
+[24.422s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo.srv
+[24.422s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo_Request.msg
+[24.424s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo_Response.msg
+[24.425s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/ament_index/resource_index/package_run_dependencies/realsense2_camera_msgs
+[24.425s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/ament_index/resource_index/parent_prefix_path/realsense2_camera_msgs
+[24.425s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/ament_prefix_path.sh
+[24.426s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/ament_prefix_path.dsv
+[24.426s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/path.sh
+[24.426s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/path.dsv
+[24.427s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.bash
+[24.427s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.sh
+[24.427s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.zsh
+[24.427s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.dsv
+[24.428s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.dsv
+[24.428s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/ament_index/resource_index/packages/realsense2_camera_msgs
+[24.428s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_cExport.cmake
+[24.429s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_cExport-noconfig.cmake
+[24.429s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[24.429s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[24.429s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cExport.cmake
+[24.429s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[24.430s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cExport.cmake
+[24.430s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[24.430s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_cppExport.cmake
+[24.430s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[24.430s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[24.430s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[24.430s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[24.431s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cppExport.cmake
+[24.431s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[24.431s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_pyExport.cmake
+[24.431s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_pyExport-noconfig.cmake
+[24.431s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/rosidl_cmake-extras.cmake
+[24.431s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[24.432s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[24.432s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[24.432s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[24.432s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[24.436s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[24.437s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgsConfig.cmake
+[24.437s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgsConfig-version.cmake
+[24.437s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.xml
+[24.455s] Invoked command in '/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs

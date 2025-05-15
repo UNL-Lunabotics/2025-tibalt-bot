@@ -57,7 +57,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera
+CMAKE_SOURCE_DIR = /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/lunabotics/2025-tibalt-bot/build/realsense2_camera
@@ -286,54 +286,6 @@ rclcpp_components/node_main_realsense2_camera_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/realsense2_camera_node.dir/build.make CMakeFiles/realsense2_camera_node.dir/rclcpp_components/node_main_realsense2_camera_node.cpp.s
 .PHONY : rclcpp_components/node_main_realsense2_camera_node.cpp.s
 
-src/actions.o: src/actions.cpp.o
-.PHONY : src/actions.o
-
-# target to build an object file
-src/actions.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/realsense2_camera.dir/build.make CMakeFiles/realsense2_camera.dir/src/actions.cpp.o
-.PHONY : src/actions.cpp.o
-
-src/actions.i: src/actions.cpp.i
-.PHONY : src/actions.i
-
-# target to preprocess a source file
-src/actions.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/realsense2_camera.dir/build.make CMakeFiles/realsense2_camera.dir/src/actions.cpp.i
-.PHONY : src/actions.cpp.i
-
-src/actions.s: src/actions.cpp.s
-.PHONY : src/actions.s
-
-# target to generate assembly for a file
-src/actions.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/realsense2_camera.dir/build.make CMakeFiles/realsense2_camera.dir/src/actions.cpp.s
-.PHONY : src/actions.cpp.s
-
-src/align_depth_filter.o: src/align_depth_filter.cpp.o
-.PHONY : src/align_depth_filter.o
-
-# target to build an object file
-src/align_depth_filter.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/realsense2_camera.dir/build.make CMakeFiles/realsense2_camera.dir/src/align_depth_filter.cpp.o
-.PHONY : src/align_depth_filter.cpp.o
-
-src/align_depth_filter.i: src/align_depth_filter.cpp.i
-.PHONY : src/align_depth_filter.i
-
-# target to preprocess a source file
-src/align_depth_filter.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/realsense2_camera.dir/build.make CMakeFiles/realsense2_camera.dir/src/align_depth_filter.cpp.i
-.PHONY : src/align_depth_filter.cpp.i
-
-src/align_depth_filter.s: src/align_depth_filter.cpp.s
-.PHONY : src/align_depth_filter.s
-
-# target to generate assembly for a file
-src/align_depth_filter.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/realsense2_camera.dir/build.make CMakeFiles/realsense2_camera.dir/src/align_depth_filter.cpp.s
-.PHONY : src/align_depth_filter.cpp.s
-
 src/base_realsense_node.o: src/base_realsense_node.cpp.o
 .PHONY : src/base_realsense_node.o
 
@@ -453,30 +405,6 @@ src/parameters.s: src/parameters.cpp.s
 src/parameters.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/realsense2_camera.dir/build.make CMakeFiles/realsense2_camera.dir/src/parameters.cpp.s
 .PHONY : src/parameters.cpp.s
-
-src/pointcloud_filter.o: src/pointcloud_filter.cpp.o
-.PHONY : src/pointcloud_filter.o
-
-# target to build an object file
-src/pointcloud_filter.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/realsense2_camera.dir/build.make CMakeFiles/realsense2_camera.dir/src/pointcloud_filter.cpp.o
-.PHONY : src/pointcloud_filter.cpp.o
-
-src/pointcloud_filter.i: src/pointcloud_filter.cpp.i
-.PHONY : src/pointcloud_filter.i
-
-# target to preprocess a source file
-src/pointcloud_filter.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/realsense2_camera.dir/build.make CMakeFiles/realsense2_camera.dir/src/pointcloud_filter.cpp.i
-.PHONY : src/pointcloud_filter.cpp.i
-
-src/pointcloud_filter.s: src/pointcloud_filter.cpp.s
-.PHONY : src/pointcloud_filter.s
-
-# target to generate assembly for a file
-src/pointcloud_filter.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/realsense2_camera.dir/build.make CMakeFiles/realsense2_camera.dir/src/pointcloud_filter.cpp.s
-.PHONY : src/pointcloud_filter.cpp.s
 
 src/profile_manager.o: src/profile_manager.cpp.o
 .PHONY : src/profile_manager.o
@@ -717,12 +645,6 @@ help:
 	@echo "... rclcpp_components/node_main_realsense2_camera_node.o"
 	@echo "... rclcpp_components/node_main_realsense2_camera_node.i"
 	@echo "... rclcpp_components/node_main_realsense2_camera_node.s"
-	@echo "... src/actions.o"
-	@echo "... src/actions.i"
-	@echo "... src/actions.s"
-	@echo "... src/align_depth_filter.o"
-	@echo "... src/align_depth_filter.i"
-	@echo "... src/align_depth_filter.s"
 	@echo "... src/base_realsense_node.o"
 	@echo "... src/base_realsense_node.i"
 	@echo "... src/base_realsense_node.s"
@@ -738,9 +660,6 @@ help:
 	@echo "... src/parameters.o"
 	@echo "... src/parameters.i"
 	@echo "... src/parameters.s"
-	@echo "... src/pointcloud_filter.o"
-	@echo "... src/pointcloud_filter.i"
-	@echo "... src/pointcloud_filter.s"
 	@echo "... src/profile_manager.o"
 	@echo "... src/profile_manager.i"
 	@echo "... src/profile_manager.s"

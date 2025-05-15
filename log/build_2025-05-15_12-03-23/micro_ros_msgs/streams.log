@@ -1,0 +1,295 @@
+[0.052s] Invoking command in '/home/lunabotics/2025-tibalt-bot/build/micro_ros_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lunabotics/2025-tibalt-bot/src/micro_ros_msgs -DCMAKE_INSTALL_PREFIX=/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs
+[0.840s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.841s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.842s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.843s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.860s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.024s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.140s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.879s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.372s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.019s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.080s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[3.085s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.169s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[3.169s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.169s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.170s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[3.222s] -- Found PythonExtra: .so  
+[3.325s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.332s] -- Added test 'lint_cmake' to check CMake code style
+[3.338s] -- Added test 'xmllint' to check XML markup files
+[3.359s] -- Configuring done
+[3.443s] -- Generating done
+[3.467s] -- Build files have been written to: /home/lunabotics/2025-tibalt-bot/build/micro_ros_msgs
+[3.492s] Invoked command in '/home/lunabotics/2025-tibalt-bot/build/micro_ros_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lunabotics/2025-tibalt-bot/src/micro_ros_msgs -DCMAKE_INSTALL_PREFIX=/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs
+[3.497s] Invoking command in '/home/lunabotics/2025-tibalt-bot/build/micro_ros_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lunabotics/2025-tibalt-bot/build/micro_ros_msgs -- -j6 -l6
+[3.564s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.915s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[3.920s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.926s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.999s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.055s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.758s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[5.238s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.905s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.979s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[6.047s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[6.048s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[6.048s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[6.082s] -- Added test 'copyright' to check source files copyright and LICENSE
+[6.087s] -- Added test 'lint_cmake' to check CMake code style
+[6.089s] -- Added test 'xmllint' to check XML markup files
+[6.098s] -- Configuring done
+[6.192s] -- Generating done
+[6.221s] -- Build files have been written to: /home/lunabotics/2025-tibalt-bot/build/micro_ros_msgs
+[6.368s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[6.391s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[6.506s] [  4%] Built target ament_cmake_python_copy_micro_ros_msgs
+[7.278s] running egg_info
+[7.281s] creating micro_ros_msgs.egg-info
+[7.282s] writing micro_ros_msgs.egg-info/PKG-INFO
+[7.284s] writing dependency_links to micro_ros_msgs.egg-info/dependency_links.txt
+[7.286s] writing top-level names to micro_ros_msgs.egg-info/top_level.txt
+[7.289s] writing manifest file 'micro_ros_msgs.egg-info/SOURCES.txt'
+[7.298s] reading manifest file 'micro_ros_msgs.egg-info/SOURCES.txt'
+[7.302s] writing manifest file 'micro_ros_msgs.egg-info/SOURCES.txt'
+[7.522s] [  4%] Built target ament_cmake_python_build_micro_ros_msgs_egg
+[7.976s] [  4%] Built target micro_ros_msgs__cpp
+[8.025s] [  6%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/micro_ros_msgs/msg/detail/node__functions.c.o[0m
+[8.032s] [  8%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/micro_ros_msgs/msg/detail/graph__functions.c.o[0m
+[8.041s] [ 10%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[8.046s] [ 12%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/micro_ros_msgs/msg/detail/entity__functions.c.o[0m
+[8.053s] [ 14%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[8.062s] [ 17%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[8.365s] [ 19%] [32m[1mLinking C shared library libmicro_ros_msgs__rosidl_generator_c.so[0m
+[8.677s] [ 19%] Built target micro_ros_msgs__rosidl_generator_c
+[8.781s] [ 21%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[8.804s] [ 23%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[8.808s] [ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[9.918s] [ 27%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/micro_ros_msgs/msg/graph__type_support.cpp.o[0m
+[10.252s] [ 29%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/micro_ros_msgs/msg/detail/graph__type_support.cpp.o[0m
+[10.344s] [ 31%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/micro_ros_msgs/msg/detail/dds_fastrtps/graph__type_support.cpp.o[0m
+[10.806s] [ 34%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/micro_ros_msgs/msg/detail/graph__type_support.c.o[0m
+[10.933s] [ 36%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/micro_ros_msgs/msg/graph__type_support.cpp.o[0m
+[11.109s] [ 38%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/micro_ros_msgs/msg/detail/graph__type_support_c.cpp.o[0m
+[11.144s] [ 40%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/micro_ros_msgs/msg/detail/node__type_support.c.o[0m
+[11.174s] [ 42%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/micro_ros_msgs/msg/node__type_support.cpp.o[0m
+[11.389s] [ 44%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/micro_ros_msgs/msg/node__type_support.cpp.o[0m
+[11.443s] [ 46%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/micro_ros_msgs/msg/entity__type_support.cpp.o[0m
+[11.527s] [ 48%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/micro_ros_msgs/msg/detail/entity__type_support.c.o[0m
+[11.699s] [ 51%] [32m[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_c.so[0m
+[11.807s] [ 53%] [32m[1mLinking C shared library libmicro_ros_msgs__rosidl_typesupport_introspection_c.so[0m
+[12.010s] [ 53%] Built target micro_ros_msgs__rosidl_typesupport_c
+[12.066s] [ 53%] Built target micro_ros_msgs__rosidl_typesupport_introspection_c
+[12.105s] [ 55%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/micro_ros_msgs/msg/entity__type_support.cpp.o[0m
+[12.165s] [ 57%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/micro_ros_msgs/msg/detail/dds_fastrtps/node__type_support.cpp.o[0m
+[13.143s] [ 59%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/micro_ros_msgs/msg/detail/node__type_support_c.cpp.o[0m
+[13.360s] [ 61%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/micro_ros_msgs/msg/detail/dds_fastrtps/entity__type_support.cpp.o[0m
+[13.435s] [ 63%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/micro_ros_msgs/msg/detail/node__type_support.cpp.o[0m
+[13.937s] [ 65%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/micro_ros_msgs/msg/detail/entity__type_support.cpp.o[0m
+[14.013s] [ 68%] [32m[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_cpp.so[0m
+[14.309s] [ 68%] Built target micro_ros_msgs__rosidl_typesupport_cpp
+[14.404s] [ 70%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/micro_ros_msgs/msg/detail/entity__type_support_c.cpp.o[0m
+[16.450s] [ 72%] [32m[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[16.524s] [ 74%] [32m[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[16.915s] [ 76%] [32m[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[16.961s] [ 76%] Built target micro_ros_msgs__rosidl_typesupport_fastrtps_c
+[16.992s] [ 76%] Built target micro_ros_msgs__rosidl_typesupport_fastrtps_cpp
+[17.256s] [ 76%] Built target micro_ros_msgs__rosidl_typesupport_introspection_cpp
+[17.297s] gmake[2]: Warning: File '/home/lunabotics/2025-tibalt-bot/src/micro_ros_msgs/msg/Graph.msg' has modification time 9457 s in the future
+[17.297s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[17.321s] [ 76%] Built target micro_ros_msgs
+[17.396s] [ 78%] [34m[1mGenerating Python code for ROS interfaces[0m
+[18.712s] [ 78%] Built target micro_ros_msgs__py
+[18.765s] [ 85%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/micro_ros_msgs/msg/_entity_s.c.o[0m
+[18.765s] [ 85%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/micro_ros_msgs/msg/_node_s.c.o[0m
+[18.766s] [ 85%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/micro_ros_msgs/msg/_graph_s.c.o[0m
+[19.106s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/micro_ros_msgs/libmicro_ros_msgs__rosidl_generator_py.so[0m
+[19.207s] [ 87%] Built target micro_ros_msgs__rosidl_generator_py
+[19.260s] [ 93%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[19.261s] [ 93%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[19.261s] [ 93%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[19.515s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+[19.515s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so[0m
+[19.526s] [100%] [32m[1mLinking C shared library rosidl_generator_py/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so[0m
+[19.602s] [100%] Built target micro_ros_msgs__rosidl_typesupport_fastrtps_c__pyext
+[19.603s] [100%] Built target micro_ros_msgs__rosidl_typesupport_c__pyext
+[19.622s] [100%] Built target micro_ros_msgs__rosidl_typesupport_introspection_c__pyext
+[19.657s] Invoked command in '/home/lunabotics/2025-tibalt-bot/build/micro_ros_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lunabotics/2025-tibalt-bot/build/micro_ros_msgs -- -j6 -l6
+[19.690s] Invoking command in '/home/lunabotics/2025-tibalt-bot/build/micro_ros_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lunabotics/2025-tibalt-bot/build/micro_ros_msgs
+[19.711s] -- Install configuration: ""
+[19.711s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/ament_index/resource_index/rosidl_interfaces/micro_ros_msgs
+[19.711s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs
+[19.712s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg
+[19.712s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/rosidl_generator_c__visibility_control.h
+[19.712s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/entity.h
+[19.712s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail
+[19.713s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__functions.h
+[19.713s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__struct.h
+[19.713s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__functions.c
+[19.713s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__functions.c
+[19.714s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__type_support.h
+[19.714s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__type_support.h
+[19.714s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__struct.h
+[19.714s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__functions.h
+[19.715s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__functions.c
+[19.715s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__type_support.h
+[19.715s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__functions.h
+[19.715s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__struct.h
+[19.716s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/node.h
+[19.716s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/graph.h
+[19.716s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/environment/library_path.sh
+[19.717s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/environment/library_path.dsv
+[19.717s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_generator_c.so
+[19.718s] -- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_generator_c.so" to ""
+[19.719s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs
+[19.719s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg
+[19.719s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail
+[19.719s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__rosidl_typesupport_fastrtps_c.h
+[19.719s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__rosidl_typesupport_fastrtps_c.h
+[19.719s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__rosidl_typesupport_fastrtps_c.h
+[19.720s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[19.720s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_fastrtps_c.so
+[19.721s] -- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[19.721s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs
+[19.721s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg
+[19.721s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail
+[19.721s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__type_support.c
+[19.722s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__rosidl_typesupport_introspection_c.h
+[19.722s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__type_support.c
+[19.722s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__type_support.c
+[19.722s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__rosidl_typesupport_introspection_c.h
+[19.722s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__rosidl_typesupport_introspection_c.h
+[19.722s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[19.723s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_introspection_c.so
+[19.724s] -- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_introspection_c.so" to ""
+[19.724s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_c.so
+[19.725s] -- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_c.so" to ""
+[19.725s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs
+[19.725s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg
+[19.725s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/entity.hpp
+[19.725s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/graph.hpp
+[19.726s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/node.hpp
+[19.726s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[19.726s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail
+[19.726s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__struct.hpp
+[19.726s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__struct.hpp
+[19.727s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__traits.hpp
+[19.727s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__type_support.hpp
+[19.727s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__traits.hpp
+[19.727s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__traits.hpp
+[19.728s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__builder.hpp
+[19.728s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__builder.hpp
+[19.728s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__type_support.hpp
+[19.729s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__type_support.hpp
+[19.729s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__builder.hpp
+[19.729s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__struct.hpp
+[19.729s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs
+[19.729s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg
+[19.730s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail
+[19.730s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/dds_fastrtps
+[19.730s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__rosidl_typesupport_fastrtps_cpp.hpp
+[19.730s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__rosidl_typesupport_fastrtps_cpp.hpp
+[19.730s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__rosidl_typesupport_fastrtps_cpp.hpp
+[19.731s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[19.731s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_fastrtps_cpp.so
+[19.732s] -- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[19.732s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs
+[19.732s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg
+[19.733s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail
+[19.733s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__rosidl_typesupport_introspection_cpp.hpp
+[19.733s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__type_support.cpp
+[19.733s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__type_support.cpp
+[19.733s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__rosidl_typesupport_introspection_cpp.hpp
+[19.734s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__rosidl_typesupport_introspection_cpp.hpp
+[19.734s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__type_support.cpp
+[19.734s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_introspection_cpp.so
+[19.735s] -- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[19.736s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_cpp.so
+[19.736s] -- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_cpp.so" to ""
+[19.736s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/environment/pythonpath.sh
+[19.737s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/environment/pythonpath.dsv
+[19.737s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs-5.0.2-py3.10.egg-info
+[19.737s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs-5.0.2-py3.10.egg-info/top_level.txt
+[19.738s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs-5.0.2-py3.10.egg-info/SOURCES.txt
+[19.738s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs-5.0.2-py3.10.egg-info/PKG-INFO
+[19.738s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs-5.0.2-py3.10.egg-info/dependency_links.txt
+[19.738s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs
+[19.739s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[19.739s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/libmicro_ros_msgs__rosidl_generator_py.so
+[19.739s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[19.740s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[19.740s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg
+[19.740s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_entity_s.c
+[19.740s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_node.py
+[19.740s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_node_s.c
+[19.741s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_graph.py
+[19.741s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_entity.py
+[19.741s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_graph_s.c
+[19.742s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/__init__.py
+[19.743s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_c.c
+[19.743s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[19.743s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[19.743s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/__init__.py
+[19.831s] Listing '/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs'...
+[19.831s] Compiling '/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/__init__.py'...
+[19.831s] Listing '/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg'...
+[19.832s] Compiling '/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/__init__.py'...
+[19.832s] Compiling '/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_entity.py'...
+[19.832s] Compiling '/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_graph.py'...
+[19.832s] Compiling '/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_node.py'...
+[19.850s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[19.851s] -- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""
+[19.851s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[19.851s] -- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""
+[19.852s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[19.852s] -- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""
+[19.852s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_generator_py.so
+[19.853s] -- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_generator_py.so" to ""
+[19.853s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/msg/Graph.idl
+[19.854s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/msg/Node.idl
+[19.854s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/msg/Entity.idl
+[19.854s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/msg/Graph.msg
+[19.855s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/msg/Node.msg
+[19.855s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/msg/Entity.msg
+[19.856s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/ament_index/resource_index/package_run_dependencies/micro_ros_msgs
+[19.857s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/ament_index/resource_index/parent_prefix_path/micro_ros_msgs
+[19.857s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/environment/ament_prefix_path.sh
+[19.858s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/environment/ament_prefix_path.dsv
+[19.858s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/environment/path.sh
+[19.858s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/environment/path.dsv
+[19.858s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/local_setup.bash
+[19.858s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/local_setup.sh
+[19.858s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/local_setup.zsh
+[19.859s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/local_setup.dsv
+[19.859s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/package.dsv
+[19.859s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/ament_index/resource_index/packages/micro_ros_msgs
+[19.860s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_generator_cExport.cmake
+[19.860s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_generator_cExport-noconfig.cmake
+[19.861s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[19.861s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[19.861s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_introspection_cExport.cmake
+[19.862s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[19.862s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_cExport.cmake
+[19.862s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[19.863s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_generator_cppExport.cmake
+[19.863s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[19.863s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[19.864s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[19.864s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[19.864s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_cppExport.cmake
+[19.865s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[19.865s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_generator_pyExport.cmake
+[19.866s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_generator_pyExport-noconfig.cmake
+[19.866s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/rosidl_cmake-extras.cmake
+[19.867s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[19.867s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[19.867s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[19.868s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[19.868s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[19.868s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[19.869s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgsConfig.cmake
+[19.869s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgsConfig-version.cmake
+[19.869s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/share/micro_ros_msgs/package.xml
+[19.880s] Invoked command in '/home/lunabotics/2025-tibalt-bot/build/micro_ros_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lunabotics/2025-tibalt-bot/build/micro_ros_msgs

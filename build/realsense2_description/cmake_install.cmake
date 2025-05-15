@@ -1,4 +1,4 @@
-# Install script for directory: /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_description
+# Install script for directory: /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_description
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,10 +44,10 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_description" TYPE DIRECTORY FILES
-    "/home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_description/launch"
-    "/home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_description/meshes"
-    "/home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_description/rviz"
-    "/home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_description/urdf"
+    "/home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_description/launch"
+    "/home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_description/meshes"
+    "/home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_description/rviz"
+    "/home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_description/urdf"
     )
 endif()
 
@@ -107,7 +107,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_description" TYPE FILE FILES "/home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_description/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_description" TYPE FILE FILES "/home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_description/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

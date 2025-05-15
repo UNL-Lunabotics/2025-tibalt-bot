@@ -1,7 +1,7 @@
 CMakeFiles/realsense2_camera.dir/src/ros_sensor.cpp.o: \
- /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/ros_sensor.cpp \
+ /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/ros_sensor.cpp \
  /usr/include/stdc-predef.h \
- /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/include/ros_sensor.h \
+ /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/ros_sensor.h \
  /usr/include/librealsense2/rs.hpp /usr/include/librealsense2/rs.h \
  /usr/include/librealsense2/rsutil.h /usr/include/c++/11/stdlib.h \
  /usr/include/c++/11/cstdlib \
@@ -260,8 +260,7 @@ CMakeFiles/realsense2_camera.dir/src/ros_sensor.cpp.o: \
  /usr/include/librealsense2/hpp/rs_pipeline.hpp \
  /usr/include/librealsense2/hpp/rs_context.hpp \
  /usr/include/librealsense2/rsutil.h \
- /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/include/constants.h \
- /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/include/ros_node_base.h \
+ /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/constants.h \
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/11/csignal /usr/include/signal.h \
  /usr/include/aarch64-linux-gnu/bits/signum-generic.h \
@@ -687,13 +686,13 @@ CMakeFiles/realsense2_camera.dir/src/ros_sensor.cpp.o: \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
- /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/include/ros_utils.h \
- /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/include/sensor_params.h \
- /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/include/dynamic_params.h \
+ /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/ros_utils.h \
+ /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/sensor_params.h \
+ /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/dynamic_params.h \
  /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_deque.h \
  /usr/include/c++/11/bits/deque.tcc \
- /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/include/ros_param_backend.h \
- /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/include/profile_manager.h \
+ /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/ros_param_backend.h \
+ /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/profile_manager.h \
  /opt/ros/humble/include/diagnostic_updater/diagnostic_updater.hpp \
  /opt/ros/humble/include/diagnostic_msgs/diagnostic_msgs/msg/diagnostic_array.hpp \
  /opt/ros/humble/include/diagnostic_msgs/diagnostic_msgs/msg/detail/diagnostic_array__struct.hpp \

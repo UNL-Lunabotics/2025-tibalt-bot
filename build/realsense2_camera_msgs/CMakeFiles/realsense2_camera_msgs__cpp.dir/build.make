@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera_msgs
+CMAKE_SOURCE_DIR = /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera_msgs
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs
@@ -91,21 +91,6 @@ CMakeFiles/realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_m
 CMakeFiles/realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/device_info__struct.hpp
 CMakeFiles/realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/device_info__traits.hpp
 CMakeFiles/realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/device_info__type_support.hpp
-CMakeFiles/realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/srv/calib_config_read.hpp
-CMakeFiles/realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/calib_config_read__builder.hpp
-CMakeFiles/realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/calib_config_read__struct.hpp
-CMakeFiles/realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/calib_config_read__traits.hpp
-CMakeFiles/realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/calib_config_read__type_support.hpp
-CMakeFiles/realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/srv/calib_config_write.hpp
-CMakeFiles/realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/calib_config_write__builder.hpp
-CMakeFiles/realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/calib_config_write__struct.hpp
-CMakeFiles/realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/calib_config_write__traits.hpp
-CMakeFiles/realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/calib_config_write__type_support.hpp
-CMakeFiles/realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/action/triggered_calibration.hpp
-CMakeFiles/realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/action/detail/triggered_calibration__builder.hpp
-CMakeFiles/realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/action/detail/triggered_calibration__struct.hpp
-CMakeFiles/realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/action/detail/triggered_calibration__traits.hpp
-CMakeFiles/realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/action/detail/triggered_calibration__type_support.hpp
 CMakeFiles/realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
 
 rosidl_generator_cpp/realsense2_camera_msgs/msg/imu_info.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -128,9 +113,6 @@ rosidl_generator_cpp/realsense2_camera_msgs/msg/imu_info.hpp: rosidl_adapter/rea
 rosidl_generator_cpp/realsense2_camera_msgs/msg/imu_info.hpp: rosidl_adapter/realsense2_camera_msgs/msg/Metadata.idl
 rosidl_generator_cpp/realsense2_camera_msgs/msg/imu_info.hpp: rosidl_adapter/realsense2_camera_msgs/msg/RGBD.idl
 rosidl_generator_cpp/realsense2_camera_msgs/msg/imu_info.hpp: rosidl_adapter/realsense2_camera_msgs/srv/DeviceInfo.idl
-rosidl_generator_cpp/realsense2_camera_msgs/msg/imu_info.hpp: rosidl_adapter/realsense2_camera_msgs/srv/CalibConfigRead.idl
-rosidl_generator_cpp/realsense2_camera_msgs/msg/imu_info.hpp: rosidl_adapter/realsense2_camera_msgs/srv/CalibConfigWrite.idl
-rosidl_generator_cpp/realsense2_camera_msgs/msg/imu_info.hpp: rosidl_adapter/realsense2_camera_msgs/action/TriggeredCalibration.idl
 rosidl_generator_cpp/realsense2_camera_msgs/msg/imu_info.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_cpp/realsense2_camera_msgs/msg/imu_info.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 rosidl_generator_cpp/realsense2_camera_msgs/msg/imu_info.hpp: /opt/ros/humble/share/std_msgs/msg/Bool.idl
@@ -221,11 +203,6 @@ rosidl_generator_cpp/realsense2_camera_msgs/msg/imu_info.hpp: /opt/ros/humble/sh
 rosidl_generator_cpp/realsense2_camera_msgs/msg/imu_info.hpp: /opt/ros/humble/share/geometry_msgs/msg/VelocityStamped.idl
 rosidl_generator_cpp/realsense2_camera_msgs/msg/imu_info.hpp: /opt/ros/humble/share/geometry_msgs/msg/Wrench.idl
 rosidl_generator_cpp/realsense2_camera_msgs/msg/imu_info.hpp: /opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl
-rosidl_generator_cpp/realsense2_camera_msgs/msg/imu_info.hpp: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
-rosidl_generator_cpp/realsense2_camera_msgs/msg/imu_info.hpp: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
-rosidl_generator_cpp/realsense2_camera_msgs/msg/imu_info.hpp: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
-rosidl_generator_cpp/realsense2_camera_msgs/msg/imu_info.hpp: /opt/ros/humble/share/action_msgs/srv/CancelGoal.idl
-rosidl_generator_cpp/realsense2_camera_msgs/msg/imu_info.hpp: /opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs/rosidl_generator_cpp__arguments.json
 
@@ -301,57 +278,7 @@ rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/device_info__traits.hpp: 
 rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/device_info__type_support.hpp: rosidl_generator_cpp/realsense2_camera_msgs/msg/imu_info.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/device_info__type_support.hpp
 
-rosidl_generator_cpp/realsense2_camera_msgs/srv/calib_config_read.hpp: rosidl_generator_cpp/realsense2_camera_msgs/msg/imu_info.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/realsense2_camera_msgs/srv/calib_config_read.hpp
-
-rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/calib_config_read__builder.hpp: rosidl_generator_cpp/realsense2_camera_msgs/msg/imu_info.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/calib_config_read__builder.hpp
-
-rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/calib_config_read__struct.hpp: rosidl_generator_cpp/realsense2_camera_msgs/msg/imu_info.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/calib_config_read__struct.hpp
-
-rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/calib_config_read__traits.hpp: rosidl_generator_cpp/realsense2_camera_msgs/msg/imu_info.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/calib_config_read__traits.hpp
-
-rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/calib_config_read__type_support.hpp: rosidl_generator_cpp/realsense2_camera_msgs/msg/imu_info.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/calib_config_read__type_support.hpp
-
-rosidl_generator_cpp/realsense2_camera_msgs/srv/calib_config_write.hpp: rosidl_generator_cpp/realsense2_camera_msgs/msg/imu_info.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/realsense2_camera_msgs/srv/calib_config_write.hpp
-
-rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/calib_config_write__builder.hpp: rosidl_generator_cpp/realsense2_camera_msgs/msg/imu_info.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/calib_config_write__builder.hpp
-
-rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/calib_config_write__struct.hpp: rosidl_generator_cpp/realsense2_camera_msgs/msg/imu_info.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/calib_config_write__struct.hpp
-
-rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/calib_config_write__traits.hpp: rosidl_generator_cpp/realsense2_camera_msgs/msg/imu_info.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/calib_config_write__traits.hpp
-
-rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/calib_config_write__type_support.hpp: rosidl_generator_cpp/realsense2_camera_msgs/msg/imu_info.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/calib_config_write__type_support.hpp
-
-rosidl_generator_cpp/realsense2_camera_msgs/action/triggered_calibration.hpp: rosidl_generator_cpp/realsense2_camera_msgs/msg/imu_info.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/realsense2_camera_msgs/action/triggered_calibration.hpp
-
-rosidl_generator_cpp/realsense2_camera_msgs/action/detail/triggered_calibration__builder.hpp: rosidl_generator_cpp/realsense2_camera_msgs/msg/imu_info.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/realsense2_camera_msgs/action/detail/triggered_calibration__builder.hpp
-
-rosidl_generator_cpp/realsense2_camera_msgs/action/detail/triggered_calibration__struct.hpp: rosidl_generator_cpp/realsense2_camera_msgs/msg/imu_info.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/realsense2_camera_msgs/action/detail/triggered_calibration__struct.hpp
-
-rosidl_generator_cpp/realsense2_camera_msgs/action/detail/triggered_calibration__traits.hpp: rosidl_generator_cpp/realsense2_camera_msgs/msg/imu_info.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/realsense2_camera_msgs/action/detail/triggered_calibration__traits.hpp
-
-rosidl_generator_cpp/realsense2_camera_msgs/action/detail/triggered_calibration__type_support.hpp: rosidl_generator_cpp/realsense2_camera_msgs/msg/imu_info.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/realsense2_camera_msgs/action/detail/triggered_calibration__type_support.hpp
-
 realsense2_camera_msgs__cpp: CMakeFiles/realsense2_camera_msgs__cpp
-realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/action/detail/triggered_calibration__builder.hpp
-realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/action/detail/triggered_calibration__struct.hpp
-realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/action/detail/triggered_calibration__traits.hpp
-realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/action/detail/triggered_calibration__type_support.hpp
-realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/action/triggered_calibration.hpp
 realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/msg/detail/extrinsics__builder.hpp
 realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/msg/detail/extrinsics__struct.hpp
 realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/msg/detail/extrinsics__traits.hpp
@@ -372,16 +299,6 @@ realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/msg/ext
 realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/msg/imu_info.hpp
 realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/msg/metadata.hpp
 realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/msg/rgbd.hpp
-realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/srv/calib_config_read.hpp
-realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/srv/calib_config_write.hpp
-realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/calib_config_read__builder.hpp
-realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/calib_config_read__struct.hpp
-realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/calib_config_read__traits.hpp
-realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/calib_config_read__type_support.hpp
-realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/calib_config_write__builder.hpp
-realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/calib_config_write__struct.hpp
-realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/calib_config_write__traits.hpp
-realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/calib_config_write__type_support.hpp
 realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/device_info__builder.hpp
 realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/device_info__struct.hpp
 realsense2_camera_msgs__cpp: rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/device_info__traits.hpp
@@ -399,6 +316,6 @@ CMakeFiles/realsense2_camera_msgs__cpp.dir/clean:
 .PHONY : CMakeFiles/realsense2_camera_msgs__cpp.dir/clean
 
 CMakeFiles/realsense2_camera_msgs__cpp.dir/depend:
-	cd /home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera_msgs /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera_msgs /home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs /home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs /home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs/CMakeFiles/realsense2_camera_msgs__cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera_msgs /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera_msgs /home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs /home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs /home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs/CMakeFiles/realsense2_camera_msgs__cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/realsense2_camera_msgs__cpp.dir/depend
 

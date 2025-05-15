@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera
+CMAKE_SOURCE_DIR = /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/lunabotics/2025-tibalt-bot/build/realsense2_camera
@@ -70,228 +70,186 @@ include CMakeFiles/realsense2_camera.dir/progress.make
 include CMakeFiles/realsense2_camera.dir/flags.make
 
 CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o: CMakeFiles/realsense2_camera.dir/flags.make
-CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o: /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/realsense_node_factory.cpp
+CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o: /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/realsense_node_factory.cpp
 CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o: CMakeFiles/realsense2_camera.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunabotics/2025-tibalt-bot/build/realsense2_camera/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o -MF CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o.d -o CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o -c /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/realsense_node_factory.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o -MF CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o.d -o CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o -c /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/realsense_node_factory.cpp
 
 CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/realsense_node_factory.cpp > CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/realsense_node_factory.cpp > CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.i
 
 CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/realsense_node_factory.cpp -o CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/realsense_node_factory.cpp -o CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.s
 
 CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o: CMakeFiles/realsense2_camera.dir/flags.make
-CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o: /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/base_realsense_node.cpp
+CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o: /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/base_realsense_node.cpp
 CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o: CMakeFiles/realsense2_camera.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunabotics/2025-tibalt-bot/build/realsense2_camera/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o -MF CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o.d -o CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o -c /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/base_realsense_node.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o -MF CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o.d -o CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o -c /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/base_realsense_node.cpp
 
 CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/base_realsense_node.cpp > CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/base_realsense_node.cpp > CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.i
 
 CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/base_realsense_node.cpp -o CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/base_realsense_node.cpp -o CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.s
 
 CMakeFiles/realsense2_camera.dir/src/parameters.cpp.o: CMakeFiles/realsense2_camera.dir/flags.make
-CMakeFiles/realsense2_camera.dir/src/parameters.cpp.o: /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/parameters.cpp
+CMakeFiles/realsense2_camera.dir/src/parameters.cpp.o: /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/parameters.cpp
 CMakeFiles/realsense2_camera.dir/src/parameters.cpp.o: CMakeFiles/realsense2_camera.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunabotics/2025-tibalt-bot/build/realsense2_camera/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/realsense2_camera.dir/src/parameters.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/realsense2_camera.dir/src/parameters.cpp.o -MF CMakeFiles/realsense2_camera.dir/src/parameters.cpp.o.d -o CMakeFiles/realsense2_camera.dir/src/parameters.cpp.o -c /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/parameters.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/realsense2_camera.dir/src/parameters.cpp.o -MF CMakeFiles/realsense2_camera.dir/src/parameters.cpp.o.d -o CMakeFiles/realsense2_camera.dir/src/parameters.cpp.o -c /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/parameters.cpp
 
 CMakeFiles/realsense2_camera.dir/src/parameters.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/realsense2_camera.dir/src/parameters.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/parameters.cpp > CMakeFiles/realsense2_camera.dir/src/parameters.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/parameters.cpp > CMakeFiles/realsense2_camera.dir/src/parameters.cpp.i
 
 CMakeFiles/realsense2_camera.dir/src/parameters.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/realsense2_camera.dir/src/parameters.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/parameters.cpp -o CMakeFiles/realsense2_camera.dir/src/parameters.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/parameters.cpp -o CMakeFiles/realsense2_camera.dir/src/parameters.cpp.s
 
 CMakeFiles/realsense2_camera.dir/src/rs_node_setup.cpp.o: CMakeFiles/realsense2_camera.dir/flags.make
-CMakeFiles/realsense2_camera.dir/src/rs_node_setup.cpp.o: /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/rs_node_setup.cpp
+CMakeFiles/realsense2_camera.dir/src/rs_node_setup.cpp.o: /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/rs_node_setup.cpp
 CMakeFiles/realsense2_camera.dir/src/rs_node_setup.cpp.o: CMakeFiles/realsense2_camera.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunabotics/2025-tibalt-bot/build/realsense2_camera/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/realsense2_camera.dir/src/rs_node_setup.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/realsense2_camera.dir/src/rs_node_setup.cpp.o -MF CMakeFiles/realsense2_camera.dir/src/rs_node_setup.cpp.o.d -o CMakeFiles/realsense2_camera.dir/src/rs_node_setup.cpp.o -c /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/rs_node_setup.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/realsense2_camera.dir/src/rs_node_setup.cpp.o -MF CMakeFiles/realsense2_camera.dir/src/rs_node_setup.cpp.o.d -o CMakeFiles/realsense2_camera.dir/src/rs_node_setup.cpp.o -c /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/rs_node_setup.cpp
 
 CMakeFiles/realsense2_camera.dir/src/rs_node_setup.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/realsense2_camera.dir/src/rs_node_setup.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/rs_node_setup.cpp > CMakeFiles/realsense2_camera.dir/src/rs_node_setup.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/rs_node_setup.cpp > CMakeFiles/realsense2_camera.dir/src/rs_node_setup.cpp.i
 
 CMakeFiles/realsense2_camera.dir/src/rs_node_setup.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/realsense2_camera.dir/src/rs_node_setup.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/rs_node_setup.cpp -o CMakeFiles/realsense2_camera.dir/src/rs_node_setup.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/rs_node_setup.cpp -o CMakeFiles/realsense2_camera.dir/src/rs_node_setup.cpp.s
 
 CMakeFiles/realsense2_camera.dir/src/ros_sensor.cpp.o: CMakeFiles/realsense2_camera.dir/flags.make
-CMakeFiles/realsense2_camera.dir/src/ros_sensor.cpp.o: /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/ros_sensor.cpp
+CMakeFiles/realsense2_camera.dir/src/ros_sensor.cpp.o: /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/ros_sensor.cpp
 CMakeFiles/realsense2_camera.dir/src/ros_sensor.cpp.o: CMakeFiles/realsense2_camera.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunabotics/2025-tibalt-bot/build/realsense2_camera/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/realsense2_camera.dir/src/ros_sensor.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/realsense2_camera.dir/src/ros_sensor.cpp.o -MF CMakeFiles/realsense2_camera.dir/src/ros_sensor.cpp.o.d -o CMakeFiles/realsense2_camera.dir/src/ros_sensor.cpp.o -c /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/ros_sensor.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/realsense2_camera.dir/src/ros_sensor.cpp.o -MF CMakeFiles/realsense2_camera.dir/src/ros_sensor.cpp.o.d -o CMakeFiles/realsense2_camera.dir/src/ros_sensor.cpp.o -c /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/ros_sensor.cpp
 
 CMakeFiles/realsense2_camera.dir/src/ros_sensor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/realsense2_camera.dir/src/ros_sensor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/ros_sensor.cpp > CMakeFiles/realsense2_camera.dir/src/ros_sensor.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/ros_sensor.cpp > CMakeFiles/realsense2_camera.dir/src/ros_sensor.cpp.i
 
 CMakeFiles/realsense2_camera.dir/src/ros_sensor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/realsense2_camera.dir/src/ros_sensor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/ros_sensor.cpp -o CMakeFiles/realsense2_camera.dir/src/ros_sensor.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/ros_sensor.cpp -o CMakeFiles/realsense2_camera.dir/src/ros_sensor.cpp.s
 
 CMakeFiles/realsense2_camera.dir/src/ros_utils.cpp.o: CMakeFiles/realsense2_camera.dir/flags.make
-CMakeFiles/realsense2_camera.dir/src/ros_utils.cpp.o: /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/ros_utils.cpp
+CMakeFiles/realsense2_camera.dir/src/ros_utils.cpp.o: /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/ros_utils.cpp
 CMakeFiles/realsense2_camera.dir/src/ros_utils.cpp.o: CMakeFiles/realsense2_camera.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunabotics/2025-tibalt-bot/build/realsense2_camera/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/realsense2_camera.dir/src/ros_utils.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/realsense2_camera.dir/src/ros_utils.cpp.o -MF CMakeFiles/realsense2_camera.dir/src/ros_utils.cpp.o.d -o CMakeFiles/realsense2_camera.dir/src/ros_utils.cpp.o -c /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/ros_utils.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/realsense2_camera.dir/src/ros_utils.cpp.o -MF CMakeFiles/realsense2_camera.dir/src/ros_utils.cpp.o.d -o CMakeFiles/realsense2_camera.dir/src/ros_utils.cpp.o -c /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/ros_utils.cpp
 
 CMakeFiles/realsense2_camera.dir/src/ros_utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/realsense2_camera.dir/src/ros_utils.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/ros_utils.cpp > CMakeFiles/realsense2_camera.dir/src/ros_utils.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/ros_utils.cpp > CMakeFiles/realsense2_camera.dir/src/ros_utils.cpp.i
 
 CMakeFiles/realsense2_camera.dir/src/ros_utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/realsense2_camera.dir/src/ros_utils.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/ros_utils.cpp -o CMakeFiles/realsense2_camera.dir/src/ros_utils.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/ros_utils.cpp -o CMakeFiles/realsense2_camera.dir/src/ros_utils.cpp.s
 
 CMakeFiles/realsense2_camera.dir/src/dynamic_params.cpp.o: CMakeFiles/realsense2_camera.dir/flags.make
-CMakeFiles/realsense2_camera.dir/src/dynamic_params.cpp.o: /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/dynamic_params.cpp
+CMakeFiles/realsense2_camera.dir/src/dynamic_params.cpp.o: /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/dynamic_params.cpp
 CMakeFiles/realsense2_camera.dir/src/dynamic_params.cpp.o: CMakeFiles/realsense2_camera.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunabotics/2025-tibalt-bot/build/realsense2_camera/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/realsense2_camera.dir/src/dynamic_params.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/realsense2_camera.dir/src/dynamic_params.cpp.o -MF CMakeFiles/realsense2_camera.dir/src/dynamic_params.cpp.o.d -o CMakeFiles/realsense2_camera.dir/src/dynamic_params.cpp.o -c /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/dynamic_params.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/realsense2_camera.dir/src/dynamic_params.cpp.o -MF CMakeFiles/realsense2_camera.dir/src/dynamic_params.cpp.o.d -o CMakeFiles/realsense2_camera.dir/src/dynamic_params.cpp.o -c /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/dynamic_params.cpp
 
 CMakeFiles/realsense2_camera.dir/src/dynamic_params.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/realsense2_camera.dir/src/dynamic_params.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/dynamic_params.cpp > CMakeFiles/realsense2_camera.dir/src/dynamic_params.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/dynamic_params.cpp > CMakeFiles/realsense2_camera.dir/src/dynamic_params.cpp.i
 
 CMakeFiles/realsense2_camera.dir/src/dynamic_params.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/realsense2_camera.dir/src/dynamic_params.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/dynamic_params.cpp -o CMakeFiles/realsense2_camera.dir/src/dynamic_params.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/dynamic_params.cpp -o CMakeFiles/realsense2_camera.dir/src/dynamic_params.cpp.s
 
 CMakeFiles/realsense2_camera.dir/src/sensor_params.cpp.o: CMakeFiles/realsense2_camera.dir/flags.make
-CMakeFiles/realsense2_camera.dir/src/sensor_params.cpp.o: /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/sensor_params.cpp
+CMakeFiles/realsense2_camera.dir/src/sensor_params.cpp.o: /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/sensor_params.cpp
 CMakeFiles/realsense2_camera.dir/src/sensor_params.cpp.o: CMakeFiles/realsense2_camera.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunabotics/2025-tibalt-bot/build/realsense2_camera/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/realsense2_camera.dir/src/sensor_params.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/realsense2_camera.dir/src/sensor_params.cpp.o -MF CMakeFiles/realsense2_camera.dir/src/sensor_params.cpp.o.d -o CMakeFiles/realsense2_camera.dir/src/sensor_params.cpp.o -c /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/sensor_params.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/realsense2_camera.dir/src/sensor_params.cpp.o -MF CMakeFiles/realsense2_camera.dir/src/sensor_params.cpp.o.d -o CMakeFiles/realsense2_camera.dir/src/sensor_params.cpp.o -c /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/sensor_params.cpp
 
 CMakeFiles/realsense2_camera.dir/src/sensor_params.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/realsense2_camera.dir/src/sensor_params.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/sensor_params.cpp > CMakeFiles/realsense2_camera.dir/src/sensor_params.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/sensor_params.cpp > CMakeFiles/realsense2_camera.dir/src/sensor_params.cpp.i
 
 CMakeFiles/realsense2_camera.dir/src/sensor_params.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/realsense2_camera.dir/src/sensor_params.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/sensor_params.cpp -o CMakeFiles/realsense2_camera.dir/src/sensor_params.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/sensor_params.cpp -o CMakeFiles/realsense2_camera.dir/src/sensor_params.cpp.s
 
 CMakeFiles/realsense2_camera.dir/src/named_filter.cpp.o: CMakeFiles/realsense2_camera.dir/flags.make
-CMakeFiles/realsense2_camera.dir/src/named_filter.cpp.o: /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/named_filter.cpp
+CMakeFiles/realsense2_camera.dir/src/named_filter.cpp.o: /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/named_filter.cpp
 CMakeFiles/realsense2_camera.dir/src/named_filter.cpp.o: CMakeFiles/realsense2_camera.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunabotics/2025-tibalt-bot/build/realsense2_camera/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/realsense2_camera.dir/src/named_filter.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/realsense2_camera.dir/src/named_filter.cpp.o -MF CMakeFiles/realsense2_camera.dir/src/named_filter.cpp.o.d -o CMakeFiles/realsense2_camera.dir/src/named_filter.cpp.o -c /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/named_filter.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/realsense2_camera.dir/src/named_filter.cpp.o -MF CMakeFiles/realsense2_camera.dir/src/named_filter.cpp.o.d -o CMakeFiles/realsense2_camera.dir/src/named_filter.cpp.o -c /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/named_filter.cpp
 
 CMakeFiles/realsense2_camera.dir/src/named_filter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/realsense2_camera.dir/src/named_filter.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/named_filter.cpp > CMakeFiles/realsense2_camera.dir/src/named_filter.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/named_filter.cpp > CMakeFiles/realsense2_camera.dir/src/named_filter.cpp.i
 
 CMakeFiles/realsense2_camera.dir/src/named_filter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/realsense2_camera.dir/src/named_filter.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/named_filter.cpp -o CMakeFiles/realsense2_camera.dir/src/named_filter.cpp.s
-
-CMakeFiles/realsense2_camera.dir/src/pointcloud_filter.cpp.o: CMakeFiles/realsense2_camera.dir/flags.make
-CMakeFiles/realsense2_camera.dir/src/pointcloud_filter.cpp.o: /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/pointcloud_filter.cpp
-CMakeFiles/realsense2_camera.dir/src/pointcloud_filter.cpp.o: CMakeFiles/realsense2_camera.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunabotics/2025-tibalt-bot/build/realsense2_camera/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/realsense2_camera.dir/src/pointcloud_filter.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/realsense2_camera.dir/src/pointcloud_filter.cpp.o -MF CMakeFiles/realsense2_camera.dir/src/pointcloud_filter.cpp.o.d -o CMakeFiles/realsense2_camera.dir/src/pointcloud_filter.cpp.o -c /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/pointcloud_filter.cpp
-
-CMakeFiles/realsense2_camera.dir/src/pointcloud_filter.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/realsense2_camera.dir/src/pointcloud_filter.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/pointcloud_filter.cpp > CMakeFiles/realsense2_camera.dir/src/pointcloud_filter.cpp.i
-
-CMakeFiles/realsense2_camera.dir/src/pointcloud_filter.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/realsense2_camera.dir/src/pointcloud_filter.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/pointcloud_filter.cpp -o CMakeFiles/realsense2_camera.dir/src/pointcloud_filter.cpp.s
-
-CMakeFiles/realsense2_camera.dir/src/align_depth_filter.cpp.o: CMakeFiles/realsense2_camera.dir/flags.make
-CMakeFiles/realsense2_camera.dir/src/align_depth_filter.cpp.o: /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/align_depth_filter.cpp
-CMakeFiles/realsense2_camera.dir/src/align_depth_filter.cpp.o: CMakeFiles/realsense2_camera.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunabotics/2025-tibalt-bot/build/realsense2_camera/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/realsense2_camera.dir/src/align_depth_filter.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/realsense2_camera.dir/src/align_depth_filter.cpp.o -MF CMakeFiles/realsense2_camera.dir/src/align_depth_filter.cpp.o.d -o CMakeFiles/realsense2_camera.dir/src/align_depth_filter.cpp.o -c /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/align_depth_filter.cpp
-
-CMakeFiles/realsense2_camera.dir/src/align_depth_filter.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/realsense2_camera.dir/src/align_depth_filter.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/align_depth_filter.cpp > CMakeFiles/realsense2_camera.dir/src/align_depth_filter.cpp.i
-
-CMakeFiles/realsense2_camera.dir/src/align_depth_filter.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/realsense2_camera.dir/src/align_depth_filter.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/align_depth_filter.cpp -o CMakeFiles/realsense2_camera.dir/src/align_depth_filter.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/named_filter.cpp -o CMakeFiles/realsense2_camera.dir/src/named_filter.cpp.s
 
 CMakeFiles/realsense2_camera.dir/src/profile_manager.cpp.o: CMakeFiles/realsense2_camera.dir/flags.make
-CMakeFiles/realsense2_camera.dir/src/profile_manager.cpp.o: /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/profile_manager.cpp
+CMakeFiles/realsense2_camera.dir/src/profile_manager.cpp.o: /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/profile_manager.cpp
 CMakeFiles/realsense2_camera.dir/src/profile_manager.cpp.o: CMakeFiles/realsense2_camera.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunabotics/2025-tibalt-bot/build/realsense2_camera/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/realsense2_camera.dir/src/profile_manager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/realsense2_camera.dir/src/profile_manager.cpp.o -MF CMakeFiles/realsense2_camera.dir/src/profile_manager.cpp.o.d -o CMakeFiles/realsense2_camera.dir/src/profile_manager.cpp.o -c /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/profile_manager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunabotics/2025-tibalt-bot/build/realsense2_camera/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/realsense2_camera.dir/src/profile_manager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/realsense2_camera.dir/src/profile_manager.cpp.o -MF CMakeFiles/realsense2_camera.dir/src/profile_manager.cpp.o.d -o CMakeFiles/realsense2_camera.dir/src/profile_manager.cpp.o -c /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/profile_manager.cpp
 
 CMakeFiles/realsense2_camera.dir/src/profile_manager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/realsense2_camera.dir/src/profile_manager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/profile_manager.cpp > CMakeFiles/realsense2_camera.dir/src/profile_manager.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/profile_manager.cpp > CMakeFiles/realsense2_camera.dir/src/profile_manager.cpp.i
 
 CMakeFiles/realsense2_camera.dir/src/profile_manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/realsense2_camera.dir/src/profile_manager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/profile_manager.cpp -o CMakeFiles/realsense2_camera.dir/src/profile_manager.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/profile_manager.cpp -o CMakeFiles/realsense2_camera.dir/src/profile_manager.cpp.s
 
 CMakeFiles/realsense2_camera.dir/src/image_publisher.cpp.o: CMakeFiles/realsense2_camera.dir/flags.make
-CMakeFiles/realsense2_camera.dir/src/image_publisher.cpp.o: /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/image_publisher.cpp
+CMakeFiles/realsense2_camera.dir/src/image_publisher.cpp.o: /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/image_publisher.cpp
 CMakeFiles/realsense2_camera.dir/src/image_publisher.cpp.o: CMakeFiles/realsense2_camera.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunabotics/2025-tibalt-bot/build/realsense2_camera/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/realsense2_camera.dir/src/image_publisher.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/realsense2_camera.dir/src/image_publisher.cpp.o -MF CMakeFiles/realsense2_camera.dir/src/image_publisher.cpp.o.d -o CMakeFiles/realsense2_camera.dir/src/image_publisher.cpp.o -c /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/image_publisher.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunabotics/2025-tibalt-bot/build/realsense2_camera/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/realsense2_camera.dir/src/image_publisher.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/realsense2_camera.dir/src/image_publisher.cpp.o -MF CMakeFiles/realsense2_camera.dir/src/image_publisher.cpp.o.d -o CMakeFiles/realsense2_camera.dir/src/image_publisher.cpp.o -c /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/image_publisher.cpp
 
 CMakeFiles/realsense2_camera.dir/src/image_publisher.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/realsense2_camera.dir/src/image_publisher.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/image_publisher.cpp > CMakeFiles/realsense2_camera.dir/src/image_publisher.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/image_publisher.cpp > CMakeFiles/realsense2_camera.dir/src/image_publisher.cpp.i
 
 CMakeFiles/realsense2_camera.dir/src/image_publisher.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/realsense2_camera.dir/src/image_publisher.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/image_publisher.cpp -o CMakeFiles/realsense2_camera.dir/src/image_publisher.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/image_publisher.cpp -o CMakeFiles/realsense2_camera.dir/src/image_publisher.cpp.s
 
 CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: CMakeFiles/realsense2_camera.dir/flags.make
-CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/tfs.cpp
+CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/tfs.cpp
 CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: CMakeFiles/realsense2_camera.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunabotics/2025-tibalt-bot/build/realsense2_camera/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o -MF CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o.d -o CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o -c /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/tfs.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunabotics/2025-tibalt-bot/build/realsense2_camera/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o -MF CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o.d -o CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o -c /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/tfs.cpp
 
 CMakeFiles/realsense2_camera.dir/src/tfs.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/realsense2_camera.dir/src/tfs.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/tfs.cpp > CMakeFiles/realsense2_camera.dir/src/tfs.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/tfs.cpp > CMakeFiles/realsense2_camera.dir/src/tfs.cpp.i
 
 CMakeFiles/realsense2_camera.dir/src/tfs.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/realsense2_camera.dir/src/tfs.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/tfs.cpp -o CMakeFiles/realsense2_camera.dir/src/tfs.cpp.s
-
-CMakeFiles/realsense2_camera.dir/src/actions.cpp.o: CMakeFiles/realsense2_camera.dir/flags.make
-CMakeFiles/realsense2_camera.dir/src/actions.cpp.o: /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/actions.cpp
-CMakeFiles/realsense2_camera.dir/src/actions.cpp.o: CMakeFiles/realsense2_camera.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunabotics/2025-tibalt-bot/build/realsense2_camera/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/realsense2_camera.dir/src/actions.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/realsense2_camera.dir/src/actions.cpp.o -MF CMakeFiles/realsense2_camera.dir/src/actions.cpp.o.d -o CMakeFiles/realsense2_camera.dir/src/actions.cpp.o -c /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/actions.cpp
-
-CMakeFiles/realsense2_camera.dir/src/actions.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/realsense2_camera.dir/src/actions.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/actions.cpp > CMakeFiles/realsense2_camera.dir/src/actions.cpp.i
-
-CMakeFiles/realsense2_camera.dir/src/actions.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/realsense2_camera.dir/src/actions.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/actions.cpp -o CMakeFiles/realsense2_camera.dir/src/actions.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/tfs.cpp -o CMakeFiles/realsense2_camera.dir/src/tfs.cpp.s
 
 CMakeFiles/realsense2_camera.dir/src/ros_param_backend.cpp.o: CMakeFiles/realsense2_camera.dir/flags.make
-CMakeFiles/realsense2_camera.dir/src/ros_param_backend.cpp.o: /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/ros_param_backend.cpp
+CMakeFiles/realsense2_camera.dir/src/ros_param_backend.cpp.o: /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/ros_param_backend.cpp
 CMakeFiles/realsense2_camera.dir/src/ros_param_backend.cpp.o: CMakeFiles/realsense2_camera.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunabotics/2025-tibalt-bot/build/realsense2_camera/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/realsense2_camera.dir/src/ros_param_backend.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/realsense2_camera.dir/src/ros_param_backend.cpp.o -MF CMakeFiles/realsense2_camera.dir/src/ros_param_backend.cpp.o.d -o CMakeFiles/realsense2_camera.dir/src/ros_param_backend.cpp.o -c /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/ros_param_backend.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lunabotics/2025-tibalt-bot/build/realsense2_camera/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/realsense2_camera.dir/src/ros_param_backend.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/realsense2_camera.dir/src/ros_param_backend.cpp.o -MF CMakeFiles/realsense2_camera.dir/src/ros_param_backend.cpp.o.d -o CMakeFiles/realsense2_camera.dir/src/ros_param_backend.cpp.o -c /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/ros_param_backend.cpp
 
 CMakeFiles/realsense2_camera.dir/src/ros_param_backend.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/realsense2_camera.dir/src/ros_param_backend.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/ros_param_backend.cpp > CMakeFiles/realsense2_camera.dir/src/ros_param_backend.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/ros_param_backend.cpp > CMakeFiles/realsense2_camera.dir/src/ros_param_backend.cpp.i
 
 CMakeFiles/realsense2_camera.dir/src/ros_param_backend.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/realsense2_camera.dir/src/ros_param_backend.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/ros_param_backend.cpp -o CMakeFiles/realsense2_camera.dir/src/ros_param_backend.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/ros_param_backend.cpp -o CMakeFiles/realsense2_camera.dir/src/ros_param_backend.cpp.s
 
 # Object files for target realsense2_camera
 realsense2_camera_OBJECTS = \
@@ -304,12 +262,9 @@ realsense2_camera_OBJECTS = \
 "CMakeFiles/realsense2_camera.dir/src/dynamic_params.cpp.o" \
 "CMakeFiles/realsense2_camera.dir/src/sensor_params.cpp.o" \
 "CMakeFiles/realsense2_camera.dir/src/named_filter.cpp.o" \
-"CMakeFiles/realsense2_camera.dir/src/pointcloud_filter.cpp.o" \
-"CMakeFiles/realsense2_camera.dir/src/align_depth_filter.cpp.o" \
 "CMakeFiles/realsense2_camera.dir/src/profile_manager.cpp.o" \
 "CMakeFiles/realsense2_camera.dir/src/image_publisher.cpp.o" \
 "CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o" \
-"CMakeFiles/realsense2_camera.dir/src/actions.cpp.o" \
 "CMakeFiles/realsense2_camera.dir/src/ros_param_backend.cpp.o"
 
 # External object files for target realsense2_camera
@@ -324,12 +279,9 @@ librealsense2_camera.so: CMakeFiles/realsense2_camera.dir/src/ros_utils.cpp.o
 librealsense2_camera.so: CMakeFiles/realsense2_camera.dir/src/dynamic_params.cpp.o
 librealsense2_camera.so: CMakeFiles/realsense2_camera.dir/src/sensor_params.cpp.o
 librealsense2_camera.so: CMakeFiles/realsense2_camera.dir/src/named_filter.cpp.o
-librealsense2_camera.so: CMakeFiles/realsense2_camera.dir/src/pointcloud_filter.cpp.o
-librealsense2_camera.so: CMakeFiles/realsense2_camera.dir/src/align_depth_filter.cpp.o
 librealsense2_camera.so: CMakeFiles/realsense2_camera.dir/src/profile_manager.cpp.o
 librealsense2_camera.so: CMakeFiles/realsense2_camera.dir/src/image_publisher.cpp.o
 librealsense2_camera.so: CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o
-librealsense2_camera.so: CMakeFiles/realsense2_camera.dir/src/actions.cpp.o
 librealsense2_camera.so: CMakeFiles/realsense2_camera.dir/src/ros_param_backend.cpp.o
 librealsense2_camera.so: CMakeFiles/realsense2_camera.dir/build.make
 librealsense2_camera.so: /usr/lib/aarch64-linux-gnu/librealsense2.so.2.55.1
@@ -350,12 +302,6 @@ librealsense2_camera.so: /home/lunabotics/2025-tibalt-bot/install/realsense2_cam
 librealsense2_camera.so: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_introspection_cpp.so
 librealsense2_camera.so: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_cpp.so
 librealsense2_camera.so: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_generator_py.so
-librealsense2_camera.so: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_fastrtps_c.so
-librealsense2_camera.so: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_introspection_c.so
-librealsense2_camera.so: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_fastrtps_cpp.so
-librealsense2_camera.so: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_introspection_cpp.so
-librealsense2_camera.so: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_cpp.so
-librealsense2_camera.so: /opt/ros/humble/lib/libstd_srvs__rosidl_generator_py.so
 librealsense2_camera.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
 librealsense2_camera.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so
 librealsense2_camera.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
@@ -390,8 +336,6 @@ librealsense2_camera.so: /home/lunabotics/2025-tibalt-bot/install/realsense2_cam
 librealsense2_camera.so: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_generator_c.so
 librealsense2_camera.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_c.so
 librealsense2_camera.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_c.so
-librealsense2_camera.so: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_c.so
-librealsense2_camera.so: /opt/ros/humble/lib/libstd_srvs__rosidl_generator_c.so
 librealsense2_camera.so: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_c.so
 librealsense2_camera.so: /opt/ros/humble/lib/libnav_msgs__rosidl_generator_c.so
 librealsense2_camera.so: /opt/ros/humble/lib/libtf2_ros.so
@@ -422,15 +366,15 @@ librealsense2_camera.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_
 librealsense2_camera.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_cpp.so
 librealsense2_camera.so: /opt/ros/humble/lib/libtf2_msgs__rosidl_generator_py.so
 librealsense2_camera.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_py.so
-librealsense2_camera.so: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_py.so
-librealsense2_camera.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_py.so
 librealsense2_camera.so: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_c.so
 librealsense2_camera.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
-librealsense2_camera.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_c.so
-librealsense2_camera.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_c.so
 librealsense2_camera.so: /opt/ros/humble/lib/libtf2_msgs__rosidl_generator_c.so
 librealsense2_camera.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
+librealsense2_camera.so: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_py.so
+librealsense2_camera.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_c.so
 librealsense2_camera.so: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_c.so
+librealsense2_camera.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_py.so
+librealsense2_camera.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_c.so
 librealsense2_camera.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_c.so
 librealsense2_camera.so: /opt/ros/humble/lib/librclcpp.so
 librealsense2_camera.so: /opt/ros/humble/lib/liblibstatistics_collector.so
@@ -503,7 +447,7 @@ librealsense2_camera.so: /opt/ros/humble/lib/librcpputils.so
 librealsense2_camera.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 librealsense2_camera.so: /opt/ros/humble/lib/librcutils.so
 librealsense2_camera.so: CMakeFiles/realsense2_camera.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lunabotics/2025-tibalt-bot/build/realsense2_camera/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX shared library librealsense2_camera.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lunabotics/2025-tibalt-bot/build/realsense2_camera/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX shared library librealsense2_camera.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/realsense2_camera.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -515,6 +459,6 @@ CMakeFiles/realsense2_camera.dir/clean:
 .PHONY : CMakeFiles/realsense2_camera.dir/clean
 
 CMakeFiles/realsense2_camera.dir/depend:
-	cd /home/lunabotics/2025-tibalt-bot/build/realsense2_camera && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera /home/lunabotics/2025-tibalt-bot/build/realsense2_camera /home/lunabotics/2025-tibalt-bot/build/realsense2_camera /home/lunabotics/2025-tibalt-bot/build/realsense2_camera/CMakeFiles/realsense2_camera.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lunabotics/2025-tibalt-bot/build/realsense2_camera && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera /home/lunabotics/2025-tibalt-bot/build/realsense2_camera /home/lunabotics/2025-tibalt-bot/build/realsense2_camera /home/lunabotics/2025-tibalt-bot/build/realsense2_camera/CMakeFiles/realsense2_camera.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/realsense2_camera.dir/depend
 

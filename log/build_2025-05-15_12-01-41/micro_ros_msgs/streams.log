@@ -1,0 +1,33 @@
+[0.035s] Invoking command in '/home/lunabotics/2025-tibalt-bot/build/micro_ros_msgs': /usr/bin/cmake /home/lunabotics/2025-tibalt-bot/src/micro_ros_msgs -DCMAKE_INSTALL_PREFIX=/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs
+[0.168s] -- The C compiler identification is GNU 11.4.0
+[0.300s] -- The CXX compiler identification is GNU 11.4.0
+[0.321s] -- Detecting C compiler ABI info
+[0.491s] -- Detecting C compiler ABI info - done
+[0.513s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.514s] -- Detecting C compile features
+[0.515s] -- Detecting C compile features - done
+[0.525s] -- Detecting CXX compiler ABI info
+[0.730s] -- Detecting CXX compiler ABI info - done
+[0.750s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.751s] -- Detecting CXX compile features
+[0.752s] -- Detecting CXX compile features - done
+[0.777s] [31mCMake Error at CMakeLists.txt:19 (find_package):
+[0.778s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[0.778s]   has asked CMake to find a package configuration file provided by
+[0.778s]   "ament_cmake", but CMake did not find one.
+[0.778s] 
+[0.778s]   Could not find a package configuration file provided by "ament_cmake" with
+[0.779s]   any of the following names:
+[0.780s] 
+[0.780s]     ament_cmakeConfig.cmake
+[0.780s]     ament_cmake-config.cmake
+[0.780s] 
+[0.781s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[0.781s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[0.781s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[0.781s]   has been installed.
+[0.781s] 
+[0.781s] [0m
+[0.781s] -- Configuring incomplete, errors occurred!
+[0.782s] See also "/home/lunabotics/2025-tibalt-bot/build/micro_ros_msgs/CMakeFiles/CMakeOutput.log".
+[0.794s] Invoked command in '/home/lunabotics/2025-tibalt-bot/build/micro_ros_msgs' returned '1': /usr/bin/cmake /home/lunabotics/2025-tibalt-bot/src/micro_ros_msgs -DCMAKE_INSTALL_PREFIX=/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs

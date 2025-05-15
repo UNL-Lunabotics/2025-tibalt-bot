@@ -1,0 +1,146 @@
+[0.045s] Invoking command in '/home/lunabotics/2025-tibalt-bot/build/realsense2_camera': AMENT_PREFIX_PATH=/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lunabotics/2025-tibalt-bot/build/realsense2_camera -- -j6 -l6
+[0.151s] -- Create Release Build.
+[0.153s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.671s] -- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[0.744s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.753s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.773s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.803s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.851s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.885s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[1.033s] -- Found image_transport: 3.1.11 (/opt/ros/humble/share/image_transport/cmake)
+[1.174s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.182s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.450s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.637s] -- Found rclcpp_components: 16.0.12 (/opt/ros/humble/share/rclcpp_components/cmake)
+[1.695s] -- Found realsense2_camera_msgs: 4.55.1 (/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake)
+[1.743s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.791s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.983s] -- Found diagnostic_updater: 4.0.3 (/opt/ros/humble/share/diagnostic_updater/cmake)
+[2.045s] -- Build for ROS2 Humble
+[2.057s] -- Found ament_cmake_gtest: 1.3.11 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[2.058s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[2.072s] -- Found ament_cmake_pytest: 1.3.11 (/opt/ros/humble/share/ament_cmake_pytest/cmake)
+[12.237s] -- rs_device_info:
+[12.238s] -- Device Name                   Serial Number       Firmware Version
+[12.238s] Intel RealSense D435I         033322071026        5.16.0.1
+[12.238s] Intel RealSense D435I         048522075108        5.15.1
+[12.238s] 
+[12.238s] -- D455 device found
+[19.566s] -- Configuring done
+[19.675s] -- Generating done
+[19.701s] -- Build files have been written to: /home/lunabotics/2025-tibalt-bot/build/realsense2_camera
+[19.796s] [35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[19.796s] [35m[1mConsolidate compiler generated dependencies of target realsense2_camera_node[0m
+[19.796s] [35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[19.818s] [35m[1mConsolidate compiler generated dependencies of target realsense2_camera[0m
+[19.820s] gmake[2]: Warning: File '/opt/ros/humble/src/gtest_vendor/src/gtest-all.cc' has modification time 1722003293 s in the future
+[19.832s] gmake[2]: Warning: File '/usr/include/stdc-predef.h' has modification time 1738092861 s in the future
+[19.837s] gmake[2]: Warning: File '/opt/ros/humble/src/gtest_vendor/src/gtest_main.cc' has modification time 1722003293 s in the future
+[19.844s] [  4%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[19.869s] [  9%] [32mBuilding CXX object CMakeFiles/realsense2_camera_node.dir/rclcpp_components/node_main_realsense2_camera_node.cpp.o[0m
+[19.887s] [ 13%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[19.934s] gmake[2]: Warning: File '/usr/include/stdc-predef.h' has modification time 1738092861 s in the future
+[19.966s] [ 18%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o[0m
+[20.009s] [ 22%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o[0m
+[20.025s] [ 27%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/parameters.cpp.o[0m
+[22.230s] [ 31%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[22.434s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[22.499s] [ 31%] Built target gtest_main
+[22.578s] [ 36%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/rs_node_setup.cpp.o[0m
+[36.998s] [ 40%] [32m[1mLinking CXX executable realsense2_camera_node[0m
+[37.804s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[37.876s] [ 40%] Built target realsense2_camera_node
+[37.999s] [ 45%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/ros_sensor.cpp.o[0m
+[55.470s] [ 50%] [32m[1mLinking CXX static library libgtest.a[0m
+[55.733s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[55.776s] [ 50%] Built target gtest
+[55.788s] [ 54%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/ros_utils.cpp.o[0m
+[55.885s] [35m[1mConsolidate compiler generated dependencies of target gtest_template[0m
+[55.916s] gmake[2]: Warning: File '/usr/include/stdc-predef.h' has modification time 1738092825 s in the future
+[56.018s] [ 59%] [32mBuilding CXX object CMakeFiles/gtest_template.dir/test/gtest_template.cpp.o[0m
+[60.581s] [ 63%] [32m[1mLinking CXX executable gtest_template[0m
+[61.161s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[61.229s] [ 63%] Built target gtest_template
+[84.920s] [ 72%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/image_publisher.cpp.o[0m
+[84.921s] [ 72%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/profile_manager.cpp.o[0m
+[85.968s] [ 77%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/named_filter.cpp.o[0m
+[87.030s] [ 81%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/sensor_params.cpp.o[0m
+[87.627s] [ 86%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o[0m
+[87.637s] [ 90%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/dynamic_params.cpp.o[0m
+[125.745s] [ 95%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/ros_param_backend.cpp.o[0m
+[134.745s] [100%] [32m[1mLinking CXX shared library librealsense2_camera.so[0m
+[136.374s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[136.401s] [100%] Built target realsense2_camera
+[136.443s] Invoked command in '/home/lunabotics/2025-tibalt-bot/build/realsense2_camera' returned '0': AMENT_PREFIX_PATH=/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lunabotics/2025-tibalt-bot/build/realsense2_camera -- -j6 -l6
+[136.447s] Invoking command in '/home/lunabotics/2025-tibalt-bot/build/realsense2_camera': AMENT_PREFIX_PATH=/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/lunabotics/2025-tibalt-bot/build/realsense2_camera
+[136.475s] -- Install configuration: "Release"
+[136.475s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/lib/realsense2_camera/realsense2_camera_node
+[136.476s] -- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/realsense2_camera/lib/realsense2_camera/realsense2_camera_node" to ""
+[136.476s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/lib/librealsense2_camera.so
+[136.487s] -- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/realsense2_camera/lib/librealsense2_camera.so" to ""
+[136.488s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/include
+[136.488s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/include/ros_param_backend.h
+[136.489s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/include/realsense_node_factory.h
+[136.489s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/include/constants.h
+[136.489s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/include/named_filter.h
+[136.489s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/include/ros_sensor.h
+[136.490s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/include/dynamic_params.h
+[136.490s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/include/base_realsense_node.h
+[136.490s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/include/image_publisher.h
+[136.490s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/include/gl_window.h
+[136.491s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/include/sensor_params.h
+[136.491s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/include/ros_utils.h
+[136.491s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/include/profile_manager.h
+[136.491s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/launch
+[136.491s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/launch/rs_multi_camera_launch.py
+[136.492s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/launch/rs_intra_process_demo_launch.py
+[136.492s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/launch/rs_launch.py
+[136.492s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/launch/default.rviz
+[136.492s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples
+[136.492s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/align_depth
+[136.493s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/align_depth/README.md
+[136.493s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/align_depth/rs_align_depth_launch.py
+[136.494s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/launch_from_rosbag
+[136.494s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/launch_from_rosbag/README.md
+[136.494s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/launch_from_rosbag/rs_launch_from_rosbag.py
+[136.494s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file
+[136.495s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/rs_launch_get_params_from_yaml.py
+[136.495s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/README.md
+[136.495s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/config
+[136.495s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/config/config.yaml
+[136.495s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/pointcloud
+[136.496s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rviz
+[136.496s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rviz/urdf_pointcloud.rviz
+[136.496s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rviz/pointcloud.rviz
+[136.496s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rs_d405_pointcloud_launch.py
+[136.496s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/README.md
+[136.496s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rs_pointcloud_launch.py
+[136.496s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rs_d455_pointcloud_launch.py
+[136.497s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/dual_camera
+[136.497s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/rviz
+[136.497s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/rviz/dual_camera_pointcloud.rviz
+[136.497s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/README.md
+[136.497s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/rs_dual_camera_launch.py
+[136.497s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/environment/library_path.sh
+[136.498s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/environment/library_path.dsv
+[136.498s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/ament_index/resource_index/package_run_dependencies/realsense2_camera
+[136.498s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/ament_index/resource_index/parent_prefix_path/realsense2_camera
+[136.498s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/environment/ament_prefix_path.sh
+[136.498s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/environment/ament_prefix_path.dsv
+[136.498s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/environment/path.sh
+[136.499s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/environment/path.dsv
+[136.499s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/local_setup.bash
+[136.499s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/local_setup.sh
+[136.499s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/local_setup.zsh
+[136.500s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/local_setup.dsv
+[136.502s] -- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/package.dsv
+[136.503s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/ament_index/resource_index/packages/realsense2_camera
+[136.504s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/ament_index/resource_index/rclcpp_components/realsense2_camera
+[136.504s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_include_directories-extras.cmake
+[136.504s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_libraries-extras.cmake
+[136.504s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_dependencies-extras.cmake
+[136.505s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/cmake/realsense2_cameraConfig.cmake
+[136.505s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/cmake/realsense2_cameraConfig-version.cmake
+[136.505s] -- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/package.xml
+[136.506s] Invoked command in '/home/lunabotics/2025-tibalt-bot/build/realsense2_camera' returned '0': AMENT_PREFIX_PATH=/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/lunabotics/2025-tibalt-bot/build/realsense2_camera

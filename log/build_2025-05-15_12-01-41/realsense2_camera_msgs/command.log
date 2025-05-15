@@ -1,0 +1,2 @@
+Invoking command in '/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs': /usr/bin/cmake /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera_msgs -DCMAKE_INSTALL_PREFIX=/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs
+Invoked command in '/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs' returned '1': /usr/bin/cmake /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera_msgs -DCMAKE_INSTALL_PREFIX=/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs

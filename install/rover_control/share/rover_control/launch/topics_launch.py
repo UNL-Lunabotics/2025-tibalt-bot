@@ -89,24 +89,4 @@ def generate_launch_description():
         output='screen'
     ))
 
-    # ld.add_action(Node(
-    #     package='realsense2_camera',
-    #     executable='realsense2_camera_node',
-    #     name='cam_1',
-    #     parameters=[{
-    #         'serial_no': cam_1_serial,
-    #         'camera_name': 'cam_1'
-    #     }]
-    # ))
-
-    # ld.add_action(Node(
-    #     package='realsense2_camera',
-    #     executable='realsense2_camera_node',
-    #     name='cam_2',
-    #     parameters=[{
-    #         'serial_no': cam_2_serial,
-    #         'camera_name': 'cam_2'
-    #     }]
-    # ))
-
     return ld

@@ -1,5 +1,5 @@
 CMakeFiles/gtest_template.dir/test/gtest_template.cpp.o: \
- /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/test/gtest_template.cpp \
+ /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/test/gtest_template.cpp \
  /usr/include/stdc-predef.h \
  /opt/ros/humble/src/gtest_vendor/include/gtest/gtest.h \
  /usr/include/c++/11/cstddef \

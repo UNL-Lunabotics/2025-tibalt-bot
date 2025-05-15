@@ -1,6 +1,6 @@
 # generated from ament_cmake_export_dependencies/cmake/ament_cmake_export_dependencies-extras.cmake.in
 
-set(_exported_dependencies "cv_bridge;image_transport;rclcpp;rclcpp_components;realsense2_camera_msgs;std_srvs;std_msgs;sensor_msgs;nav_msgs;tf2;tf2_ros;diagnostic_updater;realsense2")
+set(_exported_dependencies "cv_bridge;image_transport;rclcpp;rclcpp_components;realsense2_camera_msgs;std_msgs;sensor_msgs;nav_msgs;tf2;tf2_ros;diagnostic_updater;realsense2")
 
 find_package(ament_cmake_libraries QUIET REQUIRED)
 

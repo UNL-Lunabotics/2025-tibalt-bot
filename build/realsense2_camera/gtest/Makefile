@@ -57,7 +57,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera
+CMAKE_SOURCE_DIR = /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/lunabotics/2025-tibalt-bot/build/realsense2_camera

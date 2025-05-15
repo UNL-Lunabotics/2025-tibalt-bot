@@ -1,8 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/realsense2_camera.dir/src/actions.cpp.o"
-  "CMakeFiles/realsense2_camera.dir/src/actions.cpp.o.d"
-  "CMakeFiles/realsense2_camera.dir/src/align_depth_filter.cpp.o"
-  "CMakeFiles/realsense2_camera.dir/src/align_depth_filter.cpp.o.d"
   "CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o"
   "CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o.d"
   "CMakeFiles/realsense2_camera.dir/src/dynamic_params.cpp.o"
@@ -13,8 +9,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/realsense2_camera.dir/src/named_filter.cpp.o.d"
   "CMakeFiles/realsense2_camera.dir/src/parameters.cpp.o"
   "CMakeFiles/realsense2_camera.dir/src/parameters.cpp.o.d"
-  "CMakeFiles/realsense2_camera.dir/src/pointcloud_filter.cpp.o"
-  "CMakeFiles/realsense2_camera.dir/src/pointcloud_filter.cpp.o.d"
   "CMakeFiles/realsense2_camera.dir/src/profile_manager.cpp.o"
   "CMakeFiles/realsense2_camera.dir/src/profile_manager.cpp.o.d"
   "CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o"

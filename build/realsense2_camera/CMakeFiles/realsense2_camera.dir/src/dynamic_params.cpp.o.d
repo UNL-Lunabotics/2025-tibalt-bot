@@ -1,8 +1,8 @@
 CMakeFiles/realsense2_camera.dir/src/dynamic_params.cpp.o: \
- /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/dynamic_params.cpp \
+ /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/dynamic_params.cpp \
  /usr/include/stdc-predef.h \
- /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/include/dynamic_params.h \
- /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/include/ros_utils.h \
+ /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/dynamic_params.h \
+ /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/ros_utils.h \
  /usr/include/c++/11/iostream \
  /usr/include/aarch64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/11/bits/os_defines.h \
@@ -159,7 +159,6 @@ CMakeFiles/realsense2_camera.dir/src/dynamic_params.cpp.o: \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/include/ros_node_base.h \
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/11/csignal /usr/include/signal.h \
  /usr/include/aarch64-linux-gnu/bits/signum-generic.h \
@@ -688,7 +687,7 @@ CMakeFiles/realsense2_camera.dir/src/dynamic_params.cpp.o: \
  /usr/include/librealsense2/hpp/rs_pipeline.hpp \
  /usr/include/librealsense2/hpp/rs_context.hpp \
  /usr/include/librealsense2/rsutil.h \
- /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/include/constants.h \
+ /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/constants.h \
  /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_deque.h \
  /usr/include/c++/11/bits/deque.tcc \
- /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/include/ros_param_backend.h
+ /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/ros_param_backend.h

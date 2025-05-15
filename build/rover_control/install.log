@@ -9,6 +9,7 @@
 /home/lunabotics/2025-tibalt-bot/install/rover_control/share/rover_control/launch/joystick_launch.py
 /home/lunabotics/2025-tibalt-bot/install/rover_control/share/rover_control/config
 /home/lunabotics/2025-tibalt-bot/install/rover_control/share/rover_control/urdf
+/home/lunabotics/2025-tibalt-bot/install/rover_control/share/ament_index/resource_index/packages/rover_control
 /home/lunabotics/2025-tibalt-bot/install/rover_control/lib/python3.10/site-packages/rover_control-0.0.0-py3.10.egg-info/top_level.txt
 /home/lunabotics/2025-tibalt-bot/install/rover_control/lib/python3.10/site-packages/rover_control-0.0.0-py3.10.egg-info/requires.txt
 /home/lunabotics/2025-tibalt-bot/install/rover_control/lib/python3.10/site-packages/rover_control-0.0.0-py3.10.egg-info/SOURCES.txt

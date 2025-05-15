@@ -7,10 +7,7 @@
     "/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs:msg/Extrinsics.idl",
     "/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs:msg/Metadata.idl",
     "/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs:msg/RGBD.idl",
-    "/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs:srv/DeviceInfo.idl",
-    "/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs:srv/CalibConfigRead.idl",
-    "/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs:srv/CalibConfigWrite.idl",
-    "/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs:action/TriggeredCalibration.idl"
+    "/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs:srv/DeviceInfo.idl"
   ],
   "ros_interface_dependencies": [
     "builtin_interfaces:/opt/ros/humble/share/builtin_interfaces/msg/Duration.idl",
@@ -102,12 +99,7 @@
     "geometry_msgs:/opt/ros/humble/share/geometry_msgs/msg/Vector3Stamped.idl",
     "geometry_msgs:/opt/ros/humble/share/geometry_msgs/msg/VelocityStamped.idl",
     "geometry_msgs:/opt/ros/humble/share/geometry_msgs/msg/Wrench.idl",
-    "geometry_msgs:/opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl",
-    "action_msgs:/opt/ros/humble/share/action_msgs/msg/GoalInfo.idl",
-    "action_msgs:/opt/ros/humble/share/action_msgs/msg/GoalStatus.idl",
-    "action_msgs:/opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl",
-    "action_msgs:/opt/ros/humble/share/action_msgs/srv/CancelGoal.idl",
-    "unique_identifier_msgs:/opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl"
+    "geometry_msgs:/opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/lib/rosidl_typesupport_c/rosidl_typesupport_c",
@@ -121,9 +113,6 @@
     "/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs/msg/Metadata.idl",
     "/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs/msg/RGBD.idl",
     "/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs/srv/DeviceInfo.idl",
-    "/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs/srv/CalibConfigRead.idl",
-    "/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs/srv/CalibConfigWrite.idl",
-    "/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs/action/TriggeredCalibration.idl",
     "/opt/ros/humble/share/builtin_interfaces/msg/Duration.idl",
     "/opt/ros/humble/share/builtin_interfaces/msg/Time.idl",
     "/opt/ros/humble/share/std_msgs/msg/Bool.idl",
@@ -213,11 +202,6 @@
     "/opt/ros/humble/share/geometry_msgs/msg/Vector3Stamped.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/VelocityStamped.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/Wrench.idl",
-    "/opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl",
-    "/opt/ros/humble/share/action_msgs/msg/GoalInfo.idl",
-    "/opt/ros/humble/share/action_msgs/msg/GoalStatus.idl",
-    "/opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl",
-    "/opt/ros/humble/share/action_msgs/srv/CancelGoal.idl",
-    "/opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl"
+    "/opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl"
   ]
 }

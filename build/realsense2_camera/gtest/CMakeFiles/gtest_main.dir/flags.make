@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/include -I/usr/include/opencv4 -I/opt/ros/humble/src/gtest_vendor/. -isystem /opt/ros/humble/src/gtest_vendor/include
+CXX_INCLUDES = -I/home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include -I/usr/include/opencv4 -I/opt/ros/humble/src/gtest_vendor/. -isystem /opt/ros/humble/src/gtest_vendor/include
 
 CXX_FLAGS = -O2  -fPIE -fstack-protector-strong -fPIC -fno-operator-names -Wformat -Wformat-security -Wall -DHUMBLE -O3 -DNDEBUG -D_FORTIFY_SOURCE=2 -Wall -Wextra -Wpedantic -std=gnu++14
 

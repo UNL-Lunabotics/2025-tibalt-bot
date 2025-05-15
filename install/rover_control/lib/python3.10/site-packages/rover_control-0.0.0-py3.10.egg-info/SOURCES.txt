@@ -10,6 +10,7 @@ setup.py
 ../../build/rover_control/rover_control.egg-info/zip-safe
 launch/joystick_launch.py
 launch/topics_launch.py
+resource/rover_control
 rover_control/__init__.py
 rover_control/gui.py
 rover_control/tibalt_control.py

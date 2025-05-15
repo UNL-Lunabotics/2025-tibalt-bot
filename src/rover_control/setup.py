@@ -18,7 +18,10 @@ setup(
         (os.path.join('share', package_name, 'config'), glob('config/*.yaml')),
 
         # Include URDF or xacro files
-        (os.path.join('share', package_name, 'urdf'), glob('urdf/*')),
+        (os.path.join('share', package_name, 'urdf'), glob('urdf/*')),\
+        
+        ('share/ament_index/resource_index/packages', ['resource/rover_control']),
+        ('share/rover_control', ['package.xml']),
     ],
     install_requires=['setuptools'],
     zip_safe=True,

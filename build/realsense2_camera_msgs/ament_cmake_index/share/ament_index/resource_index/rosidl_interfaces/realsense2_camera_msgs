@@ -1,5 +1,3 @@
-action/TriggeredCalibration.action
-action/TriggeredCalibration.idl
 msg/Extrinsics.idl
 msg/Extrinsics.msg
 msg/IMUInfo.idl
@@ -8,14 +6,6 @@ msg/Metadata.idl
 msg/Metadata.msg
 msg/RGBD.idl
 msg/RGBD.msg
-srv/CalibConfigRead.idl
-srv/CalibConfigRead.srv
-srv/CalibConfigRead_Request.msg
-srv/CalibConfigRead_Response.msg
-srv/CalibConfigWrite.idl
-srv/CalibConfigWrite.srv
-srv/CalibConfigWrite_Request.msg
-srv/CalibConfigWrite_Response.msg
 srv/DeviceInfo.idl
 srv/DeviceInfo.srv
 srv/DeviceInfo_Request.msg

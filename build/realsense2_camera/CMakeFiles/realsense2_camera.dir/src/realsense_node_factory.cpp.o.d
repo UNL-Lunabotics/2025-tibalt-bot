@@ -1,8 +1,8 @@
 CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o: \
- /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/realsense_node_factory.cpp \
+ /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/realsense_node_factory.cpp \
  /usr/include/stdc-predef.h \
- /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/../include/realsense_node_factory.h \
- /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/../include/constants.h \
+ /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/../include/realsense_node_factory.h \
+ /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/../include/constants.h \
  /usr/include/c++/11/string \
  /usr/include/aarch64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/11/bits/os_defines.h \
@@ -136,7 +136,6 @@ CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/basic_string.tcc \
- /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/../include/ros_node_base.h \
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/11/csignal /usr/include/signal.h \
  /usr/include/aarch64-linux-gnu/bits/signum-generic.h \
@@ -648,7 +647,7 @@ CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o: \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
- /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/../include/base_realsense_node.h \
+ /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/../include/base_realsense_node.h \
  /usr/include/librealsense2/rs.hpp /usr/include/librealsense2/rs.h \
  /usr/include/librealsense2/rsutil.h /usr/include/c++/11/math.h \
  /usr/lib/gcc/aarch64-linux-gnu/11/include/float.h \
@@ -771,12 +770,6 @@ CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o: \
  /opt/ros/humble/include/diagnostic_updater/diagnostic_status_wrapper.hpp \
  /opt/ros/humble/include/diagnostic_updater/publisher.hpp \
  /opt/ros/humble/include/diagnostic_updater/update_functions.hpp \
- /opt/ros/humble/include/std_srvs/std_srvs/srv/empty.hpp \
- /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/empty__struct.hpp \
- /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/empty__builder.hpp \
- /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/empty__traits.hpp \
- /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/empty__type_support.hpp \
- /opt/ros/humble/include/std_srvs/std_srvs/msg/rosidl_generator_cpp__visibility_control.hpp \
  /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/imu_info.hpp \
  /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__struct.hpp \
  /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__builder.hpp \
@@ -807,82 +800,6 @@ CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o: \
  /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__builder.hpp \
  /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__traits.hpp \
  /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__type_support.hpp \
- /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/calib_config_read.hpp \
- /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/calib_config_read__struct.hpp \
- /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/calib_config_read__builder.hpp \
- /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/calib_config_read__traits.hpp \
- /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/calib_config_read__type_support.hpp \
- /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/calib_config_write.hpp \
- /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/calib_config_write__struct.hpp \
- /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/calib_config_write__builder.hpp \
- /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/calib_config_write__traits.hpp \
- /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/calib_config_write__type_support.hpp \
- /opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp \
- /opt/ros/humble/include/rclcpp_action/rclcpp_action/client.hpp \
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/action_type_support_struct.h \
- /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/action_type_support.hpp \
- /opt/ros/humble/include/rclcpp_action/rclcpp_action/client_goal_handle.hpp \
- /opt/ros/humble/include/rcl_action/rcl_action/action_client.h \
- /opt/ros/humble/include/rcl_action/rcl_action/types.h \
- /opt/ros/humble/include/rcl_action/rcl_action/visibility_control.h \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/goal_info.h \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_info__struct.h \
- /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h \
- /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_info__functions.h \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/rosidl_generator_c__visibility_control.h \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_info__type_support.h \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/goal_status.h \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__struct.h \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__functions.h \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__type_support.h \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/goal_status_array.h \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__struct.h \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__functions.h \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__type_support.h \
- /opt/ros/humble/include/action_msgs/action_msgs/srv/cancel_goal.h \
- /opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__struct.h \
- /opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__functions.h \
- /opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__type_support.h \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/goal_status.hpp \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__struct.hpp \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_info__struct.hpp \
- /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.hpp \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__builder.hpp \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__traits.hpp \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_info__traits.hpp \
- /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__traits.hpp \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__type_support.hpp \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
- /opt/ros/humble/include/rclcpp_action/rclcpp_action/exceptions.hpp \
- /opt/ros/humble/include/rclcpp_action/rclcpp_action/types.hpp \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/goal_info.hpp \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_info__builder.hpp \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_info__type_support.hpp \
- /opt/ros/humble/include/rclcpp_action/rclcpp_action/visibility_control.hpp \
- /opt/ros/humble/include/rclcpp_action/rclcpp_action/client_goal_handle_impl.hpp \
- /opt/ros/humble/include/rclcpp_action/rclcpp_action/create_client.hpp \
- /opt/ros/humble/include/rclcpp_action/rclcpp_action/create_server.hpp \
- /opt/ros/humble/include/rcl_action/rcl_action/action_server.h \
- /opt/ros/humble/include/rcl_action/rcl_action/goal_handle.h \
- /opt/ros/humble/include/rcl_action/rcl_action/goal_state_machine.h \
- /opt/ros/humble/include/rclcpp_action/rclcpp_action/server.hpp \
- /opt/ros/humble/include/rclcpp_action/rclcpp_action/server_goal_handle.hpp \
- /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/action/triggered_calibration.hpp \
- /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/action/detail/triggered_calibration__struct.hpp \
- /opt/ros/humble/include/action_msgs/action_msgs/srv/cancel_goal.hpp \
- /opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__struct.hpp \
- /opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__builder.hpp \
- /opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__traits.hpp \
- /opt/ros/humble/include/action_msgs/action_msgs/srv/detail/cancel_goal__type_support.hpp \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/goal_status_array.hpp \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__struct.hpp \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__builder.hpp \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__traits.hpp \
- /opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status_array__type_support.hpp \
- /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/action/detail/triggered_calibration__builder.hpp \
- /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/action/detail/triggered_calibration__traits.hpp \
- /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/action/detail/triggered_calibration__type_support.hpp \
  /usr/include/librealsense2/hpp/rs_processing.hpp \
  /usr/include/librealsense2/rs_advanced_mode.hpp \
  /usr/include/librealsense2/rs.hpp \
@@ -1095,15 +1012,15 @@ CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o: \
  /usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h \
  /usr/include/eigen3/Eigen/src/Geometry/Umeyama.h \
  /usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h \
- /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/include/ros_sensor.h \
- /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/include/ros_utils.h \
- /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/include/sensor_params.h \
- /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/include/dynamic_params.h \
+ /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/ros_sensor.h \
+ /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/ros_utils.h \
+ /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/sensor_params.h \
+ /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/dynamic_params.h \
  /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_deque.h \
  /usr/include/c++/11/bits/deque.tcc \
- /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/include/ros_param_backend.h \
- /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/include/profile_manager.h \
- /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/include/named_filter.h \
+ /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/ros_param_backend.h \
+ /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/profile_manager.h \
+ /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/named_filter.h \
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/point_cloud2.hpp \
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__struct.hpp \
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__struct.hpp \

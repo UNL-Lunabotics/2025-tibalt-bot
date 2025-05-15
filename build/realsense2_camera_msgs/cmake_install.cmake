@@ -1,4 +1,4 @@
-# Install script for directory: /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera_msgs
+# Install script for directory: /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera_msgs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -376,35 +376,23 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_camera_msgs/srv" TYPE FILE FILES "/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs/srv/CalibConfigRead.idl")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_camera_msgs/msg" TYPE FILE FILES "/home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera_msgs/msg/IMUInfo.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_camera_msgs/srv" TYPE FILE FILES "/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs/srv/CalibConfigWrite.idl")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_camera_msgs/msg" TYPE FILE FILES "/home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera_msgs/msg/Extrinsics.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_camera_msgs/action" TYPE FILE FILES "/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs/action/TriggeredCalibration.idl")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_camera_msgs/msg" TYPE FILE FILES "/home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera_msgs/msg/Metadata.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_camera_msgs/msg" TYPE FILE FILES "/home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera_msgs/msg/IMUInfo.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_camera_msgs/msg" TYPE FILE FILES "/home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera_msgs/msg/RGBD.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_camera_msgs/msg" TYPE FILE FILES "/home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera_msgs/msg/Extrinsics.msg")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_camera_msgs/msg" TYPE FILE FILES "/home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera_msgs/msg/Metadata.msg")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_camera_msgs/msg" TYPE FILE FILES "/home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera_msgs/msg/RGBD.msg")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_camera_msgs/srv" TYPE FILE FILES "/home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera_msgs/srv/DeviceInfo.srv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_camera_msgs/srv" TYPE FILE FILES "/home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera_msgs/srv/DeviceInfo.srv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -413,34 +401,6 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_camera_msgs/srv" TYPE FILE FILES "/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs/rosidl_cmake/srv/DeviceInfo_Response.msg")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_camera_msgs/srv" TYPE FILE FILES "/home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera_msgs/srv/CalibConfigRead.srv")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_camera_msgs/srv" TYPE FILE FILES "/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs/rosidl_cmake/srv/CalibConfigRead_Request.msg")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_camera_msgs/srv" TYPE FILE FILES "/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs/rosidl_cmake/srv/CalibConfigRead_Response.msg")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_camera_msgs/srv" TYPE FILE FILES "/home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera_msgs/srv/CalibConfigWrite.srv")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_camera_msgs/srv" TYPE FILE FILES "/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs/rosidl_cmake/srv/CalibConfigWrite_Request.msg")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_camera_msgs/srv" TYPE FILE FILES "/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs/rosidl_cmake/srv/CalibConfigWrite_Response.msg")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_camera_msgs/action" TYPE FILE FILES "/home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera_msgs/action/TriggeredCalibration.action")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -695,7 +655,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_camera_msgs" TYPE FILE FILES "/home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera_msgs/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_camera_msgs" TYPE FILE FILES "/home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera_msgs/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)

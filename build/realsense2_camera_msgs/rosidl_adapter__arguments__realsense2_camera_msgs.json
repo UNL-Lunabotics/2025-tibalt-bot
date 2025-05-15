@@ -1,13 +1,10 @@
 {
   "package_name": "realsense2_camera_msgs",
   "non_idl_tuples": [
-    "/home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera_msgs:msg/IMUInfo.msg",
-    "/home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera_msgs:msg/Extrinsics.msg",
-    "/home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera_msgs:msg/Metadata.msg",
-    "/home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera_msgs:msg/RGBD.msg",
-    "/home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera_msgs:srv/DeviceInfo.srv",
-    "/home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera_msgs:srv/CalibConfigRead.srv",
-    "/home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera_msgs:srv/CalibConfigWrite.srv",
-    "/home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera_msgs:action/TriggeredCalibration.action"
+    "/home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera_msgs:msg/IMUInfo.msg",
+    "/home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera_msgs:msg/Extrinsics.msg",
+    "/home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera_msgs:msg/Metadata.msg",
+    "/home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera_msgs:msg/RGBD.msg",
+    "/home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera_msgs:srv/DeviceInfo.srv"
   ]
 }

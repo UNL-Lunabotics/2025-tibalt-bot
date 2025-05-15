@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/test/gtest_template.cpp" "CMakeFiles/gtest_template.dir/test/gtest_template.cpp.o" "gcc" "CMakeFiles/gtest_template.dir/test/gtest_template.cpp.o.d"
+  "/home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/test/gtest_template.cpp" "CMakeFiles/gtest_template.dir/test/gtest_template.cpp.o" "gcc" "CMakeFiles/gtest_template.dir/test/gtest_template.cpp.o.d"
   )
 
 # Targets to which this target links.

@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera
+CMAKE_SOURCE_DIR = /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/lunabotics/2025-tibalt-bot/build/realsense2_camera
@@ -106,6 +106,6 @@ gtest/CMakeFiles/gtest.dir/clean:
 .PHONY : gtest/CMakeFiles/gtest.dir/clean
 
 gtest/CMakeFiles/gtest.dir/depend:
-	cd /home/lunabotics/2025-tibalt-bot/build/realsense2_camera && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera /opt/ros/humble/src/gtest_vendor /home/lunabotics/2025-tibalt-bot/build/realsense2_camera /home/lunabotics/2025-tibalt-bot/build/realsense2_camera/gtest /home/lunabotics/2025-tibalt-bot/build/realsense2_camera/gtest/CMakeFiles/gtest.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lunabotics/2025-tibalt-bot/build/realsense2_camera && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera /opt/ros/humble/src/gtest_vendor /home/lunabotics/2025-tibalt-bot/build/realsense2_camera /home/lunabotics/2025-tibalt-bot/build/realsense2_camera/gtest /home/lunabotics/2025-tibalt-bot/build/realsense2_camera/gtest/CMakeFiles/gtest.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : gtest/CMakeFiles/gtest.dir/depend
 
