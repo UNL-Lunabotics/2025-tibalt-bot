@@ -91,10 +91,13 @@ class Tibalt(Node):
         left_motor = y_axis + x_axis
         right_motor = y_axis - x_axis
         max_mag = max(abs(left_motor), abs(right_motor))
+
         if max_mag > 1.0:
             left_motor /= max_mag
             right_motor /= max_mag
-        self.dt_left_motor = int(left_motor * 100.0)
+
+        # Invert the left motor so it drives the same way as right
+        self.dt_left_motor = -(int(left_motor * 100.0))
         self.dt_right_motor = int(right_motor * 100.0)
 
     # Logic for computing excavation motor speeds

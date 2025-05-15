@@ -4,9 +4,9 @@
 CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o: /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/base_realsense_node.cpp \
   /usr/include/stdc-predef.h \
   /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/base_realsense_node.h \
-  /usr/local/include/librealsense2/rs.hpp \
-  /usr/local/include/librealsense2/rs.h \
-  /usr/local/include/librealsense2/rsutil.h \
+  /usr/include/librealsense2/rs.hpp \
+  /usr/include/librealsense2/rs.h \
+  /usr/include/librealsense2/rsutil.h \
   /usr/include/c++/11/stdlib.h \
   /usr/include/c++/11/cstdlib \
   /usr/include/aarch64-linux-gnu/c++/11/bits/c++config.h \
@@ -111,27 +111,27 @@ CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o: /home/lunabotics
   /usr/include/c++/11/tr1/poly_laguerre.tcc \
   /usr/include/c++/11/tr1/riemann_zeta.tcc \
   /usr/lib/gcc/aarch64-linux-gnu/11/include/float.h \
-  /usr/local/include/librealsense2/h/rs_types.h \
-  /usr/local/include/librealsense2/h/rs_sensor.h \
-  /usr/local/include/librealsense2/h/rs_types.h \
-  /usr/local/include/librealsense2/h/rs_context.h \
-  /usr/local/include/librealsense2/h/rs_device.h \
-  /usr/local/include/librealsense2/h/rs_sensor.h \
-  /usr/local/include/librealsense2/h/rs_frame.h \
-  /usr/local/include/librealsense2/h/rs_option.h \
-  /usr/local/include/librealsense2/h/rs_processing.h \
-  /usr/local/include/librealsense2/h/rs_option.h \
-  /usr/local/include/librealsense2/h/rs_record_playback.h \
-  /usr/local/include/librealsense2/hpp/rs_types.hpp \
-  /usr/local/include/librealsense2/rs.h \
-  /usr/local/include/librealsense2/h/rs_context.h \
-  /usr/local/include/librealsense2/h/rs_device.h \
-  /usr/local/include/librealsense2/h/rs_frame.h \
-  /usr/local/include/librealsense2/h/rs_processing.h \
-  /usr/local/include/librealsense2/h/rs_record_playback.h \
-  /usr/local/include/librealsense2/h/rs_sensor.h \
-  /usr/local/include/librealsense2/h/rs_pipeline.h \
-  /usr/local/include/librealsense2/h/rs_config.h \
+  /usr/include/librealsense2/h/rs_types.h \
+  /usr/include/librealsense2/h/rs_sensor.h \
+  /usr/include/librealsense2/h/rs_types.h \
+  /usr/include/librealsense2/h/rs_context.h \
+  /usr/include/librealsense2/h/rs_device.h \
+  /usr/include/librealsense2/h/rs_sensor.h \
+  /usr/include/librealsense2/h/rs_frame.h \
+  /usr/include/librealsense2/h/rs_option.h \
+  /usr/include/librealsense2/h/rs_processing.h \
+  /usr/include/librealsense2/h/rs_option.h \
+  /usr/include/librealsense2/h/rs_record_playback.h \
+  /usr/include/librealsense2/hpp/rs_types.hpp \
+  /usr/include/librealsense2/rs.h \
+  /usr/include/librealsense2/h/rs_context.h \
+  /usr/include/librealsense2/h/rs_device.h \
+  /usr/include/librealsense2/h/rs_frame.h \
+  /usr/include/librealsense2/h/rs_processing.h \
+  /usr/include/librealsense2/h/rs_record_playback.h \
+  /usr/include/librealsense2/h/rs_sensor.h \
+  /usr/include/librealsense2/h/rs_pipeline.h \
+  /usr/include/librealsense2/h/rs_config.h \
   /usr/include/c++/11/string \
   /usr/include/c++/11/bits/stringfwd.h \
   /usr/include/c++/11/bits/memoryfwd.h \
@@ -290,22 +290,28 @@ CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o: /home/lunabotics
   /usr/include/c++/11/ratio \
   /usr/include/c++/11/ctime \
   /usr/include/c++/11/bits/parse_numbers.h \
-  /usr/local/include/librealsense2/hpp/rs_context.hpp \
-  /usr/local/include/librealsense2/hpp/rs_types.hpp \
-  /usr/local/include/librealsense2/hpp/rs_record_playback.hpp \
-  /usr/local/include/librealsense2/hpp/rs_device.hpp \
-  /usr/local/include/librealsense2/hpp/rs_sensor.hpp \
-  /usr/local/include/librealsense2/hpp/rs_frame.hpp \
-  /usr/local/include/librealsense2/hpp/rs_processing.hpp \
-  /usr/local/include/librealsense2/hpp/rs_options.hpp \
-  /usr/local/include/librealsense2/hpp/rs_device.hpp \
-  /usr/local/include/librealsense2/hpp/rs_frame.hpp \
-  /usr/local/include/librealsense2/hpp/rs_processing.hpp \
-  /usr/local/include/librealsense2/hpp/rs_record_playback.hpp \
-  /usr/local/include/librealsense2/hpp/rs_sensor.hpp \
-  /usr/local/include/librealsense2/hpp/rs_pipeline.hpp \
-  /usr/local/include/librealsense2/hpp/rs_context.hpp \
-  /usr/local/include/librealsense2/rsutil.h \
+  /usr/include/librealsense2/hpp/rs_context.hpp \
+  /usr/include/librealsense2/hpp/rs_types.hpp \
+  /usr/include/librealsense2/hpp/rs_record_playback.hpp \
+  /usr/include/librealsense2/hpp/rs_device.hpp \
+  /usr/include/librealsense2/hpp/rs_sensor.hpp \
+  /usr/include/librealsense2/hpp/rs_frame.hpp \
+  /usr/include/librealsense2/hpp/rs_processing.hpp \
+  /usr/include/librealsense2/hpp/rs_options.hpp \
+  /usr/include/librealsense2/h/rs_types.h \
+  /usr/include/c++/11/cstring \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/aarch64-linux-gnu/bits/strings_fortified.h \
+  /usr/include/aarch64-linux-gnu/bits/string_fortified.h \
+  /usr/include/librealsense2/hpp/rs_device.hpp \
+  /usr/include/librealsense2/hpp/rs_frame.hpp \
+  /usr/include/librealsense2/hpp/rs_processing.hpp \
+  /usr/include/librealsense2/hpp/rs_record_playback.hpp \
+  /usr/include/librealsense2/hpp/rs_sensor.hpp \
+  /usr/include/librealsense2/hpp/rs_pipeline.hpp \
+  /usr/include/librealsense2/hpp/rs_context.hpp \
+  /usr/include/librealsense2/rsutil.h \
   /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/constants.h \
   /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
   /usr/include/c++/11/csignal \
@@ -411,10 +417,6 @@ CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o: /home/lunabotics
   /opt/ros/humble/include/rmw/rmw/types.h \
   /opt/ros/humble/include/rcutils/rcutils/logging.h \
   /opt/ros/humble/include/rcutils/rcutils/error_handling.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/aarch64-linux-gnu/bits/strings_fortified.h \
-  /usr/include/aarch64-linux-gnu/bits/string_fortified.h \
   /opt/ros/humble/include/rcutils/rcutils/snprintf.h \
   /opt/ros/humble/include/rcutils/rcutils/time.h \
   /opt/ros/humble/include/rcutils/rcutils/types.h \
@@ -554,7 +556,6 @@ CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o: /home/lunabotics
   /opt/ros/humble/include/rclcpp/rclcpp/subscription_base.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/allocator/allocator_common.hpp \
-  /usr/include/c++/11/cstring \
   /opt/ros/humble/include/rclcpp/rclcpp/allocator/allocator_deleter.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/detail/subscription_callback_type_helper.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/message_info.hpp \
@@ -869,12 +870,12 @@ CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o: /home/lunabotics
   /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__builder.hpp \
   /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__traits.hpp \
   /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__type_support.hpp \
-  /usr/local/include/librealsense2/hpp/rs_processing.hpp \
-  /usr/local/include/librealsense2/rs_advanced_mode.hpp \
-  /usr/local/include/librealsense2/rs.hpp \
-  /usr/local/include/librealsense2/rs_advanced_mode.h \
-  /usr/local/include/librealsense2/h/rs_advanced_mode_command.h \
-  /usr/local/include/librealsense2/hpp/rs_serializable_device.hpp \
+  /usr/include/librealsense2/hpp/rs_processing.hpp \
+  /usr/include/librealsense2/rs_advanced_mode.hpp \
+  /usr/include/librealsense2/rs.hpp \
+  /usr/include/librealsense2/rs_advanced_mode.h \
+  /usr/include/librealsense2/h/rs_advanced_mode_command.h \
+  /usr/include/librealsense2/hpp/rs_serializable_device.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/camera_info.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__builder.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__type_support.hpp \
@@ -1833,48 +1834,49 @@ CMakeFiles/realsense2_camera.dir/src/dynamic_params.cpp.o: /home/lunabotics/2025
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
-  /usr/local/include/librealsense2/rs.hpp \
-  /usr/local/include/librealsense2/rs.h \
-  /usr/local/include/librealsense2/rsutil.h \
+  /usr/include/librealsense2/rs.hpp \
+  /usr/include/librealsense2/rs.h \
+  /usr/include/librealsense2/rsutil.h \
   /usr/include/c++/11/math.h \
   /usr/lib/gcc/aarch64-linux-gnu/11/include/float.h \
-  /usr/local/include/librealsense2/h/rs_types.h \
-  /usr/local/include/librealsense2/h/rs_sensor.h \
-  /usr/local/include/librealsense2/h/rs_types.h \
-  /usr/local/include/librealsense2/h/rs_context.h \
-  /usr/local/include/librealsense2/h/rs_device.h \
-  /usr/local/include/librealsense2/h/rs_sensor.h \
-  /usr/local/include/librealsense2/h/rs_frame.h \
-  /usr/local/include/librealsense2/h/rs_option.h \
-  /usr/local/include/librealsense2/h/rs_processing.h \
-  /usr/local/include/librealsense2/h/rs_option.h \
-  /usr/local/include/librealsense2/h/rs_record_playback.h \
-  /usr/local/include/librealsense2/hpp/rs_types.hpp \
-  /usr/local/include/librealsense2/rs.h \
-  /usr/local/include/librealsense2/h/rs_context.h \
-  /usr/local/include/librealsense2/h/rs_device.h \
-  /usr/local/include/librealsense2/h/rs_frame.h \
-  /usr/local/include/librealsense2/h/rs_processing.h \
-  /usr/local/include/librealsense2/h/rs_record_playback.h \
-  /usr/local/include/librealsense2/h/rs_sensor.h \
-  /usr/local/include/librealsense2/h/rs_pipeline.h \
-  /usr/local/include/librealsense2/h/rs_config.h \
-  /usr/local/include/librealsense2/hpp/rs_context.hpp \
-  /usr/local/include/librealsense2/hpp/rs_types.hpp \
-  /usr/local/include/librealsense2/hpp/rs_record_playback.hpp \
-  /usr/local/include/librealsense2/hpp/rs_device.hpp \
-  /usr/local/include/librealsense2/hpp/rs_sensor.hpp \
-  /usr/local/include/librealsense2/hpp/rs_frame.hpp \
-  /usr/local/include/librealsense2/hpp/rs_processing.hpp \
-  /usr/local/include/librealsense2/hpp/rs_options.hpp \
-  /usr/local/include/librealsense2/hpp/rs_device.hpp \
-  /usr/local/include/librealsense2/hpp/rs_frame.hpp \
-  /usr/local/include/librealsense2/hpp/rs_processing.hpp \
-  /usr/local/include/librealsense2/hpp/rs_record_playback.hpp \
-  /usr/local/include/librealsense2/hpp/rs_sensor.hpp \
-  /usr/local/include/librealsense2/hpp/rs_pipeline.hpp \
-  /usr/local/include/librealsense2/hpp/rs_context.hpp \
-  /usr/local/include/librealsense2/rsutil.h \
+  /usr/include/librealsense2/h/rs_types.h \
+  /usr/include/librealsense2/h/rs_sensor.h \
+  /usr/include/librealsense2/h/rs_types.h \
+  /usr/include/librealsense2/h/rs_context.h \
+  /usr/include/librealsense2/h/rs_device.h \
+  /usr/include/librealsense2/h/rs_sensor.h \
+  /usr/include/librealsense2/h/rs_frame.h \
+  /usr/include/librealsense2/h/rs_option.h \
+  /usr/include/librealsense2/h/rs_processing.h \
+  /usr/include/librealsense2/h/rs_option.h \
+  /usr/include/librealsense2/h/rs_record_playback.h \
+  /usr/include/librealsense2/hpp/rs_types.hpp \
+  /usr/include/librealsense2/rs.h \
+  /usr/include/librealsense2/h/rs_context.h \
+  /usr/include/librealsense2/h/rs_device.h \
+  /usr/include/librealsense2/h/rs_frame.h \
+  /usr/include/librealsense2/h/rs_processing.h \
+  /usr/include/librealsense2/h/rs_record_playback.h \
+  /usr/include/librealsense2/h/rs_sensor.h \
+  /usr/include/librealsense2/h/rs_pipeline.h \
+  /usr/include/librealsense2/h/rs_config.h \
+  /usr/include/librealsense2/hpp/rs_context.hpp \
+  /usr/include/librealsense2/hpp/rs_types.hpp \
+  /usr/include/librealsense2/hpp/rs_record_playback.hpp \
+  /usr/include/librealsense2/hpp/rs_device.hpp \
+  /usr/include/librealsense2/hpp/rs_sensor.hpp \
+  /usr/include/librealsense2/hpp/rs_frame.hpp \
+  /usr/include/librealsense2/hpp/rs_processing.hpp \
+  /usr/include/librealsense2/hpp/rs_options.hpp \
+  /usr/include/librealsense2/h/rs_types.h \
+  /usr/include/librealsense2/hpp/rs_device.hpp \
+  /usr/include/librealsense2/hpp/rs_frame.hpp \
+  /usr/include/librealsense2/hpp/rs_processing.hpp \
+  /usr/include/librealsense2/hpp/rs_record_playback.hpp \
+  /usr/include/librealsense2/hpp/rs_sensor.hpp \
+  /usr/include/librealsense2/hpp/rs_pipeline.hpp \
+  /usr/include/librealsense2/hpp/rs_context.hpp \
+  /usr/include/librealsense2/rsutil.h \
   /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/constants.h \
   /usr/include/c++/11/deque \
   /usr/include/c++/11/bits/stl_deque.h \
@@ -2807,9 +2809,9 @@ CMakeFiles/realsense2_camera.dir/src/named_filter.cpp.o: /home/lunabotics/2025-t
   /usr/include/c++/11/backward/auto_ptr.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/include/c++/11/pstl/execution_defs.h \
-  /usr/local/include/librealsense2/rs.hpp \
-  /usr/local/include/librealsense2/rs.h \
-  /usr/local/include/librealsense2/rsutil.h \
+  /usr/include/librealsense2/rs.hpp \
+  /usr/include/librealsense2/rs.h \
+  /usr/include/librealsense2/rsutil.h \
   /usr/include/c++/11/stdlib.h \
   /usr/lib/gcc/aarch64-linux-gnu/11/include/stdbool.h \
   /usr/include/c++/11/math.h \
@@ -2839,27 +2841,27 @@ CMakeFiles/realsense2_camera.dir/src/named_filter.cpp.o: /home/lunabotics/2025-t
   /usr/include/c++/11/tr1/poly_laguerre.tcc \
   /usr/include/c++/11/tr1/riemann_zeta.tcc \
   /usr/lib/gcc/aarch64-linux-gnu/11/include/float.h \
-  /usr/local/include/librealsense2/h/rs_types.h \
-  /usr/local/include/librealsense2/h/rs_sensor.h \
-  /usr/local/include/librealsense2/h/rs_types.h \
-  /usr/local/include/librealsense2/h/rs_context.h \
-  /usr/local/include/librealsense2/h/rs_device.h \
-  /usr/local/include/librealsense2/h/rs_sensor.h \
-  /usr/local/include/librealsense2/h/rs_frame.h \
-  /usr/local/include/librealsense2/h/rs_option.h \
-  /usr/local/include/librealsense2/h/rs_processing.h \
-  /usr/local/include/librealsense2/h/rs_option.h \
-  /usr/local/include/librealsense2/h/rs_record_playback.h \
-  /usr/local/include/librealsense2/hpp/rs_types.hpp \
-  /usr/local/include/librealsense2/rs.h \
-  /usr/local/include/librealsense2/h/rs_context.h \
-  /usr/local/include/librealsense2/h/rs_device.h \
-  /usr/local/include/librealsense2/h/rs_frame.h \
-  /usr/local/include/librealsense2/h/rs_processing.h \
-  /usr/local/include/librealsense2/h/rs_record_playback.h \
-  /usr/local/include/librealsense2/h/rs_sensor.h \
-  /usr/local/include/librealsense2/h/rs_pipeline.h \
-  /usr/local/include/librealsense2/h/rs_config.h \
+  /usr/include/librealsense2/h/rs_types.h \
+  /usr/include/librealsense2/h/rs_sensor.h \
+  /usr/include/librealsense2/h/rs_types.h \
+  /usr/include/librealsense2/h/rs_context.h \
+  /usr/include/librealsense2/h/rs_device.h \
+  /usr/include/librealsense2/h/rs_sensor.h \
+  /usr/include/librealsense2/h/rs_frame.h \
+  /usr/include/librealsense2/h/rs_option.h \
+  /usr/include/librealsense2/h/rs_processing.h \
+  /usr/include/librealsense2/h/rs_option.h \
+  /usr/include/librealsense2/h/rs_record_playback.h \
+  /usr/include/librealsense2/hpp/rs_types.hpp \
+  /usr/include/librealsense2/rs.h \
+  /usr/include/librealsense2/h/rs_context.h \
+  /usr/include/librealsense2/h/rs_device.h \
+  /usr/include/librealsense2/h/rs_frame.h \
+  /usr/include/librealsense2/h/rs_processing.h \
+  /usr/include/librealsense2/h/rs_record_playback.h \
+  /usr/include/librealsense2/h/rs_sensor.h \
+  /usr/include/librealsense2/h/rs_pipeline.h \
+  /usr/include/librealsense2/h/rs_config.h \
   /usr/include/c++/11/vector \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
@@ -2908,21 +2910,27 @@ CMakeFiles/realsense2_camera.dir/src/named_filter.cpp.o: /home/lunabotics/2025-t
   /usr/include/c++/11/ratio \
   /usr/include/c++/11/ctime \
   /usr/include/c++/11/bits/parse_numbers.h \
-  /usr/local/include/librealsense2/hpp/rs_context.hpp \
-  /usr/local/include/librealsense2/hpp/rs_types.hpp \
-  /usr/local/include/librealsense2/hpp/rs_record_playback.hpp \
-  /usr/local/include/librealsense2/hpp/rs_device.hpp \
-  /usr/local/include/librealsense2/hpp/rs_sensor.hpp \
-  /usr/local/include/librealsense2/hpp/rs_frame.hpp \
-  /usr/local/include/librealsense2/hpp/rs_processing.hpp \
-  /usr/local/include/librealsense2/hpp/rs_options.hpp \
-  /usr/local/include/librealsense2/hpp/rs_device.hpp \
-  /usr/local/include/librealsense2/hpp/rs_frame.hpp \
-  /usr/local/include/librealsense2/hpp/rs_processing.hpp \
-  /usr/local/include/librealsense2/hpp/rs_record_playback.hpp \
-  /usr/local/include/librealsense2/hpp/rs_sensor.hpp \
-  /usr/local/include/librealsense2/hpp/rs_pipeline.hpp \
-  /usr/local/include/librealsense2/hpp/rs_context.hpp \
+  /usr/include/librealsense2/hpp/rs_context.hpp \
+  /usr/include/librealsense2/hpp/rs_types.hpp \
+  /usr/include/librealsense2/hpp/rs_record_playback.hpp \
+  /usr/include/librealsense2/hpp/rs_device.hpp \
+  /usr/include/librealsense2/hpp/rs_sensor.hpp \
+  /usr/include/librealsense2/hpp/rs_frame.hpp \
+  /usr/include/librealsense2/hpp/rs_processing.hpp \
+  /usr/include/librealsense2/hpp/rs_options.hpp \
+  /usr/include/librealsense2/h/rs_types.h \
+  /usr/include/c++/11/cstring \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/aarch64-linux-gnu/bits/strings_fortified.h \
+  /usr/include/aarch64-linux-gnu/bits/string_fortified.h \
+  /usr/include/librealsense2/hpp/rs_device.hpp \
+  /usr/include/librealsense2/hpp/rs_frame.hpp \
+  /usr/include/librealsense2/hpp/rs_processing.hpp \
+  /usr/include/librealsense2/hpp/rs_record_playback.hpp \
+  /usr/include/librealsense2/hpp/rs_sensor.hpp \
+  /usr/include/librealsense2/hpp/rs_pipeline.hpp \
+  /usr/include/librealsense2/hpp/rs_context.hpp \
   /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/sensor_params.h \
   /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
   /usr/include/c++/11/csignal \
@@ -3028,10 +3036,6 @@ CMakeFiles/realsense2_camera.dir/src/named_filter.cpp.o: /home/lunabotics/2025-t
   /opt/ros/humble/include/rmw/rmw/types.h \
   /opt/ros/humble/include/rcutils/rcutils/logging.h \
   /opt/ros/humble/include/rcutils/rcutils/error_handling.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/aarch64-linux-gnu/bits/strings_fortified.h \
-  /usr/include/aarch64-linux-gnu/bits/string_fortified.h \
   /opt/ros/humble/include/rcutils/rcutils/snprintf.h \
   /opt/ros/humble/include/rcutils/rcutils/time.h \
   /opt/ros/humble/include/rcutils/rcutils/types.h \
@@ -3171,7 +3175,6 @@ CMakeFiles/realsense2_camera.dir/src/named_filter.cpp.o: /home/lunabotics/2025-t
   /opt/ros/humble/include/rclcpp/rclcpp/subscription_base.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/allocator/allocator_common.hpp \
-  /usr/include/c++/11/cstring \
   /opt/ros/humble/include/rclcpp/rclcpp/allocator/allocator_deleter.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/detail/subscription_callback_type_helper.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/message_info.hpp \
@@ -3375,7 +3378,7 @@ CMakeFiles/realsense2_camera.dir/src/named_filter.cpp.o: /home/lunabotics/2025-t
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
   /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/dynamic_params.h \
   /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/ros_utils.h \
-  /usr/local/include/librealsense2/rsutil.h \
+  /usr/include/librealsense2/rsutil.h \
   /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/constants.h \
   /usr/include/c++/11/deque \
   /usr/include/c++/11/bits/stl_deque.h \
@@ -3420,9 +3423,9 @@ CMakeFiles/realsense2_camera.dir/src/named_filter.cpp.o: /home/lunabotics/2025-t
 CMakeFiles/realsense2_camera.dir/src/parameters.cpp.o: /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/parameters.cpp \
   /usr/include/stdc-predef.h \
   /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/base_realsense_node.h \
-  /usr/local/include/librealsense2/rs.hpp \
-  /usr/local/include/librealsense2/rs.h \
-  /usr/local/include/librealsense2/rsutil.h \
+  /usr/include/librealsense2/rs.hpp \
+  /usr/include/librealsense2/rs.h \
+  /usr/include/librealsense2/rsutil.h \
   /usr/include/c++/11/stdlib.h \
   /usr/include/c++/11/cstdlib \
   /usr/include/aarch64-linux-gnu/c++/11/bits/c++config.h \
@@ -3527,27 +3530,27 @@ CMakeFiles/realsense2_camera.dir/src/parameters.cpp.o: /home/lunabotics/2025-tib
   /usr/include/c++/11/tr1/poly_laguerre.tcc \
   /usr/include/c++/11/tr1/riemann_zeta.tcc \
   /usr/lib/gcc/aarch64-linux-gnu/11/include/float.h \
-  /usr/local/include/librealsense2/h/rs_types.h \
-  /usr/local/include/librealsense2/h/rs_sensor.h \
-  /usr/local/include/librealsense2/h/rs_types.h \
-  /usr/local/include/librealsense2/h/rs_context.h \
-  /usr/local/include/librealsense2/h/rs_device.h \
-  /usr/local/include/librealsense2/h/rs_sensor.h \
-  /usr/local/include/librealsense2/h/rs_frame.h \
-  /usr/local/include/librealsense2/h/rs_option.h \
-  /usr/local/include/librealsense2/h/rs_processing.h \
-  /usr/local/include/librealsense2/h/rs_option.h \
-  /usr/local/include/librealsense2/h/rs_record_playback.h \
-  /usr/local/include/librealsense2/hpp/rs_types.hpp \
-  /usr/local/include/librealsense2/rs.h \
-  /usr/local/include/librealsense2/h/rs_context.h \
-  /usr/local/include/librealsense2/h/rs_device.h \
-  /usr/local/include/librealsense2/h/rs_frame.h \
-  /usr/local/include/librealsense2/h/rs_processing.h \
-  /usr/local/include/librealsense2/h/rs_record_playback.h \
-  /usr/local/include/librealsense2/h/rs_sensor.h \
-  /usr/local/include/librealsense2/h/rs_pipeline.h \
-  /usr/local/include/librealsense2/h/rs_config.h \
+  /usr/include/librealsense2/h/rs_types.h \
+  /usr/include/librealsense2/h/rs_sensor.h \
+  /usr/include/librealsense2/h/rs_types.h \
+  /usr/include/librealsense2/h/rs_context.h \
+  /usr/include/librealsense2/h/rs_device.h \
+  /usr/include/librealsense2/h/rs_sensor.h \
+  /usr/include/librealsense2/h/rs_frame.h \
+  /usr/include/librealsense2/h/rs_option.h \
+  /usr/include/librealsense2/h/rs_processing.h \
+  /usr/include/librealsense2/h/rs_option.h \
+  /usr/include/librealsense2/h/rs_record_playback.h \
+  /usr/include/librealsense2/hpp/rs_types.hpp \
+  /usr/include/librealsense2/rs.h \
+  /usr/include/librealsense2/h/rs_context.h \
+  /usr/include/librealsense2/h/rs_device.h \
+  /usr/include/librealsense2/h/rs_frame.h \
+  /usr/include/librealsense2/h/rs_processing.h \
+  /usr/include/librealsense2/h/rs_record_playback.h \
+  /usr/include/librealsense2/h/rs_sensor.h \
+  /usr/include/librealsense2/h/rs_pipeline.h \
+  /usr/include/librealsense2/h/rs_config.h \
   /usr/include/c++/11/string \
   /usr/include/c++/11/bits/stringfwd.h \
   /usr/include/c++/11/bits/memoryfwd.h \
@@ -3706,22 +3709,28 @@ CMakeFiles/realsense2_camera.dir/src/parameters.cpp.o: /home/lunabotics/2025-tib
   /usr/include/c++/11/ratio \
   /usr/include/c++/11/ctime \
   /usr/include/c++/11/bits/parse_numbers.h \
-  /usr/local/include/librealsense2/hpp/rs_context.hpp \
-  /usr/local/include/librealsense2/hpp/rs_types.hpp \
-  /usr/local/include/librealsense2/hpp/rs_record_playback.hpp \
-  /usr/local/include/librealsense2/hpp/rs_device.hpp \
-  /usr/local/include/librealsense2/hpp/rs_sensor.hpp \
-  /usr/local/include/librealsense2/hpp/rs_frame.hpp \
-  /usr/local/include/librealsense2/hpp/rs_processing.hpp \
-  /usr/local/include/librealsense2/hpp/rs_options.hpp \
-  /usr/local/include/librealsense2/hpp/rs_device.hpp \
-  /usr/local/include/librealsense2/hpp/rs_frame.hpp \
-  /usr/local/include/librealsense2/hpp/rs_processing.hpp \
-  /usr/local/include/librealsense2/hpp/rs_record_playback.hpp \
-  /usr/local/include/librealsense2/hpp/rs_sensor.hpp \
-  /usr/local/include/librealsense2/hpp/rs_pipeline.hpp \
-  /usr/local/include/librealsense2/hpp/rs_context.hpp \
-  /usr/local/include/librealsense2/rsutil.h \
+  /usr/include/librealsense2/hpp/rs_context.hpp \
+  /usr/include/librealsense2/hpp/rs_types.hpp \
+  /usr/include/librealsense2/hpp/rs_record_playback.hpp \
+  /usr/include/librealsense2/hpp/rs_device.hpp \
+  /usr/include/librealsense2/hpp/rs_sensor.hpp \
+  /usr/include/librealsense2/hpp/rs_frame.hpp \
+  /usr/include/librealsense2/hpp/rs_processing.hpp \
+  /usr/include/librealsense2/hpp/rs_options.hpp \
+  /usr/include/librealsense2/h/rs_types.h \
+  /usr/include/c++/11/cstring \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/aarch64-linux-gnu/bits/strings_fortified.h \
+  /usr/include/aarch64-linux-gnu/bits/string_fortified.h \
+  /usr/include/librealsense2/hpp/rs_device.hpp \
+  /usr/include/librealsense2/hpp/rs_frame.hpp \
+  /usr/include/librealsense2/hpp/rs_processing.hpp \
+  /usr/include/librealsense2/hpp/rs_record_playback.hpp \
+  /usr/include/librealsense2/hpp/rs_sensor.hpp \
+  /usr/include/librealsense2/hpp/rs_pipeline.hpp \
+  /usr/include/librealsense2/hpp/rs_context.hpp \
+  /usr/include/librealsense2/rsutil.h \
   /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/constants.h \
   /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
   /usr/include/c++/11/csignal \
@@ -3827,10 +3836,6 @@ CMakeFiles/realsense2_camera.dir/src/parameters.cpp.o: /home/lunabotics/2025-tib
   /opt/ros/humble/include/rmw/rmw/types.h \
   /opt/ros/humble/include/rcutils/rcutils/logging.h \
   /opt/ros/humble/include/rcutils/rcutils/error_handling.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/aarch64-linux-gnu/bits/strings_fortified.h \
-  /usr/include/aarch64-linux-gnu/bits/string_fortified.h \
   /opt/ros/humble/include/rcutils/rcutils/snprintf.h \
   /opt/ros/humble/include/rcutils/rcutils/time.h \
   /opt/ros/humble/include/rcutils/rcutils/types.h \
@@ -3970,7 +3975,6 @@ CMakeFiles/realsense2_camera.dir/src/parameters.cpp.o: /home/lunabotics/2025-tib
   /opt/ros/humble/include/rclcpp/rclcpp/subscription_base.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/allocator/allocator_common.hpp \
-  /usr/include/c++/11/cstring \
   /opt/ros/humble/include/rclcpp/rclcpp/allocator/allocator_deleter.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/detail/subscription_callback_type_helper.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/message_info.hpp \
@@ -4285,12 +4289,12 @@ CMakeFiles/realsense2_camera.dir/src/parameters.cpp.o: /home/lunabotics/2025-tib
   /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__builder.hpp \
   /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__traits.hpp \
   /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__type_support.hpp \
-  /usr/local/include/librealsense2/hpp/rs_processing.hpp \
-  /usr/local/include/librealsense2/rs_advanced_mode.hpp \
-  /usr/local/include/librealsense2/rs.hpp \
-  /usr/local/include/librealsense2/rs_advanced_mode.h \
-  /usr/local/include/librealsense2/h/rs_advanced_mode_command.h \
-  /usr/local/include/librealsense2/hpp/rs_serializable_device.hpp \
+  /usr/include/librealsense2/hpp/rs_processing.hpp \
+  /usr/include/librealsense2/rs_advanced_mode.hpp \
+  /usr/include/librealsense2/rs.hpp \
+  /usr/include/librealsense2/rs_advanced_mode.h \
+  /usr/include/librealsense2/h/rs_advanced_mode_command.h \
+  /usr/include/librealsense2/hpp/rs_serializable_device.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/camera_info.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__builder.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__type_support.hpp \
@@ -4524,9 +4528,9 @@ CMakeFiles/realsense2_camera.dir/src/parameters.cpp.o: /home/lunabotics/2025-tib
 CMakeFiles/realsense2_camera.dir/src/profile_manager.cpp.o: /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/profile_manager.cpp \
   /usr/include/stdc-predef.h \
   /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/profile_manager.h \
-  /usr/local/include/librealsense2/rs.hpp \
-  /usr/local/include/librealsense2/rs.h \
-  /usr/local/include/librealsense2/rsutil.h \
+  /usr/include/librealsense2/rs.hpp \
+  /usr/include/librealsense2/rs.h \
+  /usr/include/librealsense2/rsutil.h \
   /usr/include/c++/11/stdlib.h \
   /usr/include/c++/11/cstdlib \
   /usr/include/aarch64-linux-gnu/c++/11/bits/c++config.h \
@@ -4631,27 +4635,27 @@ CMakeFiles/realsense2_camera.dir/src/profile_manager.cpp.o: /home/lunabotics/202
   /usr/include/c++/11/tr1/poly_laguerre.tcc \
   /usr/include/c++/11/tr1/riemann_zeta.tcc \
   /usr/lib/gcc/aarch64-linux-gnu/11/include/float.h \
-  /usr/local/include/librealsense2/h/rs_types.h \
-  /usr/local/include/librealsense2/h/rs_sensor.h \
-  /usr/local/include/librealsense2/h/rs_types.h \
-  /usr/local/include/librealsense2/h/rs_context.h \
-  /usr/local/include/librealsense2/h/rs_device.h \
-  /usr/local/include/librealsense2/h/rs_sensor.h \
-  /usr/local/include/librealsense2/h/rs_frame.h \
-  /usr/local/include/librealsense2/h/rs_option.h \
-  /usr/local/include/librealsense2/h/rs_processing.h \
-  /usr/local/include/librealsense2/h/rs_option.h \
-  /usr/local/include/librealsense2/h/rs_record_playback.h \
-  /usr/local/include/librealsense2/hpp/rs_types.hpp \
-  /usr/local/include/librealsense2/rs.h \
-  /usr/local/include/librealsense2/h/rs_context.h \
-  /usr/local/include/librealsense2/h/rs_device.h \
-  /usr/local/include/librealsense2/h/rs_frame.h \
-  /usr/local/include/librealsense2/h/rs_processing.h \
-  /usr/local/include/librealsense2/h/rs_record_playback.h \
-  /usr/local/include/librealsense2/h/rs_sensor.h \
-  /usr/local/include/librealsense2/h/rs_pipeline.h \
-  /usr/local/include/librealsense2/h/rs_config.h \
+  /usr/include/librealsense2/h/rs_types.h \
+  /usr/include/librealsense2/h/rs_sensor.h \
+  /usr/include/librealsense2/h/rs_types.h \
+  /usr/include/librealsense2/h/rs_context.h \
+  /usr/include/librealsense2/h/rs_device.h \
+  /usr/include/librealsense2/h/rs_sensor.h \
+  /usr/include/librealsense2/h/rs_frame.h \
+  /usr/include/librealsense2/h/rs_option.h \
+  /usr/include/librealsense2/h/rs_processing.h \
+  /usr/include/librealsense2/h/rs_option.h \
+  /usr/include/librealsense2/h/rs_record_playback.h \
+  /usr/include/librealsense2/hpp/rs_types.hpp \
+  /usr/include/librealsense2/rs.h \
+  /usr/include/librealsense2/h/rs_context.h \
+  /usr/include/librealsense2/h/rs_device.h \
+  /usr/include/librealsense2/h/rs_frame.h \
+  /usr/include/librealsense2/h/rs_processing.h \
+  /usr/include/librealsense2/h/rs_record_playback.h \
+  /usr/include/librealsense2/h/rs_sensor.h \
+  /usr/include/librealsense2/h/rs_pipeline.h \
+  /usr/include/librealsense2/h/rs_config.h \
   /usr/include/c++/11/string \
   /usr/include/c++/11/bits/stringfwd.h \
   /usr/include/c++/11/bits/memoryfwd.h \
@@ -4810,21 +4814,27 @@ CMakeFiles/realsense2_camera.dir/src/profile_manager.cpp.o: /home/lunabotics/202
   /usr/include/c++/11/ratio \
   /usr/include/c++/11/ctime \
   /usr/include/c++/11/bits/parse_numbers.h \
-  /usr/local/include/librealsense2/hpp/rs_context.hpp \
-  /usr/local/include/librealsense2/hpp/rs_types.hpp \
-  /usr/local/include/librealsense2/hpp/rs_record_playback.hpp \
-  /usr/local/include/librealsense2/hpp/rs_device.hpp \
-  /usr/local/include/librealsense2/hpp/rs_sensor.hpp \
-  /usr/local/include/librealsense2/hpp/rs_frame.hpp \
-  /usr/local/include/librealsense2/hpp/rs_processing.hpp \
-  /usr/local/include/librealsense2/hpp/rs_options.hpp \
-  /usr/local/include/librealsense2/hpp/rs_device.hpp \
-  /usr/local/include/librealsense2/hpp/rs_frame.hpp \
-  /usr/local/include/librealsense2/hpp/rs_processing.hpp \
-  /usr/local/include/librealsense2/hpp/rs_record_playback.hpp \
-  /usr/local/include/librealsense2/hpp/rs_sensor.hpp \
-  /usr/local/include/librealsense2/hpp/rs_pipeline.hpp \
-  /usr/local/include/librealsense2/hpp/rs_context.hpp \
+  /usr/include/librealsense2/hpp/rs_context.hpp \
+  /usr/include/librealsense2/hpp/rs_types.hpp \
+  /usr/include/librealsense2/hpp/rs_record_playback.hpp \
+  /usr/include/librealsense2/hpp/rs_device.hpp \
+  /usr/include/librealsense2/hpp/rs_sensor.hpp \
+  /usr/include/librealsense2/hpp/rs_frame.hpp \
+  /usr/include/librealsense2/hpp/rs_processing.hpp \
+  /usr/include/librealsense2/hpp/rs_options.hpp \
+  /usr/include/librealsense2/h/rs_types.h \
+  /usr/include/c++/11/cstring \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/aarch64-linux-gnu/bits/strings_fortified.h \
+  /usr/include/aarch64-linux-gnu/bits/string_fortified.h \
+  /usr/include/librealsense2/hpp/rs_device.hpp \
+  /usr/include/librealsense2/hpp/rs_frame.hpp \
+  /usr/include/librealsense2/hpp/rs_processing.hpp \
+  /usr/include/librealsense2/hpp/rs_record_playback.hpp \
+  /usr/include/librealsense2/hpp/rs_sensor.hpp \
+  /usr/include/librealsense2/hpp/rs_pipeline.hpp \
+  /usr/include/librealsense2/hpp/rs_context.hpp \
   /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/sensor_params.h \
   /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
   /usr/include/c++/11/csignal \
@@ -4930,10 +4940,6 @@ CMakeFiles/realsense2_camera.dir/src/profile_manager.cpp.o: /home/lunabotics/202
   /opt/ros/humble/include/rmw/rmw/types.h \
   /opt/ros/humble/include/rcutils/rcutils/logging.h \
   /opt/ros/humble/include/rcutils/rcutils/error_handling.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/aarch64-linux-gnu/bits/strings_fortified.h \
-  /usr/include/aarch64-linux-gnu/bits/string_fortified.h \
   /opt/ros/humble/include/rcutils/rcutils/snprintf.h \
   /opt/ros/humble/include/rcutils/rcutils/time.h \
   /opt/ros/humble/include/rcutils/rcutils/types.h \
@@ -5073,7 +5079,6 @@ CMakeFiles/realsense2_camera.dir/src/profile_manager.cpp.o: /home/lunabotics/202
   /opt/ros/humble/include/rclcpp/rclcpp/subscription_base.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/allocator/allocator_common.hpp \
-  /usr/include/c++/11/cstring \
   /opt/ros/humble/include/rclcpp/rclcpp/allocator/allocator_deleter.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/detail/subscription_callback_type_helper.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/message_info.hpp \
@@ -5277,7 +5282,7 @@ CMakeFiles/realsense2_camera.dir/src/profile_manager.cpp.o: /home/lunabotics/202
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
   /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/dynamic_params.h \
   /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/ros_utils.h \
-  /usr/local/include/librealsense2/rsutil.h \
+  /usr/include/librealsense2/rsutil.h \
   /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/constants.h \
   /usr/include/c++/11/deque \
   /usr/include/c++/11/bits/stl_deque.h \
@@ -6014,48 +6019,49 @@ CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o: /home/lunabot
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
   /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/base_realsense_node.h \
-  /usr/local/include/librealsense2/rs.hpp \
-  /usr/local/include/librealsense2/rs.h \
-  /usr/local/include/librealsense2/rsutil.h \
+  /usr/include/librealsense2/rs.hpp \
+  /usr/include/librealsense2/rs.h \
+  /usr/include/librealsense2/rsutil.h \
   /usr/include/c++/11/math.h \
   /usr/lib/gcc/aarch64-linux-gnu/11/include/float.h \
-  /usr/local/include/librealsense2/h/rs_types.h \
-  /usr/local/include/librealsense2/h/rs_sensor.h \
-  /usr/local/include/librealsense2/h/rs_types.h \
-  /usr/local/include/librealsense2/h/rs_context.h \
-  /usr/local/include/librealsense2/h/rs_device.h \
-  /usr/local/include/librealsense2/h/rs_sensor.h \
-  /usr/local/include/librealsense2/h/rs_frame.h \
-  /usr/local/include/librealsense2/h/rs_option.h \
-  /usr/local/include/librealsense2/h/rs_processing.h \
-  /usr/local/include/librealsense2/h/rs_option.h \
-  /usr/local/include/librealsense2/h/rs_record_playback.h \
-  /usr/local/include/librealsense2/hpp/rs_types.hpp \
-  /usr/local/include/librealsense2/rs.h \
-  /usr/local/include/librealsense2/h/rs_context.h \
-  /usr/local/include/librealsense2/h/rs_device.h \
-  /usr/local/include/librealsense2/h/rs_frame.h \
-  /usr/local/include/librealsense2/h/rs_processing.h \
-  /usr/local/include/librealsense2/h/rs_record_playback.h \
-  /usr/local/include/librealsense2/h/rs_sensor.h \
-  /usr/local/include/librealsense2/h/rs_pipeline.h \
-  /usr/local/include/librealsense2/h/rs_config.h \
-  /usr/local/include/librealsense2/hpp/rs_context.hpp \
-  /usr/local/include/librealsense2/hpp/rs_types.hpp \
-  /usr/local/include/librealsense2/hpp/rs_record_playback.hpp \
-  /usr/local/include/librealsense2/hpp/rs_device.hpp \
-  /usr/local/include/librealsense2/hpp/rs_sensor.hpp \
-  /usr/local/include/librealsense2/hpp/rs_frame.hpp \
-  /usr/local/include/librealsense2/hpp/rs_processing.hpp \
-  /usr/local/include/librealsense2/hpp/rs_options.hpp \
-  /usr/local/include/librealsense2/hpp/rs_device.hpp \
-  /usr/local/include/librealsense2/hpp/rs_frame.hpp \
-  /usr/local/include/librealsense2/hpp/rs_processing.hpp \
-  /usr/local/include/librealsense2/hpp/rs_record_playback.hpp \
-  /usr/local/include/librealsense2/hpp/rs_sensor.hpp \
-  /usr/local/include/librealsense2/hpp/rs_pipeline.hpp \
-  /usr/local/include/librealsense2/hpp/rs_context.hpp \
-  /usr/local/include/librealsense2/rsutil.h \
+  /usr/include/librealsense2/h/rs_types.h \
+  /usr/include/librealsense2/h/rs_sensor.h \
+  /usr/include/librealsense2/h/rs_types.h \
+  /usr/include/librealsense2/h/rs_context.h \
+  /usr/include/librealsense2/h/rs_device.h \
+  /usr/include/librealsense2/h/rs_sensor.h \
+  /usr/include/librealsense2/h/rs_frame.h \
+  /usr/include/librealsense2/h/rs_option.h \
+  /usr/include/librealsense2/h/rs_processing.h \
+  /usr/include/librealsense2/h/rs_option.h \
+  /usr/include/librealsense2/h/rs_record_playback.h \
+  /usr/include/librealsense2/hpp/rs_types.hpp \
+  /usr/include/librealsense2/rs.h \
+  /usr/include/librealsense2/h/rs_context.h \
+  /usr/include/librealsense2/h/rs_device.h \
+  /usr/include/librealsense2/h/rs_frame.h \
+  /usr/include/librealsense2/h/rs_processing.h \
+  /usr/include/librealsense2/h/rs_record_playback.h \
+  /usr/include/librealsense2/h/rs_sensor.h \
+  /usr/include/librealsense2/h/rs_pipeline.h \
+  /usr/include/librealsense2/h/rs_config.h \
+  /usr/include/librealsense2/hpp/rs_context.hpp \
+  /usr/include/librealsense2/hpp/rs_types.hpp \
+  /usr/include/librealsense2/hpp/rs_record_playback.hpp \
+  /usr/include/librealsense2/hpp/rs_device.hpp \
+  /usr/include/librealsense2/hpp/rs_sensor.hpp \
+  /usr/include/librealsense2/hpp/rs_frame.hpp \
+  /usr/include/librealsense2/hpp/rs_processing.hpp \
+  /usr/include/librealsense2/hpp/rs_options.hpp \
+  /usr/include/librealsense2/h/rs_types.h \
+  /usr/include/librealsense2/hpp/rs_device.hpp \
+  /usr/include/librealsense2/hpp/rs_frame.hpp \
+  /usr/include/librealsense2/hpp/rs_processing.hpp \
+  /usr/include/librealsense2/hpp/rs_record_playback.hpp \
+  /usr/include/librealsense2/hpp/rs_sensor.hpp \
+  /usr/include/librealsense2/hpp/rs_pipeline.hpp \
+  /usr/include/librealsense2/hpp/rs_context.hpp \
+  /usr/include/librealsense2/rsutil.h \
   /opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge.h \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/image.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.hpp \
@@ -6169,12 +6175,12 @@ CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o: /home/lunabot
   /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__builder.hpp \
   /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__traits.hpp \
   /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__type_support.hpp \
-  /usr/local/include/librealsense2/hpp/rs_processing.hpp \
-  /usr/local/include/librealsense2/rs_advanced_mode.hpp \
-  /usr/local/include/librealsense2/rs.hpp \
-  /usr/local/include/librealsense2/rs_advanced_mode.h \
-  /usr/local/include/librealsense2/h/rs_advanced_mode_command.h \
-  /usr/local/include/librealsense2/hpp/rs_serializable_device.hpp \
+  /usr/include/librealsense2/hpp/rs_processing.hpp \
+  /usr/include/librealsense2/rs_advanced_mode.hpp \
+  /usr/include/librealsense2/rs.hpp \
+  /usr/include/librealsense2/rs_advanced_mode.h \
+  /usr/include/librealsense2/h/rs_advanced_mode_command.h \
+  /usr/include/librealsense2/hpp/rs_serializable_device.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/camera_info.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__builder.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__type_support.hpp \
@@ -7149,9 +7155,9 @@ CMakeFiles/realsense2_camera.dir/src/ros_param_backend.cpp.o: /home/lunabotics/2
 CMakeFiles/realsense2_camera.dir/src/ros_sensor.cpp.o: /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/ros_sensor.cpp \
   /usr/include/stdc-predef.h \
   /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/ros_sensor.h \
-  /usr/local/include/librealsense2/rs.hpp \
-  /usr/local/include/librealsense2/rs.h \
-  /usr/local/include/librealsense2/rsutil.h \
+  /usr/include/librealsense2/rs.hpp \
+  /usr/include/librealsense2/rs.h \
+  /usr/include/librealsense2/rsutil.h \
   /usr/include/c++/11/stdlib.h \
   /usr/include/c++/11/cstdlib \
   /usr/include/aarch64-linux-gnu/c++/11/bits/c++config.h \
@@ -7256,27 +7262,27 @@ CMakeFiles/realsense2_camera.dir/src/ros_sensor.cpp.o: /home/lunabotics/2025-tib
   /usr/include/c++/11/tr1/poly_laguerre.tcc \
   /usr/include/c++/11/tr1/riemann_zeta.tcc \
   /usr/lib/gcc/aarch64-linux-gnu/11/include/float.h \
-  /usr/local/include/librealsense2/h/rs_types.h \
-  /usr/local/include/librealsense2/h/rs_sensor.h \
-  /usr/local/include/librealsense2/h/rs_types.h \
-  /usr/local/include/librealsense2/h/rs_context.h \
-  /usr/local/include/librealsense2/h/rs_device.h \
-  /usr/local/include/librealsense2/h/rs_sensor.h \
-  /usr/local/include/librealsense2/h/rs_frame.h \
-  /usr/local/include/librealsense2/h/rs_option.h \
-  /usr/local/include/librealsense2/h/rs_processing.h \
-  /usr/local/include/librealsense2/h/rs_option.h \
-  /usr/local/include/librealsense2/h/rs_record_playback.h \
-  /usr/local/include/librealsense2/hpp/rs_types.hpp \
-  /usr/local/include/librealsense2/rs.h \
-  /usr/local/include/librealsense2/h/rs_context.h \
-  /usr/local/include/librealsense2/h/rs_device.h \
-  /usr/local/include/librealsense2/h/rs_frame.h \
-  /usr/local/include/librealsense2/h/rs_processing.h \
-  /usr/local/include/librealsense2/h/rs_record_playback.h \
-  /usr/local/include/librealsense2/h/rs_sensor.h \
-  /usr/local/include/librealsense2/h/rs_pipeline.h \
-  /usr/local/include/librealsense2/h/rs_config.h \
+  /usr/include/librealsense2/h/rs_types.h \
+  /usr/include/librealsense2/h/rs_sensor.h \
+  /usr/include/librealsense2/h/rs_types.h \
+  /usr/include/librealsense2/h/rs_context.h \
+  /usr/include/librealsense2/h/rs_device.h \
+  /usr/include/librealsense2/h/rs_sensor.h \
+  /usr/include/librealsense2/h/rs_frame.h \
+  /usr/include/librealsense2/h/rs_option.h \
+  /usr/include/librealsense2/h/rs_processing.h \
+  /usr/include/librealsense2/h/rs_option.h \
+  /usr/include/librealsense2/h/rs_record_playback.h \
+  /usr/include/librealsense2/hpp/rs_types.hpp \
+  /usr/include/librealsense2/rs.h \
+  /usr/include/librealsense2/h/rs_context.h \
+  /usr/include/librealsense2/h/rs_device.h \
+  /usr/include/librealsense2/h/rs_frame.h \
+  /usr/include/librealsense2/h/rs_processing.h \
+  /usr/include/librealsense2/h/rs_record_playback.h \
+  /usr/include/librealsense2/h/rs_sensor.h \
+  /usr/include/librealsense2/h/rs_pipeline.h \
+  /usr/include/librealsense2/h/rs_config.h \
   /usr/include/c++/11/string \
   /usr/include/c++/11/bits/stringfwd.h \
   /usr/include/c++/11/bits/memoryfwd.h \
@@ -7435,22 +7441,28 @@ CMakeFiles/realsense2_camera.dir/src/ros_sensor.cpp.o: /home/lunabotics/2025-tib
   /usr/include/c++/11/ratio \
   /usr/include/c++/11/ctime \
   /usr/include/c++/11/bits/parse_numbers.h \
-  /usr/local/include/librealsense2/hpp/rs_context.hpp \
-  /usr/local/include/librealsense2/hpp/rs_types.hpp \
-  /usr/local/include/librealsense2/hpp/rs_record_playback.hpp \
-  /usr/local/include/librealsense2/hpp/rs_device.hpp \
-  /usr/local/include/librealsense2/hpp/rs_sensor.hpp \
-  /usr/local/include/librealsense2/hpp/rs_frame.hpp \
-  /usr/local/include/librealsense2/hpp/rs_processing.hpp \
-  /usr/local/include/librealsense2/hpp/rs_options.hpp \
-  /usr/local/include/librealsense2/hpp/rs_device.hpp \
-  /usr/local/include/librealsense2/hpp/rs_frame.hpp \
-  /usr/local/include/librealsense2/hpp/rs_processing.hpp \
-  /usr/local/include/librealsense2/hpp/rs_record_playback.hpp \
-  /usr/local/include/librealsense2/hpp/rs_sensor.hpp \
-  /usr/local/include/librealsense2/hpp/rs_pipeline.hpp \
-  /usr/local/include/librealsense2/hpp/rs_context.hpp \
-  /usr/local/include/librealsense2/rsutil.h \
+  /usr/include/librealsense2/hpp/rs_context.hpp \
+  /usr/include/librealsense2/hpp/rs_types.hpp \
+  /usr/include/librealsense2/hpp/rs_record_playback.hpp \
+  /usr/include/librealsense2/hpp/rs_device.hpp \
+  /usr/include/librealsense2/hpp/rs_sensor.hpp \
+  /usr/include/librealsense2/hpp/rs_frame.hpp \
+  /usr/include/librealsense2/hpp/rs_processing.hpp \
+  /usr/include/librealsense2/hpp/rs_options.hpp \
+  /usr/include/librealsense2/h/rs_types.h \
+  /usr/include/c++/11/cstring \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/aarch64-linux-gnu/bits/strings_fortified.h \
+  /usr/include/aarch64-linux-gnu/bits/string_fortified.h \
+  /usr/include/librealsense2/hpp/rs_device.hpp \
+  /usr/include/librealsense2/hpp/rs_frame.hpp \
+  /usr/include/librealsense2/hpp/rs_processing.hpp \
+  /usr/include/librealsense2/hpp/rs_record_playback.hpp \
+  /usr/include/librealsense2/hpp/rs_sensor.hpp \
+  /usr/include/librealsense2/hpp/rs_pipeline.hpp \
+  /usr/include/librealsense2/hpp/rs_context.hpp \
+  /usr/include/librealsense2/rsutil.h \
   /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/constants.h \
   /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
   /usr/include/c++/11/csignal \
@@ -7556,10 +7568,6 @@ CMakeFiles/realsense2_camera.dir/src/ros_sensor.cpp.o: /home/lunabotics/2025-tib
   /opt/ros/humble/include/rmw/rmw/types.h \
   /opt/ros/humble/include/rcutils/rcutils/logging.h \
   /opt/ros/humble/include/rcutils/rcutils/error_handling.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/aarch64-linux-gnu/bits/strings_fortified.h \
-  /usr/include/aarch64-linux-gnu/bits/string_fortified.h \
   /opt/ros/humble/include/rcutils/rcutils/snprintf.h \
   /opt/ros/humble/include/rcutils/rcutils/time.h \
   /opt/ros/humble/include/rcutils/rcutils/types.h \
@@ -7699,7 +7707,6 @@ CMakeFiles/realsense2_camera.dir/src/ros_sensor.cpp.o: /home/lunabotics/2025-tib
   /opt/ros/humble/include/rclcpp/rclcpp/subscription_base.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/allocator/allocator_common.hpp \
-  /usr/include/c++/11/cstring \
   /opt/ros/humble/include/rclcpp/rclcpp/allocator/allocator_deleter.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/detail/subscription_callback_type_helper.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/message_info.hpp \
@@ -8640,55 +8647,56 @@ CMakeFiles/realsense2_camera.dir/src/ros_utils.cpp.o: /home/lunabotics/2025-tiba
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
-  /usr/local/include/librealsense2/rs.hpp \
-  /usr/local/include/librealsense2/rs.h \
-  /usr/local/include/librealsense2/rsutil.h \
+  /usr/include/librealsense2/rs.hpp \
+  /usr/include/librealsense2/rs.h \
+  /usr/include/librealsense2/rsutil.h \
   /usr/include/c++/11/math.h \
   /usr/lib/gcc/aarch64-linux-gnu/11/include/float.h \
-  /usr/local/include/librealsense2/h/rs_types.h \
-  /usr/local/include/librealsense2/h/rs_sensor.h \
-  /usr/local/include/librealsense2/h/rs_types.h \
-  /usr/local/include/librealsense2/h/rs_context.h \
-  /usr/local/include/librealsense2/h/rs_device.h \
-  /usr/local/include/librealsense2/h/rs_sensor.h \
-  /usr/local/include/librealsense2/h/rs_frame.h \
-  /usr/local/include/librealsense2/h/rs_option.h \
-  /usr/local/include/librealsense2/h/rs_processing.h \
-  /usr/local/include/librealsense2/h/rs_option.h \
-  /usr/local/include/librealsense2/h/rs_record_playback.h \
-  /usr/local/include/librealsense2/hpp/rs_types.hpp \
-  /usr/local/include/librealsense2/rs.h \
-  /usr/local/include/librealsense2/h/rs_context.h \
-  /usr/local/include/librealsense2/h/rs_device.h \
-  /usr/local/include/librealsense2/h/rs_frame.h \
-  /usr/local/include/librealsense2/h/rs_processing.h \
-  /usr/local/include/librealsense2/h/rs_record_playback.h \
-  /usr/local/include/librealsense2/h/rs_sensor.h \
-  /usr/local/include/librealsense2/h/rs_pipeline.h \
-  /usr/local/include/librealsense2/h/rs_config.h \
-  /usr/local/include/librealsense2/hpp/rs_context.hpp \
-  /usr/local/include/librealsense2/hpp/rs_types.hpp \
-  /usr/local/include/librealsense2/hpp/rs_record_playback.hpp \
-  /usr/local/include/librealsense2/hpp/rs_device.hpp \
-  /usr/local/include/librealsense2/hpp/rs_sensor.hpp \
-  /usr/local/include/librealsense2/hpp/rs_frame.hpp \
-  /usr/local/include/librealsense2/hpp/rs_processing.hpp \
-  /usr/local/include/librealsense2/hpp/rs_options.hpp \
-  /usr/local/include/librealsense2/hpp/rs_device.hpp \
-  /usr/local/include/librealsense2/hpp/rs_frame.hpp \
-  /usr/local/include/librealsense2/hpp/rs_processing.hpp \
-  /usr/local/include/librealsense2/hpp/rs_record_playback.hpp \
-  /usr/local/include/librealsense2/hpp/rs_sensor.hpp \
-  /usr/local/include/librealsense2/hpp/rs_pipeline.hpp \
-  /usr/local/include/librealsense2/hpp/rs_context.hpp \
-  /usr/local/include/librealsense2/rsutil.h
+  /usr/include/librealsense2/h/rs_types.h \
+  /usr/include/librealsense2/h/rs_sensor.h \
+  /usr/include/librealsense2/h/rs_types.h \
+  /usr/include/librealsense2/h/rs_context.h \
+  /usr/include/librealsense2/h/rs_device.h \
+  /usr/include/librealsense2/h/rs_sensor.h \
+  /usr/include/librealsense2/h/rs_frame.h \
+  /usr/include/librealsense2/h/rs_option.h \
+  /usr/include/librealsense2/h/rs_processing.h \
+  /usr/include/librealsense2/h/rs_option.h \
+  /usr/include/librealsense2/h/rs_record_playback.h \
+  /usr/include/librealsense2/hpp/rs_types.hpp \
+  /usr/include/librealsense2/rs.h \
+  /usr/include/librealsense2/h/rs_context.h \
+  /usr/include/librealsense2/h/rs_device.h \
+  /usr/include/librealsense2/h/rs_frame.h \
+  /usr/include/librealsense2/h/rs_processing.h \
+  /usr/include/librealsense2/h/rs_record_playback.h \
+  /usr/include/librealsense2/h/rs_sensor.h \
+  /usr/include/librealsense2/h/rs_pipeline.h \
+  /usr/include/librealsense2/h/rs_config.h \
+  /usr/include/librealsense2/hpp/rs_context.hpp \
+  /usr/include/librealsense2/hpp/rs_types.hpp \
+  /usr/include/librealsense2/hpp/rs_record_playback.hpp \
+  /usr/include/librealsense2/hpp/rs_device.hpp \
+  /usr/include/librealsense2/hpp/rs_sensor.hpp \
+  /usr/include/librealsense2/hpp/rs_frame.hpp \
+  /usr/include/librealsense2/hpp/rs_processing.hpp \
+  /usr/include/librealsense2/hpp/rs_options.hpp \
+  /usr/include/librealsense2/h/rs_types.h \
+  /usr/include/librealsense2/hpp/rs_device.hpp \
+  /usr/include/librealsense2/hpp/rs_frame.hpp \
+  /usr/include/librealsense2/hpp/rs_processing.hpp \
+  /usr/include/librealsense2/hpp/rs_record_playback.hpp \
+  /usr/include/librealsense2/hpp/rs_sensor.hpp \
+  /usr/include/librealsense2/hpp/rs_pipeline.hpp \
+  /usr/include/librealsense2/hpp/rs_context.hpp \
+  /usr/include/librealsense2/rsutil.h
 
 CMakeFiles/realsense2_camera.dir/src/rs_node_setup.cpp.o: /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/rs_node_setup.cpp \
   /usr/include/stdc-predef.h \
   /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/base_realsense_node.h \
-  /usr/local/include/librealsense2/rs.hpp \
-  /usr/local/include/librealsense2/rs.h \
-  /usr/local/include/librealsense2/rsutil.h \
+  /usr/include/librealsense2/rs.hpp \
+  /usr/include/librealsense2/rs.h \
+  /usr/include/librealsense2/rsutil.h \
   /usr/include/c++/11/stdlib.h \
   /usr/include/c++/11/cstdlib \
   /usr/include/aarch64-linux-gnu/c++/11/bits/c++config.h \
@@ -8793,27 +8801,27 @@ CMakeFiles/realsense2_camera.dir/src/rs_node_setup.cpp.o: /home/lunabotics/2025-
   /usr/include/c++/11/tr1/poly_laguerre.tcc \
   /usr/include/c++/11/tr1/riemann_zeta.tcc \
   /usr/lib/gcc/aarch64-linux-gnu/11/include/float.h \
-  /usr/local/include/librealsense2/h/rs_types.h \
-  /usr/local/include/librealsense2/h/rs_sensor.h \
-  /usr/local/include/librealsense2/h/rs_types.h \
-  /usr/local/include/librealsense2/h/rs_context.h \
-  /usr/local/include/librealsense2/h/rs_device.h \
-  /usr/local/include/librealsense2/h/rs_sensor.h \
-  /usr/local/include/librealsense2/h/rs_frame.h \
-  /usr/local/include/librealsense2/h/rs_option.h \
-  /usr/local/include/librealsense2/h/rs_processing.h \
-  /usr/local/include/librealsense2/h/rs_option.h \
-  /usr/local/include/librealsense2/h/rs_record_playback.h \
-  /usr/local/include/librealsense2/hpp/rs_types.hpp \
-  /usr/local/include/librealsense2/rs.h \
-  /usr/local/include/librealsense2/h/rs_context.h \
-  /usr/local/include/librealsense2/h/rs_device.h \
-  /usr/local/include/librealsense2/h/rs_frame.h \
-  /usr/local/include/librealsense2/h/rs_processing.h \
-  /usr/local/include/librealsense2/h/rs_record_playback.h \
-  /usr/local/include/librealsense2/h/rs_sensor.h \
-  /usr/local/include/librealsense2/h/rs_pipeline.h \
-  /usr/local/include/librealsense2/h/rs_config.h \
+  /usr/include/librealsense2/h/rs_types.h \
+  /usr/include/librealsense2/h/rs_sensor.h \
+  /usr/include/librealsense2/h/rs_types.h \
+  /usr/include/librealsense2/h/rs_context.h \
+  /usr/include/librealsense2/h/rs_device.h \
+  /usr/include/librealsense2/h/rs_sensor.h \
+  /usr/include/librealsense2/h/rs_frame.h \
+  /usr/include/librealsense2/h/rs_option.h \
+  /usr/include/librealsense2/h/rs_processing.h \
+  /usr/include/librealsense2/h/rs_option.h \
+  /usr/include/librealsense2/h/rs_record_playback.h \
+  /usr/include/librealsense2/hpp/rs_types.hpp \
+  /usr/include/librealsense2/rs.h \
+  /usr/include/librealsense2/h/rs_context.h \
+  /usr/include/librealsense2/h/rs_device.h \
+  /usr/include/librealsense2/h/rs_frame.h \
+  /usr/include/librealsense2/h/rs_processing.h \
+  /usr/include/librealsense2/h/rs_record_playback.h \
+  /usr/include/librealsense2/h/rs_sensor.h \
+  /usr/include/librealsense2/h/rs_pipeline.h \
+  /usr/include/librealsense2/h/rs_config.h \
   /usr/include/c++/11/string \
   /usr/include/c++/11/bits/stringfwd.h \
   /usr/include/c++/11/bits/memoryfwd.h \
@@ -8972,22 +8980,28 @@ CMakeFiles/realsense2_camera.dir/src/rs_node_setup.cpp.o: /home/lunabotics/2025-
   /usr/include/c++/11/ratio \
   /usr/include/c++/11/ctime \
   /usr/include/c++/11/bits/parse_numbers.h \
-  /usr/local/include/librealsense2/hpp/rs_context.hpp \
-  /usr/local/include/librealsense2/hpp/rs_types.hpp \
-  /usr/local/include/librealsense2/hpp/rs_record_playback.hpp \
-  /usr/local/include/librealsense2/hpp/rs_device.hpp \
-  /usr/local/include/librealsense2/hpp/rs_sensor.hpp \
-  /usr/local/include/librealsense2/hpp/rs_frame.hpp \
-  /usr/local/include/librealsense2/hpp/rs_processing.hpp \
-  /usr/local/include/librealsense2/hpp/rs_options.hpp \
-  /usr/local/include/librealsense2/hpp/rs_device.hpp \
-  /usr/local/include/librealsense2/hpp/rs_frame.hpp \
-  /usr/local/include/librealsense2/hpp/rs_processing.hpp \
-  /usr/local/include/librealsense2/hpp/rs_record_playback.hpp \
-  /usr/local/include/librealsense2/hpp/rs_sensor.hpp \
-  /usr/local/include/librealsense2/hpp/rs_pipeline.hpp \
-  /usr/local/include/librealsense2/hpp/rs_context.hpp \
-  /usr/local/include/librealsense2/rsutil.h \
+  /usr/include/librealsense2/hpp/rs_context.hpp \
+  /usr/include/librealsense2/hpp/rs_types.hpp \
+  /usr/include/librealsense2/hpp/rs_record_playback.hpp \
+  /usr/include/librealsense2/hpp/rs_device.hpp \
+  /usr/include/librealsense2/hpp/rs_sensor.hpp \
+  /usr/include/librealsense2/hpp/rs_frame.hpp \
+  /usr/include/librealsense2/hpp/rs_processing.hpp \
+  /usr/include/librealsense2/hpp/rs_options.hpp \
+  /usr/include/librealsense2/h/rs_types.h \
+  /usr/include/c++/11/cstring \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/aarch64-linux-gnu/bits/strings_fortified.h \
+  /usr/include/aarch64-linux-gnu/bits/string_fortified.h \
+  /usr/include/librealsense2/hpp/rs_device.hpp \
+  /usr/include/librealsense2/hpp/rs_frame.hpp \
+  /usr/include/librealsense2/hpp/rs_processing.hpp \
+  /usr/include/librealsense2/hpp/rs_record_playback.hpp \
+  /usr/include/librealsense2/hpp/rs_sensor.hpp \
+  /usr/include/librealsense2/hpp/rs_pipeline.hpp \
+  /usr/include/librealsense2/hpp/rs_context.hpp \
+  /usr/include/librealsense2/rsutil.h \
   /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/constants.h \
   /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
   /usr/include/c++/11/csignal \
@@ -9093,10 +9107,6 @@ CMakeFiles/realsense2_camera.dir/src/rs_node_setup.cpp.o: /home/lunabotics/2025-
   /opt/ros/humble/include/rmw/rmw/types.h \
   /opt/ros/humble/include/rcutils/rcutils/logging.h \
   /opt/ros/humble/include/rcutils/rcutils/error_handling.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/aarch64-linux-gnu/bits/strings_fortified.h \
-  /usr/include/aarch64-linux-gnu/bits/string_fortified.h \
   /opt/ros/humble/include/rcutils/rcutils/snprintf.h \
   /opt/ros/humble/include/rcutils/rcutils/time.h \
   /opt/ros/humble/include/rcutils/rcutils/types.h \
@@ -9236,7 +9246,6 @@ CMakeFiles/realsense2_camera.dir/src/rs_node_setup.cpp.o: /home/lunabotics/2025-
   /opt/ros/humble/include/rclcpp/rclcpp/subscription_base.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/allocator/allocator_common.hpp \
-  /usr/include/c++/11/cstring \
   /opt/ros/humble/include/rclcpp/rclcpp/allocator/allocator_deleter.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/detail/subscription_callback_type_helper.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/message_info.hpp \
@@ -9551,12 +9560,12 @@ CMakeFiles/realsense2_camera.dir/src/rs_node_setup.cpp.o: /home/lunabotics/2025-
   /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__builder.hpp \
   /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__traits.hpp \
   /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__type_support.hpp \
-  /usr/local/include/librealsense2/hpp/rs_processing.hpp \
-  /usr/local/include/librealsense2/rs_advanced_mode.hpp \
-  /usr/local/include/librealsense2/rs.hpp \
-  /usr/local/include/librealsense2/rs_advanced_mode.h \
-  /usr/local/include/librealsense2/h/rs_advanced_mode_command.h \
-  /usr/local/include/librealsense2/hpp/rs_serializable_device.hpp \
+  /usr/include/librealsense2/hpp/rs_processing.hpp \
+  /usr/include/librealsense2/rs_advanced_mode.hpp \
+  /usr/include/librealsense2/rs.hpp \
+  /usr/include/librealsense2/rs_advanced_mode.h \
+  /usr/include/librealsense2/h/rs_advanced_mode_command.h \
+  /usr/include/librealsense2/hpp/rs_serializable_device.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/camera_info.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__builder.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__type_support.hpp \
@@ -9805,9 +9814,9 @@ CMakeFiles/realsense2_camera.dir/src/rs_node_setup.cpp.o: /home/lunabotics/2025-
 CMakeFiles/realsense2_camera.dir/src/sensor_params.cpp.o: /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/sensor_params.cpp \
   /usr/include/stdc-predef.h \
   /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/sensor_params.h \
-  /usr/local/include/librealsense2/rs.hpp \
-  /usr/local/include/librealsense2/rs.h \
-  /usr/local/include/librealsense2/rsutil.h \
+  /usr/include/librealsense2/rs.hpp \
+  /usr/include/librealsense2/rs.h \
+  /usr/include/librealsense2/rsutil.h \
   /usr/include/c++/11/stdlib.h \
   /usr/include/c++/11/cstdlib \
   /usr/include/aarch64-linux-gnu/c++/11/bits/c++config.h \
@@ -9912,27 +9921,27 @@ CMakeFiles/realsense2_camera.dir/src/sensor_params.cpp.o: /home/lunabotics/2025-
   /usr/include/c++/11/tr1/poly_laguerre.tcc \
   /usr/include/c++/11/tr1/riemann_zeta.tcc \
   /usr/lib/gcc/aarch64-linux-gnu/11/include/float.h \
-  /usr/local/include/librealsense2/h/rs_types.h \
-  /usr/local/include/librealsense2/h/rs_sensor.h \
-  /usr/local/include/librealsense2/h/rs_types.h \
-  /usr/local/include/librealsense2/h/rs_context.h \
-  /usr/local/include/librealsense2/h/rs_device.h \
-  /usr/local/include/librealsense2/h/rs_sensor.h \
-  /usr/local/include/librealsense2/h/rs_frame.h \
-  /usr/local/include/librealsense2/h/rs_option.h \
-  /usr/local/include/librealsense2/h/rs_processing.h \
-  /usr/local/include/librealsense2/h/rs_option.h \
-  /usr/local/include/librealsense2/h/rs_record_playback.h \
-  /usr/local/include/librealsense2/hpp/rs_types.hpp \
-  /usr/local/include/librealsense2/rs.h \
-  /usr/local/include/librealsense2/h/rs_context.h \
-  /usr/local/include/librealsense2/h/rs_device.h \
-  /usr/local/include/librealsense2/h/rs_frame.h \
-  /usr/local/include/librealsense2/h/rs_processing.h \
-  /usr/local/include/librealsense2/h/rs_record_playback.h \
-  /usr/local/include/librealsense2/h/rs_sensor.h \
-  /usr/local/include/librealsense2/h/rs_pipeline.h \
-  /usr/local/include/librealsense2/h/rs_config.h \
+  /usr/include/librealsense2/h/rs_types.h \
+  /usr/include/librealsense2/h/rs_sensor.h \
+  /usr/include/librealsense2/h/rs_types.h \
+  /usr/include/librealsense2/h/rs_context.h \
+  /usr/include/librealsense2/h/rs_device.h \
+  /usr/include/librealsense2/h/rs_sensor.h \
+  /usr/include/librealsense2/h/rs_frame.h \
+  /usr/include/librealsense2/h/rs_option.h \
+  /usr/include/librealsense2/h/rs_processing.h \
+  /usr/include/librealsense2/h/rs_option.h \
+  /usr/include/librealsense2/h/rs_record_playback.h \
+  /usr/include/librealsense2/hpp/rs_types.hpp \
+  /usr/include/librealsense2/rs.h \
+  /usr/include/librealsense2/h/rs_context.h \
+  /usr/include/librealsense2/h/rs_device.h \
+  /usr/include/librealsense2/h/rs_frame.h \
+  /usr/include/librealsense2/h/rs_processing.h \
+  /usr/include/librealsense2/h/rs_record_playback.h \
+  /usr/include/librealsense2/h/rs_sensor.h \
+  /usr/include/librealsense2/h/rs_pipeline.h \
+  /usr/include/librealsense2/h/rs_config.h \
   /usr/include/c++/11/string \
   /usr/include/c++/11/bits/stringfwd.h \
   /usr/include/c++/11/bits/memoryfwd.h \
@@ -10091,21 +10100,27 @@ CMakeFiles/realsense2_camera.dir/src/sensor_params.cpp.o: /home/lunabotics/2025-
   /usr/include/c++/11/ratio \
   /usr/include/c++/11/ctime \
   /usr/include/c++/11/bits/parse_numbers.h \
-  /usr/local/include/librealsense2/hpp/rs_context.hpp \
-  /usr/local/include/librealsense2/hpp/rs_types.hpp \
-  /usr/local/include/librealsense2/hpp/rs_record_playback.hpp \
-  /usr/local/include/librealsense2/hpp/rs_device.hpp \
-  /usr/local/include/librealsense2/hpp/rs_sensor.hpp \
-  /usr/local/include/librealsense2/hpp/rs_frame.hpp \
-  /usr/local/include/librealsense2/hpp/rs_processing.hpp \
-  /usr/local/include/librealsense2/hpp/rs_options.hpp \
-  /usr/local/include/librealsense2/hpp/rs_device.hpp \
-  /usr/local/include/librealsense2/hpp/rs_frame.hpp \
-  /usr/local/include/librealsense2/hpp/rs_processing.hpp \
-  /usr/local/include/librealsense2/hpp/rs_record_playback.hpp \
-  /usr/local/include/librealsense2/hpp/rs_sensor.hpp \
-  /usr/local/include/librealsense2/hpp/rs_pipeline.hpp \
-  /usr/local/include/librealsense2/hpp/rs_context.hpp \
+  /usr/include/librealsense2/hpp/rs_context.hpp \
+  /usr/include/librealsense2/hpp/rs_types.hpp \
+  /usr/include/librealsense2/hpp/rs_record_playback.hpp \
+  /usr/include/librealsense2/hpp/rs_device.hpp \
+  /usr/include/librealsense2/hpp/rs_sensor.hpp \
+  /usr/include/librealsense2/hpp/rs_frame.hpp \
+  /usr/include/librealsense2/hpp/rs_processing.hpp \
+  /usr/include/librealsense2/hpp/rs_options.hpp \
+  /usr/include/librealsense2/h/rs_types.h \
+  /usr/include/c++/11/cstring \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/aarch64-linux-gnu/bits/strings_fortified.h \
+  /usr/include/aarch64-linux-gnu/bits/string_fortified.h \
+  /usr/include/librealsense2/hpp/rs_device.hpp \
+  /usr/include/librealsense2/hpp/rs_frame.hpp \
+  /usr/include/librealsense2/hpp/rs_processing.hpp \
+  /usr/include/librealsense2/hpp/rs_record_playback.hpp \
+  /usr/include/librealsense2/hpp/rs_sensor.hpp \
+  /usr/include/librealsense2/hpp/rs_pipeline.hpp \
+  /usr/include/librealsense2/hpp/rs_context.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
   /usr/include/c++/11/csignal \
   /usr/include/signal.h \
@@ -10210,10 +10225,6 @@ CMakeFiles/realsense2_camera.dir/src/sensor_params.cpp.o: /home/lunabotics/2025-
   /opt/ros/humble/include/rmw/rmw/types.h \
   /opt/ros/humble/include/rcutils/rcutils/logging.h \
   /opt/ros/humble/include/rcutils/rcutils/error_handling.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/aarch64-linux-gnu/bits/strings_fortified.h \
-  /usr/include/aarch64-linux-gnu/bits/string_fortified.h \
   /opt/ros/humble/include/rcutils/rcutils/snprintf.h \
   /opt/ros/humble/include/rcutils/rcutils/time.h \
   /opt/ros/humble/include/rcutils/rcutils/types.h \
@@ -10353,7 +10364,6 @@ CMakeFiles/realsense2_camera.dir/src/sensor_params.cpp.o: /home/lunabotics/2025-
   /opt/ros/humble/include/rclcpp/rclcpp/subscription_base.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/allocator/allocator_common.hpp \
-  /usr/include/c++/11/cstring \
   /opt/ros/humble/include/rclcpp/rclcpp/allocator/allocator_deleter.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/detail/subscription_callback_type_helper.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/message_info.hpp \
@@ -10557,7 +10567,7 @@ CMakeFiles/realsense2_camera.dir/src/sensor_params.cpp.o: /home/lunabotics/2025-
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
   /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/dynamic_params.h \
   /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/ros_utils.h \
-  /usr/local/include/librealsense2/rsutil.h \
+  /usr/include/librealsense2/rsutil.h \
   /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/constants.h \
   /usr/include/c++/11/deque \
   /usr/include/c++/11/bits/stl_deque.h \
@@ -10567,9 +10577,9 @@ CMakeFiles/realsense2_camera.dir/src/sensor_params.cpp.o: /home/lunabotics/2025-
 CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/tfs.cpp \
   /usr/include/stdc-predef.h \
   /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/base_realsense_node.h \
-  /usr/local/include/librealsense2/rs.hpp \
-  /usr/local/include/librealsense2/rs.h \
-  /usr/local/include/librealsense2/rsutil.h \
+  /usr/include/librealsense2/rs.hpp \
+  /usr/include/librealsense2/rs.h \
+  /usr/include/librealsense2/rsutil.h \
   /usr/include/c++/11/stdlib.h \
   /usr/include/c++/11/cstdlib \
   /usr/include/aarch64-linux-gnu/c++/11/bits/c++config.h \
@@ -10674,27 +10684,27 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
   /usr/include/c++/11/tr1/poly_laguerre.tcc \
   /usr/include/c++/11/tr1/riemann_zeta.tcc \
   /usr/lib/gcc/aarch64-linux-gnu/11/include/float.h \
-  /usr/local/include/librealsense2/h/rs_types.h \
-  /usr/local/include/librealsense2/h/rs_sensor.h \
-  /usr/local/include/librealsense2/h/rs_types.h \
-  /usr/local/include/librealsense2/h/rs_context.h \
-  /usr/local/include/librealsense2/h/rs_device.h \
-  /usr/local/include/librealsense2/h/rs_sensor.h \
-  /usr/local/include/librealsense2/h/rs_frame.h \
-  /usr/local/include/librealsense2/h/rs_option.h \
-  /usr/local/include/librealsense2/h/rs_processing.h \
-  /usr/local/include/librealsense2/h/rs_option.h \
-  /usr/local/include/librealsense2/h/rs_record_playback.h \
-  /usr/local/include/librealsense2/hpp/rs_types.hpp \
-  /usr/local/include/librealsense2/rs.h \
-  /usr/local/include/librealsense2/h/rs_context.h \
-  /usr/local/include/librealsense2/h/rs_device.h \
-  /usr/local/include/librealsense2/h/rs_frame.h \
-  /usr/local/include/librealsense2/h/rs_processing.h \
-  /usr/local/include/librealsense2/h/rs_record_playback.h \
-  /usr/local/include/librealsense2/h/rs_sensor.h \
-  /usr/local/include/librealsense2/h/rs_pipeline.h \
-  /usr/local/include/librealsense2/h/rs_config.h \
+  /usr/include/librealsense2/h/rs_types.h \
+  /usr/include/librealsense2/h/rs_sensor.h \
+  /usr/include/librealsense2/h/rs_types.h \
+  /usr/include/librealsense2/h/rs_context.h \
+  /usr/include/librealsense2/h/rs_device.h \
+  /usr/include/librealsense2/h/rs_sensor.h \
+  /usr/include/librealsense2/h/rs_frame.h \
+  /usr/include/librealsense2/h/rs_option.h \
+  /usr/include/librealsense2/h/rs_processing.h \
+  /usr/include/librealsense2/h/rs_option.h \
+  /usr/include/librealsense2/h/rs_record_playback.h \
+  /usr/include/librealsense2/hpp/rs_types.hpp \
+  /usr/include/librealsense2/rs.h \
+  /usr/include/librealsense2/h/rs_context.h \
+  /usr/include/librealsense2/h/rs_device.h \
+  /usr/include/librealsense2/h/rs_frame.h \
+  /usr/include/librealsense2/h/rs_processing.h \
+  /usr/include/librealsense2/h/rs_record_playback.h \
+  /usr/include/librealsense2/h/rs_sensor.h \
+  /usr/include/librealsense2/h/rs_pipeline.h \
+  /usr/include/librealsense2/h/rs_config.h \
   /usr/include/c++/11/string \
   /usr/include/c++/11/bits/stringfwd.h \
   /usr/include/c++/11/bits/memoryfwd.h \
@@ -10853,22 +10863,28 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
   /usr/include/c++/11/ratio \
   /usr/include/c++/11/ctime \
   /usr/include/c++/11/bits/parse_numbers.h \
-  /usr/local/include/librealsense2/hpp/rs_context.hpp \
-  /usr/local/include/librealsense2/hpp/rs_types.hpp \
-  /usr/local/include/librealsense2/hpp/rs_record_playback.hpp \
-  /usr/local/include/librealsense2/hpp/rs_device.hpp \
-  /usr/local/include/librealsense2/hpp/rs_sensor.hpp \
-  /usr/local/include/librealsense2/hpp/rs_frame.hpp \
-  /usr/local/include/librealsense2/hpp/rs_processing.hpp \
-  /usr/local/include/librealsense2/hpp/rs_options.hpp \
-  /usr/local/include/librealsense2/hpp/rs_device.hpp \
-  /usr/local/include/librealsense2/hpp/rs_frame.hpp \
-  /usr/local/include/librealsense2/hpp/rs_processing.hpp \
-  /usr/local/include/librealsense2/hpp/rs_record_playback.hpp \
-  /usr/local/include/librealsense2/hpp/rs_sensor.hpp \
-  /usr/local/include/librealsense2/hpp/rs_pipeline.hpp \
-  /usr/local/include/librealsense2/hpp/rs_context.hpp \
-  /usr/local/include/librealsense2/rsutil.h \
+  /usr/include/librealsense2/hpp/rs_context.hpp \
+  /usr/include/librealsense2/hpp/rs_types.hpp \
+  /usr/include/librealsense2/hpp/rs_record_playback.hpp \
+  /usr/include/librealsense2/hpp/rs_device.hpp \
+  /usr/include/librealsense2/hpp/rs_sensor.hpp \
+  /usr/include/librealsense2/hpp/rs_frame.hpp \
+  /usr/include/librealsense2/hpp/rs_processing.hpp \
+  /usr/include/librealsense2/hpp/rs_options.hpp \
+  /usr/include/librealsense2/h/rs_types.h \
+  /usr/include/c++/11/cstring \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/aarch64-linux-gnu/bits/strings_fortified.h \
+  /usr/include/aarch64-linux-gnu/bits/string_fortified.h \
+  /usr/include/librealsense2/hpp/rs_device.hpp \
+  /usr/include/librealsense2/hpp/rs_frame.hpp \
+  /usr/include/librealsense2/hpp/rs_processing.hpp \
+  /usr/include/librealsense2/hpp/rs_record_playback.hpp \
+  /usr/include/librealsense2/hpp/rs_sensor.hpp \
+  /usr/include/librealsense2/hpp/rs_pipeline.hpp \
+  /usr/include/librealsense2/hpp/rs_context.hpp \
+  /usr/include/librealsense2/rsutil.h \
   /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/constants.h \
   /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
   /usr/include/c++/11/csignal \
@@ -10974,10 +10990,6 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
   /opt/ros/humble/include/rmw/rmw/types.h \
   /opt/ros/humble/include/rcutils/rcutils/logging.h \
   /opt/ros/humble/include/rcutils/rcutils/error_handling.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/aarch64-linux-gnu/bits/strings_fortified.h \
-  /usr/include/aarch64-linux-gnu/bits/string_fortified.h \
   /opt/ros/humble/include/rcutils/rcutils/snprintf.h \
   /opt/ros/humble/include/rcutils/rcutils/time.h \
   /opt/ros/humble/include/rcutils/rcutils/types.h \
@@ -11117,7 +11129,6 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
   /opt/ros/humble/include/rclcpp/rclcpp/subscription_base.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/allocator/allocator_common.hpp \
-  /usr/include/c++/11/cstring \
   /opt/ros/humble/include/rclcpp/rclcpp/allocator/allocator_deleter.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/detail/subscription_callback_type_helper.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/message_info.hpp \
@@ -11432,12 +11443,12 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
   /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__builder.hpp \
   /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__traits.hpp \
   /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__type_support.hpp \
-  /usr/local/include/librealsense2/hpp/rs_processing.hpp \
-  /usr/local/include/librealsense2/rs_advanced_mode.hpp \
-  /usr/local/include/librealsense2/rs.hpp \
-  /usr/local/include/librealsense2/rs_advanced_mode.h \
-  /usr/local/include/librealsense2/h/rs_advanced_mode_command.h \
-  /usr/local/include/librealsense2/hpp/rs_serializable_device.hpp \
+  /usr/include/librealsense2/hpp/rs_processing.hpp \
+  /usr/include/librealsense2/rs_advanced_mode.hpp \
+  /usr/include/librealsense2/rs.hpp \
+  /usr/include/librealsense2/rs_advanced_mode.h \
+  /usr/include/librealsense2/h/rs_advanced_mode_command.h \
+  /usr/include/librealsense2/hpp/rs_serializable_device.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/camera_info.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__builder.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__type_support.hpp \
@@ -11770,7 +11781,7 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp:
 
-/usr/local/include/librealsense2/hpp/rs_processing.hpp:
+/usr/include/librealsense2/rs.hpp:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp:
 
@@ -11783,8 +11794,6 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 /opt/ros/humble/include/rcutils/rcutils/logging.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/ros_message_intra_process_buffer.hpp:
-
-/usr/local/include/librealsense2/h/rs_frame.h:
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__type_support.hpp:
 
@@ -11822,6 +11831,10 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /opt/ros/humble/include/rclcpp/rclcpp/guard_condition.hpp:
 
+/opt/ros/humble/include/rclcpp/rclcpp/contexts/default_context.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h:
+
 /usr/include/aarch64-linux-gnu/bits/math-vector.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__builder.hpp:
@@ -11836,6 +11849,10 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /usr/include/aarch64-linux-gnu/c++/11/bits/c++config.h:
 
+/usr/include/c++/11/unordered_set:
+
+/usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h:
+
 /opt/ros/humble/include/rcpputils/rcpputils/scope_exit.hpp:
 
 /opt/ros/humble/include/rcl/rcl/event.h:
@@ -11849,10 +11866,6 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 /opt/ros/humble/include/image_transport/image_transport/camera_subscriber.hpp:
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:
-
-/opt/ros/humble/include/rmw/rmw/event.h:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/sequence_bound.h:
 
@@ -11869,12 +11882,6 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/image.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/Inverse.h:
-
-/opt/ros/humble/include/rcl/rcl/service.h:
-
-/usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h:
-
-/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/extrinsics.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:
 
@@ -11900,8 +11907,6 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /opt/ros/humble/include/rcl/rcl/client.h:
 
-/usr/local/include/librealsense2/hpp/rs_pipeline.hpp:
-
 /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/types.h:
 
 /usr/include/assert.h:
@@ -11922,8 +11927,6 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp:
-
 /opt/ros/humble/include/rmw/rmw/events_statuses/offered_deadline_missed.h:
 
 /opt/ros/humble/include/rmw/rmw/events_statuses/message_lost.h:
@@ -11935,8 +11938,6 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 /opt/ros/humble/include/rmw/rmw/qos_policy_kind.h:
 
 /usr/include/eigen3/Eigen/src/QR/CompleteOrthogonalDecomposition.h:
-
-/opt/ros/humble/include/rmw/rmw/events_statuses/incompatible_qos.h:
 
 /usr/include/c++/11/bits/list.tcc:
 
@@ -11960,16 +11961,6 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /opt/ros/humble/include/rcutils/rcutils/types/hash_map.h:
 
-/usr/include/c++/11/variant:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/region_of_interest__struct.hpp:
-
-/opt/ros/humble/include/rcutils/rcutils/types/char_array.h:
-
-/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
-
-/opt/ros/humble/include/rcutils/rcutils/time.h:
-
 /opt/ros/humble/include/rcutils/rcutils/error_handling.h:
 
 /opt/ros/humble/include/rmw/rmw/visibility_control.h:
@@ -11977,8 +11968,6 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 /usr/include/c++/11/type_traits:
 
 /opt/ros/humble/include/rmw/rmw/localhost.h:
-
-/opt/ros/humble/include/rmw/rmw/init_options.h:
 
 /usr/include/eigen3/Eigen/src/Core/Replicate.h:
 
@@ -12020,19 +12009,17 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /usr/include/c++/11/list:
 
-/usr/include/aarch64-linux-gnu/c++/11/bits/messages_members.h:
-
-/usr/include/opencv4/opencv2/core/neon_utils.hpp:
-
-/usr/local/include/librealsense2/hpp/rs_context.hpp:
-
-/usr/include/c++/11/bits/stl_tree.h:
-
 /usr/include/c++/11/set:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp:
 
 /usr/include/c++/11/bits/stl_set.h:
+
+/usr/include/c++/11/atomic:
+
+/usr/include/asm-generic/int-ll64.h:
+
+/usr/include/c++/11/bits/regex_error.h:
 
 /usr/include/c++/11/mutex:
 
@@ -12040,17 +12027,13 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /usr/include/aarch64-linux-gnu/bits/types/struct_sigstack.h:
 
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_topics_interface.hpp:
+
 /usr/include/aarch64-linux-gnu/bits/ss_flags.h:
 
 /usr/include/eigen3/Eigen/SVD:
 
 /usr/include/linux/close_range.h:
-
-/usr/include/aarch64-linux-gnu/bits/unistd_ext.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/synchronization_policy_common.hpp:
 
 /usr/include/aarch64-linux-gnu/bits/getopt_core.h:
 
@@ -12102,12 +12085,6 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /usr/include/alloca.h:
 
-/usr/include/aarch64-linux-gnu/c++/11/bits/c++allocator.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp:
-
-/usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h:
-
 /usr/include/aarch64-linux-gnu/asm/sigcontext.h:
 
 /usr/include/eigen3/Eigen/src/Core/products/Parallelizer.h:
@@ -12116,25 +12093,45 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /usr/include/aarch64-linux-gnu/bits/signum-generic.h:
 
-/usr/include/c++/11/unordered_set:
+/usr/include/aarch64-linux-gnu/bits/unistd_ext.h:
 
-/usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h:
+/opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_topics_interface.hpp:
+/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/synchronization_policy_common.hpp:
 
-/usr/local/include/librealsense2/hpp/rs_frame.hpp:
+/usr/include/librealsense2/hpp/rs_pipeline.hpp:
 
-/usr/local/include/librealsense2/hpp/rs_sensor.hpp:
+/usr/include/c++/11/bits/move.h:
 
-/usr/include/c++/11/atomic:
+/usr/include/aarch64-linux-gnu/c++/11/bits/c++allocator.h:
 
-/usr/include/asm-generic/int-ll64.h:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp:
 
-/usr/include/c++/11/bits/regex_error.h:
+/usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h:
 
-/usr/local/include/librealsense2/hpp/rs_record_playback.hpp:
+/usr/include/librealsense2/hpp/rs_processing.hpp:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp:
+/usr/include/aarch64-linux-gnu/bits/unistd.h:
+
+/usr/include/c++/11/bits/this_thread_sleep.h:
+
+/usr/include/librealsense2/hpp/rs_device.hpp:
+
+/usr/include/c++/11/bits/stl_multimap.h:
+
+/usr/include/c++/11/variant:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/region_of_interest__struct.hpp:
+
+/opt/ros/humble/include/rcutils/rcutils/types/char_array.h:
+
+/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/usr/include/librealsense2/hpp/rs_record_playback.hpp:
+
+/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__type_support.hpp:
+
+/usr/include/c++/11/queue:
 
 /usr/include/c++/11/bits/parse_numbers.h:
 
@@ -12152,17 +12149,9 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /usr/include/aarch64-linux-gnu/bits/types/struct_timespec.h:
 
-/usr/local/include/librealsense2/hpp/rs_serializable_device.hpp:
-
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/buffers/ring_buffer_implementation.hpp:
 
 /usr/include/c++/11/ostream:
-
-/usr/include/aarch64-linux-gnu/bits/unistd.h:
-
-/usr/include/c++/11/bits/this_thread_sleep.h:
-
-/usr/include/c++/11/bits/locale_facets.tcc:
 
 /usr/include/string.h:
 
@@ -12200,31 +12189,69 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /usr/include/aarch64-linux-gnu/bits/strings_fortified.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/contexts/default_context.hpp:
+/opt/ros/humble/include/rcl/rcl/service.h:
 
-/usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h:
+/usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h:
 
-/usr/local/include/librealsense2/hpp/rs_types.hpp:
+/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/extrinsics.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/create_timer.hpp:
+/usr/include/librealsense2/h/rs_pipeline.h:
 
-/usr/include/aarch64-linux-gnu/bits/uintn-identity.h:
+/usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h:
 
-/usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h:
+/opt/ros/humble/include/rmw/rmw/events_statuses/incompatible_qos.h:
 
-/usr/include/c++/11/bits/fstream.tcc:
+/usr/include/librealsense2/hpp/rs_types.hpp:
 
-/usr/include/features.h:
+/usr/lib/gcc/aarch64-linux-gnu/11/include/stdbool.h:
 
-/usr/include/eigen3/Eigen/src/Geometry/Hyperplane.h:
+/home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/base_realsense_node.cpp:
 
-/usr/include/aarch64-linux-gnu/bits/types/__sigset_t.h:
+/usr/include/c++/11/bits/erase_if.h:
 
-/usr/local/include/librealsense2/h/rs_sensor.h:
+/usr/include/aarch64-linux-gnu/bits/thread-shared-types.h:
+
+/usr/include/aarch64-linux-gnu/bits/endianness.h:
+
+/usr/include/opencv4/opencv2/core/cvdef.h:
+
+/usr/include/librealsense2/h/rs_sensor.h:
+
+/usr/include/c++/11/limits:
+
+/usr/include/aarch64-linux-gnu/c++/11/bits/cpu_defines.h:
+
+/usr/include/aarch64-linux-gnu/c++/11/bits/messages_members.h:
+
+/usr/include/opencv4/opencv2/core/neon_utils.hpp:
+
+/usr/include/c++/11/bits/stl_tree.h:
+
+/usr/include/librealsense2/h/rs_types.h:
+
+/usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/detail/resolve_enable_topic_statistics.hpp:
+
+/usr/include/aarch64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp:
 
 /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__traits.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/create_generic_publisher.hpp:
+
+/usr/include/c++/11/bits/ostream.tcc:
+
+/usr/include/c++/11/tr1/modified_bessel_func.tcc:
+
+/usr/include/eigen3/Eigen/src/Core/NestByValue.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp:
+
+/usr/include/c++/11/tr1/legendre_function.tcc:
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp:
 
@@ -12232,15 +12259,13 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /usr/include/asm-generic/errno.h:
 
-/usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h:
-
 /opt/ros/humble/include/diagnostic_msgs/diagnostic_msgs/msg/detail/diagnostic_array__builder.hpp:
 
-/usr/include/c++/11/limits:
+/usr/include/librealsense2/hpp/rs_sensor.hpp:
 
-/usr/local/include/librealsense2/h/rs_config.h:
+/opt/ros/humble/include/rcl/rcl/guard_condition.h:
 
-/usr/include/aarch64-linux-gnu/c++/11/bits/cpu_defines.h:
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_topics_interface_traits.hpp:
 
 /opt/ros/humble/include/rmw/rmw/time.h:
 
@@ -12250,15 +12275,27 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /usr/include/c++/11/bits/predefined_ops.h:
 
+/usr/include/aarch64-linux-gnu/sys/select.h:
+
+/usr/include/librealsense2/hpp/rs_options.hpp:
+
+/usr/include/c++/11/bits/uses_allocator.h:
+
+/usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h:
+
+/opt/ros/humble/include/rcpputils/rcpputils/filesystem_helper.hpp:
+
+/opt/ros/humble/include/rcutils/rcutils/types/array_list.h:
+
+/opt/ros/humble/include/rcl/rcl/node_options.h:
+
+/usr/include/features-time64.h:
+
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp:
+
 /usr/include/c++/11/ext/atomicity.h:
 
 /usr/include/c++/11/bits/stl_iterator.h:
-
-/usr/include/aarch64-linux-gnu/bits/thread-shared-types.h:
-
-/usr/include/aarch64-linux-gnu/bits/endianness.h:
-
-/usr/include/opencv4/opencv2/core/cvdef.h:
 
 /usr/include/c++/11/new:
 
@@ -12276,51 +12313,39 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /usr/include/aarch64-linux-gnu/bits/waitstatus.h:
 
-/usr/include/c++/11/ext/numeric_traits.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp:
-
-/usr/lib/gcc/aarch64-linux-gnu/11/include/stdalign.h:
-
-/opt/ros/humble/include/rcpputils/rcpputils/thread_safety_annotations.hpp:
-
-/usr/include/c++/11/bits/atomic_base.h:
-
 /usr/include/c++/11/bits/specfun.h:
 
 /usr/include/c++/11/debug/assertions.h:
 
 /usr/include/eigen3/Eigen/src/Geometry/Translation.h:
 
-/opt/ros/humble/include/rcl/rcl/node_options.h:
-
-/usr/include/features-time64.h:
-
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp:
-
-/opt/ros/humble/include/rcutils/rcutils/types/array_list.h:
-
 /usr/include/c++/11/ctime:
 
 /usr/include/aarch64-linux-gnu/bits/mathcalls-helper-functions.h:
+
+/usr/include/aarch64-linux-gnu/bits/stdlib.h:
 
 /usr/include/c++/11/ext/type_traits.h:
 
 /usr/include/c++/11/csignal:
 
+/usr/include/librealsense2/hpp/rs_serializable_device.hpp:
+
 /usr/include/eigen3/Eigen/src/Core/SolverBase.h:
 
 /usr/include/c++/11/pstl/glue_memory_defs.h:
 
-/usr/include/aarch64-linux-gnu/bits/stdint-uintn.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/qos_event.hpp:
-
-/usr/include/c++/11/bits/std_thread.h:
-
-/usr/local/include/librealsense2/h/rs_option.h:
-
 /usr/include/pthread.h:
+
+/opt/ros/humble/include/rmw/rmw/event.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:
+
+/usr/include/librealsense2/h/rs_processing.h:
+
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__traits.hpp:
 
 /usr/include/c++/11/bits/enable_special_members.h:
 
@@ -12330,25 +12355,17 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /usr/include/c++/11/cstdio:
 
+/opt/ros/humble/include/rclcpp/rclcpp/time.hpp:
+
+/usr/include/aarch64-linux-gnu/bits/sigcontext.h:
+
 /usr/lib/gcc/aarch64-linux-gnu/11/include/stdint.h:
 
 /usr/include/aarch64-linux-gnu/bits/wctype-wchar.h:
 
 /usr/include/time.h:
 
-/usr/lib/gcc/aarch64-linux-gnu/11/include/stdbool.h:
-
-/usr/include/aarch64-linux-gnu/c++/11/bits/c++locale.h:
-
-/usr/include/aarch64-linux-gnu/bits/types/clock_t.h:
-
-/usr/include/aarch64-linux-gnu/bits/stdio.h:
-
-/usr/include/c++/11/cerrno:
-
 /usr/include/c++/11/backward/binders.h:
-
-/usr/local/include/librealsense2/h/rs_device.h:
 
 /usr/include/stdlib.h:
 
@@ -12380,9 +12397,19 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__struct.hpp:
 
-/opt/ros/humble/include/rcl/rcl/guard_condition.h:
+/usr/include/aarch64-linux-gnu/bits/types/__fpos64_t.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_topics_interface_traits.hpp:
+/opt/ros/humble/include/rmw/rmw/domain_id.h:
+
+/usr/include/librealsense2/rsutil.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/siginfo_t.h:
+
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp:
+
+/usr/include/aarch64-linux-gnu/bits/types.h:
+
+/usr/include/eigen3/Eigen/src/Core/Product.h:
 
 /usr/include/aarch64-linux-gnu/bits/struct_mutex.h:
 
@@ -12390,15 +12417,7 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /usr/include/eigen3/Eigen/LU:
 
-/usr/include/aarch64-linux-gnu/bits/types.h:
-
-/usr/include/eigen3/Eigen/src/Core/Product.h:
-
 /usr/include/aarch64-linux-gnu/asm/posix_types.h:
-
-/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:
-
-/usr/include/aarch64-linux-gnu/bits/setjmp.h:
 
 /usr/include/stdc-predef.h:
 
@@ -12416,6 +12435,16 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /usr/include/c++/11/bits/std_mutex.h:
 
+/usr/include/aarch64-linux-gnu/bits/siginfo-consts.h:
+
+/opt/ros/humble/include/class_loader/class_loader/register_macro.hpp:
+
+/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/tf_message.hpp:
+
+/usr/include/c++/11/bits/shared_ptr_base.h:
+
+/usr/include/c++/11/bits/basic_string.h:
+
 /usr/include/eigen3/Eigen/src/Core/SolveTriangular.h:
 
 /usr/include/c++/11/bits/functexcept.h:
@@ -12432,59 +12461,23 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__builder.hpp:
 
+/usr/include/aarch64-linux-gnu/bits/uintn-identity.h:
+
 /usr/include/aarch64-linux-gnu/bits/fp-logb.h:
 
 /usr/include/aarch64-linux-gnu/bits/stdint-intn.h:
 
 /usr/include/eigen3/Eigen/src/Geometry/EulerAngles.h:
 
-/usr/include/aarch64-linux-gnu/bits/stdlib.h:
+/usr/include/aarch64-linux-gnu/bits/stdint-uintn.h:
 
-/usr/local/include/librealsense2/h/rs_context.h:
+/opt/ros/humble/include/rclcpp/rclcpp/qos_event.hpp:
 
-/opt/ros/humble/include/rcpputils/rcpputils/filesystem_helper.hpp:
+/usr/include/c++/11/bits/std_thread.h:
 
-/usr/include/aarch64-linux-gnu/bits/types/FILE.h:
+/usr/include/librealsense2/rs.h:
 
-/usr/include/c++/11/iostream:
-
-/usr/include/c++/11/bits/node_handle.h:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/point_cloud2_iterator.hpp:
-
-/home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/src/base_realsense_node.cpp:
-
-/usr/include/c++/11/bits/erase_if.h:
-
-/usr/include/aarch64-linux-gnu/bits/types/__fpos64_t.h:
-
-/usr/include/c++/11/cstring:
-
-/usr/include/c++/11/bits/atomic_futex.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/ParametrizedLine.h:
-
-/usr/include/c++/11/bits/charconv.h:
-
-/usr/include/c++/11/bits/exception_ptr.h:
-
-/usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h:
-
-/usr/include/c++/11/debug/debug.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/create_generic_publisher.hpp:
-
-/usr/include/c++/11/bits/ostream.tcc:
-
-/usr/include/c++/11/tr1/modified_bessel_func.tcc:
-
-/usr/include/eigen3/Eigen/src/Core/NestByValue.h:
-
-/usr/include/aarch64-linux-gnu/sys/select.h:
-
-/usr/include/c++/11/bits/localefwd.h:
-
-/opt/ros/humble/include/diagnostic_msgs/diagnostic_msgs/msg/detail/diagnostic_status__type_support.hpp:
+/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__type_support.hpp:
 
 /usr/include/c++/11/math.h:
 
@@ -12508,6 +12501,12 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /usr/lib/gcc/aarch64-linux-gnu/11/include/stddef.h:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp:
+
+/usr/include/librealsense2/h/rs_record_playback.h:
+
+/usr/include/eigen3/Eigen/src/misc/Image.h:
+
 /usr/include/aarch64-linux-gnu/bits/types/timer_t.h:
 
 /usr/include/c++/11/istream:
@@ -12515,32 +12514,6 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 /usr/include/aarch64-linux-gnu/asm/sve_context.h:
 
 /usr/include/eigen3/Eigen/src/Core/arch/Default/ConjHelper.h:
-
-/usr/local/include/librealsense2/hpp/rs_device.hpp:
-
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
-
-/usr/include/aarch64-linux-gnu/bits/types/struct_sched_param.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/RotationBase.h:
-
-/usr/include/c++/11/tr1/poly_laguerre.tcc:
-
-/usr/include/c++/11/array:
-
-/usr/include/aarch64-linux-gnu/sys/cdefs.h:
-
-/usr/lib/gcc/aarch64-linux-gnu/11/include/syslimits.h:
-
-/usr/include/aarch64-linux-gnu/bits/iscanonical.h:
-
-/usr/local/include/librealsense2/h/rs_processing.h:
-
-/usr/include/endian.h:
-
-/usr/include/eigen3/Eigen/src/Core/arch/Default/BFloat16.h:
-
-/usr/include/c++/11/exception:
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/region_of_interest__traits.hpp:
 
@@ -12552,15 +12525,67 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /usr/include/aarch64-linux-gnu/c++/11/bits/os_defines.h:
 
-/usr/local/include/librealsense2/h/rs_pipeline.h:
-
 /opt/ros/humble/include/rcutils/rcutils/logging_macros.h:
+
+/usr/include/aarch64-linux-gnu/sys/cdefs.h:
+
+/usr/lib/gcc/aarch64-linux-gnu/11/include/syslimits.h:
+
+/usr/include/aarch64-linux-gnu/bits/iscanonical.h:
+
+/usr/include/endian.h:
+
+/usr/include/eigen3/Eigen/src/Core/arch/Default/BFloat16.h:
+
+/usr/include/c++/11/exception:
 
 /opt/ros/humble/include/rmw/rmw/impl/cpp/demangle.hpp:
 
 /usr/include/c++/11/stdlib.h:
 
 /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__struct.hpp:
+
+/usr/include/librealsense2/rs_advanced_mode.hpp:
+
+/usr/include/c++/11/cstring:
+
+/usr/include/c++/11/bits/atomic_futex.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/ParametrizedLine.h:
+
+/usr/include/c++/11/bits/charconv.h:
+
+/usr/include/c++/11/bits/exception_ptr.h:
+
+/usr/include/c++/11/ext/numeric_traits.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp:
+
+/usr/lib/gcc/aarch64-linux-gnu/11/include/stdalign.h:
+
+/opt/ros/humble/include/rcpputils/rcpputils/thread_safety_annotations.hpp:
+
+/usr/include/c++/11/bits/atomic_base.h:
+
+/usr/include/features.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/Hyperplane.h:
+
+/usr/include/c++/11/debug/debug.h:
+
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/usr/include/aarch64-linux-gnu/bits/types/struct_sched_param.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/RotationBase.h:
+
+/usr/include/c++/11/tr1/poly_laguerre.tcc:
+
+/usr/include/c++/11/array:
+
+/usr/include/c++/11/bits/localefwd.h:
+
+/opt/ros/humble/include/diagnostic_msgs/diagnostic_msgs/msg/detail/diagnostic_status__type_support.hpp:
 
 /opt/ros/humble/include/rmw/rmw/security_options.h:
 
@@ -12584,27 +12609,9 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /usr/include/c++/11/bits/shared_ptr.h:
 
-/opt/ros/humble/include/rmw/rmw/domain_id.h:
-
-/usr/local/include/librealsense2/rs.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__builder.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:
-
-/usr/include/aarch64-linux-gnu/c++/11/bits/c++io.h:
-
-/usr/include/c++/11/bits/ptr_traits.h:
-
-/opt/ros/humble/include/diagnostic_updater/update_functions.hpp:
-
-/usr/include/stdint.h:
-
-/usr/include/c++/11/ext/aligned_buffer.h:
-
 /usr/include/c++/11/bits/atomic_lockfree_defines.h:
+
+/usr/include/librealsense2/hpp/rs_frame.hpp:
 
 /usr/include/aarch64-linux-gnu/bits/typesizes.h:
 
@@ -12613,6 +12620,14 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 /usr/include/math.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp:
+
+/usr/include/aarch64-linux-gnu/bits/types/clock_t.h:
+
+/usr/include/aarch64-linux-gnu/c++/11/bits/c++locale.h:
+
+/usr/include/aarch64-linux-gnu/bits/setjmp.h:
+
+/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:
 
 /opt/ros/humble/include/rcl/rcl/macros.h:
 
@@ -12628,6 +12643,8 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /usr/include/c++/11/pstl/pstl_config.h:
 
+/usr/include/librealsense2/h/rs_config.h:
+
 /usr/include/aarch64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
 /usr/include/c++/11/cmath:
@@ -12641,6 +12658,8 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 /opt/ros/humble/include/class_loader/class_loader/visibility_control.hpp:
 
 /usr/include/c++/11/bits/streambuf_iterator.h:
+
+/usr/include/c++/11/ext/aligned_buffer.h:
 
 /usr/include/aarch64-linux-gnu/bits/endian.h:
 
@@ -12670,6 +12689,10 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h:
 
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp:
+
+/usr/include/ctype.h:
+
 /opt/ros/humble/include/rmw/rmw/ret_types.h:
 
 /usr/include/c++/11/cassert:
@@ -12685,6 +12708,14 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 /usr/include/c++/11/bits/stream_iterator.h:
 
 /opt/ros/humble/include/rcl/rcl/types.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/__sigset_t.h:
+
+/usr/include/c++/11/bits/ptr_traits.h:
+
+/opt/ros/humble/include/diagnostic_updater/update_functions.hpp:
+
+/usr/include/stdint.h:
 
 /usr/include/c++/11/sstream:
 
@@ -12708,11 +12739,11 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /usr/include/aarch64-linux-gnu/bits/pthreadtypes-arch.h:
 
+/opt/ros/humble/include/rcutils/rcutils/time.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:
 
 /usr/include/aarch64-linux-gnu/bits/procfs-extra.h:
-
-/usr/local/include/librealsense2/rsutil.h:
 
 /opt/ros/humble/include/rcutils/rcutils/snprintf.h:
 
@@ -12740,13 +12771,27 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /opt/ros/humble/include/image_transport/image_transport/visibility_control.hpp:
 
-/usr/include/c++/11/bits/move.h:
-
 /usr/include/opencv4/opencv2/core/core.hpp:
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__type_support.hpp:
 
 /usr/include/c++/11/bits/string_view.tcc:
+
+/usr/include/locale.h:
+
+/usr/include/c++/11/locale:
+
+/usr/include/opencv4/opencv2/core/fast_math.hpp:
+
+/home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/ros_param_backend.h:
+
+/usr/include/c++/11/backward/auto_ptr.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h:
+
+/opt/ros/humble/include/rcl/rcl/subscription.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/wint_t.h:
 
 /usr/include/c++/11/typeinfo:
 
@@ -12778,21 +12823,9 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /usr/include/eigen3/Eigen/src/Core/BandMatrix.h:
 
-/usr/include/c++/11/backward/auto_ptr.h:
+/usr/include/aarch64-linux-gnu/bits/stdio.h:
 
-/usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h:
-
-/opt/ros/humble/include/rcl/rcl/subscription.h:
-
-/usr/include/aarch64-linux-gnu/bits/types/wint_t.h:
-
-/usr/include/locale.h:
-
-/usr/include/c++/11/locale:
-
-/usr/include/opencv4/opencv2/core/fast_math.hpp:
-
-/home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/ros_param_backend.h:
+/usr/include/c++/11/cerrno:
 
 /usr/include/c++/11/bits/regex_compiler.h:
 
@@ -12803,12 +12836,6 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 /usr/include/c++/11/initializer_list:
 
 /usr/include/c++/11/iosfwd:
-
-/usr/include/c++/11/bits/stl_multimap.h:
-
-/usr/local/include/librealsense2/rs.hpp:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__builder.hpp:
 
 /usr/include/c++/11/unordered_map:
 
@@ -12846,16 +12873,6 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /usr/include/c++/11/bits/stl_function.h:
 
-/usr/include/aarch64-linux-gnu/bits/siginfo-consts.h:
-
-/opt/ros/humble/include/class_loader/class_loader/register_macro.hpp:
-
-/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/tf_message.hpp:
-
-/usr/include/c++/11/bits/shared_ptr_base.h:
-
-/usr/include/c++/11/bits/basic_string.h:
-
 /opt/ros/humble/include/rmw/rmw/qos_profiles.h:
 
 /usr/include/aarch64-linux-gnu/c++/11/bits/gthr.h:
@@ -12876,27 +12893,13 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /opt/ros/humble/include/rclcpp/rclcpp/any_service_callback.hpp:
 
-/usr/local/include/librealsense2/h/rs_types.h:
-
 /usr/include/aarch64-linux-gnu/bits/timex.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/detail/resolve_enable_topic_statistics.hpp:
-
-/usr/include/aarch64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:
 
 /usr/include/c++/11/cwctype:
 
 /usr/include/aarch64-linux-gnu/c++/11/bits/atomic_word.h:
 
 /usr/include/aarch64-linux-gnu/sys/single_threaded.h:
-
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__traits.hpp:
-
-/usr/local/include/librealsense2/h/rs_record_playback.h:
 
 /usr/include/c++/11/bits/functional_hash.h:
 
@@ -12966,6 +12969,12 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:
 
+/usr/include/c++/11/bits/locale_facets.tcc:
+
+/usr/include/librealsense2/h/rs_device.h:
+
+/usr/include/opencv4/opencv2/core/check.hpp:
+
 /usr/include/c++/11/bits/stl_uninitialized.h:
 
 /usr/include/c++/11/bits/stl_bvector.h:
@@ -12981,10 +12990,6 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 /usr/include/c++/11/bits/stl_tempbuf.h:
 
 /usr/include/c++/11/bits/unique_lock.h:
-
-/usr/include/c++/11/bits/uses_allocator.h:
-
-/usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h:
 
 /usr/include/aarch64-linux-gnu/bits/select2.h:
 
@@ -13006,6 +13011,10 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /usr/include/linux/stddef.h:
 
+/opt/ros/humble/include/rmw/rmw/init_options.h:
+
+/usr/include/librealsense2/h/rs_option.h:
+
 /usr/include/c++/11/ext/concurrence.h:
 
 /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h:
@@ -13024,13 +13033,19 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /usr/include/c++/11/bits/shared_ptr_atomic.h:
 
-/usr/local/include/librealsense2/hpp/rs_options.hpp:
-
 /usr/include/c++/11/bits/hashtable_policy.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp:
 
 /usr/include/c++/11/bits/basic_ios.tcc:
+
+/usr/include/aarch64-linux-gnu/bits/types/FILE.h:
+
+/usr/include/c++/11/iostream:
+
+/usr/include/c++/11/bits/node_handle.h:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/point_cloud2_iterator.hpp:
 
 /usr/include/c++/11/bits/unordered_map.h:
 
@@ -13096,21 +13111,11 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /opt/ros/humble/include/rclcpp/rclcpp/timer.hpp:
 
-/usr/local/include/librealsense2/rs_advanced_mode.hpp:
-
 /opt/ros/humble/include/rcl/rcl/log_level.h:
 
 /usr/include/eigen3/Eigen/src/Core/Stride.h:
 
 /usr/include/eigen3/Eigen/src/QR/HouseholderQR.h:
-
-/usr/include/aarch64-linux-gnu/bits/sigcontext.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/time.hpp:
-
-/usr/include/ctype.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:
 
@@ -13120,17 +13125,9 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/ros_utils.h:
 
-/usr/include/aarch64-linux-gnu/bits/types/siginfo_t.h:
-
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp:
-
 /opt/ros/humble/include/rclcpp/rclcpp/rate.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/detail/resolve_use_intra_process.hpp:
-
-/usr/include/aarch64-linux-gnu/bits/local_lim.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:
 
 /usr/include/aarch64-linux-gnu/bits/posix2_lim.h:
 
@@ -13216,6 +13213,10 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /opt/ros/humble/include/rclcpp/rclcpp/publisher_options.hpp:
 
+/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:
+
+/usr/include/aarch64-linux-gnu/bits/local_lim.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/future_return_code.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node.hpp:
@@ -13231,6 +13232,14 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__struct.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__builder.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:
+
+/usr/include/aarch64-linux-gnu/c++/11/bits/c++io.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp:
 
@@ -13294,6 +13303,8 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp:
 
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/Swap.h:
@@ -13333,6 +13344,8 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_timers_interface.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/create_timer.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface_traits.hpp:
 
@@ -13382,10 +13395,6 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp:
 
-/usr/include/c++/11/tr1/legendre_function.tcc:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp:
-
 /usr/include/c++/11/bits/hash_bytes.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp:
@@ -13413,6 +13422,8 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 /opt/ros/humble/include/rclcpp/rclcpp/subscription_wait_set_mask.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_result.hpp:
+
+/usr/include/librealsense2/h/rs_frame.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp:
 
@@ -13460,6 +13471,8 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /usr/lib/gcc/aarch64-linux-gnu/11/include/arm_neon.h:
 
+/usr/include/librealsense2/h/rs_advanced_mode_command.h:
+
 /usr/lib/gcc/aarch64-linux-gnu/11/include/arm_fp16.h:
 
 /usr/include/opencv4/opencv2/core/base.hpp:
@@ -13480,11 +13493,11 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /usr/include/eigen3/Eigen/src/Core/Reverse.h:
 
+/usr/include/librealsense2/h/rs_context.h:
+
 /usr/include/opencv4/opencv2/core/vsx_utils.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/NumTraits.h:
-
-/usr/include/opencv4/opencv2/core/check.hpp:
 
 /usr/include/opencv4/opencv2/core/types_c.h:
 
@@ -13546,6 +13559,8 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /usr/include/eigen3/Eigen/src/Core/util/Meta.h:
 
+/opt/ros/humble/include/diagnostic_msgs/diagnostic_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
+
 /opt/ros/humble/include/diagnostic_msgs/diagnostic_msgs/msg/detail/diagnostic_status__builder.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector.h:
@@ -13561,8 +13576,6 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__struct.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp:
-
-/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__type_support.hpp:
 
 /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/metadata.hpp:
 
@@ -13586,13 +13599,7 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__type_support.hpp:
 
-/usr/local/include/librealsense2/rs_advanced_mode.h:
-
-/opt/ros/humble/include/diagnostic_msgs/diagnostic_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
-
-/usr/local/include/librealsense2/h/rs_advanced_mode_command.h:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__traits.hpp:
+/usr/include/librealsense2/rs_advanced_mode.h:
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/camera_info.hpp:
 
@@ -13657,10 +13664,6 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp:
 
 /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__traits.hpp:
-
-/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__type_support.hpp:
-
-/usr/include/c++/11/queue:
 
 /opt/ros/humble/include/tf2_ros/tf2_ros/qos.hpp:
 
@@ -13744,6 +13747,8 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /usr/include/eigen3/Eigen/src/plugins/BlockMethods.h:
 
+/usr/include/librealsense2/hpp/rs_context.hpp:
+
 /usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:
 
 /usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.h:
@@ -13771,6 +13776,10 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 /usr/include/aarch64-linux-gnu/c++/11/bits/basic_file.h:
 
 /usr/include/eigen3/Eigen/src/Core/ArrayBase.h:
+
+/usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h:
+
+/usr/include/c++/11/bits/fstream.tcc:
 
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:
 
@@ -13894,8 +13903,6 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /usr/include/eigen3/Eigen/src/misc/Kernel.h:
 
-/usr/include/eigen3/Eigen/src/misc/Image.h:
-
 /usr/include/eigen3/Eigen/src/LU/FullPivLU.h:
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/bounded_vector.hpp:
@@ -13930,7 +13937,11 @@ CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o: /home/lunabotics/2025-tibalt-bot
 
 /home/lunabotics/2025-tibalt-bot/src/realsense-ros-4.55.1/realsense2_camera/include/named_filter.h:
 
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__builder.hpp:
+
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__traits.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__traits.hpp:
 
 /usr/include/c++/11/fstream:
 
