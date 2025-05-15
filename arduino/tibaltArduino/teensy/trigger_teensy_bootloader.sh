@@ -1,11 +1,12 @@
 #!/bin/bash
-# trigger_teensy_bootloader.sh
 
-# Make sure GPIO is exported
-echo 18 > /sys/class/gpio/export 2>/dev/null
-echo out > /sys/class/gpio/gpio18/direction
+# Example using gpiochip4 line 0 (replace with your actual line)
+CHIP=gpiochip0
+LINE=18
 
-# Pull PROG pin LOW to enter bootloader
-echo 0 > /sys/class/gpio/gpio18/value
+# Pull PROG pin LOW
+gpioset $CHIP $LINE=0
 sleep 0.1
-echo 1 > /sys/class/gpio/gpio18/value
+
+# Release pin (HIGH)
+gpioset $CHIP $LINE=1
