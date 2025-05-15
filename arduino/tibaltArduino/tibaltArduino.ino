@@ -1,11 +1,12 @@
+#include <micro_ros_arduino.h>
+#include <RoboClaw.h>
+#include <Servo.h>
+
 #include <rcl/rcl.h>
 #include <rclc/rclc.h>
 #include <rclc/executor.h>
 #include <std_msgs/msg/int16_multi_array.h>
 // #include <std_msgs/Int16.h>
-#include <micro_ros_arduino.h>
-#include <RoboClaw.h>
-#include <Servo.h>
 
 #define ROBOCLAW_ADDRESS 0x80
 #define ROBOCLAW_BAUD 38400
@@ -32,7 +33,7 @@ rcl_node_t node;
 
 
 //TODO: check topic indices
-void motor_update(const std_msgs::Int16MultiArray& joystick_arr) {
+void motor_update(const void * msgin) {
   const std_msgs__msg__Int16MultiArray * motor_msg = (const std_msgs__msg__Int16MultiArray *)msgin;
   int dtLeftPwm = motor_msg->data.data[0] * 5 + pwmStop;
   int dtRightPwm = motor_msg->data.data[1] * 5 + pwmStop;
@@ -42,7 +43,7 @@ void motor_update(const std_msgs::Int16MultiArray& joystick_arr) {
   roboclaw1.ForwardBackwardM2(ROBOCLAW_ADDRESS, motor_msg->data.data[2]); // Excavation drive
   roboclaw2.ForwardBackwardM1(ROBOCLAW_ADDRESS, motor_msg->data.data[3]); // Excavation actuator
   roboclaw1.ForwardBackwardM1(ROBOCLAW_ADDRESS, motor_msg->data.data[4]); // Hopper actuator
-  hopperServo.write(motor_msg->data.data[5]);
+  hopperLatch.write(motor_msg->data.data[5]);
 }
 
 
@@ -56,7 +57,7 @@ void setup() {
   dtRight.attach(dtRightPin);
   dtLeft.attach(dtLeftPin);
 
-  hopperServo.attach(hopperServoPin);
+  hopperLatch.attach(hopperServoPin);
 
   // Make sure the motors aren't moving
   roboclaw1.ForwardBackwardM1(ROBOCLAW_ADDRESS, 64);
@@ -84,7 +85,7 @@ void setup() {
     "motor_speeds");
 
   rclc_executor_init(&executor, &support.context, 1, &allocator);
-  rclc_executor_add_subscription(&executor, &subscriber, &msg, &motor_callback, ON_NEW_DATA);
+  rclc_executor_add_subscription(&executor, &subscriber, &msg, &motor_update, ON_NEW_DATA);
 }
 
 void loop() {
