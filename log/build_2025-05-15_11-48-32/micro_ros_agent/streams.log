@@ -1,0 +1,26 @@
+[0.026s] Invoking command in '/home/lunabotics/2025-tibalt-bot/build/micro_ros_agent': AMENT_PREFIX_PATH=/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs CMAKE_PREFIX_PATH=/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs LD_LIBRARY_PATH=/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib PYTHONPATH=/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages /usr/bin/cmake --build /home/lunabotics/2025-tibalt-bot/build/micro_ros_agent -- -j6 -l6
+[0.184s] [ 16%] [32m[1mLinking CXX executable micro_ros_agent[0m
+[1.629s] [100%] Built target micro_ros_agent
+[1.664s] Invoked command in '/home/lunabotics/2025-tibalt-bot/build/micro_ros_agent' returned '0': AMENT_PREFIX_PATH=/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs CMAKE_PREFIX_PATH=/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs LD_LIBRARY_PATH=/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib PYTHONPATH=/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages /usr/bin/cmake --build /home/lunabotics/2025-tibalt-bot/build/micro_ros_agent -- -j6 -l6
+[1.670s] Invoking command in '/home/lunabotics/2025-tibalt-bot/build/micro_ros_agent': AMENT_PREFIX_PATH=/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs CMAKE_PREFIX_PATH=/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs LD_LIBRARY_PATH=/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib PYTHONPATH=/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages /usr/bin/cmake --install /home/lunabotics/2025-tibalt-bot/build/micro_ros_agent
+[1.690s] -- Install configuration: ""
+[1.691s] -- Execute custom install script
+[1.692s] -- Up-to-date symlink: /home/lunabotics/2025-tibalt-bot/install/micro_ros_agent/share/ament_index/resource_index/package_run_dependencies/micro_ros_agent
+[1.692s] -- Up-to-date symlink: /home/lunabotics/2025-tibalt-bot/install/micro_ros_agent/share/ament_index/resource_index/parent_prefix_path/micro_ros_agent
+[1.693s] -- Up-to-date symlink: /home/lunabotics/2025-tibalt-bot/install/micro_ros_agent/share/micro_ros_agent/environment/ament_prefix_path.sh
+[1.694s] -- Up-to-date symlink: /home/lunabotics/2025-tibalt-bot/install/micro_ros_agent/share/micro_ros_agent/environment/ament_prefix_path.dsv
+[1.694s] -- Up-to-date symlink: /home/lunabotics/2025-tibalt-bot/install/micro_ros_agent/share/micro_ros_agent/environment/path.sh
+[1.695s] -- Up-to-date symlink: /home/lunabotics/2025-tibalt-bot/install/micro_ros_agent/share/micro_ros_agent/environment/path.dsv
+[1.695s] -- Up-to-date symlink: /home/lunabotics/2025-tibalt-bot/install/micro_ros_agent/share/micro_ros_agent/local_setup.bash
+[1.695s] -- Up-to-date symlink: /home/lunabotics/2025-tibalt-bot/install/micro_ros_agent/share/micro_ros_agent/local_setup.sh
+[1.696s] -- Up-to-date symlink: /home/lunabotics/2025-tibalt-bot/install/micro_ros_agent/share/micro_ros_agent/local_setup.zsh
+[1.696s] -- Up-to-date symlink: /home/lunabotics/2025-tibalt-bot/install/micro_ros_agent/share/micro_ros_agent/local_setup.dsv
+[1.696s] -- Symlinking: /home/lunabotics/2025-tibalt-bot/install/micro_ros_agent/share/micro_ros_agent/package.dsv
+[1.725s] -- Up-to-date symlink: /home/lunabotics/2025-tibalt-bot/install/micro_ros_agent/share/ament_index/resource_index/packages/micro_ros_agent
+[1.725s] -- Up-to-date symlink: /home/lunabotics/2025-tibalt-bot/install/micro_ros_agent/share/micro_ros_agent/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.726s] -- Up-to-date symlink: /home/lunabotics/2025-tibalt-bot/install/micro_ros_agent/share/micro_ros_agent/cmake/micro_ros_agentConfig.cmake
+[1.726s] -- Up-to-date symlink: /home/lunabotics/2025-tibalt-bot/install/micro_ros_agent/share/micro_ros_agent/cmake/micro_ros_agentConfig-version.cmake
+[1.726s] -- Up-to-date symlink: /home/lunabotics/2025-tibalt-bot/install/micro_ros_agent/share/micro_ros_agent/package.xml
+[1.727s] -- Up-to-date symlink: /home/lunabotics/2025-tibalt-bot/install/micro_ros_agent/lib/micro_ros_agent/micro_ros_agent
+[1.727s] -- Up-to-date symlink: /home/lunabotics/2025-tibalt-bot/install/micro_ros_agent/share/micro_ros_agent/launch/micro_ros_agent_launch.py
+[1.736s] Invoked command in '/home/lunabotics/2025-tibalt-bot/build/micro_ros_agent' returned '0': AMENT_PREFIX_PATH=/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs CMAKE_PREFIX_PATH=/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs LD_LIBRARY_PATH=/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/lib PYTHONPATH=/home/lunabotics/2025-tibalt-bot/install/micro_ros_msgs/local/lib/python3.10/dist-packages /usr/bin/cmake --install /home/lunabotics/2025-tibalt-bot/build/micro_ros_agent

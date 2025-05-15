@@ -5,6 +5,9 @@ import os
 from glob import glob
 import subprocess
 
+cam_1_serial = "728312070349"
+cam_2_serial = "728312070350"
+
 
 # The arducam camera could be in a different path, so this checks that
 def find_arducam():
@@ -51,6 +54,7 @@ def generate_launch_description():
     #     parameters=[{'serial_no': '048522075108'}],
     #     output='screen'
     # ))
+
     # arducam_dev = find_arducam()
     # if arducam_dev:
     #     print("Found hopper bin cam")
@@ -65,7 +69,6 @@ def generate_launch_description():
     #             {'image_height': 480},
     #             {'framerate': 30}
     #         ],
-    #         output='screen'
     #     ))
     # else:
     #     print("Did not find hopper bin cam")
@@ -85,5 +88,25 @@ def generate_launch_description():
         name='tibalt_control',
         output='screen'
     ))
+
+    # ld.add_action(Node(
+    #     package='realsense2_camera',
+    #     executable='realsense2_camera_node',
+    #     name='cam_1',
+    #     parameters=[{
+    #         'serial_no': cam_1_serial,
+    #         'camera_name': 'cam_1'
+    #     }]
+    # ))
+
+    # ld.add_action(Node(
+    #     package='realsense2_camera',
+    #     executable='realsense2_camera_node',
+    #     name='cam_2',
+    #     parameters=[{
+    #         'serial_no': cam_2_serial,
+    #         'camera_name': 'cam_2'
+    #     }]
+    # ))
 
     return ld
