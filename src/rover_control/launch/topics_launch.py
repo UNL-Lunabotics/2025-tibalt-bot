@@ -55,23 +55,23 @@ def generate_launch_description():
         output='screen'
     ))
 
-    # arducam_dev = find_arducam()
-    # if arducam_dev:
-    #     print("Found hopper bin cam")
-    #     ld.add_action(Node(
-    #         package='usb_cam',
-    #         executable='usb_cam_node_exe',
-    #         namespace='arducam',
-    #         name='usb_cam',
-    #         parameters=[
-    #             {'video_device': arducam_dev},
-    #             {'image_width': 640},
-    #             {'image_height': 480},
-    #             {'framerate': 30}
-    #         ],
-    #     ))
-    # else:
-    #     print("Did not find hopper bin cam")
+    arducam_dev = find_arducam()
+    if arducam_dev:
+        print("Found hopper bin cam")
+        ld.add_action(Node(
+            package='usb_cam',
+            executable='usb_cam_node_exe',
+            namespace='arducam',
+            name='usb_cam',
+            parameters=[
+                {'video_device': arducam_dev},
+                {'image_width': 640},
+                {'image_height': 480},
+                {'framerate': 30}
+            ],
+        ))
+    else:
+        print("Did not find hopper bin cam")
 
     # Start the joystick node (not sure if i need this here but oh well)
     ld.add_action(Node(
