@@ -1,14 +1,14 @@
 #!/bin/bash
 
-# Example using gpiochip1 line 4 (PIN16)
+# Example using gpiochip1 line 6 (PIN18)
 CHIP=gpiochip1
-LINE=4
+LINE=6
 
 echo "[INFO] Triggering Teensy PROG pin via GPIO $CHIP line $LINE"
 
-# Pull PROG pin LOW
+# Pull PROG pin LOW to enter bootloader
 gpioset $CHIP $LINE=0
-sleep 0.1
+sleep 0.25
 
 # Release pin (HIGH)
 gpioset $CHIP $LINE=1
