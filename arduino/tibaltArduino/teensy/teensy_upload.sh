@@ -3,6 +3,8 @@
 # Path to your compiled firmware
 HEX_PATH=".pio/build/teensy41/firmware.hex"
 
+sleep 0.5
+
 # Upload using teensy_loader_cli (must be installed and in PATH)
 # -w: wait for device
 # -s: reboot after upload
