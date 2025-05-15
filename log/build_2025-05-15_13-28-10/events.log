@@ -1,0 +1,1365 @@
+[0.000000] (-) TimerEvent: {}
+[0.001647] (realsense2_camera_msgs) JobQueued: {'identifier': 'realsense2_camera_msgs', 'dependencies': OrderedDict()}
+[0.002596] (rover_control) JobQueued: {'identifier': 'rover_control', 'dependencies': OrderedDict()}
+[0.003046] (realsense2_camera) JobQueued: {'identifier': 'realsense2_camera', 'dependencies': OrderedDict([('realsense2_camera_msgs', '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs')])}
+[0.003558] (realsense2_description) JobQueued: {'identifier': 'realsense2_description', 'dependencies': OrderedDict([('realsense2_camera_msgs', '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs')])}
+[0.003660] (realsense2_camera_msgs) JobStarted: {'identifier': 'realsense2_camera_msgs'}
+[0.028605] (rover_control) JobStarted: {'identifier': 'rover_control'}
+[0.052755] (realsense2_camera_msgs) JobProgress: {'identifier': 'realsense2_camera_msgs', 'progress': 'cmake'}
+[0.055316] (realsense2_camera_msgs) JobProgress: {'identifier': 'realsense2_camera_msgs', 'progress': 'build'}
+[0.057580] (realsense2_camera_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs', '--', '-j6', '-l6'], 'cwd': '/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lunabotics'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lunabotics'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.100.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1607'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2266'), ('BUNDLED_DEBUGPY_PATH', '/home/lunabotics/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-arm64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3759'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lunabotics'), ('JOURNAL_STREAM', '8:43402'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lunabotics'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/lunabotics/.local/bin:/home/lunabotics/bin:/opt/ros/humble/bin:/home/lunabotics/.local/bin:/home/lunabotics/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/lunabotics/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-arm64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/lunabotics-desktop:@/tmp/.ICE-unix/2242,unix/lunabotics-desktop:/tmp/.ICE-unix/2242'), ('INVOCATION_ID', 'a44fd50fbe2e403bacbb1524ca9a6c0f'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/lunabotics/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-a67fdb2d3af79892.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2a0a9112f3.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.098358] (-) TimerEvent: {}
+[0.147601] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.198601] (-) TimerEvent: {}
+[0.299634] (-) TimerEvent: {}
+[0.400662] (-) TimerEvent: {}
+[0.501849] (-) TimerEvent: {}
+[0.513844] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.520933] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.532120] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.602081] (-) TimerEvent: {}
+[0.611315] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.673334] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[0.696298] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.8.0 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[0.702117] (-) TimerEvent: {}
+[0.721232] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.802348] (-) TimerEvent: {}
+[0.903340] (-) TimerEvent: {}
+[1.004426] (-) TimerEvent: {}
+[1.105998] (-) TimerEvent: {}
+[1.207355] (-) TimerEvent: {}
+[1.308688] (-) TimerEvent: {}
+[1.409742] (-) TimerEvent: {}
+[1.510756] (-) TimerEvent: {}
+[1.613033] (-) TimerEvent: {}
+[1.682055] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cppcheck: 0.12.12 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)\n'}
+[1.685270] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cpplint: 0.12.12 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)\n'}
+[1.692918] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_uncrustify: 0.12.12 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)\n'}
+[1.698163] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.713168] (-) TimerEvent: {}
+[1.814050] (-) TimerEvent: {}
+[1.900246] (rover_control) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/rover_control', 'build', '--build-base', '/home/lunabotics/2025-tibalt-bot/build/rover_control/build', 'install', '--record', '/home/lunabotics/2025-tibalt-bot/build/rover_control/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/lunabotics/2025-tibalt-bot/src/rover_control', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'lunabotics', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/lunabotics', 'CHROME_DESKTOP': 'code.desktop', 'TERM_PROGRAM_VERSION': '1.100.1', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '1607', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '2266', 'BUNDLED_DEBUGPY_PATH': '/home/lunabotics/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-arm64/bundled/libs/debugpy', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3759', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'lunabotics', 'JOURNAL_STREAM': '8:43402', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'lunabotics', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/home/lunabotics/.local/bin:/home/lunabotics/bin:/opt/ros/humble/bin:/home/lunabotics/.local/bin:/home/lunabotics/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/lunabotics/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-arm64/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/lunabotics-desktop:@/tmp/.ICE-unix/2242,unix/lunabotics-desktop:/tmp/.ICE-unix/2242', 'INVOCATION_ID': 'a44fd50fbe2e403bacbb1524ca9a6c0f', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/lunabotics/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-a67fdb2d3af79892.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-2a0a9112f3.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/lunabotics/2025-tibalt-bot/build/rover_control', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/lunabotics/2025-tibalt-bot/build/rover_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lunabotics/2025-tibalt-bot/install/rover_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[1.914117] (-) TimerEvent: {}
+[2.014951] (-) TimerEvent: {}
+[2.116080] (-) TimerEvent: {}
+[2.217124] (-) TimerEvent: {}
+[2.318106] (-) TimerEvent: {}
+[2.419053] (-) TimerEvent: {}
+[2.452154] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.513767] (rover_control) StdoutLine: {'line': b'running egg_info\n'}
+[2.515321] (rover_control) StdoutLine: {'line': b'writing ../../build/rover_control/rover_control.egg-info/PKG-INFO\n'}
+[2.516235] (rover_control) StdoutLine: {'line': b'writing dependency_links to ../../build/rover_control/rover_control.egg-info/dependency_links.txt\n'}
+[2.516722] (rover_control) StdoutLine: {'line': b'writing entry points to ../../build/rover_control/rover_control.egg-info/entry_points.txt\n'}
+[2.517226] (rover_control) StdoutLine: {'line': b'writing requirements to ../../build/rover_control/rover_control.egg-info/requires.txt\n'}
+[2.517482] (rover_control) StdoutLine: {'line': b'writing top-level names to ../../build/rover_control/rover_control.egg-info/top_level.txt\n'}
+[2.519071] (-) TimerEvent: {}
+[2.522239] (rover_control) StdoutLine: {'line': b"reading manifest file '../../build/rover_control/rover_control.egg-info/SOURCES.txt'\n"}
+[2.524195] (rover_control) StdoutLine: {'line': b"writing manifest file '../../build/rover_control/rover_control.egg-info/SOURCES.txt'\n"}
+[2.524509] (rover_control) StdoutLine: {'line': b'running build\n'}
+[2.524741] (rover_control) StdoutLine: {'line': b'running build_py\n'}
+[2.525997] (rover_control) StdoutLine: {'line': b'running install\n'}
+[2.526505] (rover_control) StdoutLine: {'line': b'running install_lib\n'}
+[2.534864] (rover_control) StdoutLine: {'line': b'running install_data\n'}
+[2.535558] (rover_control) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.540152] (rover_control) StdoutLine: {'line': b"removing '/home/lunabotics/2025-tibalt-bot/install/rover_control/lib/python3.10/site-packages/rover_control-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[2.541316] (rover_control) StdoutLine: {'line': b'Copying ../../build/rover_control/rover_control.egg-info to /home/lunabotics/2025-tibalt-bot/install/rover_control/lib/python3.10/site-packages/rover_control-0.0.0-py3.10.egg-info\n'}
+[2.544265] (rover_control) StdoutLine: {'line': b'running install_scripts\n'}
+[2.598723] (rover_control) StdoutLine: {'line': b'Installing tibalt_control script to /home/lunabotics/2025-tibalt-bot/install/rover_control/lib/rover_control\n'}
+[2.600086] (rover_control) StdoutLine: {'line': b"writing list of installed files to '/home/lunabotics/2025-tibalt-bot/build/rover_control/install.log'\n"}
+[2.619359] (-) TimerEvent: {}
+[2.720488] (rover_control) CommandEnded: {'returncode': 0}
+[2.722584] (-) TimerEvent: {}
+[2.775006] (rover_control) JobEnded: {'identifier': 'rover_control', 'rc': 0}
+[2.822911] (-) TimerEvent: {}
+[2.924049] (-) TimerEvent: {}
+[3.025255] (-) TimerEvent: {}
+[3.126407] (-) TimerEvent: {}
+[3.227480] (-) TimerEvent: {}
+[3.328574] (-) TimerEvent: {}
+[3.429591] (-) TimerEvent: {}
+[3.450302] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.519022] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[3.529710] (-) TimerEvent: {}
+[3.587536] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.588339] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[3.588552] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[3.629911] (-) TimerEvent: {}
+[3.730901] (-) TimerEvent: {}
+[3.731905] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_flake8: 0.12.12 (/opt/ros/humble/share/ament_cmake_flake8/cmake)\n'}
+[3.735368] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake_pep257: 0.12.12 (/opt/ros/humble/share/ament_cmake_pep257/cmake)\n'}
+[3.760206] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.831173] (-) TimerEvent: {}
+[3.882342] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[3.915585] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs\n'}
+[3.931225] (-) TimerEvent: {}
+[4.005651] (realsense2_camera_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_generator_c\x1b[0m\n'}
+[4.030870] (realsense2_camera_msgs) StdoutLine: {'line': b'[  1%] Built target realsense2_camera_msgs__cpp\n'}
+[4.031612] (-) TimerEvent: {}
+[4.043682] (realsense2_camera_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/realsense2_camera_msgs/msg/detail/imu_info__functions.c.o\x1b[0m\n'}
+[4.050837] (realsense2_camera_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/realsense2_camera_msgs/msg/detail/metadata__functions.c.o\x1b[0m\n'}
+[4.051796] (realsense2_camera_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/realsense2_camera_msgs/msg/detail/extrinsics__functions.c.o\x1b[0m\n'}
+[4.073147] (realsense2_camera_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/realsense2_camera_msgs/msg/detail/rgbd__functions.c.o\x1b[0m\n'}
+[4.077543] (realsense2_camera_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[4.101636] (realsense2_camera_msgs) StdoutLine: {'line': b'[  7%] Built target ament_cmake_python_copy_realsense2_camera_msgs\n'}
+[4.127954] (realsense2_camera_msgs) StdoutLine: {'line': b'[  9%] \x1b[32m\x1b[1mLinking CXX shared library librealsense2_camera_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[4.131874] (-) TimerEvent: {}
+[4.135145] (realsense2_camera_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[4.196890] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32m\x1b[1mLinking CXX shared library librealsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[4.232235] (-) TimerEvent: {}
+[4.236811] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_c.dir/rosidl_generator_c/realsense2_camera_msgs/srv/detail/device_info__functions.c.o\x1b[0m\n'}
+[4.240434] (realsense2_camera_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[4.290823] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/msg/detail/imu_info__type_support.cpp.o\x1b[0m\n'}
+[4.304449] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/msg/detail/extrinsics__type_support.cpp.o\x1b[0m\n'}
+[4.333092] (-) TimerEvent: {}
+[4.424106] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 25%] Built target realsense2_camera_msgs__rosidl_typesupport_cpp\n'}
+[4.434016] (-) TimerEvent: {}
+[4.480186] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/msg/detail/metadata__type_support.cpp.o\x1b[0m\n'}
+[4.525066] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32m\x1b[1mLinking C shared library librealsense2_camera_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[4.536212] (-) TimerEvent: {}
+[4.582995] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 38%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[4.616408] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/msg/detail/rgbd__type_support.cpp.o\x1b[0m\n'}
+[4.636484] (-) TimerEvent: {}
+[4.737766] (-) TimerEvent: {}
+[4.826205] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 41%] Built target realsense2_camera_msgs__rosidl_generator_c\n'}
+[4.838000] (-) TimerEvent: {}
+[4.927037] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/srv/detail/device_info__type_support.cpp.o\x1b[0m\n'}
+[4.938267] (-) TimerEvent: {}
+[5.039317] (-) TimerEvent: {}
+[5.140392] (-) TimerEvent: {}
+[5.147251] (realsense2_camera_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[5.153522] (realsense2_camera_msgs) StdoutLine: {'line': b'writing realsense2_camera_msgs.egg-info/PKG-INFO\n'}
+[5.157765] (realsense2_camera_msgs) StdoutLine: {'line': b'writing dependency_links to realsense2_camera_msgs.egg-info/dependency_links.txt\n'}
+[5.161924] (realsense2_camera_msgs) StdoutLine: {'line': b'writing top-level names to realsense2_camera_msgs.egg-info/top_level.txt\n'}
+[5.176344] (realsense2_camera_msgs) StdoutLine: {'line': b"reading manifest file 'realsense2_camera_msgs.egg-info/SOURCES.txt'\n"}
+[5.179915] (realsense2_camera_msgs) StdoutLine: {'line': b"writing manifest file 'realsense2_camera_msgs.egg-info/SOURCES.txt'\n"}
+[5.240793] (-) TimerEvent: {}
+[5.342163] (-) TimerEvent: {}
+[5.363966] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 42%] Built target ament_cmake_python_build_realsense2_camera_msgs_egg\n'}
+[5.427404] (realsense2_camera_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[5.442437] (-) TimerEvent: {}
+[5.518934] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/msg/detail/imu_info__type_support_c.cpp.o\x1b[0m\n'}
+[5.542764] (-) TimerEvent: {}
+[5.639095] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/msg/detail/extrinsics__type_support_c.cpp.o\x1b[0m\n'}
+[5.642965] (-) TimerEvent: {}
+[5.744102] (-) TimerEvent: {}
+[5.845409] (-) TimerEvent: {}
+[5.847971] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/msg/detail/metadata__type_support_c.cpp.o\x1b[0m\n'}
+[5.945709] (-) TimerEvent: {}
+[5.955874] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/msg/detail/rgbd__type_support_c.cpp.o\x1b[0m\n'}
+[6.046003] (-) TimerEvent: {}
+[6.147597] (-) TimerEvent: {}
+[6.248904] (-) TimerEvent: {}
+[6.290357] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/srv/detail/device_info__type_support_c.cpp.o\x1b[0m\n'}
+[6.349168] (-) TimerEvent: {}
+[6.450412] (-) TimerEvent: {}
+[6.551756] (-) TimerEvent: {}
+[6.653012] (-) TimerEvent: {}
+[6.692239] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32m\x1b[1mLinking CXX shared library librealsense2_camera_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[6.753287] (-) TimerEvent: {}
+[6.855009] (-) TimerEvent: {}
+[6.956304] (-) TimerEvent: {}
+[7.057690] (-) TimerEvent: {}
+[7.097475] (realsense2_camera_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[7.133885] (realsense2_camera_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[7.154424] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/realsense2_camera_msgs/msg/imu_info__type_support.cpp.o\x1b[0m\n'}
+[7.157860] (-) TimerEvent: {}
+[7.181944] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/realsense2_camera_msgs/msg/extrinsics__type_support.cpp.o\x1b[0m\n'}
+[7.241591] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/realsense2_camera_msgs/msg/metadata__type_support.cpp.o\x1b[0m\n'}
+[7.250296] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking C shared library librealsense2_camera_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[7.258162] (-) TimerEvent: {}
+[7.295756] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/realsense2_camera_msgs/msg/rgbd__type_support.cpp.o\x1b[0m\n'}
+[7.317818] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 61%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_cpp\n'}
+[7.345900] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/realsense2_camera_msgs/srv/device_info__type_support.cpp.o\x1b[0m\n'}
+[7.358445] (-) TimerEvent: {}
+[7.414145] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 73%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_c\n'}
+[7.458721] (-) TimerEvent: {}
+[7.461860] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library librealsense2_camera_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[7.559003] (-) TimerEvent: {}
+[7.573938] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library librealsense2_camera_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[7.597838] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 77%] Built target realsense2_camera_msgs__rosidl_typesupport_c\n'}
+[7.659290] (-) TimerEvent: {}
+[7.760491] (-) TimerEvent: {}
+[7.832463] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 79%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c\n'}
+[7.860677] (-) TimerEvent: {}
+[7.887646] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 79%] Built target realsense2_camera_msgs\n'}
+[7.960921] (-) TimerEvent: {}
+[7.962469] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 80%] Built target realsense2_camera_msgs__py\n'}
+[8.017929] (realsense2_camera_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_generator_py\x1b[0m\n'}
+[8.062845] (-) TimerEvent: {}
+[8.075274] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/realsense2_camera_msgs/srv/_device_info_s.c.o\x1b[0m\n'}
+[8.076344] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/realsense2_camera_msgs/msg/_rgbd_s.c.o\x1b[0m\n'}
+[8.076599] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/realsense2_camera_msgs/msg/_extrinsics_s.c.o\x1b[0m\n'}
+[8.095194] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/realsense2_camera_msgs/msg/_imu_info_s.c.o\x1b[0m\n'}
+[8.105688] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/realsense2_camera_msgs/msg/_metadata_s.c.o\x1b[0m\n'}
+[8.163006] (-) TimerEvent: {}
+[8.264195] (-) TimerEvent: {}
+[8.365810] (-) TimerEvent: {}
+[8.467965] (-) TimerEvent: {}
+[8.524995] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/realsense2_camera_msgs/librealsense2_camera_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[8.568284] (-) TimerEvent: {}
+[8.669449] (-) TimerEvent: {}
+[8.673392] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 90%] Built target realsense2_camera_msgs__rosidl_generator_py\n'}
+[8.706664] (realsense2_camera_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[8.708444] (realsense2_camera_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[8.726133] (realsense2_camera_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[8.742882] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[8.761563] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[8.763540] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[8.769585] (-) TimerEvent: {}
+[8.839244] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 96%] Built target realsense2_camera_msgs__rosidl_typesupport_c__pyext\n'}
+[8.869910] (-) TimerEvent: {}
+[8.901063] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 98%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[8.970202] (-) TimerEvent: {}
+[9.071403] (-) TimerEvent: {}
+[9.091269] (realsense2_camera_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[9.171718] (-) TimerEvent: {}
+[9.213552] (realsense2_camera_msgs) StdoutLine: {'line': b'[100%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[9.253797] (realsense2_camera_msgs) CommandEnded: {'returncode': 0}
+[9.257257] (realsense2_camera_msgs) JobProgress: {'identifier': 'realsense2_camera_msgs', 'progress': 'install'}
+[9.271991] (-) TimerEvent: {}
+[9.284567] (realsense2_camera_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs'], 'cwd': '/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lunabotics'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lunabotics'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.100.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1607'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2266'), ('BUNDLED_DEBUGPY_PATH', '/home/lunabotics/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-arm64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3759'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lunabotics'), ('JOURNAL_STREAM', '8:43402'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lunabotics'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/lunabotics/.local/bin:/home/lunabotics/bin:/opt/ros/humble/bin:/home/lunabotics/.local/bin:/home/lunabotics/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/lunabotics/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-arm64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/lunabotics-desktop:@/tmp/.ICE-unix/2242,unix/lunabotics-desktop:/tmp/.ICE-unix/2242'), ('INVOCATION_ID', 'a44fd50fbe2e403bacbb1524ca9a6c0f'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/lunabotics/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-a67fdb2d3af79892.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2a0a9112f3.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[9.317769] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.319471] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/ament_index/resource_index/rosidl_interfaces/realsense2_camera_msgs\n'}
+[9.319696] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs\n'}
+[9.319945] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg\n'}
+[9.327759] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[9.329054] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rgbd.h\n'}
+[9.342997] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/imu_info.h\n'}
+[9.343372] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/metadata.h\n'}
+[9.343555] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/extrinsics.h\n'}
+[9.343724] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail\n'}
+[9.349658] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__functions.h\n'}
+[9.350317] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__functions.h\n'}
+[9.350527] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__struct.h\n'}
+[9.350701] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__type_support.h\n'}
+[9.351192] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__type_support.h\n'}
+[9.351410] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__functions.c\n'}
+[9.351735] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__type_support.h\n'}
+[9.351944] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__type_support.h\n'}
+[9.352125] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__functions.c\n'}
+[9.352293] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__functions.h\n'}
+[9.352448] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__struct.h\n'}
+[9.352598] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__functions.c\n'}
+[9.352744] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__struct.h\n'}
+[9.353023] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__functions.c\n'}
+[9.353242] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__functions.h\n'}
+[9.353608] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__struct.h\n'}
+[9.354069] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv\n'}
+[9.354283] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail\n'}
+[9.354481] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__functions.c\n'}
+[9.354642] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__type_support.h\n'}
+[9.354792] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__functions.h\n'}
+[9.354939] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__struct.h\n'}
+[9.355087] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/device_info.h\n'}
+[9.355234] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/library_path.sh\n'}
+[9.355378] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/library_path.dsv\n'}
+[9.355523] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_generator_c.so\n'}
+[9.355665] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_generator_c.so" to ""\n'}
+[9.355852] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs\n'}
+[9.355999] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg\n'}
+[9.356483] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail\n'}
+[9.356678] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_fastrtps_c.h\n'}
+[9.357039] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_fastrtps_c.h\n'}
+[9.357414] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_fastrtps_c.h\n'}
+[9.357576] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__rosidl_typesupport_fastrtps_c.h\n'}
+[9.357765] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[9.357915] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv\n'}
+[9.358145] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail\n'}
+[9.358489] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_fastrtps_c.h\n'}
+[9.358694] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[9.358879] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[9.359055] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs\n'}
+[9.359238] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg\n'}
+[9.359389] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail\n'}
+[9.359537] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_introspection_c.h\n'}
+[9.359682] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__type_support.c\n'}
+[9.359827] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__type_support.c\n'}
+[9.359966] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__type_support.c\n'}
+[9.360106] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__type_support.c\n'}
+[9.360247] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_introspection_c.h\n'}
+[9.360442] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__rosidl_typesupport_introspection_c.h\n'}
+[9.360592] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_introspection_c.h\n'}
+[9.360738] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[9.361071] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv\n'}
+[9.361229] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail\n'}
+[9.361429] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__type_support.c\n'}
+[9.361581] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_introspection_c.h\n'}
+[9.361833] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_introspection_c.so\n'}
+[9.362237] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[9.362649] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_c.so\n'}
+[9.363089] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_c.so" to ""\n'}
+[9.363316] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs\n'}
+[9.363664] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg\n'}
+[9.364005] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/extrinsics.hpp\n'}
+[9.364475] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/imu_info.hpp\n'}
+[9.364729] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[9.364937] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rgbd.hpp\n'}
+[9.365192] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail\n'}
+[9.365349] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__type_support.hpp\n'}
+[9.365502] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__struct.hpp\n'}
+[9.365655] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__struct.hpp\n'}
+[9.365824] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__builder.hpp\n'}
+[9.365969] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__type_support.hpp\n'}
+[9.366191] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__type_support.hpp\n'}
+[9.366355] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__builder.hpp\n'}
+[9.366503] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__traits.hpp\n'}
+[9.366717] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__traits.hpp\n'}
+[9.367212] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__struct.hpp\n'}
+[9.367471] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__struct.hpp\n'}
+[9.367668] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__builder.hpp\n'}
+[9.367877] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__builder.hpp\n'}
+[9.368034] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__type_support.hpp\n'}
+[9.368184] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__traits.hpp\n'}
+[9.368329] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__traits.hpp\n'}
+[9.368478] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/metadata.hpp\n'}
+[9.368623] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv\n'}
+[9.368765] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail\n'}
+[9.369031] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__builder.hpp\n'}
+[9.369225] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__type_support.hpp\n'}
+[9.369411] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__traits.hpp\n'}
+[9.369578] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__struct.hpp\n'}
+[9.369723] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/device_info.hpp\n'}
+[9.369871] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs\n'}
+[9.370083] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg\n'}
+[9.370248] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail\n'}
+[9.370395] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/dds_fastrtps\n'}
+[9.370561] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[9.370751] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[9.370899] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[9.371079] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[9.371226] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[9.371401] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv\n'}
+[9.371559] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail\n'}
+[9.371780] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/dds_fastrtps\n'}
+[9.372035] (-) TimerEvent: {}
+[9.372480] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[9.372754] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[9.373043] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[9.373270] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs\n'}
+[9.373457] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg\n'}
+[9.373693] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail\n'}
+[9.373860] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_introspection_cpp.hpp\n'}
+[9.374131] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[9.374433] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__rosidl_typesupport_introspection_cpp.hpp\n'}
+[9.374694] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__type_support.cpp\n'}
+[9.375028] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__type_support.cpp\n'}
+[9.375205] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__type_support.cpp\n'}
+[9.375410] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__type_support.cpp\n'}
+[9.375561] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_introspection_cpp.hpp\n'}
+[9.375715] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv\n'}
+[9.375860] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail\n'}
+[9.376007] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__type_support.cpp\n'}
+[9.376151] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[9.376294] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[9.376440] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[9.376586] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_cpp.so\n'}
+[9.376764] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[9.377041] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/pythonpath.sh\n'}
+[9.377204] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/pythonpath.dsv\n'}
+[9.377352] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs-4.55.1-py3.10.egg-info\n'}
+[9.377546] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs-4.55.1-py3.10.egg-info/top_level.txt\n'}
+[9.377698] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs-4.55.1-py3.10.egg-info/SOURCES.txt\n'}
+[9.377846] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs-4.55.1-py3.10.egg-info/PKG-INFO\n'}
+[9.377989] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs-4.55.1-py3.10.egg-info/dependency_links.txt\n'}
+[9.378134] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs\n'}
+[9.378289] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[9.378440] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[9.378610] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/librealsense2_camera_msgs__rosidl_generator_py.so\n'}
+[9.378757] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[9.378903] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[9.379049] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[9.379192] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg\n'}
+[9.379336] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_rgbd_s.c\n'}
+[9.379485] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_rgbd.py\n'}
+[9.379649] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_extrinsics_s.c\n'}
+[9.379794] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_extrinsics.py\n'}
+[9.379937] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_imu_info.py\n'}
+[9.380082] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_metadata_s.c\n'}
+[9.380226] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_metadata.py\n'}
+[9.380370] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/__init__.py\n'}
+[9.380512] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_imu_info_s.c\n'}
+[9.380671] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv\n'}
+[9.380819] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/_device_info.py\n'}
+[9.381080] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/_device_info_s.c\n'}
+[9.381272] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/__init__.py\n'}
+[9.381422] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/__init__.py\n'}
+[9.381572] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[9.472324] (-) TimerEvent: {}
+[9.497752] (realsense2_camera_msgs) StdoutLine: {'line': b"Listing '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs'...\n"}
+[9.498510] (realsense2_camera_msgs) StdoutLine: {'line': b"Compiling '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/__init__.py'...\n"}
+[9.498760] (realsense2_camera_msgs) StdoutLine: {'line': b"Listing '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg'...\n"}
+[9.498934] (realsense2_camera_msgs) StdoutLine: {'line': b"Compiling '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/__init__.py'...\n"}
+[9.499144] (realsense2_camera_msgs) StdoutLine: {'line': b"Compiling '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_extrinsics.py'...\n"}
+[9.499313] (realsense2_camera_msgs) StdoutLine: {'line': b"Compiling '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_imu_info.py'...\n"}
+[9.499487] (realsense2_camera_msgs) StdoutLine: {'line': b"Compiling '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_metadata.py'...\n"}
+[9.499637] (realsense2_camera_msgs) StdoutLine: {'line': b"Compiling '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_rgbd.py'...\n"}
+[9.499782] (realsense2_camera_msgs) StdoutLine: {'line': b"Listing '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv'...\n"}
+[9.499929] (realsense2_camera_msgs) StdoutLine: {'line': b"Compiling '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/__init__.py'...\n"}
+[9.500073] (realsense2_camera_msgs) StdoutLine: {'line': b"Compiling '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/_device_info.py'...\n"}
+[9.523778] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[9.525190] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[9.526588] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[9.526998] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[9.527425] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[9.527955] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[9.528465] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_generator_py.so\n'}
+[9.529672] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_generator_py.so" to ""\n'}
+[9.530115] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/IMUInfo.idl\n'}
+[9.530514] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Extrinsics.idl\n'}
+[9.531019] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Metadata.idl\n'}
+[9.531357] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/RGBD.idl\n'}
+[9.531647] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo.idl\n'}
+[9.531820] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/IMUInfo.msg\n'}
+[9.532074] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Extrinsics.msg\n'}
+[9.532301] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Metadata.msg\n'}
+[9.532556] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/RGBD.msg\n'}
+[9.533025] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo.srv\n'}
+[9.533323] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo_Request.msg\n'}
+[9.533613] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo_Response.msg\n'}
+[9.533786] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/ament_index/resource_index/package_run_dependencies/realsense2_camera_msgs\n'}
+[9.533972] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/ament_index/resource_index/parent_prefix_path/realsense2_camera_msgs\n'}
+[9.534132] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/ament_prefix_path.sh\n'}
+[9.534284] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/ament_prefix_path.dsv\n'}
+[9.534461] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/path.sh\n'}
+[9.534636] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/path.dsv\n'}
+[9.534821] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.bash\n'}
+[9.534990] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.sh\n'}
+[9.535178] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.zsh\n'}
+[9.535355] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.dsv\n'}
+[9.535538] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.dsv\n'}
+[9.535719] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/ament_index/resource_index/packages/realsense2_camera_msgs\n'}
+[9.535899] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_cExport.cmake\n'}
+[9.536101] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[9.536286] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[9.536465] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[9.536661] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[9.536842] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[9.537037] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cExport.cmake\n'}
+[9.537257] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[9.537464] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_cppExport.cmake\n'}
+[9.537673] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[9.537875] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[9.538081] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[9.538284] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[9.538488] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[9.538663] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[9.538821] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_pyExport.cmake\n'}
+[9.538964] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[9.539124] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[9.539267] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[9.539411] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[9.539570] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[9.539714] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[9.539856] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[9.540008] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[9.540150] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgsConfig.cmake\n'}
+[9.540287] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgsConfig-version.cmake\n'}
+[9.540429] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.xml\n'}
+[9.546871] (realsense2_camera_msgs) CommandEnded: {'returncode': 0}
+[9.572962] (-) TimerEvent: {}
+[9.595968] (realsense2_camera_msgs) JobEnded: {'identifier': 'realsense2_camera_msgs', 'rc': 0}
+[9.603562] (realsense2_camera) JobStarted: {'identifier': 'realsense2_camera'}
+[9.614929] (realsense2_description) JobStarted: {'identifier': 'realsense2_description'}
+[9.636038] (realsense2_camera) JobProgress: {'identifier': 'realsense2_camera', 'progress': 'cmake'}
+[9.638005] (realsense2_camera) JobProgress: {'identifier': 'realsense2_camera', 'progress': 'build'}
+[9.639353] (realsense2_camera) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lunabotics/2025-tibalt-bot/build/realsense2_camera', '--', '-j6', '-l6'], 'cwd': '/home/lunabotics/2025-tibalt-bot/build/realsense2_camera', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lunabotics'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lunabotics'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.100.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1607'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2266'), ('BUNDLED_DEBUGPY_PATH', '/home/lunabotics/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-arm64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3759'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lunabotics'), ('JOURNAL_STREAM', '8:43402'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lunabotics'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/lunabotics/.local/bin:/home/lunabotics/bin:/opt/ros/humble/bin:/home/lunabotics/.local/bin:/home/lunabotics/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/lunabotics/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-arm64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/lunabotics-desktop:@/tmp/.ICE-unix/2242,unix/lunabotics-desktop:/tmp/.ICE-unix/2242'), ('INVOCATION_ID', 'a44fd50fbe2e403bacbb1524ca9a6c0f'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/lunabotics/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-a67fdb2d3af79892.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2a0a9112f3.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lunabotics/2025-tibalt-bot/build/realsense2_camera'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs:/opt/ros/humble')]), 'shell': False}
+[9.653463] (realsense2_description) JobProgress: {'identifier': 'realsense2_description', 'progress': 'cmake'}
+[9.656289] (realsense2_description) JobProgress: {'identifier': 'realsense2_description', 'progress': 'build'}
+[9.657590] (realsense2_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lunabotics/2025-tibalt-bot/build/realsense2_description', '--', '-j6', '-l6'], 'cwd': '/home/lunabotics/2025-tibalt-bot/build/realsense2_description', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lunabotics'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lunabotics'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.100.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1607'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2266'), ('BUNDLED_DEBUGPY_PATH', '/home/lunabotics/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-arm64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3759'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lunabotics'), ('JOURNAL_STREAM', '8:43402'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lunabotics'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/lunabotics/.local/bin:/home/lunabotics/bin:/opt/ros/humble/bin:/home/lunabotics/.local/bin:/home/lunabotics/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/lunabotics/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-arm64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/lunabotics-desktop:@/tmp/.ICE-unix/2242,unix/lunabotics-desktop:/tmp/.ICE-unix/2242'), ('INVOCATION_ID', 'a44fd50fbe2e403bacbb1524ca9a6c0f'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/lunabotics/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-a67fdb2d3af79892.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2a0a9112f3.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lunabotics/2025-tibalt-bot/build/realsense2_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs:/opt/ros/humble')]), 'shell': False}
+[9.673343] (-) TimerEvent: {}
+[9.774538] (-) TimerEvent: {}
+[9.810200] (realsense2_description) CommandEnded: {'returncode': 0}
+[9.852591] (realsense2_camera) StdoutLine: {'line': b'-- Create Release Build.\n'}
+[9.853807] (realsense2_camera) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[9.874635] (-) TimerEvent: {}
+[9.896587] (realsense2_description) JobProgress: {'identifier': 'realsense2_description', 'progress': 'install'}
+[9.898573] (realsense2_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/lunabotics/2025-tibalt-bot/build/realsense2_description'], 'cwd': '/home/lunabotics/2025-tibalt-bot/build/realsense2_description', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lunabotics'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lunabotics'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.100.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1607'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2266'), ('BUNDLED_DEBUGPY_PATH', '/home/lunabotics/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-arm64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3759'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lunabotics'), ('JOURNAL_STREAM', '8:43402'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lunabotics'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/lunabotics/.local/bin:/home/lunabotics/bin:/opt/ros/humble/bin:/home/lunabotics/.local/bin:/home/lunabotics/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/lunabotics/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-arm64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/lunabotics-desktop:@/tmp/.ICE-unix/2242,unix/lunabotics-desktop:/tmp/.ICE-unix/2242'), ('INVOCATION_ID', 'a44fd50fbe2e403bacbb1524ca9a6c0f'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/lunabotics/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-a67fdb2d3af79892.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2a0a9112f3.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lunabotics/2025-tibalt-bot/build/realsense2_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs:/opt/ros/humble')]), 'shell': False}
+[9.923490] (realsense2_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.928163] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/launch\n'}
+[9.928543] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/launch/launch_utils.py\n'}
+[9.928728] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/launch/view_model.launch.py\n'}
+[9.928917] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/meshes\n'}
+[9.929072] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/meshes/plug_collision.stl\n'}
+[9.929219] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/meshes/d405.stl\n'}
+[9.929370] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/meshes/d415.stl\n'}
+[9.929591] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/meshes/d435.dae\n'}
+[9.929754] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/meshes/d455.stl\n'}
+[9.929903] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/meshes/plug.stl\n'}
+[9.930048] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/meshes/l515.dae\n'}
+[9.930191] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/rviz\n'}
+[9.930338] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/rviz/urdf.rviz\n'}
+[9.930478] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/urdf\n'}
+[9.930618] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/urdf/test_d435_multiple_cameras.urdf.xacro\n'}
+[9.930765] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/urdf/_d455.urdf.xacro\n'}
+[9.930905] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/urdf/_materials.urdf.xacro\n'}
+[9.931089] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/urdf/test_r410_camera.urdf.xacro\n'}
+[9.931237] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/urdf/_usb_plug.urdf.xacro\n'}
+[9.931380] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/urdf/_r410.urdf.xacro\n'}
+[9.931521] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/urdf/test_d435i_camera.urdf.xacro\n'}
+[9.931661] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/urdf/_d415.urdf.xacro\n'}
+[9.931804] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/urdf/_r430.urdf.xacro\n'}
+[9.931992] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/urdf/test_d455_camera.urdf.xacro\n'}
+[9.932139] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/urdf/test_d415_camera.urdf.xacro\n'}
+[9.932284] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/urdf/_d435i_imu_modules.urdf.xacro\n'}
+[9.932426] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/urdf/_d435.urdf.xacro\n'}
+[9.932581] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/urdf/_d405.urdf.xacro\n'}
+[9.932721] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/urdf/test_d405_camera.urdf.xacro\n'}
+[9.932884] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/urdf/test_r430_camera.urdf.xacro\n'}
+[9.933032] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/urdf/test_d435_camera.urdf.xacro\n'}
+[9.933317] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/urdf/_d435i.urdf.xacro\n'}
+[9.934214] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/ament_index/resource_index/package_run_dependencies/realsense2_description\n'}
+[9.934391] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/ament_index/resource_index/parent_prefix_path/realsense2_description\n'}
+[9.934549] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/environment/ament_prefix_path.sh\n'}
+[9.934717] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/environment/ament_prefix_path.dsv\n'}
+[9.934868] (realsense2_description) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/environment/path.sh\n'}
+[9.935012] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/environment/path.dsv\n'}
+[9.935154] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/local_setup.bash\n'}
+[9.935295] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/local_setup.sh\n'}
+[9.936374] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/local_setup.zsh\n'}
+[9.938620] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/local_setup.dsv\n'}
+[9.939538] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/package.dsv\n'}
+[9.939978] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/ament_index/resource_index/packages/realsense2_description\n'}
+[9.940373] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/cmake/realsense2_descriptionConfig.cmake\n'}
+[9.940983] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/cmake/realsense2_descriptionConfig-version.cmake\n'}
+[9.941521] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_description/share/realsense2_description/package.xml\n'}
+[9.941850] (realsense2_description) CommandEnded: {'returncode': 0}
+[9.974815] (-) TimerEvent: {}
+[9.981520] (realsense2_description) JobEnded: {'identifier': 'realsense2_description', 'rc': 0}
+[10.075151] (-) TimerEvent: {}
+[10.175993] (-) TimerEvent: {}
+[10.257536] (realsense2_camera) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[10.276295] (-) TimerEvent: {}
+[10.309629] (realsense2_camera) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[10.314701] (realsense2_camera) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[10.327847] (realsense2_camera) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[10.348040] (realsense2_camera) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[10.374059] (realsense2_camera) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[10.376333] (-) TimerEvent: {}
+[10.403099] (realsense2_camera) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[10.476712] (-) TimerEvent: {}
+[10.514181] (realsense2_camera) StdoutLine: {'line': b'-- Found image_transport: 3.1.11 (/opt/ros/humble/share/image_transport/cmake)\n'}
+[10.577018] (-) TimerEvent: {}
+[10.616526] (realsense2_camera) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[10.622359] (realsense2_camera) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[10.677284] (-) TimerEvent: {}
+[10.778472] (-) TimerEvent: {}
+[10.871336] (realsense2_camera) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[10.878532] (-) TimerEvent: {}
+[10.979378] (-) TimerEvent: {}
+[11.040497] (realsense2_camera) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.12 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[11.079566] (-) TimerEvent: {}
+[11.087977] (realsense2_camera) StdoutLine: {'line': b'-- Found realsense2_camera_msgs: 4.55.1 (/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake)\n'}
+[11.132802] (realsense2_camera) StdoutLine: {'line': b'-- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[11.177302] (realsense2_camera) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[11.179657] (-) TimerEvent: {}
+[11.280488] (-) TimerEvent: {}
+[11.346699] (realsense2_camera) StdoutLine: {'line': b'-- Found diagnostic_updater: 4.0.3 (/opt/ros/humble/share/diagnostic_updater/cmake)\n'}
+[11.380635] (-) TimerEvent: {}
+[11.397959] (realsense2_camera) StdoutLine: {'line': b'-- Build for ROS2 Humble\n'}
+[11.409012] (realsense2_camera) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 1.3.11 (/opt/ros/humble/share/ament_cmake_gtest/cmake)\n'}
+[11.413205] (realsense2_camera) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[11.425725] (realsense2_camera) StdoutLine: {'line': b'-- Found ament_cmake_pytest: 1.3.11 (/opt/ros/humble/share/ament_cmake_pytest/cmake)\n'}
+[11.480872] (-) TimerEvent: {}
+[11.581891] (-) TimerEvent: {}
+[11.683021] (-) TimerEvent: {}
+[11.784099] (-) TimerEvent: {}
+[11.885223] (-) TimerEvent: {}
+[11.987468] (-) TimerEvent: {}
+[12.088584] (-) TimerEvent: {}
+[12.189760] (-) TimerEvent: {}
+[12.290956] (-) TimerEvent: {}
+[12.392378] (-) TimerEvent: {}
+[12.493779] (-) TimerEvent: {}
+[12.594887] (-) TimerEvent: {}
+[12.695925] (-) TimerEvent: {}
+[12.797026] (-) TimerEvent: {}
+[12.897995] (-) TimerEvent: {}
+[12.998977] (-) TimerEvent: {}
+[13.099932] (-) TimerEvent: {}
+[13.201016] (-) TimerEvent: {}
+[13.302167] (-) TimerEvent: {}
+[13.403470] (-) TimerEvent: {}
+[13.504690] (-) TimerEvent: {}
+[13.605823] (-) TimerEvent: {}
+[13.706966] (-) TimerEvent: {}
+[13.808108] (-) TimerEvent: {}
+[13.909247] (-) TimerEvent: {}
+[14.010375] (-) TimerEvent: {}
+[14.111532] (-) TimerEvent: {}
+[14.212671] (-) TimerEvent: {}
+[14.313903] (-) TimerEvent: {}
+[14.415177] (-) TimerEvent: {}
+[14.516608] (-) TimerEvent: {}
+[14.617739] (-) TimerEvent: {}
+[14.718807] (-) TimerEvent: {}
+[14.820466] (-) TimerEvent: {}
+[14.921539] (-) TimerEvent: {}
+[15.022543] (-) TimerEvent: {}
+[15.123553] (-) TimerEvent: {}
+[15.224579] (-) TimerEvent: {}
+[15.325723] (-) TimerEvent: {}
+[15.426916] (-) TimerEvent: {}
+[15.528032] (-) TimerEvent: {}
+[15.629061] (-) TimerEvent: {}
+[15.730031] (-) TimerEvent: {}
+[15.830969] (-) TimerEvent: {}
+[15.931918] (-) TimerEvent: {}
+[16.032929] (-) TimerEvent: {}
+[16.133920] (-) TimerEvent: {}
+[16.234963] (-) TimerEvent: {}
+[16.336177] (-) TimerEvent: {}
+[16.437517] (-) TimerEvent: {}
+[16.538713] (-) TimerEvent: {}
+[16.639827] (-) TimerEvent: {}
+[16.740989] (-) TimerEvent: {}
+[16.842094] (-) TimerEvent: {}
+[16.943207] (-) TimerEvent: {}
+[17.044277] (-) TimerEvent: {}
+[17.145333] (-) TimerEvent: {}
+[17.246361] (-) TimerEvent: {}
+[17.347575] (-) TimerEvent: {}
+[17.448733] (-) TimerEvent: {}
+[17.549891] (-) TimerEvent: {}
+[17.650988] (-) TimerEvent: {}
+[17.752103] (-) TimerEvent: {}
+[17.853225] (-) TimerEvent: {}
+[17.954334] (-) TimerEvent: {}
+[18.055434] (-) TimerEvent: {}
+[18.156514] (-) TimerEvent: {}
+[18.257686] (-) TimerEvent: {}
+[18.358969] (-) TimerEvent: {}
+[18.460218] (-) TimerEvent: {}
+[18.561375] (-) TimerEvent: {}
+[18.662421] (-) TimerEvent: {}
+[18.763552] (-) TimerEvent: {}
+[18.864667] (-) TimerEvent: {}
+[18.965849] (-) TimerEvent: {}
+[19.066998] (-) TimerEvent: {}
+[19.168106] (-) TimerEvent: {}
+[19.269280] (-) TimerEvent: {}
+[19.370530] (-) TimerEvent: {}
+[19.471806] (-) TimerEvent: {}
+[19.573204] (-) TimerEvent: {}
+[19.674328] (-) TimerEvent: {}
+[19.775505] (-) TimerEvent: {}
+[19.876637] (-) TimerEvent: {}
+[19.977773] (-) TimerEvent: {}
+[20.078740] (-) TimerEvent: {}
+[20.179707] (-) TimerEvent: {}
+[20.280767] (-) TimerEvent: {}
+[20.382025] (-) TimerEvent: {}
+[20.483254] (-) TimerEvent: {}
+[20.584476] (-) TimerEvent: {}
+[20.685784] (-) TimerEvent: {}
+[20.787065] (-) TimerEvent: {}
+[20.888312] (-) TimerEvent: {}
+[20.989025] (realsense2_camera) StdoutLine: {'line': b'-- rs_device_info:\n'}
+[20.989998] (-) TimerEvent: {}
+[20.990524] (realsense2_camera) StdoutLine: {'line': b'-- Device Name                   Serial Number       Firmware Version    \n'}
+[20.990881] (realsense2_camera) StdoutLine: {'line': b'Intel RealSense D435I         033322071026        05.16.00.01         \n'}
+[20.991182] (realsense2_camera) StdoutLine: {'line': b'\n'}
+[20.991465] (realsense2_camera) StdoutLine: {'line': b'-- D455 device found\n'}
+[21.090270] (-) TimerEvent: {}
+[21.191223] (-) TimerEvent: {}
+[21.292206] (-) TimerEvent: {}
+[21.393195] (-) TimerEvent: {}
+[21.494141] (-) TimerEvent: {}
+[21.595117] (-) TimerEvent: {}
+[21.696140] (-) TimerEvent: {}
+[21.797219] (-) TimerEvent: {}
+[21.898396] (-) TimerEvent: {}
+[21.999513] (-) TimerEvent: {}
+[22.100611] (-) TimerEvent: {}
+[22.201766] (-) TimerEvent: {}
+[22.302745] (-) TimerEvent: {}
+[22.403736] (-) TimerEvent: {}
+[22.504687] (-) TimerEvent: {}
+[22.605723] (-) TimerEvent: {}
+[22.706785] (-) TimerEvent: {}
+[22.807989] (-) TimerEvent: {}
+[22.909205] (-) TimerEvent: {}
+[23.010323] (-) TimerEvent: {}
+[23.111442] (-) TimerEvent: {}
+[23.212575] (-) TimerEvent: {}
+[23.313679] (-) TimerEvent: {}
+[23.414720] (-) TimerEvent: {}
+[23.515823] (-) TimerEvent: {}
+[23.616809] (-) TimerEvent: {}
+[23.717880] (-) TimerEvent: {}
+[23.819127] (-) TimerEvent: {}
+[23.920339] (-) TimerEvent: {}
+[24.021502] (-) TimerEvent: {}
+[24.122618] (-) TimerEvent: {}
+[24.223727] (-) TimerEvent: {}
+[24.324845] (-) TimerEvent: {}
+[24.425865] (-) TimerEvent: {}
+[24.527014] (-) TimerEvent: {}
+[24.628356] (-) TimerEvent: {}
+[24.729533] (-) TimerEvent: {}
+[24.830790] (-) TimerEvent: {}
+[24.932021] (-) TimerEvent: {}
+[25.033128] (-) TimerEvent: {}
+[25.134097] (-) TimerEvent: {}
+[25.235075] (-) TimerEvent: {}
+[25.336065] (-) TimerEvent: {}
+[25.437205] (-) TimerEvent: {}
+[25.538172] (-) TimerEvent: {}
+[25.639149] (-) TimerEvent: {}
+[25.740257] (-) TimerEvent: {}
+[25.841376] (-) TimerEvent: {}
+[25.942338] (-) TimerEvent: {}
+[26.043265] (-) TimerEvent: {}
+[26.144314] (-) TimerEvent: {}
+[26.245619] (-) TimerEvent: {}
+[26.347685] (-) TimerEvent: {}
+[26.448860] (-) TimerEvent: {}
+[26.549974] (-) TimerEvent: {}
+[26.651112] (-) TimerEvent: {}
+[26.752373] (-) TimerEvent: {}
+[26.853754] (-) TimerEvent: {}
+[26.954724] (-) TimerEvent: {}
+[27.055707] (-) TimerEvent: {}
+[27.156674] (-) TimerEvent: {}
+[27.257629] (-) TimerEvent: {}
+[27.358580] (-) TimerEvent: {}
+[27.459515] (-) TimerEvent: {}
+[27.560546] (-) TimerEvent: {}
+[27.661850] (-) TimerEvent: {}
+[27.763032] (-) TimerEvent: {}
+[27.863971] (-) TimerEvent: {}
+[27.964960] (-) TimerEvent: {}
+[28.065904] (-) TimerEvent: {}
+[28.166842] (-) TimerEvent: {}
+[28.267808] (-) TimerEvent: {}
+[28.368802] (-) TimerEvent: {}
+[28.469825] (-) TimerEvent: {}
+[28.570915] (-) TimerEvent: {}
+[28.672130] (-) TimerEvent: {}
+[28.773573] (-) TimerEvent: {}
+[28.874645] (-) TimerEvent: {}
+[28.907897] (realsense2_camera) StdoutLine: {'line': b'-- Configuring done\n'}
+[28.975042] (-) TimerEvent: {}
+[28.990692] (realsense2_camera) StdoutLine: {'line': b'-- Generating done\n'}
+[29.023199] (realsense2_camera) StdoutLine: {'line': b'-- Build files have been written to: /home/lunabotics/2025-tibalt-bot/build/realsense2_camera\n'}
+[29.075338] (-) TimerEvent: {}
+[29.129107] (realsense2_camera) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target gtest\x1b[0m\n'}
+[29.134245] (realsense2_camera) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target gtest_main\x1b[0m\n'}
+[29.148671] (realsense2_camera) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target realsense2_camera_node\x1b[0m\n'}
+[29.163389] (realsense2_camera) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target realsense2_camera\x1b[0m\n'}
+[29.170318] (realsense2_camera) StdoutLine: {'line': b'[  4%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[29.175586] (-) TimerEvent: {}
+[29.186260] (realsense2_camera) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[29.226685] (realsense2_camera) StdoutLine: {'line': b'[ 18%] Built target realsense2_camera_node\n'}
+[29.275877] (-) TimerEvent: {}
+[29.319569] (realsense2_camera) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o\x1b[0m\n'}
+[29.325047] (realsense2_camera) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o\x1b[0m\n'}
+[29.325956] (realsense2_camera) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/parameters.cpp.o\x1b[0m\n'}
+[29.367647] (realsense2_camera) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/rs_node_setup.cpp.o\x1b[0m\n'}
+[29.376146] (-) TimerEvent: {}
+[29.477792] (-) TimerEvent: {}
+[29.579390] (-) TimerEvent: {}
+[29.681053] (-) TimerEvent: {}
+[29.782667] (-) TimerEvent: {}
+[29.884268] (-) TimerEvent: {}
+[29.986410] (-) TimerEvent: {}
+[30.088117] (-) TimerEvent: {}
+[30.189958] (-) TimerEvent: {}
+[30.291594] (-) TimerEvent: {}
+[30.393385] (-) TimerEvent: {}
+[30.495214] (-) TimerEvent: {}
+[30.597308] (-) TimerEvent: {}
+[30.605379] (realsense2_camera) StdoutLine: {'line': b'[ 40%] Built target gtest\n'}
+[30.643569] (realsense2_camera) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o\x1b[0m\n'}
+[30.697602] (-) TimerEvent: {}
+[30.799107] (-) TimerEvent: {}
+[30.900305] (-) TimerEvent: {}
+[31.002644] (-) TimerEvent: {}
+[31.104431] (-) TimerEvent: {}
+[31.206755] (-) TimerEvent: {}
+[31.308897] (-) TimerEvent: {}
+[31.409793] (-) TimerEvent: {}
+[31.511522] (-) TimerEvent: {}
+[31.612400] (-) TimerEvent: {}
+[31.713629] (-) TimerEvent: {}
+[31.815069] (-) TimerEvent: {}
+[31.917762] (-) TimerEvent: {}
+[32.018559] (-) TimerEvent: {}
+[32.119350] (-) TimerEvent: {}
+[32.220139] (-) TimerEvent: {}
+[32.321655] (-) TimerEvent: {}
+[32.344682] (realsense2_camera) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[32.422601] (-) TimerEvent: {}
+[32.524695] (-) TimerEvent: {}
+[32.625867] (-) TimerEvent: {}
+[32.726876] (-) TimerEvent: {}
+[32.731615] (realsense2_camera) StdoutLine: {'line': b'[ 50%] Built target gtest_main\n'}
+[32.813466] (realsense2_camera) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target gtest_template\x1b[0m\n'}
+[32.827192] (-) TimerEvent: {}
+[32.925050] (realsense2_camera) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX executable gtest_template\x1b[0m\n'}
+[32.927303] (-) TimerEvent: {}
+[33.028165] (-) TimerEvent: {}
+[33.130055] (-) TimerEvent: {}
+[33.231898] (-) TimerEvent: {}
+[33.333797] (-) TimerEvent: {}
+[33.435412] (-) TimerEvent: {}
+[33.463804] (realsense2_camera) StdoutLine: {'line': b'[ 59%] Built target gtest_template\n'}
+[33.535635] (-) TimerEvent: {}
+[33.637675] (-) TimerEvent: {}
+[33.739462] (-) TimerEvent: {}
+[33.841275] (-) TimerEvent: {}
+[33.943043] (-) TimerEvent: {}
+[34.044877] (-) TimerEvent: {}
+[34.146531] (-) TimerEvent: {}
+[34.248283] (-) TimerEvent: {}
+[34.350099] (-) TimerEvent: {}
+[34.450954] (-) TimerEvent: {}
+[34.551795] (-) TimerEvent: {}
+[34.652599] (-) TimerEvent: {}
+[34.753691] (-) TimerEvent: {}
+[34.855454] (-) TimerEvent: {}
+[34.957193] (-) TimerEvent: {}
+[35.060383] (-) TimerEvent: {}
+[35.164022] (-) TimerEvent: {}
+[35.267536] (-) TimerEvent: {}
+[35.370576] (-) TimerEvent: {}
+[35.473998] (-) TimerEvent: {}
+[35.575433] (-) TimerEvent: {}
+[35.677989] (-) TimerEvent: {}
+[35.780869] (-) TimerEvent: {}
+[35.883719] (-) TimerEvent: {}
+[35.986498] (-) TimerEvent: {}
+[36.088442] (-) TimerEvent: {}
+[36.191817] (-) TimerEvent: {}
+[36.294515] (-) TimerEvent: {}
+[36.397460] (-) TimerEvent: {}
+[36.500657] (-) TimerEvent: {}
+[36.603588] (-) TimerEvent: {}
+[36.705801] (-) TimerEvent: {}
+[36.809474] (-) TimerEvent: {}
+[36.912682] (-) TimerEvent: {}
+[37.015953] (-) TimerEvent: {}
+[37.119137] (-) TimerEvent: {}
+[37.222298] (-) TimerEvent: {}
+[37.325432] (-) TimerEvent: {}
+[37.428419] (-) TimerEvent: {}
+[37.531582] (-) TimerEvent: {}
+[37.634800] (-) TimerEvent: {}
+[37.738344] (-) TimerEvent: {}
+[37.841495] (-) TimerEvent: {}
+[37.944683] (-) TimerEvent: {}
+[38.048052] (-) TimerEvent: {}
+[38.152210] (-) TimerEvent: {}
+[38.255350] (-) TimerEvent: {}
+[38.358910] (-) TimerEvent: {}
+[38.462071] (-) TimerEvent: {}
+[38.566158] (-) TimerEvent: {}
+[38.669345] (-) TimerEvent: {}
+[38.773010] (-) TimerEvent: {}
+[38.876242] (-) TimerEvent: {}
+[38.979999] (-) TimerEvent: {}
+[39.082728] (-) TimerEvent: {}
+[39.186080] (-) TimerEvent: {}
+[39.289345] (-) TimerEvent: {}
+[39.391277] (-) TimerEvent: {}
+[39.494838] (-) TimerEvent: {}
+[39.597414] (-) TimerEvent: {}
+[39.699573] (-) TimerEvent: {}
+[39.800787] (-) TimerEvent: {}
+[39.902080] (-) TimerEvent: {}
+[40.003426] (-) TimerEvent: {}
+[40.105049] (-) TimerEvent: {}
+[40.210282] (-) TimerEvent: {}
+[40.313372] (-) TimerEvent: {}
+[40.415697] (-) TimerEvent: {}
+[40.516975] (-) TimerEvent: {}
+[40.618190] (-) TimerEvent: {}
+[40.719418] (-) TimerEvent: {}
+[40.821336] (-) TimerEvent: {}
+[40.923197] (-) TimerEvent: {}
+[41.026552] (-) TimerEvent: {}
+[41.128706] (-) TimerEvent: {}
+[41.231458] (-) TimerEvent: {}
+[41.333645] (-) TimerEvent: {}
+[41.436562] (-) TimerEvent: {}
+[41.539079] (-) TimerEvent: {}
+[41.639856] (-) TimerEvent: {}
+[41.742049] (-) TimerEvent: {}
+[41.844174] (-) TimerEvent: {}
+[41.946739] (-) TimerEvent: {}
+[42.048959] (-) TimerEvent: {}
+[42.152992] (-) TimerEvent: {}
+[42.256373] (-) TimerEvent: {}
+[42.359804] (-) TimerEvent: {}
+[42.463103] (-) TimerEvent: {}
+[42.565276] (-) TimerEvent: {}
+[42.666815] (-) TimerEvent: {}
+[42.769768] (-) TimerEvent: {}
+[42.872553] (-) TimerEvent: {}
+[42.975342] (-) TimerEvent: {}
+[43.078259] (-) TimerEvent: {}
+[43.181034] (-) TimerEvent: {}
+[43.282259] (-) TimerEvent: {}
+[43.383436] (-) TimerEvent: {}
+[43.484650] (-) TimerEvent: {}
+[43.585727] (-) TimerEvent: {}
+[43.689209] (-) TimerEvent: {}
+[43.791373] (-) TimerEvent: {}
+[43.894998] (-) TimerEvent: {}
+[43.998330] (-) TimerEvent: {}
+[44.101731] (-) TimerEvent: {}
+[44.204043] (-) TimerEvent: {}
+[44.313167] (-) TimerEvent: {}
+[44.415278] (-) TimerEvent: {}
+[44.518545] (-) TimerEvent: {}
+[44.620291] (-) TimerEvent: {}
+[44.722087] (-) TimerEvent: {}
+[44.823682] (-) TimerEvent: {}
+[44.925537] (-) TimerEvent: {}
+[45.026774] (-) TimerEvent: {}
+[45.128068] (-) TimerEvent: {}
+[45.229439] (-) TimerEvent: {}
+[45.330670] (-) TimerEvent: {}
+[45.431956] (-) TimerEvent: {}
+[45.536050] (-) TimerEvent: {}
+[45.638926] (-) TimerEvent: {}
+[45.740243] (-) TimerEvent: {}
+[45.841883] (-) TimerEvent: {}
+[45.949382] (-) TimerEvent: {}
+[46.050701] (-) TimerEvent: {}
+[46.152007] (-) TimerEvent: {}
+[46.254258] (-) TimerEvent: {}
+[46.355532] (-) TimerEvent: {}
+[46.456986] (-) TimerEvent: {}
+[46.558361] (-) TimerEvent: {}
+[46.659793] (-) TimerEvent: {}
+[46.761033] (-) TimerEvent: {}
+[46.862411] (-) TimerEvent: {}
+[46.963649] (-) TimerEvent: {}
+[47.064896] (-) TimerEvent: {}
+[47.166308] (-) TimerEvent: {}
+[47.268281] (-) TimerEvent: {}
+[47.370297] (-) TimerEvent: {}
+[47.472202] (-) TimerEvent: {}
+[47.574079] (-) TimerEvent: {}
+[47.675974] (-) TimerEvent: {}
+[47.779471] (-) TimerEvent: {}
+[47.882879] (-) TimerEvent: {}
+[47.987922] (-) TimerEvent: {}
+[48.091241] (-) TimerEvent: {}
+[48.195006] (-) TimerEvent: {}
+[48.297977] (-) TimerEvent: {}
+[48.400530] (-) TimerEvent: {}
+[48.502406] (-) TimerEvent: {}
+[48.603659] (-) TimerEvent: {}
+[48.706855] (-) TimerEvent: {}
+[48.810125] (-) TimerEvent: {}
+[48.913448] (-) TimerEvent: {}
+[49.016615] (-) TimerEvent: {}
+[49.119713] (-) TimerEvent: {}
+[49.222278] (-) TimerEvent: {}
+[49.329674] (-) TimerEvent: {}
+[49.431364] (-) TimerEvent: {}
+[49.533108] (-) TimerEvent: {}
+[49.634692] (-) TimerEvent: {}
+[49.736502] (-) TimerEvent: {}
+[49.840018] (-) TimerEvent: {}
+[49.943340] (-) TimerEvent: {}
+[50.046727] (-) TimerEvent: {}
+[50.149791] (-) TimerEvent: {}
+[50.253008] (-) TimerEvent: {}
+[50.356351] (-) TimerEvent: {}
+[50.458191] (-) TimerEvent: {}
+[50.559884] (-) TimerEvent: {}
+[50.661684] (-) TimerEvent: {}
+[50.763664] (-) TimerEvent: {}
+[50.865402] (-) TimerEvent: {}
+[50.967047] (-) TimerEvent: {}
+[51.068790] (-) TimerEvent: {}
+[51.170486] (-) TimerEvent: {}
+[51.272201] (-) TimerEvent: {}
+[51.375277] (-) TimerEvent: {}
+[51.478396] (-) TimerEvent: {}
+[51.581557] (-) TimerEvent: {}
+[51.685087] (-) TimerEvent: {}
+[51.788177] (-) TimerEvent: {}
+[51.891306] (-) TimerEvent: {}
+[51.994375] (-) TimerEvent: {}
+[52.097438] (-) TimerEvent: {}
+[52.200357] (-) TimerEvent: {}
+[52.303326] (-) TimerEvent: {}
+[52.406618] (-) TimerEvent: {}
+[52.509537] (-) TimerEvent: {}
+[52.612536] (-) TimerEvent: {}
+[52.715635] (-) TimerEvent: {}
+[52.817906] (-) TimerEvent: {}
+[52.919175] (-) TimerEvent: {}
+[53.020423] (-) TimerEvent: {}
+[53.122254] (-) TimerEvent: {}
+[53.223507] (-) TimerEvent: {}
+[53.324751] (-) TimerEvent: {}
+[53.425960] (-) TimerEvent: {}
+[53.527687] (-) TimerEvent: {}
+[53.628995] (-) TimerEvent: {}
+[53.730648] (-) TimerEvent: {}
+[53.832628] (-) TimerEvent: {}
+[53.933894] (-) TimerEvent: {}
+[54.035154] (-) TimerEvent: {}
+[54.136433] (-) TimerEvent: {}
+[54.245176] (-) TimerEvent: {}
+[54.362482] (-) TimerEvent: {}
+[54.463717] (-) TimerEvent: {}
+[54.564849] (-) TimerEvent: {}
+[54.665722] (-) TimerEvent: {}
+[54.766843] (-) TimerEvent: {}
+[54.867726] (-) TimerEvent: {}
+[54.968872] (-) TimerEvent: {}
+[55.069766] (-) TimerEvent: {}
+[55.171055] (-) TimerEvent: {}
+[55.274553] (-) TimerEvent: {}
+[55.376266] (-) TimerEvent: {}
+[55.480017] (-) TimerEvent: {}
+[55.581158] (-) TimerEvent: {}
+[55.681923] (-) TimerEvent: {}
+[55.782808] (-) TimerEvent: {}
+[55.884156] (-) TimerEvent: {}
+[55.985802] (-) TimerEvent: {}
+[56.087856] (-) TimerEvent: {}
+[56.191045] (-) TimerEvent: {}
+[56.294181] (-) TimerEvent: {}
+[56.397327] (-) TimerEvent: {}
+[56.500640] (-) TimerEvent: {}
+[56.603747] (-) TimerEvent: {}
+[56.705014] (-) TimerEvent: {}
+[56.806229] (-) TimerEvent: {}
+[56.907407] (-) TimerEvent: {}
+[57.008572] (-) TimerEvent: {}
+[57.109841] (-) TimerEvent: {}
+[57.211283] (-) TimerEvent: {}
+[57.312151] (-) TimerEvent: {}
+[57.413463] (-) TimerEvent: {}
+[57.514624] (-) TimerEvent: {}
+[57.617320] (-) TimerEvent: {}
+[57.720259] (-) TimerEvent: {}
+[57.823475] (-) TimerEvent: {}
+[57.926635] (-) TimerEvent: {}
+[58.027849] (-) TimerEvent: {}
+[58.129760] (-) TimerEvent: {}
+[58.231441] (-) TimerEvent: {}
+[58.333155] (-) TimerEvent: {}
+[58.434869] (-) TimerEvent: {}
+[58.536591] (-) TimerEvent: {}
+[58.637850] (-) TimerEvent: {}
+[58.739045] (-) TimerEvent: {}
+[58.840286] (-) TimerEvent: {}
+[58.941605] (-) TimerEvent: {}
+[59.042815] (-) TimerEvent: {}
+[59.143994] (-) TimerEvent: {}
+[59.245778] (-) TimerEvent: {}
+[59.352279] (-) TimerEvent: {}
+[59.453896] (-) TimerEvent: {}
+[59.555045] (-) TimerEvent: {}
+[59.656249] (-) TimerEvent: {}
+[59.757465] (-) TimerEvent: {}
+[59.859841] (-) TimerEvent: {}
+[59.962467] (-) TimerEvent: {}
+[60.063727] (-) TimerEvent: {}
+[60.165691] (-) TimerEvent: {}
+[60.267337] (-) TimerEvent: {}
+[60.369080] (-) TimerEvent: {}
+[60.472255] (-) TimerEvent: {}
+[60.574027] (-) TimerEvent: {}
+[60.675738] (-) TimerEvent: {}
+[60.777391] (-) TimerEvent: {}
+[60.879284] (-) TimerEvent: {}
+[60.980956] (-) TimerEvent: {}
+[61.082139] (-) TimerEvent: {}
+[61.183352] (-) TimerEvent: {}
+[61.284611] (-) TimerEvent: {}
+[61.386373] (-) TimerEvent: {}
+[61.488057] (-) TimerEvent: {}
+[61.590257] (-) TimerEvent: {}
+[61.691895] (-) TimerEvent: {}
+[61.793627] (-) TimerEvent: {}
+[61.895269] (-) TimerEvent: {}
+[61.996967] (-) TimerEvent: {}
+[62.098620] (-) TimerEvent: {}
+[62.200254] (-) TimerEvent: {}
+[62.301913] (-) TimerEvent: {}
+[62.403527] (-) TimerEvent: {}
+[62.505255] (-) TimerEvent: {}
+[62.606900] (-) TimerEvent: {}
+[62.708621] (-) TimerEvent: {}
+[62.810207] (-) TimerEvent: {}
+[62.911376] (-) TimerEvent: {}
+[63.012547] (-) TimerEvent: {}
+[63.113731] (-) TimerEvent: {}
+[63.214913] (-) TimerEvent: {}
+[63.316121] (-) TimerEvent: {}
+[63.417181] (-) TimerEvent: {}
+[63.518043] (-) TimerEvent: {}
+[63.622807] (-) TimerEvent: {}
+[63.723993] (-) TimerEvent: {}
+[63.825169] (-) TimerEvent: {}
+[63.926326] (-) TimerEvent: {}
+[64.028026] (-) TimerEvent: {}
+[64.129752] (-) TimerEvent: {}
+[64.230898] (-) TimerEvent: {}
+[64.332761] (-) TimerEvent: {}
+[64.433948] (-) TimerEvent: {}
+[64.535114] (-) TimerEvent: {}
+[64.636312] (-) TimerEvent: {}
+[64.737537] (-) TimerEvent: {}
+[64.838695] (-) TimerEvent: {}
+[64.939877] (-) TimerEvent: {}
+[65.041159] (-) TimerEvent: {}
+[65.142361] (-) TimerEvent: {}
+[65.243543] (-) TimerEvent: {}
+[65.344727] (-) TimerEvent: {}
+[65.445950] (-) TimerEvent: {}
+[65.547126] (-) TimerEvent: {}
+[65.648296] (-) TimerEvent: {}
+[65.749524] (-) TimerEvent: {}
+[65.850819] (-) TimerEvent: {}
+[65.951975] (-) TimerEvent: {}
+[66.053162] (-) TimerEvent: {}
+[66.154264] (-) TimerEvent: {}
+[66.257344] (-) TimerEvent: {}
+[66.360275] (-) TimerEvent: {}
+[66.462886] (-) TimerEvent: {}
+[66.565445] (-) TimerEvent: {}
+[66.667150] (-) TimerEvent: {}
+[66.770072] (-) TimerEvent: {}
+[66.872962] (-) TimerEvent: {}
+[66.975769] (-) TimerEvent: {}
+[67.079726] (-) TimerEvent: {}
+[67.182634] (-) TimerEvent: {}
+[67.285765] (-) TimerEvent: {}
+[67.388550] (-) TimerEvent: {}
+[67.491398] (-) TimerEvent: {}
+[67.593486] (-) TimerEvent: {}
+[67.697111] (-) TimerEvent: {}
+[67.798264] (-) TimerEvent: {}
+[67.901146] (-) TimerEvent: {}
+[68.003014] (-) TimerEvent: {}
+[68.104169] (-) TimerEvent: {}
+[68.206174] (-) TimerEvent: {}
+[68.307396] (-) TimerEvent: {}
+[68.408530] (-) TimerEvent: {}
+[68.509690] (-) TimerEvent: {}
+[68.610844] (-) TimerEvent: {}
+[68.712008] (-) TimerEvent: {}
+[68.813198] (-) TimerEvent: {}
+[68.914377] (-) TimerEvent: {}
+[69.015539] (-) TimerEvent: {}
+[69.116731] (-) TimerEvent: {}
+[69.217887] (-) TimerEvent: {}
+[69.319066] (-) TimerEvent: {}
+[69.420174] (-) TimerEvent: {}
+[69.521409] (-) TimerEvent: {}
+[69.622611] (-) TimerEvent: {}
+[69.723829] (-) TimerEvent: {}
+[69.825139] (-) TimerEvent: {}
+[69.926326] (-) TimerEvent: {}
+[70.027522] (-) TimerEvent: {}
+[70.128712] (-) TimerEvent: {}
+[70.229872] (-) TimerEvent: {}
+[70.332572] (-) TimerEvent: {}
+[70.434722] (-) TimerEvent: {}
+[70.537341] (-) TimerEvent: {}
+[70.638521] (-) TimerEvent: {}
+[70.739676] (-) TimerEvent: {}
+[70.840886] (-) TimerEvent: {}
+[70.942089] (-) TimerEvent: {}
+[71.043287] (-) TimerEvent: {}
+[71.144465] (-) TimerEvent: {}
+[71.245699] (-) TimerEvent: {}
+[71.346805] (-) TimerEvent: {}
+[71.447910] (-) TimerEvent: {}
+[71.549086] (-) TimerEvent: {}
+[71.650250] (-) TimerEvent: {}
+[71.751420] (-) TimerEvent: {}
+[71.852513] (-) TimerEvent: {}
+[71.953677] (-) TimerEvent: {}
+[72.054800] (-) TimerEvent: {}
+[72.155926] (-) TimerEvent: {}
+[72.257124] (-) TimerEvent: {}
+[72.358289] (-) TimerEvent: {}
+[72.459425] (-) TimerEvent: {}
+[72.560561] (-) TimerEvent: {}
+[72.661761] (-) TimerEvent: {}
+[72.762897] (-) TimerEvent: {}
+[72.863963] (-) TimerEvent: {}
+[72.965112] (-) TimerEvent: {}
+[73.066197] (-) TimerEvent: {}
+[73.167333] (-) TimerEvent: {}
+[73.268481] (-) TimerEvent: {}
+[73.369676] (-) TimerEvent: {}
+[73.470861] (-) TimerEvent: {}
+[73.572078] (-) TimerEvent: {}
+[73.673270] (-) TimerEvent: {}
+[73.774430] (-) TimerEvent: {}
+[73.875588] (-) TimerEvent: {}
+[73.976732] (-) TimerEvent: {}
+[74.077878] (-) TimerEvent: {}
+[74.179039] (-) TimerEvent: {}
+[74.280250] (-) TimerEvent: {}
+[74.381416] (-) TimerEvent: {}
+[74.482545] (-) TimerEvent: {}
+[74.583706] (-) TimerEvent: {}
+[74.684818] (-) TimerEvent: {}
+[74.786033] (-) TimerEvent: {}
+[74.887117] (-) TimerEvent: {}
+[74.988300] (-) TimerEvent: {}
+[75.089446] (-) TimerEvent: {}
+[75.190584] (-) TimerEvent: {}
+[75.291755] (-) TimerEvent: {}
+[75.392980] (-) TimerEvent: {}
+[75.494085] (-) TimerEvent: {}
+[75.595215] (-) TimerEvent: {}
+[75.696365] (-) TimerEvent: {}
+[75.797496] (-) TimerEvent: {}
+[75.898653] (-) TimerEvent: {}
+[75.999774] (-) TimerEvent: {}
+[76.101017] (-) TimerEvent: {}
+[76.202203] (-) TimerEvent: {}
+[76.303353] (-) TimerEvent: {}
+[76.404462] (-) TimerEvent: {}
+[76.505613] (-) TimerEvent: {}
+[76.606906] (-) TimerEvent: {}
+[76.708072] (-) TimerEvent: {}
+[76.809283] (-) TimerEvent: {}
+[76.910450] (-) TimerEvent: {}
+[77.011560] (-) TimerEvent: {}
+[77.112725] (-) TimerEvent: {}
+[77.213882] (-) TimerEvent: {}
+[77.315027] (-) TimerEvent: {}
+[77.416180] (-) TimerEvent: {}
+[77.517337] (-) TimerEvent: {}
+[77.618496] (-) TimerEvent: {}
+[77.719640] (-) TimerEvent: {}
+[77.820768] (-) TimerEvent: {}
+[77.921934] (-) TimerEvent: {}
+[78.023089] (-) TimerEvent: {}
+[78.124210] (-) TimerEvent: {}
+[78.225391] (-) TimerEvent: {}
+[78.326559] (-) TimerEvent: {}
+[78.427756] (-) TimerEvent: {}
+[78.529108] (-) TimerEvent: {}
+[78.630226] (-) TimerEvent: {}
+[78.731363] (-) TimerEvent: {}
+[78.832458] (-) TimerEvent: {}
+[78.933617] (-) TimerEvent: {}
+[79.034786] (-) TimerEvent: {}
+[79.135921] (-) TimerEvent: {}
+[79.237113] (-) TimerEvent: {}
+[79.338260] (-) TimerEvent: {}
+[79.439403] (-) TimerEvent: {}
+[79.540563] (-) TimerEvent: {}
+[79.641713] (-) TimerEvent: {}
+[79.742828] (-) TimerEvent: {}
+[79.843945] (-) TimerEvent: {}
+[79.945233] (-) TimerEvent: {}
+[80.046325] (-) TimerEvent: {}
+[80.147430] (-) TimerEvent: {}
+[80.248546] (-) TimerEvent: {}
+[80.349904] (-) TimerEvent: {}
+[80.451021] (-) TimerEvent: {}
+[80.460541] (realsense2_camera) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking CXX shared library librealsense2_camera.so\x1b[0m\n'}
+[80.551310] (-) TimerEvent: {}
+[80.652556] (-) TimerEvent: {}
+[80.753782] (-) TimerEvent: {}
+[80.855011] (-) TimerEvent: {}
+[80.956267] (-) TimerEvent: {}
+[81.057493] (-) TimerEvent: {}
+[81.158931] (-) TimerEvent: {}
+[81.260135] (-) TimerEvent: {}
+[81.361419] (-) TimerEvent: {}
+[81.462866] (-) TimerEvent: {}
+[81.564185] (-) TimerEvent: {}
+[81.665606] (-) TimerEvent: {}
+[81.766747] (-) TimerEvent: {}
+[81.867903] (-) TimerEvent: {}
+[81.969102] (-) TimerEvent: {}
+[82.070691] (-) TimerEvent: {}
+[82.179141] (-) TimerEvent: {}
+[82.280276] (-) TimerEvent: {}
+[82.381440] (-) TimerEvent: {}
+[82.482604] (-) TimerEvent: {}
+[82.583748] (-) TimerEvent: {}
+[82.635370] (realsense2_camera) StdoutLine: {'line': b'[100%] Built target realsense2_camera\n'}
+[82.683911] (-) TimerEvent: {}
+[82.692994] (realsense2_camera) CommandEnded: {'returncode': 0}
+[82.697466] (realsense2_camera) JobProgress: {'identifier': 'realsense2_camera', 'progress': 'install'}
+[82.700151] (realsense2_camera) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/lunabotics/2025-tibalt-bot/build/realsense2_camera'], 'cwd': '/home/lunabotics/2025-tibalt-bot/build/realsense2_camera', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lunabotics'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lunabotics'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.100.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1607'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2266'), ('BUNDLED_DEBUGPY_PATH', '/home/lunabotics/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-arm64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3759'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lunabotics'), ('JOURNAL_STREAM', '8:43402'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lunabotics'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/lunabotics/.local/bin:/home/lunabotics/bin:/opt/ros/humble/bin:/home/lunabotics/.local/bin:/home/lunabotics/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/lunabotics/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-arm64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/lunabotics-desktop:@/tmp/.ICE-unix/2242,unix/lunabotics-desktop:/tmp/.ICE-unix/2242'), ('INVOCATION_ID', 'a44fd50fbe2e403bacbb1524ca9a6c0f'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/lunabotics/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-a67fdb2d3af79892.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2a0a9112f3.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lunabotics/2025-tibalt-bot/build/realsense2_camera'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs:/opt/ros/humble')]), 'shell': False}
+[82.731962] (realsense2_camera) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[82.739550] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/lib/realsense2_camera/realsense2_camera_node\n'}
+[82.741810] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/lib/librealsense2_camera.so\n'}
+[82.751040] (realsense2_camera) StdoutLine: {'line': b'-- Set runtime path of "/home/lunabotics/2025-tibalt-bot/install/realsense2_camera/lib/librealsense2_camera.so" to ""\n'}
+[82.751766] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/include\n'}
+[82.752075] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/include/ros_param_backend.h\n'}
+[82.752433] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/include/realsense_node_factory.h\n'}
+[82.752759] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/include/constants.h\n'}
+[82.753188] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/include/named_filter.h\n'}
+[82.753462] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/include/ros_sensor.h\n'}
+[82.753866] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/include/dynamic_params.h\n'}
+[82.754182] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/include/base_realsense_node.h\n'}
+[82.754378] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/include/image_publisher.h\n'}
+[82.754536] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/include/gl_window.h\n'}
+[82.754678] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/include/sensor_params.h\n'}
+[82.754819] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/include/ros_utils.h\n'}
+[82.754958] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/include/profile_manager.h\n'}
+[82.755098] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/launch\n'}
+[82.755244] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/launch/rs_multi_camera_launch.py\n'}
+[82.755390] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/launch/rs_intra_process_demo_launch.py\n'}
+[82.755532] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/launch/rs_launch.py\n'}
+[82.755673] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/launch/default.rviz\n'}
+[82.755832] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples\n'}
+[82.756041] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/align_depth\n'}
+[82.756187] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/align_depth/README.md\n'}
+[82.756329] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/align_depth/rs_align_depth_launch.py\n'}
+[82.756473] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/launch_from_rosbag\n'}
+[82.756613] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/launch_from_rosbag/README.md\n'}
+[82.756752] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/launch_from_rosbag/rs_launch_from_rosbag.py\n'}
+[82.756923] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file\n'}
+[82.757135] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/rs_launch_get_params_from_yaml.py\n'}
+[82.757344] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/README.md\n'}
+[82.757490] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/config\n'}
+[82.757667] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/config/config.yaml\n'}
+[82.757810] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/pointcloud\n'}
+[82.757949] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rviz\n'}
+[82.758087] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rviz/urdf_pointcloud.rviz\n'}
+[82.758221] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rviz/pointcloud.rviz\n'}
+[82.758353] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rs_d405_pointcloud_launch.py\n'}
+[82.758488] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/README.md\n'}
+[82.758623] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rs_pointcloud_launch.py\n'}
+[82.758795] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rs_d455_pointcloud_launch.py\n'}
+[82.758935] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/dual_camera\n'}
+[82.759072] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/rviz\n'}
+[82.759206] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/rviz/dual_camera_pointcloud.rviz\n'}
+[82.759341] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/README.md\n'}
+[82.759474] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/rs_dual_camera_launch.py\n'}
+[82.759610] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/environment/library_path.sh\n'}
+[82.759744] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/environment/library_path.dsv\n'}
+[82.759885] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/ament_index/resource_index/package_run_dependencies/realsense2_camera\n'}
+[82.760038] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/ament_index/resource_index/parent_prefix_path/realsense2_camera\n'}
+[82.763249] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/environment/ament_prefix_path.sh\n'}
+[82.764772] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/environment/ament_prefix_path.dsv\n'}
+[82.765489] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/environment/path.sh\n'}
+[82.766287] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/environment/path.dsv\n'}
+[82.767059] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/local_setup.bash\n'}
+[82.767452] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/local_setup.sh\n'}
+[82.767698] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/local_setup.zsh\n'}
+[82.767927] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/local_setup.dsv\n'}
+[82.768191] (realsense2_camera) StdoutLine: {'line': b'-- Installing: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/package.dsv\n'}
+[82.768898] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/ament_index/resource_index/packages/realsense2_camera\n'}
+[82.769222] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/ament_index/resource_index/rclcpp_components/realsense2_camera\n'}
+[82.769516] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[82.769827] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[82.770040] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[82.770249] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/cmake/realsense2_cameraConfig.cmake\n'}
+[82.770451] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/cmake/realsense2_cameraConfig-version.cmake\n'}
+[82.770639] (realsense2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/lunabotics/2025-tibalt-bot/install/realsense2_camera/share/realsense2_camera/package.xml\n'}
+[82.784707] (realsense2_camera) CommandEnded: {'returncode': 0}
+[82.788422] (-) TimerEvent: {}
+[82.876402] (realsense2_camera) JobEnded: {'identifier': 'realsense2_camera', 'rc': 0}
+[82.880572] (-) EventReactorShutdown: {}
