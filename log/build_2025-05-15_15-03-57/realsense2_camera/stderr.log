@@ -1,0 +1,39 @@
+[01m[K/home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/base_realsense_node.cpp:[m[K In member function ‘[01m[Kvoid realsense2_camera::BaseRealSenseNode::setupFilters()[m[K’:
+[01m[K/home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/base_realsense_node.cpp:232:76:[m[K [01;31m[Kerror: [m[K‘[01m[Krotation_filter[m[K’ is not a member of ‘[01m[Krs2[m[K’; did you mean ‘[01m[Kspatial_filter[m[K’?
+  232 |     _filters.push_back(std::make_shared<NamedFilter>(std::make_shared<rs2::[01;31m[Krotation_filter[m[K>(std::vector< rs2_stream >{ RS2_STREAM_DEPTH, RS2_STREAM_COLOR, RS2_STREAM_INFRARED }), _parameters, _logger));
+      |                                                                            [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                                                                            [32m[Kspatial_filter[m[K
+[01m[K/home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/base_realsense_node.cpp:232:92:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >(std::vector<rs2_stream>)[m[K’
+  232 |     _filters.push_back(std::make_shared<NamedFilter>([01;31m[Kstd::make_shared<rs2::rotation_filter>(std::vector< rs2_stream >{ RS2_STREAM_DEPTH, RS2_STREAM_COLOR, RS2_STREAM_INFRARED })[m[K, _parameters, _logger));
+      |                                                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/usr/include/librealsense2/hpp/rs_types.hpp:18[m[K,
+                 from [01m[K/usr/include/librealsense2/rs.hpp:8[m[K,
+                 from [01m[K/home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/../include/base_realsense_node.h:17[m[K,
+                 from [01m[K/home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/base_realsense_node.cpp:15[m[K:
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+  875 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:875:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/base_realsense_node.cpp:232:92:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  232 |     _filters.push_back(std::make_shared<NamedFilter>([01;31m[Kstd::make_shared<rs2::rotation_filter>(std::vector< rs2_stream >{ RS2_STREAM_DEPTH, RS2_STREAM_COLOR, RS2_STREAM_INFRARED })[m[K, _parameters, _logger));
+      |                                                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/base_realsense_node.cpp:[m[K In member function ‘[01m[Kvoid realsense2_camera::BaseRealSenseNode::imu_callback(rs2::frame)[m[K’:
+[01m[K/home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/base_realsense_node.cpp:522:71:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rs2::motion_frame[m[K’ has no member named ‘[01m[Kget_combined_motion_data[m[K’
+  522 |             auto combined_motion_data = frame.as<rs2::motion_frame>().[01;31m[Kget_combined_motion_data[m[K();
+      |                                                                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/rs_node_setup.cpp:[m[K In member function ‘[01m[Kvoid realsense2_camera::BaseRealSenseNode::CalibConfigReadService(realsense2_camera_msgs::srv::CalibConfigRead_Request_<std::allocator<void> >::SharedPtr, realsense2_camera_msgs::srv::CalibConfigRead_Response_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/rs_node_setup.cpp:618:68:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rs2::auto_calibrated_device[m[K’ has no member named ‘[01m[Kget_calibration_config[m[K’; did you mean ‘[01m[Kget_calibration_table[m[K’?
+  618 |         res->calib_config = _dev.as<rs2::auto_calibrated_device>().[01;31m[Kget_calibration_config[m[K();
+      |                                                                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                    [32m[Kget_calibration_table[m[K
+[01m[K/home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/rs_node_setup.cpp:[m[K In member function ‘[01m[Kvoid realsense2_camera::BaseRealSenseNode::CalibConfigWriteService(realsense2_camera_msgs::srv::CalibConfigWrite_Request_<std::allocator<void> >::SharedPtr, realsense2_camera_msgs::srv::CalibConfigWrite_Response_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/lunabotics/2025-tibalt-bot/src/realsense2_camera/realsense2_camera/src/rs_node_setup.cpp:632:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rs2::auto_calibrated_device[m[K’ has no member named ‘[01m[Kset_calibration_config[m[K’; did you mean ‘[01m[Kset_calibration_table[m[K’?
+  632 |         _dev.as<rs2::auto_calibrated_device>().[01;31m[Kset_calibration_config[m[K(req->calib_config);
+      |                                                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                [32m[Kset_calibration_table[m[K
+gmake[2]: *** [CMakeFiles/realsense2_camera.dir/build.make:90: CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/realsense2_camera.dir/build.make:118: CMakeFiles/realsense2_camera.dir/src/rs_node_setup.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:159: CMakeFiles/realsense2_camera.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

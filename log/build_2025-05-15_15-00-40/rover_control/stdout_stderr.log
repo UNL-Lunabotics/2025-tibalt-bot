@@ -1,0 +1,39 @@
+running egg_info
+creating ../../build/rover_control/rover_control.egg-info
+writing ../../build/rover_control/rover_control.egg-info/PKG-INFO
+writing dependency_links to ../../build/rover_control/rover_control.egg-info/dependency_links.txt
+writing entry points to ../../build/rover_control/rover_control.egg-info/entry_points.txt
+writing requirements to ../../build/rover_control/rover_control.egg-info/requires.txt
+writing top-level names to ../../build/rover_control/rover_control.egg-info/top_level.txt
+writing manifest file '../../build/rover_control/rover_control.egg-info/SOURCES.txt'
+reading manifest file '../../build/rover_control/rover_control.egg-info/SOURCES.txt'
+writing manifest file '../../build/rover_control/rover_control.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/lunabotics/2025-tibalt-bot/build/rover_control/build
+creating /home/lunabotics/2025-tibalt-bot/build/rover_control/build/lib
+creating /home/lunabotics/2025-tibalt-bot/build/rover_control/build/lib/rover_control
+copying rover_control/gui.py -> /home/lunabotics/2025-tibalt-bot/build/rover_control/build/lib/rover_control
+copying rover_control/tibalt_control.py -> /home/lunabotics/2025-tibalt-bot/build/rover_control/build/lib/rover_control
+copying rover_control/__init__.py -> /home/lunabotics/2025-tibalt-bot/build/rover_control/build/lib/rover_control
+running install
+running install_lib
+creating /home/lunabotics/2025-tibalt-bot/install/rover_control/lib/python3.10/site-packages/rover_control
+copying /home/lunabotics/2025-tibalt-bot/build/rover_control/build/lib/rover_control/gui.py -> /home/lunabotics/2025-tibalt-bot/install/rover_control/lib/python3.10/site-packages/rover_control
+copying /home/lunabotics/2025-tibalt-bot/build/rover_control/build/lib/rover_control/tibalt_control.py -> /home/lunabotics/2025-tibalt-bot/install/rover_control/lib/python3.10/site-packages/rover_control
+copying /home/lunabotics/2025-tibalt-bot/build/rover_control/build/lib/rover_control/__init__.py -> /home/lunabotics/2025-tibalt-bot/install/rover_control/lib/python3.10/site-packages/rover_control
+byte-compiling /home/lunabotics/2025-tibalt-bot/install/rover_control/lib/python3.10/site-packages/rover_control/gui.py to gui.cpython-310.pyc
+byte-compiling /home/lunabotics/2025-tibalt-bot/install/rover_control/lib/python3.10/site-packages/rover_control/tibalt_control.py to tibalt_control.cpython-310.pyc
+byte-compiling /home/lunabotics/2025-tibalt-bot/install/rover_control/lib/python3.10/site-packages/rover_control/__init__.py to __init__.cpython-310.pyc
+running install_data
+copying package.xml -> /home/lunabotics/2025-tibalt-bot/install/rover_control/share/rover_control
+creating /home/lunabotics/2025-tibalt-bot/install/rover_control/share/rover_control/launch
+copying launch/topics_launch.py -> /home/lunabotics/2025-tibalt-bot/install/rover_control/share/rover_control/launch
+copying launch/joystick_launch.py -> /home/lunabotics/2025-tibalt-bot/install/rover_control/share/rover_control/launch
+creating /home/lunabotics/2025-tibalt-bot/install/rover_control/share/rover_control/config
+creating /home/lunabotics/2025-tibalt-bot/install/rover_control/share/rover_control/urdf
+running install_egg_info
+Copying ../../build/rover_control/rover_control.egg-info to /home/lunabotics/2025-tibalt-bot/install/rover_control/lib/python3.10/site-packages/rover_control-0.0.0-py3.10.egg-info
+running install_scripts
+Installing tibalt_control script to /home/lunabotics/2025-tibalt-bot/install/rover_control/lib/rover_control
+writing list of installed files to '/home/lunabotics/2025-tibalt-bot/build/rover_control/install.log'
