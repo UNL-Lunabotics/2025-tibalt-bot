@@ -1,1 +1,0 @@
-/home/lunabotics/2025-tibalt-bot/build/micro_ros_msgs/rosidl_cmake/rosidl_cmake-extras.cmake

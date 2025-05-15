@@ -38,22 +38,22 @@ def generate_launch_description():
     ))
 
     # Start the cameras
-    # ld.add_action(Node(
-    #     package='realsense2_camera',
-    #     executable='realsense2_camera_node',
-    #     namespace='camera1',
-    #     name='rs_camera1',
-    #     parameters=[{'serial_no': '033322071026'}],
-    #     output='screen'
-    # ))
-    # ld.add_action(Node(
-    #     package='realsense2_camera',
-    #     executable='realsense2_camera_node',
-    #     namespace='camera2',
-    #     name='rs_camera2',
-    #     parameters=[{'serial_no': '048522075108'}],
-    #     output='screen'
-    # ))
+    ld.add_action(Node(
+        package='realsense2_camera',
+        executable='realsense2_camera_node',
+        namespace='camera1',
+        name='rs_camera1',
+        parameters=[{'serial_no': '033322071026'}],
+        output='screen'
+    ))
+    ld.add_action(Node(
+        package='realsense2_camera',
+        executable='realsense2_camera_node',
+        namespace='camera2',
+        name='rs_camera2',
+        parameters=[{'serial_no': '048522075108'}],
+        output='screen'
+    ))
 
     # arducam_dev = find_arducam()
     # if arducam_dev:
