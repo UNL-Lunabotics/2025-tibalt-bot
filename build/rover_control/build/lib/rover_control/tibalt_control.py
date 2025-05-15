@@ -53,8 +53,8 @@ class Tibalt(Node):
         self.hopper_is_latched = True
         
         # Drivetrain class variables
-        self.dt_left_motor = MOTOR_STOP
-        self.dt_right_motor = MOTOR_STOP
+        self.dt_left_motors = 0
+        self.dt_right_motors = 0
 
         # Excavation motor variables
         self.excav_state = LINEAR_ACTUATOR_STATE.RESTING
