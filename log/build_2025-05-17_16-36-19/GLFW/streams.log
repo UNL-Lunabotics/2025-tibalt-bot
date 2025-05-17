@@ -1,0 +1,40 @@
+[0.100s] Invoking command in '/home/lunabotics/2025-tibalt-bot/build/GLFW': /usr/bin/cmake /home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/glfw -DCMAKE_INSTALL_PREFIX=/home/lunabotics/2025-tibalt-bot/install/GLFW
+[1.328s] -- The C compiler identification is GNU 11.4.0
+[1.482s] -- Detecting C compiler ABI info
+[1.850s] -- Detecting C compiler ABI info - done
+[1.930s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.934s] -- Detecting C compile features
+[1.934s] -- Detecting C compile features - done
+[2.050s] -- Looking for pthread.h
+[2.932s] -- Looking for pthread.h - found
+[2.933s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.360s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.361s] -- Found Threads: TRUE  
+[3.361s] -- Including Wayland support
+[3.361s] -- Including X11 support
+[3.369s] -- Looking for memfd_create
+[3.762s] -- Looking for memfd_create - found
+[3.784s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[3.785s] -- Checking for modules 'wayland-client>=0.2.7;wayland-cursor>=0.2.7;wayland-egl>=0.2.7;xkbcommon>=0.5.0'
+[3.975s] --   Found wayland-client, version 1.20.0
+[4.013s] --   Found wayland-cursor, version 1.20.0
+[4.040s] --   Found wayland-egl, version 18.1.0
+[4.077s] --   Found xkbcommon, version 1.4.0
+[4.799s] -- Found X11: /usr/include   
+[4.799s] -- Looking for XOpenDisplay in /usr/lib/aarch64-linux-gnu/libX11.so;/usr/lib/aarch64-linux-gnu/libXext.so
+[5.160s] -- Looking for XOpenDisplay in /usr/lib/aarch64-linux-gnu/libX11.so;/usr/lib/aarch64-linux-gnu/libXext.so - found
+[5.161s] -- Looking for gethostbyname
+[5.433s] -- Looking for gethostbyname - found
+[5.434s] -- Looking for connect
+[5.807s] -- Looking for connect - found
+[5.808s] -- Looking for remove
+[6.088s] -- Looking for remove - found
+[6.089s] -- Looking for shmat
+[6.367s] -- Looking for shmat - found
+[6.367s] -- Looking for IceConnectionNumber in ICE
+[6.586s] -- Looking for IceConnectionNumber in ICE - found
+[6.613s] -- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+[6.614s] -- Documentation generation requires Doxygen 1.9.8 or later
+[6.616s] -- Configuring done
+[6.779s] -- Generating done
+[6.816s] -- Build files have been written to: /home/lunabotics/2025-tibalt-bot/build/GLFW

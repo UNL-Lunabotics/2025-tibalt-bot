@@ -1,0 +1,34 @@
+[0.094s] Invoking command in '/home/lunabotics/2025-tibalt-bot/build/FMT': /usr/bin/cmake /home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/fmt -DCMAKE_INSTALL_PREFIX=/home/lunabotics/2025-tibalt-bot/install/FMT
+[0.218s] -- CMake version: 3.22.1
+[1.352s] -- The CXX compiler identification is GNU 11.4.0
+[1.493s] -- Detecting CXX compiler ABI info
+[2.126s] -- Detecting CXX compiler ABI info - done
+[2.155s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.160s] -- Detecting CXX compile features
+[2.161s] -- Detecting CXX compile features - done
+[2.175s] -- Version: 7.0.0
+[2.176s] -- Build type: Release
+[2.182s] -- CXX_STANDARD: 11
+[2.191s] -- Performing Test has_std_11_flag
+[2.838s] -- Performing Test has_std_11_flag - Success
+[2.839s] -- Performing Test has_std_0x_flag
+[3.391s] -- Performing Test has_std_0x_flag - Success
+[3.391s] -- Performing Test SUPPORTS_USER_DEFINED_LITERALS
+[3.853s] -- Performing Test SUPPORTS_USER_DEFINED_LITERALS - Success
+[3.855s] -- Performing Test FMT_HAS_VARIANT
+[4.160s] -- Performing Test FMT_HAS_VARIANT - Success
+[4.161s] -- Required features: cxx_variadic_templates
+[4.164s] -- Looking for strtod_l
+[4.632s] -- Looking for strtod_l - found
+[4.684s] -- Target 'doc' disabled (requires doxygen)
+[4.692s] -- Looking for C++ include pthread.h
+[5.088s] -- Looking for C++ include pthread.h - found
+[5.088s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[5.562s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[5.565s] -- Found Threads: TRUE  
+[5.569s] -- Performing Test HAVE_FNO_DELETE_NULL_POINTER_CHECKS
+[5.805s] -- Performing Test HAVE_FNO_DELETE_NULL_POINTER_CHECKS - Success
+[5.811s] -- FMT_PEDANTIC: OFF
+[5.813s] -- Configuring done
+[5.908s] -- Generating done
+[5.944s] -- Build files have been written to: /home/lunabotics/2025-tibalt-bot/build/FMT

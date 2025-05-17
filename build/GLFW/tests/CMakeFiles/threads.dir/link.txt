@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/threads.dir/threads.c.o CMakeFiles/threads.dir/__/deps/tinycthread.c.o -o threads  ../src/libglfw3.a /usr/lib/aarch64-linux-gnu/libm.so /usr/lib/aarch64-linux-gnu/librt.a -ldl 

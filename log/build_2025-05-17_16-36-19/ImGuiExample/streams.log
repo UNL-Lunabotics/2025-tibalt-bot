@@ -1,0 +1,29 @@
+[0.091s] Invoking command in '/home/lunabotics/2025-tibalt-bot/build/ImGuiExample': /usr/bin/cmake /home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/imgui/examples/example_android_opengl3 -DCMAKE_INSTALL_PREFIX=/home/lunabotics/2025-tibalt-bot/install/ImGuiExample
+[1.346s] -- The C compiler identification is GNU 11.4.0
+[1.648s] -- The CXX compiler identification is GNU 11.4.0
+[1.706s] -- Detecting C compiler ABI info
+[2.334s] -- Detecting C compiler ABI info - done
+[2.355s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.356s] -- Detecting C compile features
+[2.356s] -- Detecting C compile features - done
+[2.391s] -- Detecting CXX compiler ABI info
+[2.973s] -- Detecting CXX compiler ABI info - done
+[3.003s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.007s] -- Detecting CXX compile features
+[3.010s] -- Detecting CXX compile features - done
+[3.016s] -- Configuring done
+[3.037s] [31mCMake Error at CMakeLists.txt:9 (add_library):
+[3.037s]   Cannot find source file:
+[3.037s] 
+[3.037s]     /sources/android/native_app_glue/android_native_app_glue.c
+[3.038s] 
+[3.038s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+[3.041s]   .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+[3.042s] 
+[3.044s] [0m
+[3.048s] [31mCMake Error at CMakeLists.txt:9 (add_library):
+[3.049s]   No SOURCES given to target: ImGuiExample
+[3.049s] 
+[3.050s] [0m
+[3.050s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[3.077s] Invoked command in '/home/lunabotics/2025-tibalt-bot/build/ImGuiExample' returned '1': /usr/bin/cmake /home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/imgui/examples/example_android_opengl3 -DCMAKE_INSTALL_PREFIX=/home/lunabotics/2025-tibalt-bot/install/ImGuiExample

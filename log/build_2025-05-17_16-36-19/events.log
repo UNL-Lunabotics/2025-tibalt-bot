@@ -1,0 +1,376 @@
+[0.000000] (-) TimerEvent: {}
+[0.002392] (CURL) JobQueued: {'identifier': 'CURL', 'dependencies': OrderedDict()}
+[0.002960] (FMT) JobQueued: {'identifier': 'FMT', 'dependencies': OrderedDict()}
+[0.003763] (GLFW) JobQueued: {'identifier': 'GLFW', 'dependencies': OrderedDict()}
+[0.003912] (ImGuiExample) JobQueued: {'identifier': 'ImGuiExample', 'dependencies': OrderedDict()}
+[0.004059] (LZ4) JobQueued: {'identifier': 'LZ4', 'dependencies': OrderedDict()}
+[0.004259] (base64) JobQueued: {'identifier': 'base64', 'dependencies': OrderedDict()}
+[0.004390] (brotli) JobQueued: {'identifier': 'brotli', 'dependencies': OrderedDict()}
+[0.004730] (cmake_install_test) JobQueued: {'identifier': 'cmake_install_test', 'dependencies': OrderedDict()}
+[0.004805] (cmark-gfm) JobQueued: {'identifier': 'cmark-gfm', 'dependencies': OrderedDict()}
+[0.004866] (control_msgs) JobQueued: {'identifier': 'control_msgs', 'dependencies': OrderedDict()}
+[0.004924] (dragonbox) JobQueued: {'identifier': 'dragonbox', 'dependencies': OrderedDict()}
+[0.004977] (imgui_example_glfw_vulkan) JobQueued: {'identifier': 'imgui_example_glfw_vulkan', 'dependencies': OrderedDict()}
+[0.005032] (imgui_example_glfw_wgpu) JobQueued: {'identifier': 'imgui_example_glfw_wgpu', 'dependencies': OrderedDict()}
+[0.005084] (koffi) JobQueued: {'identifier': 'koffi', 'dependencies': OrderedDict()}
+[0.005135] (libblake3) JobQueued: {'identifier': 'libblake3', 'dependencies': OrderedDict()}
+[0.005186] (libmimalloc) JobQueued: {'identifier': 'libmimalloc', 'dependencies': OrderedDict()}
+[0.005237] (libssh) JobQueued: {'identifier': 'libssh', 'dependencies': OrderedDict()}
+[0.005289] (mbedtls) JobQueued: {'identifier': 'mbedtls', 'dependencies': OrderedDict()}
+[0.005340] (pugixml) JobQueued: {'identifier': 'pugixml', 'dependencies': OrderedDict()}
+[0.005412] (raylib) JobQueued: {'identifier': 'raylib', 'dependencies': OrderedDict()}
+[0.005467] (realsense2_camera_msgs) JobQueued: {'identifier': 'realsense2_camera_msgs', 'dependencies': OrderedDict()}
+[0.005519] (rlbox-sandboxing-api) JobQueued: {'identifier': 'rlbox-sandboxing-api', 'dependencies': OrderedDict()}
+[0.005567] (rlbox_wasm2c) JobQueued: {'identifier': 'rlbox_wasm2c', 'dependencies': OrderedDict()}
+[0.005616] (rover_control) JobQueued: {'identifier': 'rover_control', 'dependencies': OrderedDict()}
+[0.005665] (zstd) JobQueued: {'identifier': 'zstd', 'dependencies': OrderedDict()}
+[0.005713] (realsense2_camera) JobQueued: {'identifier': 'realsense2_camera', 'dependencies': OrderedDict([('realsense2_camera_msgs', '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs')])}
+[0.005777] (realsense2_description) JobQueued: {'identifier': 'realsense2_description', 'dependencies': OrderedDict([('realsense2_camera_msgs', '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs')])}
+[0.005837] (realsense2_camera_msgs) JobStarted: {'identifier': 'realsense2_camera_msgs'}
+[0.035055] (CURL) JobStarted: {'identifier': 'CURL'}
+[0.049787] (FMT) JobStarted: {'identifier': 'FMT'}
+[0.060745] (GLFW) JobStarted: {'identifier': 'GLFW'}
+[0.072159] (ImGuiExample) JobStarted: {'identifier': 'ImGuiExample'}
+[0.081973] (LZ4) JobStarted: {'identifier': 'LZ4'}
+[0.099399] (-) TimerEvent: {}
+[0.103549] (realsense2_camera_msgs) JobProgress: {'identifier': 'realsense2_camera_msgs', 'progress': 'cmake'}
+[0.107302] (realsense2_camera_msgs) JobProgress: {'identifier': 'realsense2_camera_msgs', 'progress': 'build'}
+[0.109977] (realsense2_camera_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs', '--', '-j6', '-l6'], 'cwd': '/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lunabotics'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lunabotics'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/lunabotics/2025-tibalt-bot/arduino'), ('TERM_PROGRAM_VERSION', '1.100.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1554'), ('SYSTEMD_EXEC_PID', '2189'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3082'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lunabotics'), ('JOURNAL_STREAM', '8:39722'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lunabotics'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/lunabotics/.local/bin:/home/lunabotics/bin:/opt/ros/humble/bin:/home/lunabotics/.local/bin:/home/lunabotics/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lunabotics-desktop:@/tmp/.ICE-unix/2161,unix/lunabotics-desktop:/tmp/.ICE-unix/2161'), ('INVOCATION_ID', 'da6c2a3773844c3ea69aaff2417075d7'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-371b4ae8bc.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.132375] (CURL) JobProgress: {'identifier': 'CURL', 'progress': 'cmake'}
+[0.134623] (CURL) Command: {'cmd': ['/usr/bin/cmake', '/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/curl', '-DCMAKE_INSTALL_PREFIX=/home/lunabotics/2025-tibalt-bot/install/CURL'], 'cwd': '/home/lunabotics/2025-tibalt-bot/build/CURL', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lunabotics'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lunabotics'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/lunabotics/2025-tibalt-bot/arduino'), ('TERM_PROGRAM_VERSION', '1.100.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1554'), ('SYSTEMD_EXEC_PID', '2189'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3082'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lunabotics'), ('JOURNAL_STREAM', '8:39722'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lunabotics'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/lunabotics/.local/bin:/home/lunabotics/bin:/opt/ros/humble/bin:/home/lunabotics/.local/bin:/home/lunabotics/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lunabotics-desktop:@/tmp/.ICE-unix/2161,unix/lunabotics-desktop:/tmp/.ICE-unix/2161'), ('INVOCATION_ID', 'da6c2a3773844c3ea69aaff2417075d7'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-371b4ae8bc.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lunabotics/2025-tibalt-bot/build/CURL'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1')]), 'shell': False}
+[0.140272] (FMT) JobProgress: {'identifier': 'FMT', 'progress': 'cmake'}
+[0.141641] (FMT) Command: {'cmd': ['/usr/bin/cmake', '/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/fmt', '-DCMAKE_INSTALL_PREFIX=/home/lunabotics/2025-tibalt-bot/install/FMT'], 'cwd': '/home/lunabotics/2025-tibalt-bot/build/FMT', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lunabotics'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lunabotics'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/lunabotics/2025-tibalt-bot/arduino'), ('TERM_PROGRAM_VERSION', '1.100.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1554'), ('SYSTEMD_EXEC_PID', '2189'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3082'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lunabotics'), ('JOURNAL_STREAM', '8:39722'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lunabotics'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/lunabotics/.local/bin:/home/lunabotics/bin:/opt/ros/humble/bin:/home/lunabotics/.local/bin:/home/lunabotics/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lunabotics-desktop:@/tmp/.ICE-unix/2161,unix/lunabotics-desktop:/tmp/.ICE-unix/2161'), ('INVOCATION_ID', 'da6c2a3773844c3ea69aaff2417075d7'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-371b4ae8bc.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lunabotics/2025-tibalt-bot/build/FMT'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1')]), 'shell': False}
+[0.147235] (GLFW) JobProgress: {'identifier': 'GLFW', 'progress': 'cmake'}
+[0.148651] (GLFW) Command: {'cmd': ['/usr/bin/cmake', '/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/glfw', '-DCMAKE_INSTALL_PREFIX=/home/lunabotics/2025-tibalt-bot/install/GLFW'], 'cwd': '/home/lunabotics/2025-tibalt-bot/build/GLFW', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lunabotics'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lunabotics'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/lunabotics/2025-tibalt-bot/arduino'), ('TERM_PROGRAM_VERSION', '1.100.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1554'), ('SYSTEMD_EXEC_PID', '2189'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3082'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lunabotics'), ('JOURNAL_STREAM', '8:39722'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lunabotics'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/lunabotics/.local/bin:/home/lunabotics/bin:/opt/ros/humble/bin:/home/lunabotics/.local/bin:/home/lunabotics/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lunabotics-desktop:@/tmp/.ICE-unix/2161,unix/lunabotics-desktop:/tmp/.ICE-unix/2161'), ('INVOCATION_ID', 'da6c2a3773844c3ea69aaff2417075d7'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-371b4ae8bc.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lunabotics/2025-tibalt-bot/build/GLFW'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1')]), 'shell': False}
+[0.161509] (ImGuiExample) JobProgress: {'identifier': 'ImGuiExample', 'progress': 'cmake'}
+[0.161655] (ImGuiExample) Command: {'cmd': ['/usr/bin/cmake', '/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/imgui/examples/example_android_opengl3', '-DCMAKE_INSTALL_PREFIX=/home/lunabotics/2025-tibalt-bot/install/ImGuiExample'], 'cwd': '/home/lunabotics/2025-tibalt-bot/build/ImGuiExample', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lunabotics'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lunabotics'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/lunabotics/2025-tibalt-bot/arduino'), ('TERM_PROGRAM_VERSION', '1.100.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1554'), ('SYSTEMD_EXEC_PID', '2189'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3082'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lunabotics'), ('JOURNAL_STREAM', '8:39722'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lunabotics'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/lunabotics/.local/bin:/home/lunabotics/bin:/opt/ros/humble/bin:/home/lunabotics/.local/bin:/home/lunabotics/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lunabotics-desktop:@/tmp/.ICE-unix/2161,unix/lunabotics-desktop:/tmp/.ICE-unix/2161'), ('INVOCATION_ID', 'da6c2a3773844c3ea69aaff2417075d7'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-371b4ae8bc.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lunabotics/2025-tibalt-bot/build/ImGuiExample'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1')]), 'shell': False}
+[0.164107] (LZ4) JobProgress: {'identifier': 'LZ4', 'progress': 'cmake'}
+[0.164893] (LZ4) Command: {'cmd': ['/usr/bin/cmake', '/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/lz4/build/cmake', '-DCMAKE_INSTALL_PREFIX=/home/lunabotics/2025-tibalt-bot/install/LZ4'], 'cwd': '/home/lunabotics/2025-tibalt-bot/build/LZ4', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lunabotics'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lunabotics'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/lunabotics/2025-tibalt-bot/arduino'), ('TERM_PROGRAM_VERSION', '1.100.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1554'), ('SYSTEMD_EXEC_PID', '2189'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3082'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lunabotics'), ('JOURNAL_STREAM', '8:39722'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lunabotics'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/lunabotics/.local/bin:/home/lunabotics/bin:/opt/ros/humble/bin:/home/lunabotics/.local/bin:/home/lunabotics/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lunabotics-desktop:@/tmp/.ICE-unix/2161,unix/lunabotics-desktop:/tmp/.ICE-unix/2161'), ('INVOCATION_ID', 'da6c2a3773844c3ea69aaff2417075d7'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-371b4ae8bc.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lunabotics/2025-tibalt-bot/build/LZ4'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1')]), 'shell': False}
+[0.199700] (-) TimerEvent: {}
+[0.267356] (FMT) StdoutLine: {'line': b'-- CMake version: 3.22.1\n'}
+[0.275157] (CURL) StdoutLine: {'line': b'-- Using CMake version 3.22.1\n'}
+[0.300275] (-) TimerEvent: {}
+[0.318513] (CURL) StdoutLine: {'line': b'-- curl version=[8.12.1]\n'}
+[0.400565] (-) TimerEvent: {}
+[0.501815] (-) TimerEvent: {}
+[0.603272] (-) TimerEvent: {}
+[0.704750] (-) TimerEvent: {}
+[0.806118] (-) TimerEvent: {}
+[0.907541] (-) TimerEvent: {}
+[1.009043] (-) TimerEvent: {}
+[1.110404] (-) TimerEvent: {}
+[1.211955] (-) TimerEvent: {}
+[1.271986] (realsense2_camera_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_generator_c\x1b[0m\n'}
+[1.289523] (realsense2_camera_msgs) StdoutLine: {'line': b'[  1%] Built target realsense2_camera_msgs__cpp\n'}
+[1.312279] (-) TimerEvent: {}
+[1.371622] (realsense2_camera_msgs) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_copy_realsense2_camera_msgs\n'}
+[1.381014] (CURL) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.388525] (GLFW) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.401357] (FMT) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.408238] (realsense2_camera_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[1.418067] (ImGuiExample) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.418947] (-) TimerEvent: {}
+[1.475886] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 12%] Built target realsense2_camera_msgs__rosidl_generator_c\n'}
+[1.502640] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 23%] Built target realsense2_camera_msgs__rosidl_typesupport_cpp\n'}
+[1.519229] (-) TimerEvent: {}
+[1.529593] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 34%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[1.540250] (CURL) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.542090] (GLFW) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.542563] (FMT) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.556528] (realsense2_camera_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[1.567244] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 46%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_cpp\n'}
+[1.620498] (-) TimerEvent: {}
+[1.629706] (realsense2_camera_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[1.672271] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 57%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_c\n'}
+[1.719988] (ImGuiExample) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.720736] (-) TimerEvent: {}
+[1.736485] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 68%] Built target realsense2_camera_msgs__rosidl_typesupport_c\n'}
+[1.758076] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 79%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c\n'}
+[1.777329] (ImGuiExample) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.821079] (-) TimerEvent: {}
+[1.910704] (GLFW) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.921312] (-) TimerEvent: {}
+[1.990514] (GLFW) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.994057] (GLFW) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.994825] (GLFW) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.021612] (-) TimerEvent: {}
+[2.041661] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 79%] Built target realsense2_camera_msgs\n'}
+[2.110264] (GLFW) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.121869] (-) TimerEvent: {}
+[2.174976] (FMT) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.204649] (FMT) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.209489] (FMT) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.210598] (FMT) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.222072] (-) TimerEvent: {}
+[2.224428] (FMT) StdoutLine: {'line': b'-- Version: 7.0.0\n'}
+[2.225531] (FMT) StdoutLine: {'line': b'-- Build type: Release\n'}
+[2.231331] (FMT) StdoutLine: {'line': b'-- CXX_STANDARD: 11\n'}
+[2.240072] (FMT) StdoutLine: {'line': b'-- Performing Test has_std_11_flag\n'}
+[2.300010] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 80%] Built target realsense2_camera_msgs__py\n'}
+[2.322323] (-) TimerEvent: {}
+[2.366858] (CURL) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.399582] (ImGuiExample) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.422585] (-) TimerEvent: {}
+[2.426649] (ImGuiExample) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.427555] (ImGuiExample) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.428094] (ImGuiExample) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.438455] (CURL) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.440281] (CURL) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.443791] (CURL) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.448820] (CURL) StdoutLine: {'line': b'-- CMake platform flags: UNIX GCC\n'}
+[2.451657] (CURL) StdoutLine: {'line': b'-- Picky compiler options: -Werror-implicit-function-declaration -W -Wall -pedantic -Wbad-function-cast -Wconversion -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Waddress -Wattributes -Wcast-align -Wdeclaration-after-statement -Wdiv-by-zero -Wempty-body -Wendif-labels -Wfloat-equal -Wformat-security -Wignored-qualifiers -Wmissing-field-initializers -Wmissing-noreturn -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wold-style-definition -Wredundant-decls -Wstrict-prototypes -Wtype-limits -Wunreachable-code -Wunused-parameter -Wvla -Wclobbered -Wmissing-parameter-type -Wold-style-declaration -Wpragmas -Wstrict-aliasing=3 -Wdouble-promotion -Wformat=2 -Wtrampolines -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Wunused-const-variable -Walloc-zero -Wduplicated-branches -Wformat-truncation=2 -Wimplicit-fallthrough -Wrestrict -Warith-conversion -Wenum-conversion\n'}
+[2.463059] (ImGuiExample) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.524631] (-) TimerEvent: {}
+[2.547441] (realsense2_camera_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_generator_py\x1b[0m\n'}
+[2.623901] (CURL) StdoutLine: {'line': b'-- Found Perl: /usr/bin/perl (found version "5.34.0") \n'}
+[2.624737] (-) TimerEvent: {}
+[2.638460] (CURL) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.725061] (-) TimerEvent: {}
+[2.747324] (realsense2_camera_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[2.749263] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 90%] Built target realsense2_camera_msgs__rosidl_generator_py\n'}
+[2.754394] (realsense2_camera_msgs) StdoutLine: {'line': b'writing realsense2_camera_msgs.egg-info/PKG-INFO\n'}
+[2.770135] (realsense2_camera_msgs) StdoutLine: {'line': b'writing dependency_links to realsense2_camera_msgs.egg-info/dependency_links.txt\n'}
+[2.774189] (realsense2_camera_msgs) StdoutLine: {'line': b'writing top-level names to realsense2_camera_msgs.egg-info/top_level.txt\n'}
+[2.797995] (realsense2_camera_msgs) StdoutLine: {'line': b"reading manifest file 'realsense2_camera_msgs.egg-info/SOURCES.txt'\n"}
+[2.802271] (realsense2_camera_msgs) StdoutLine: {'line': b"writing manifest file 'realsense2_camera_msgs.egg-info/SOURCES.txt'\n"}
+[2.825347] (-) TimerEvent: {}
+[2.886876] (FMT) StdoutLine: {'line': b'-- Performing Test has_std_11_flag - Success\n'}
+[2.888609] (FMT) StdoutLine: {'line': b'-- Performing Test has_std_0x_flag\n'}
+[2.925634] (-) TimerEvent: {}
+[2.942314] (realsense2_camera_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[2.992671] (GLFW) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.993449] (GLFW) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[3.025922] (-) TimerEvent: {}
+[3.044533] (ImGuiExample) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.055751] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 90%] Built target ament_cmake_python_build_realsense2_camera_msgs_egg\n'}
+[3.074334] (ImGuiExample) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.078840] (ImGuiExample) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.081859] (ImGuiExample) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.082855] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 93%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[3.087651] (ImGuiExample) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.108327] (ImGuiExample) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:9 (add_library):\n'}
+[3.109269] (ImGuiExample) StderrLine: {'line': b'  Cannot find source file:\n'}
+[3.109478] (ImGuiExample) StderrLine: {'line': b'\n'}
+[3.109644] (ImGuiExample) StderrLine: {'line': b'    /sources/android/native_app_glue/android_native_app_glue.c\n'}
+[3.109811] (ImGuiExample) StderrLine: {'line': b'\n'}
+[3.109960] (ImGuiExample) StderrLine: {'line': b'  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h\n'}
+[3.113119] (ImGuiExample) StderrLine: {'line': b'  .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc\n'}
+[3.113844] (ImGuiExample) StderrLine: {'line': b'\n'}
+[3.115463] (ImGuiExample) StderrLine: {'line': b'\x1b[0m\n'}
+[3.120161] (ImGuiExample) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:9 (add_library):\n'}
+[3.121054] (ImGuiExample) StderrLine: {'line': b'  No SOURCES given to target: ImGuiExample\n'}
+[3.121397] (ImGuiExample) StderrLine: {'line': b'\n'}
+[3.121778] (ImGuiExample) StderrLine: {'line': b'\x1b[0m\n'}
+[3.122261] (ImGuiExample) StderrLine: {'line': b'\x1b[0mCMake Generate step failed.  Build files cannot be regenerated correctly.\x1b[0m\n'}
+[3.126071] (-) TimerEvent: {}
+[3.128783] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 96%] Built target realsense2_camera_msgs__rosidl_typesupport_c__pyext\n'}
+[3.148540] (ImGuiExample) CommandEnded: {'returncode': 1}
+[3.151908] (LZ4) StdoutLine: {'line': b'-- Creating build script for LZ4 version: 1.10.0\n'}
+[3.152562] (LZ4) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[3.152782] (LZ4) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.152962] (LZ4) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.153127] (LZ4) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[3.153287] (LZ4) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.153443] (LZ4) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.153593] (LZ4) StdoutLine: {'line': b'-- Performing Test CFLAG_pedantic_errors\n'}
+[3.153741] (LZ4) StdoutLine: {'line': b'-- Performing Test CFLAG_pedantic_errors - Success\n'}
+[3.153917] (LZ4) StdoutLine: {'line': b'-- Performing Test CFLAG_Wall\n'}
+[3.154081] (ImGuiExample) JobEnded: {'identifier': 'ImGuiExample', 'rc': 1}
+[3.164471] (realsense2_camera_msgs) StdoutLine: {'line': b'[100%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.226451] (-) TimerEvent: {}
+[3.247872] (realsense2_camera_msgs) JobEnded: {'identifier': 'realsense2_camera_msgs', 'rc': 'SIGINT'}
+[3.310675] (CURL) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[3.312735] (CURL) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[3.326710] (-) TimerEvent: {}
+[3.420088] (GLFW) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[3.420639] (LZ4) StdoutLine: {'line': b'-- Performing Test CFLAG_Wall - Success\n'}
+[3.421407] (LZ4) StdoutLine: {'line': b'-- Performing Test CFLAG_Wextra\n'}
+[3.421676] (GLFW) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[3.421863] (GLFW) StdoutLine: {'line': b'-- Including Wayland support\n'}
+[3.422034] (GLFW) StdoutLine: {'line': b'-- Including X11 support\n'}
+[3.426838] (-) TimerEvent: {}
+[3.429745] (GLFW) StdoutLine: {'line': b'-- Looking for memfd_create\n'}
+[3.440045] (FMT) StdoutLine: {'line': b'-- Performing Test has_std_0x_flag - Success\n'}
+[3.440928] (FMT) StdoutLine: {'line': b'-- Performing Test SUPPORTS_USER_DEFINED_LITERALS\n'}
+[3.527153] (-) TimerEvent: {}
+[3.628360] (-) TimerEvent: {}
+[3.674303] (CURL) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[3.676653] (CURL) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[3.677248] (CURL) StdoutLine: {'line': b'-- Looking for connect in socket\n'}
+[3.728677] (-) TimerEvent: {}
+[3.822449] (GLFW) StdoutLine: {'line': b'-- Looking for memfd_create - found\n'}
+[3.828911] (-) TimerEvent: {}
+[3.843921] (GLFW) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[3.846010] (GLFW) StdoutLine: {'line': b"-- Checking for modules 'wayland-client>=0.2.7;wayland-cursor>=0.2.7;wayland-egl>=0.2.7;xkbcommon>=0.5.0'\n"}
+[3.856808] (LZ4) StdoutLine: {'line': b'-- Performing Test CFLAG_Wextra - Success\n'}
+[3.858371] (LZ4) StdoutLine: {'line': b'-- Performing Test CFLAG_Wundef\n'}
+[3.902677] (FMT) StdoutLine: {'line': b'-- Performing Test SUPPORTS_USER_DEFINED_LITERALS - Success\n'}
+[3.904552] (FMT) StdoutLine: {'line': b'-- Performing Test FMT_HAS_VARIANT\n'}
+[3.929221] (-) TimerEvent: {}
+[3.951848] (CURL) StdoutLine: {'line': b'-- Looking for connect in socket - not found\n'}
+[3.960038] (CURL) StdoutLine: {'line': b'-- Performing Test HAVE_SOCKADDR_IN6_SIN6_ADDR\n'}
+[4.029604] (-) TimerEvent: {}
+[4.035188] (GLFW) StdoutLine: {'line': b'--   Found wayland-client, version 1.20.0\n'}
+[4.073660] (GLFW) StdoutLine: {'line': b'--   Found wayland-cursor, version 1.20.0\n'}
+[4.099965] (GLFW) StdoutLine: {'line': b'--   Found wayland-egl, version 18.1.0\n'}
+[4.129915] (-) TimerEvent: {}
+[4.137195] (GLFW) StdoutLine: {'line': b'--   Found xkbcommon, version 1.4.0\n'}
+[4.150312] (LZ4) StdoutLine: {'line': b'-- Performing Test CFLAG_Wundef - Success\n'}
+[4.151835] (LZ4) StdoutLine: {'line': b'-- Performing Test CFLAG_Wcast_qual\n'}
+[4.209453] (FMT) StdoutLine: {'line': b'-- Performing Test FMT_HAS_VARIANT - Success\n'}
+[4.210346] (FMT) StdoutLine: {'line': b'-- Required features: cxx_variadic_templates\n'}
+[4.213306] (FMT) StdoutLine: {'line': b'-- Looking for strtod_l\n'}
+[4.230179] (-) TimerEvent: {}
+[4.305415] (CURL) StdoutLine: {'line': b'-- Performing Test HAVE_SOCKADDR_IN6_SIN6_ADDR - Success\n'}
+[4.308297] (CURL) StdoutLine: {'line': b'-- Performing Test HAVE_SOCKADDR_IN6_SIN6_SCOPE_ID\n'}
+[4.336277] (-) TimerEvent: {}
+[4.441042] (-) TimerEvent: {}
+[4.480891] (LZ4) StdoutLine: {'line': b'-- Performing Test CFLAG_Wcast_qual - Success\n'}
+[4.505697] (LZ4) StdoutLine: {'line': b'-- Performing Test CFLAG_Wcast_align\n'}
+[4.541330] (-) TimerEvent: {}
+[4.642497] (-) TimerEvent: {}
+[4.653152] (CURL) StdoutLine: {'line': b'-- Performing Test HAVE_SOCKADDR_IN6_SIN6_SCOPE_ID - Success\n'}
+[4.681059] (FMT) StdoutLine: {'line': b'-- Looking for strtod_l - found\n'}
+[4.717559] (LZ4) StdoutLine: {'line': b'-- Performing Test CFLAG_Wcast_align - Success\n'}
+[4.719137] (LZ4) StdoutLine: {'line': b'-- Performing Test CFLAG_Wshadow\n'}
+[4.733759] (FMT) StdoutLine: {'line': b"-- Target 'doc' disabled (requires doxygen)\n"}
+[4.741683] (FMT) StdoutLine: {'line': b'-- Looking for C++ include pthread.h\n'}
+[4.742474] (-) TimerEvent: {}
+[4.843371] (-) TimerEvent: {}
+[4.858454] (GLFW) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[4.859845] (GLFW) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/aarch64-linux-gnu/libX11.so;/usr/lib/aarch64-linux-gnu/libXext.so\n'}
+[4.906300] (CURL) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[4.912681] (CURL) StdoutLine: {'line': b'-- Looking for OPENSSL_IS_BORINGSSL\n'}
+[4.943739] (-) TimerEvent: {}
+[4.982042] (LZ4) StdoutLine: {'line': b'-- Performing Test CFLAG_Wshadow - Success\n'}
+[4.982939] (LZ4) StdoutLine: {'line': b'-- Performing Test CFLAG_Wswitch_enum\n'}
+[4.997839] (CURL) StdoutLine: {'line': b'-- Looking for OPENSSL_IS_BORINGSSL - not found\n'}
+[4.999075] (CURL) StdoutLine: {'line': b'-- Looking for OPENSSL_IS_AWSLC\n'}
+[5.043994] (-) TimerEvent: {}
+[5.136831] (FMT) StdoutLine: {'line': b'-- Looking for C++ include pthread.h - found\n'}
+[5.137931] (FMT) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[5.144290] (-) TimerEvent: {}
+[5.200199] (CURL) StdoutLine: {'line': b'-- Looking for OPENSSL_IS_AWSLC - not found\n'}
+[5.201905] (CURL) StdoutLine: {'line': b'-- Looking for LIBRESSL_VERSION_NUMBER\n'}
+[5.219989] (GLFW) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/aarch64-linux-gnu/libX11.so;/usr/lib/aarch64-linux-gnu/libXext.so - found\n'}
+[5.221676] (GLFW) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[5.244482] (-) TimerEvent: {}
+[5.345612] (-) TimerEvent: {}
+[5.349560] (LZ4) StdoutLine: {'line': b'-- Performing Test CFLAG_Wswitch_enum - Success\n'}
+[5.351550] (LZ4) StdoutLine: {'line': b'-- Performing Test CFLAG_Wdeclaration_after_statement\n'}
+[5.380188] (CURL) StdoutLine: {'line': b'-- Looking for LIBRESSL_VERSION_NUMBER - not found\n'}
+[5.446082] (CURL) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/aarch64-linux-gnu/libz.so (found version "1.2.11") \n'}
+[5.446965] (-) TimerEvent: {}
+[5.478668] (CURL) StdoutLine: {'line': b"-- Checking for module 'libbrotlicommon'\n"}
+[5.493393] (GLFW) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[5.494944] (GLFW) StdoutLine: {'line': b'-- Looking for connect\n'}
+[5.547351] (-) TimerEvent: {}
+[5.556297] (CURL) StdoutLine: {'line': b'--   Found libbrotlicommon, version 1.0.9\n'}
+[5.611072] (FMT) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[5.614692] (FMT) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[5.618222] (FMT) StdoutLine: {'line': b'-- Performing Test HAVE_FNO_DELETE_NULL_POINTER_CHECKS\n'}
+[5.647626] (-) TimerEvent: {}
+[5.677836] (LZ4) StdoutLine: {'line': b'-- Performing Test CFLAG_Wdeclaration_after_statement - Success\n'}
+[5.678911] (LZ4) StdoutLine: {'line': b'-- Performing Test CFLAG_Wstrict_prototypes\n'}
+[5.694027] (CURL) StdoutLine: {'line': b"-- Checking for module 'libbrotlidec'\n"}
+[5.731826] (CURL) StdoutLine: {'line': b'--   Found libbrotlidec, version 1.0.9\n'}
+[5.747959] (-) TimerEvent: {}
+[5.849270] (-) TimerEvent: {}
+[5.851126] (CURL) StdoutLine: {'line': b'-- Found Brotli (via pkg-config):  (found version "1.0.9")\n'}
+[5.854226] (FMT) StdoutLine: {'line': b'-- Performing Test HAVE_FNO_DELETE_NULL_POINTER_CHECKS - Success\n'}
+[5.860734] (FMT) StdoutLine: {'line': b'-- FMT_PEDANTIC: OFF\n'}
+[5.862652] (FMT) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.867392] (CURL) StdoutLine: {'line': b"-- Checking for module 'libzstd'\n"}
+[5.868081] (GLFW) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[5.869076] (GLFW) StdoutLine: {'line': b'-- Looking for remove\n'}
+[5.924782] (LZ4) StdoutLine: {'line': b'-- Performing Test CFLAG_Wstrict_prototypes - Success\n'}
+[5.926431] (LZ4) StdoutLine: {'line': b'-- Performing Test CFLAG_Wpointer_arith\n'}
+[5.949515] (-) TimerEvent: {}
+[5.954328] (CURL) StdoutLine: {'line': b'--   Found libzstd, version 1.4.8\n'}
+[5.957122] (FMT) StdoutLine: {'line': b'-- Generating done\n'}
+[5.992910] (FMT) StdoutLine: {'line': b'-- Build files have been written to: /home/lunabotics/2025-tibalt-bot/build/FMT\n'}
+[6.009318] (FMT) JobEnded: {'identifier': 'FMT', 'rc': 'SIGINT'}
+[6.049798] (-) TimerEvent: {}
+[6.104160] (CURL) StdoutLine: {'line': b'-- Found Zstd (via pkg-config):  (found version "1.4.8")\n'}
+[6.108370] (CURL) StdoutLine: {'line': b'-- Looking for SSL_set0_wbio\n'}
+[6.148472] (GLFW) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[6.149533] (GLFW) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[6.149790] (-) TimerEvent: {}
+[6.165768] (LZ4) StdoutLine: {'line': b'-- Performing Test CFLAG_Wpointer_arith - Success\n'}
+[6.172205] (LZ4) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.189882] (LZ4) StdoutLine: {'line': b'-- Generating done\n'}
+[6.199061] (LZ4) StdoutLine: {'line': b'-- Build files have been written to: /home/lunabotics/2025-tibalt-bot/build/LZ4\n'}
+[6.208887] (LZ4) JobEnded: {'identifier': 'LZ4', 'rc': 'SIGINT'}
+[6.250206] (-) TimerEvent: {}
+[6.351577] (-) TimerEvent: {}
+[6.426817] (GLFW) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[6.427878] (GLFW) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[6.451912] (-) TimerEvent: {}
+[6.553058] (-) TimerEvent: {}
+[6.646320] (GLFW) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[6.653339] (-) TimerEvent: {}
+[6.673465] (GLFW) StdoutLine: {'line': b'-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) \n'}
+[6.674302] (GLFW) StdoutLine: {'line': b'-- Documentation generation requires Doxygen 1.9.8 or later\n'}
+[6.676697] (GLFW) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.753634] (-) TimerEvent: {}
+[6.788033] (CURL) StdoutLine: {'line': b'-- Looking for SSL_set0_wbio - found\n'}
+[6.789823] (CURL) StdoutLine: {'line': b'-- Looking for SSL_CTX_set_srp_username\n'}
+[6.838867] (GLFW) StdoutLine: {'line': b'-- Generating done\n'}
+[6.853978] (-) TimerEvent: {}
+[6.876020] (GLFW) StdoutLine: {'line': b'-- Build files have been written to: /home/lunabotics/2025-tibalt-bot/build/GLFW\n'}
+[6.897296] (GLFW) JobEnded: {'identifier': 'GLFW', 'rc': 'SIGINT'}
+[6.954252] (-) TimerEvent: {}
+[7.055436] (-) TimerEvent: {}
+[7.156615] (-) TimerEvent: {}
+[7.251283] (CURL) StdoutLine: {'line': b'-- Looking for SSL_CTX_set_srp_username - found\n'}
+[7.256771] (-) TimerEvent: {}
+[7.267021] (CURL) StdoutLine: {'line': b"-- Checking for module 'libnghttp2'\n"}
+[7.274756] (CURL) StdoutLine: {'line': b"--   No package 'libnghttp2' found\n"}
+[7.297735] (CURL) StdoutLine: {'line': b'-- Could NOT find NGHTTP2 (missing: NGHTTP2_INCLUDE_DIR NGHTTP2_LIBRARY) \n'}
+[7.312565] (CURL) StdoutLine: {'line': b"-- Checking for module 'ldap'\n"}
+[7.318821] (CURL) StdoutLine: {'line': b"--   No package 'ldap' found\n"}
+[7.320952] (CURL) StdoutLine: {'line': b"-- Checking for module 'lber'\n"}
+[7.326644] (CURL) StdoutLine: {'line': b"--   No package 'lber' found\n"}
+[7.339332] (CURL) StdoutLine: {'line': b'-- Could NOT find LDAP (missing: LDAP_INCLUDE_DIR LDAP_LIBRARY LDAP_LBER_LIBRARY) \n'}
+[7.339808] (CURL) StdoutLine: {'line': b'-- LDAP not found. CURL_DISABLE_LDAP set ON\n'}
+[7.340035] (CURL) StdoutLine: {'line': b'-- LDAP needs to be enabled to support LDAPS\n'}
+[7.351557] (CURL) StdoutLine: {'line': b"-- Checking for module 'libidn2'\n"}
+[7.356884] (-) TimerEvent: {}
+[7.358244] (CURL) StdoutLine: {'line': b"--   No package 'libidn2' found\n"}
+[7.376109] (CURL) StdoutLine: {'line': b'-- Could NOT find Libidn2 (missing: LIBIDN2_INCLUDE_DIR LIBIDN2_LIBRARY) \n'}
+[7.389932] (CURL) StdoutLine: {'line': b"-- Checking for module 'libpsl'\n"}
+[7.398524] (CURL) StdoutLine: {'line': b"--   No package 'libpsl' found\n"}
+[7.413208] (CURL) StderrLine: {'line': b'\x1b[31mCMake Error at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:230 (message):\n'}
+[7.414016] (CURL) StderrLine: {'line': b'  Could NOT find Libpsl (missing: LIBPSL_INCLUDE_DIR LIBPSL_LIBRARY)\n'}
+[7.414341] (CURL) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[7.414624] (CURL) StderrLine: {'line': b'  /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:594 (_FPHSA_FAILURE_MESSAGE)\n'}
+[7.414891] (CURL) StderrLine: {'line': b'  CMake/FindLibpsl.cmake:69 (find_package_handle_standard_args)\n'}
+[7.415142] (CURL) StderrLine: {'line': b'  CMakeLists.txt:1295 (find_package)\n'}
+[7.415387] (CURL) StderrLine: {'line': b'\n'}
+[7.415627] (CURL) StderrLine: {'line': b'\x1b[0m\n'}
+[7.417162] (CURL) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[7.417707] (CURL) StdoutLine: {'line': b'See also "/home/lunabotics/2025-tibalt-bot/build/CURL/CMakeFiles/CMakeOutput.log".\n'}
+[7.417937] (CURL) StdoutLine: {'line': b'See also "/home/lunabotics/2025-tibalt-bot/build/CURL/CMakeFiles/CMakeError.log".\n'}
+[7.441685] (CURL) JobEnded: {'identifier': 'CURL', 'rc': 'SIGINT'}
+[7.446415] (base64) JobSkipped: {'identifier': 'base64'}
+[7.446577] (brotli) JobSkipped: {'identifier': 'brotli'}
+[7.446683] (cmake_install_test) JobSkipped: {'identifier': 'cmake_install_test'}
+[7.446765] (cmark-gfm) JobSkipped: {'identifier': 'cmark-gfm'}
+[7.446841] (control_msgs) JobSkipped: {'identifier': 'control_msgs'}
+[7.446915] (dragonbox) JobSkipped: {'identifier': 'dragonbox'}
+[7.446988] (imgui_example_glfw_vulkan) JobSkipped: {'identifier': 'imgui_example_glfw_vulkan'}
+[7.447063] (imgui_example_glfw_wgpu) JobSkipped: {'identifier': 'imgui_example_glfw_wgpu'}
+[7.447136] (koffi) JobSkipped: {'identifier': 'koffi'}
+[7.447209] (libblake3) JobSkipped: {'identifier': 'libblake3'}
+[7.447280] (libmimalloc) JobSkipped: {'identifier': 'libmimalloc'}
+[7.447352] (libssh) JobSkipped: {'identifier': 'libssh'}
+[7.447423] (mbedtls) JobSkipped: {'identifier': 'mbedtls'}
+[7.447493] (pugixml) JobSkipped: {'identifier': 'pugixml'}
+[7.447560] (raylib) JobSkipped: {'identifier': 'raylib'}
+[7.447628] (rlbox-sandboxing-api) JobSkipped: {'identifier': 'rlbox-sandboxing-api'}
+[7.447733] (rlbox_wasm2c) JobSkipped: {'identifier': 'rlbox_wasm2c'}
+[7.447813] (rover_control) JobSkipped: {'identifier': 'rover_control'}
+[7.447884] (zstd) JobSkipped: {'identifier': 'zstd'}
+[7.447955] (realsense2_camera) JobSkipped: {'identifier': 'realsense2_camera'}
+[7.448025] (realsense2_description) JobSkipped: {'identifier': 'realsense2_description'}
+[7.448097] (-) EventReactorShutdown: {}

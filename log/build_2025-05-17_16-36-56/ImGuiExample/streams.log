@@ -1,0 +1,17 @@
+[0.077s] Invoking command in '/home/lunabotics/2025-tibalt-bot/build/ImGuiExample': /usr/bin/cmake /home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/imgui/examples/example_android_opengl3 -DCMAKE_INSTALL_PREFIX=/home/lunabotics/2025-tibalt-bot/install/ImGuiExample
+[0.155s] -- Configuring done
+[0.157s] [31mCMake Error at CMakeLists.txt:9 (add_library):
+[0.158s]   Cannot find source file:
+[0.158s] 
+[0.158s]     /sources/android/native_app_glue/android_native_app_glue.c
+[0.158s] 
+[0.158s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+[0.170s]   .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+[0.172s] 
+[0.172s] [0m
+[0.173s] [31mCMake Error at CMakeLists.txt:9 (add_library):
+[0.173s]   No SOURCES given to target: ImGuiExample
+[0.173s] 
+[0.185s] [0m
+[0.185s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[0.210s] Invoked command in '/home/lunabotics/2025-tibalt-bot/build/ImGuiExample' returned '1': /usr/bin/cmake /home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/imgui/examples/example_android_opengl3 -DCMAKE_INSTALL_PREFIX=/home/lunabotics/2025-tibalt-bot/install/ImGuiExample

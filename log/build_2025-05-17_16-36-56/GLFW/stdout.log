@@ -1,0 +1,150 @@
+[  0%] [34m[1mGenerating fractional-scale-v1-client-protocol.h[0m
+[  1%] [34m[1mGenerating idle-inhibit-unstable-v1-client-protocol-code.h[0m
+[  2%] [34m[1mGenerating pointer-constraints-unstable-v1-client-protocol-code.h[0m
+[  3%] [34m[1mGenerating xdg-shell-client-protocol.h[0m
+[  4%] [34m[1mGenerating fractional-scale-v1-client-protocol-code.h[0m
+[  4%] [34m[1mGenerating idle-inhibit-unstable-v1-client-protocol.h[0m
+[  5%] [34m[1mGenerating pointer-constraints-unstable-v1-client-protocol.h[0m
+[  6%] [34m[1mGenerating relative-pointer-unstable-v1-client-protocol-code.h[0m
+[  7%] [34m[1mGenerating viewporter-client-protocol-code.h[0m
+[  8%] [34m[1mGenerating viewporter-client-protocol.h[0m
+[  9%] [34m[1mGenerating wayland-client-protocol.h[0m
+[ 10%] [34m[1mGenerating wayland-client-protocol-code.h[0m
+[ 12%] [34m[1mGenerating xdg-activation-v1-client-protocol-code.h[0m
+[ 12%] [34m[1mGenerating relative-pointer-unstable-v1-client-protocol.h[0m
+[ 13%] [34m[1mGenerating xdg-activation-v1-client-protocol.h[0m
+[ 14%] [34m[1mGenerating xdg-decoration-unstable-v1-client-protocol-code.h[0m
+[ 15%] [34m[1mGenerating xdg-shell-client-protocol-code.h[0m
+[ 16%] [34m[1mGenerating xdg-decoration-unstable-v1-client-protocol.h[0m
+[ 17%] [32mBuilding C object src/CMakeFiles/glfw.dir/context.c.o[0m
+[ 18%] [32mBuilding C object src/CMakeFiles/glfw.dir/init.c.o[0m
+[ 18%] [32mBuilding C object src/CMakeFiles/glfw.dir/input.c.o[0m
+[ 19%] [32mBuilding C object src/CMakeFiles/glfw.dir/platform.c.o[0m
+[ 20%] [32mBuilding C object src/CMakeFiles/glfw.dir/monitor.c.o[0m
+[ 21%] [32mBuilding C object src/CMakeFiles/glfw.dir/vulkan.c.o[0m
+[ 21%] [32mBuilding C object src/CMakeFiles/glfw.dir/window.c.o[0m
+[ 22%] [32mBuilding C object src/CMakeFiles/glfw.dir/egl_context.c.o[0m
+[ 23%] [32mBuilding C object src/CMakeFiles/glfw.dir/osmesa_context.c.o[0m
+[ 24%] [32mBuilding C object src/CMakeFiles/glfw.dir/null_init.c.o[0m
+[ 25%] [32mBuilding C object src/CMakeFiles/glfw.dir/null_monitor.c.o[0m
+[ 26%] [32mBuilding C object src/CMakeFiles/glfw.dir/null_window.c.o[0m
+[ 27%] [32mBuilding C object src/CMakeFiles/glfw.dir/null_joystick.c.o[0m
+[ 27%] [32mBuilding C object src/CMakeFiles/glfw.dir/posix_module.c.o[0m
+[ 28%] [32mBuilding C object src/CMakeFiles/glfw.dir/posix_time.c.o[0m
+[ 29%] [32mBuilding C object src/CMakeFiles/glfw.dir/posix_thread.c.o[0m
+[ 30%] [32mBuilding C object src/CMakeFiles/glfw.dir/x11_init.c.o[0m
+[ 31%] [32mBuilding C object src/CMakeFiles/glfw.dir/x11_monitor.c.o[0m
+[ 32%] [32mBuilding C object src/CMakeFiles/glfw.dir/x11_window.c.o[0m
+[ 32%] [32mBuilding C object src/CMakeFiles/glfw.dir/xkb_unicode.c.o[0m
+[ 33%] [32mBuilding C object src/CMakeFiles/glfw.dir/wl_init.c.o[0m
+[ 34%] [32mBuilding C object src/CMakeFiles/glfw.dir/glx_context.c.o[0m
+[ 35%] [32mBuilding C object src/CMakeFiles/glfw.dir/wl_monitor.c.o[0m
+[ 36%] [32mBuilding C object src/CMakeFiles/glfw.dir/wl_window.c.o[0m
+[ 37%] [32mBuilding C object src/CMakeFiles/glfw.dir/linux_joystick.c.o[0m
+[ 37%] [32mBuilding C object src/CMakeFiles/glfw.dir/posix_poll.c.o[0m
+[ 38%] [32m[1mLinking C static library libglfw3.a[0m
+[ 38%] Built target glfw
+[ 39%] [32mBuilding C object examples/CMakeFiles/gears.dir/gears.c.o[0m
+[ 40%] [32mBuilding C object examples/CMakeFiles/boing.dir/boing.c.o[0m
+[ 40%] [32m[1mLinking C executable gears[0m
+[ 41%] [32m[1mLinking C executable boing[0m
+[ 41%] Built target gears
+[ 41%] [32mBuilding C object examples/CMakeFiles/sharing.dir/sharing.c.o[0m
+[ 41%] Built target boing
+[ 41%] [32mBuilding C object examples/CMakeFiles/particles.dir/particles.c.o[0m
+[ 42%] [32mBuilding C object examples/CMakeFiles/splitview.dir/splitview.c.o[0m
+[ 43%] [32m[1mLinking C executable sharing[0m
+[ 43%] Built target sharing
+[ 44%] [32mBuilding C object examples/CMakeFiles/particles.dir/__/deps/tinycthread.c.o[0m
+[ 44%] [32mBuilding C object examples/CMakeFiles/triangle-opengl.dir/triangle-opengl.c.o[0m
+[ 45%] [32m[1mLinking C executable splitview[0m
+[ 46%] [32mBuilding C object examples/CMakeFiles/offscreen.dir/offscreen.c.o[0m
+[ 47%] [32mBuilding C object examples/CMakeFiles/particles.dir/__/deps/getopt.c.o[0m
+[ 47%] Built target splitview
+[ 48%] [32m[1mLinking C executable particles[0m
+[ 49%] [32m[1mLinking C executable triangle-opengl[0m
+[ 50%] [32mBuilding C object examples/CMakeFiles/triangle-opengles.dir/triangle-opengles.c.o[0m
+[ 50%] Built target particles
+[ 51%] [32mBuilding C object examples/CMakeFiles/wave.dir/wave.c.o[0m
+[ 51%] Built target triangle-opengl
+[ 52%] [32mBuilding C object examples/CMakeFiles/heightmap.dir/heightmap.c.o[0m
+[ 53%] [32m[1mLinking C executable triangle-opengles[0m
+[ 54%] [32mBuilding C object examples/CMakeFiles/windows.dir/windows.c.o[0m
+[ 55%] [32m[1mLinking C executable offscreen[0m
+[ 55%] Built target offscreen
+[ 55%] Built target triangle-opengles
+[ 56%] [32m[1mLinking C executable wave[0m
+[ 56%] [32m[1mLinking C executable heightmap[0m
+[ 57%] [32m[1mLinking C executable windows[0m
+[ 57%] Built target heightmap
+[ 57%] Built target wave
+[ 57%] Built target windows
+[ 58%] [32mBuilding C object tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.o[0m
+[ 59%] [32mBuilding C object tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o[0m
+[ 60%] [32m[1mLinking C executable glfwinfo[0m
+[ 60%] Built target glfwinfo
+[ 61%] [32mBuilding C object tests/CMakeFiles/iconify.dir/iconify.c.o[0m
+[ 62%] [32mBuilding C object tests/CMakeFiles/iconify.dir/__/deps/getopt.c.o[0m
+[ 63%] [32m[1mLinking C executable iconify[0m
+[ 63%] Built target iconify
+[ 64%] [32mBuilding C object tests/CMakeFiles/monitors.dir/monitors.c.o[0m
+[ 65%] [32mBuilding C object tests/CMakeFiles/monitors.dir/__/deps/getopt.c.o[0m
+[ 65%] [32m[1mLinking C executable monitors[0m
+[ 65%] Built target monitors
+[ 66%] [32mBuilding C object tests/CMakeFiles/reopen.dir/reopen.c.o[0m
+[ 67%] [32m[1mLinking C executable reopen[0m
+[ 67%] Built target reopen
+[ 68%] [32mBuilding C object tests/CMakeFiles/cursor.dir/cursor.c.o[0m
+[ 69%] [32m[1mLinking C executable cursor[0m
+[ 69%] Built target cursor
+[ 70%] [32mBuilding C object tests/CMakeFiles/empty.dir/empty.c.o[0m
+[ 71%] [32mBuilding C object tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.o[0m
+[ 72%] [32m[1mLinking C executable empty[0m
+[ 72%] Built target empty
+[ 73%] [32mBuilding C object tests/CMakeFiles/gamma.dir/gamma.c.o[0m
+[ 74%] [32m[1mLinking C executable gamma[0m
+[ 74%] Built target gamma
+[ 75%] [32mBuilding C object tests/CMakeFiles/icon.dir/icon.c.o[0m
+[ 76%] [32m[1mLinking C executable icon[0m
+[ 76%] Built target icon
+[ 77%] [32mBuilding C object tests/CMakeFiles/inputlag.dir/inputlag.c.o[0m
+[ 78%] [32mBuilding C object tests/CMakeFiles/msaa.dir/msaa.c.o[0m
+[ 79%] [32mBuilding C object tests/CMakeFiles/msaa.dir/__/deps/getopt.c.o[0m
+[ 80%] [32m[1mLinking C executable msaa[0m
+[ 80%] Built target msaa
+[ 80%] [32mBuilding C object tests/CMakeFiles/inputlag.dir/__/deps/getopt.c.o[0m
+[ 81%] [32mBuilding C object tests/CMakeFiles/joysticks.dir/joysticks.c.o[0m
+[ 81%] [32mBuilding C object tests/CMakeFiles/events.dir/events.c.o[0m
+[ 82%] [32mBuilding C object tests/CMakeFiles/events.dir/__/deps/getopt.c.o[0m
+[ 83%] [32m[1mLinking C executable events[0m
+[ 83%] Built target events
+[ 84%] [32mBuilding C object tests/CMakeFiles/tearing.dir/tearing.c.o[0m
+[ 85%] [32mBuilding C object tests/CMakeFiles/clipboard.dir/clipboard.c.o[0m
+[ 86%] [32m[1mLinking C executable tearing[0m
+[ 87%] [32mBuilding C object tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.o[0m
+[ 87%] [32m[1mLinking C executable clipboard[0m
+[ 87%] Built target tearing
+[ 87%] [32mBuilding C object tests/CMakeFiles/allocator.dir/allocator.c.o[0m
+[ 88%] [32mBuilding C object tests/CMakeFiles/threads.dir/threads.c.o[0m
+[ 88%] Built target clipboard
+[ 88%] [32mBuilding C object tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.o[0m
+[ 89%] [32mBuilding C object tests/CMakeFiles/timeout.dir/timeout.c.o[0m
+[ 90%] [32m[1mLinking C executable allocator[0m
+[ 90%] Built target allocator
+[ 91%] [32mBuilding C object tests/CMakeFiles/title.dir/title.c.o[0m
+[ 92%] [32mBuilding C object tests/CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.o[0m
+[ 93%] [32m[1mLinking C executable timeout[0m
+[ 94%] [32m[1mLinking C executable threads[0m
+[ 94%] Built target timeout
+[ 94%] Built target threads
+[ 95%] [32m[1mLinking C executable title[0m
+[ 95%] Built target title
+[ 96%] [32m[1mLinking C executable triangle-vulkan[0m
+[ 96%] Built target triangle-vulkan
+[ 97%] [32m[1mLinking C executable inputlag[0m
+[ 97%] Built target inputlag
+[ 98%] [32m[1mLinking C executable joysticks[0m
+[ 98%] Built target joysticks
+[ 99%] [32mBuilding C object tests/CMakeFiles/window.dir/window.c.o[0m
+[100%] [32m[1mLinking C executable window[0m
+[100%] Built target window

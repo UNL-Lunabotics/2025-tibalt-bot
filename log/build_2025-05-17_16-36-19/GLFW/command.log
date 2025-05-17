@@ -1,0 +1,1 @@
+Invoking command in '/home/lunabotics/2025-tibalt-bot/build/GLFW': /usr/bin/cmake /home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/glfw -DCMAKE_INSTALL_PREFIX=/home/lunabotics/2025-tibalt-bot/install/GLFW

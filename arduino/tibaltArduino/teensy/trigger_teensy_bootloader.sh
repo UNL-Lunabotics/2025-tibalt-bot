@@ -1,8 +1,9 @@
 #!/bin/bash
 
 # Example using gpiochip1 line 6 (PIN18)
-CHIP=gpiochip1
-LINE=6
+CHIP=gpiochip0
+LINE=80
+
 
 echo "[INFO] Triggering Teensy PROG pin via GPIO $CHIP line $LINE"
 
@@ -14,3 +15,4 @@ sleep 0.25
 gpioset $CHIP $LINE=1
 
 echo "[INFO] Bootloader triggered"
+

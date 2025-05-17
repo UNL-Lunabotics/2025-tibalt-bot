@@ -1,0 +1,25 @@
+[  4%] [32mBuilding C object CMakeFiles/lz4cli.dir/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/lz4/programs/bench.c.o[0m
+[  9%] [32mBuilding C object CMakeFiles/lz4cli.dir/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/lz4/programs/lorem.c.o[0m
+[ 14%] [32mBuilding C object CMakeFiles/lz4cli.dir/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/lz4/programs/lz4cli.c.o[0m
+[ 19%] [32mBuilding C object CMakeFiles/lz4cli.dir/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/lz4/programs/threadpool.c.o[0m
+[ 23%] [32mBuilding C object CMakeFiles/lz4cli.dir/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/lz4/programs/lz4io.c.o[0m
+[ 28%] [32mBuilding C object CMakeFiles/lz4_shared.dir/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/lz4/lib/lz4.c.o[0m
+[ 33%] [32mBuilding C object CMakeFiles/lz4cli.dir/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/lz4/programs/timefn.c.o[0m
+[ 38%] [32mBuilding C object CMakeFiles/lz4cli.dir/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/lz4/programs/util.c.o[0m
+[ 42%] [32mBuilding C object CMakeFiles/lz4cli.dir/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/lz4/lib/lz4.c.o[0m
+[ 52%] [32mBuilding C object CMakeFiles/lz4cli.dir/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/lz4/lib/lz4file.c.o[0m
+[ 52%] [32mBuilding C object CMakeFiles/lz4cli.dir/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/lz4/lib/lz4frame.c.o[0m
+[ 57%] [32mBuilding C object CMakeFiles/lz4cli.dir/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/lz4/lib/lz4hc.c.o[0m
+[ 61%] [32mBuilding C object CMakeFiles/lz4cli.dir/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/lz4/lib/xxhash.c.o[0m
+[ 66%] [32mBuilding C object CMakeFiles/lz4_shared.dir/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/lz4/lib/lz4file.c.o[0m
+[ 71%] [32mBuilding C object CMakeFiles/lz4_shared.dir/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/lz4/lib/lz4frame.c.o[0m
+[ 76%] [32mBuilding C object CMakeFiles/lz4_shared.dir/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/lz4/lib/xxhash.c.o[0m
+[ 80%] [32mBuilding C object CMakeFiles/lz4_shared.dir/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/lz4/lib/lz4hc.c.o[0m
+[ 85%] [32m[1mLinking C shared library liblz4.so[0m
+[ 90%] [32m[1mLinking C executable lz4[0m
+[ 90%] Built target lz4_shared
+[ 90%] Built target lz4cli
+[ 95%] [34m[1mCreating symlink for unlz4[0m
+[100%] [34m[1mCreating symlink for lz4cat[0m
+[100%] Built target create_lz4cat_symlink
+[100%] Built target create_unlz4_symlink

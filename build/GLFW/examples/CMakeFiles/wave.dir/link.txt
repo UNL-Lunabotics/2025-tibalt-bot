@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/wave.dir/wave.c.o -o wave  ../src/libglfw3.a /usr/lib/aarch64-linux-gnu/libm.so /usr/lib/aarch64-linux-gnu/librt.a /usr/lib/aarch64-linux-gnu/libm.so -ldl 

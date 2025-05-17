@@ -1,0 +1,151 @@
+[0.072s] Invoking command in '/home/lunabotics/2025-tibalt-bot/build/GLFW': /usr/bin/cmake --build /home/lunabotics/2025-tibalt-bot/build/GLFW -- -j6 -l6
+[0.236s] [  0%] [34m[1mGenerating fractional-scale-v1-client-protocol.h[0m
+[0.274s] [  1%] [34m[1mGenerating idle-inhibit-unstable-v1-client-protocol-code.h[0m
+[0.276s] [  2%] [34m[1mGenerating pointer-constraints-unstable-v1-client-protocol-code.h[0m
+[0.282s] [  3%] [34m[1mGenerating xdg-shell-client-protocol.h[0m
+[0.290s] [  4%] [34m[1mGenerating fractional-scale-v1-client-protocol-code.h[0m
+[0.307s] [  4%] [34m[1mGenerating idle-inhibit-unstable-v1-client-protocol.h[0m
+[0.357s] [  5%] [34m[1mGenerating pointer-constraints-unstable-v1-client-protocol.h[0m
+[0.397s] [  6%] [34m[1mGenerating relative-pointer-unstable-v1-client-protocol-code.h[0m
+[0.442s] [  7%] [34m[1mGenerating viewporter-client-protocol-code.h[0m
+[0.471s] [  8%] [34m[1mGenerating viewporter-client-protocol.h[0m
+[0.489s] [  9%] [34m[1mGenerating wayland-client-protocol.h[0m
+[0.504s] [ 10%] [34m[1mGenerating wayland-client-protocol-code.h[0m
+[0.590s] [ 12%] [34m[1mGenerating xdg-activation-v1-client-protocol-code.h[0m
+[0.624s] [ 12%] [34m[1mGenerating relative-pointer-unstable-v1-client-protocol.h[0m
+[0.757s] [ 13%] [34m[1mGenerating xdg-activation-v1-client-protocol.h[0m
+[0.807s] [ 14%] [34m[1mGenerating xdg-decoration-unstable-v1-client-protocol-code.h[0m
+[0.823s] [ 15%] [34m[1mGenerating xdg-shell-client-protocol-code.h[0m
+[0.884s] [ 16%] [34m[1mGenerating xdg-decoration-unstable-v1-client-protocol.h[0m
+[1.354s] [ 17%] [32mBuilding C object src/CMakeFiles/glfw.dir/context.c.o[0m
+[1.355s] [ 18%] [32mBuilding C object src/CMakeFiles/glfw.dir/init.c.o[0m
+[1.362s] [ 18%] [32mBuilding C object src/CMakeFiles/glfw.dir/input.c.o[0m
+[1.417s] [ 19%] [32mBuilding C object src/CMakeFiles/glfw.dir/platform.c.o[0m
+[1.417s] [ 20%] [32mBuilding C object src/CMakeFiles/glfw.dir/monitor.c.o[0m
+[1.438s] [ 21%] [32mBuilding C object src/CMakeFiles/glfw.dir/vulkan.c.o[0m
+[2.899s] [ 21%] [32mBuilding C object src/CMakeFiles/glfw.dir/window.c.o[0m
+[2.947s] [ 22%] [32mBuilding C object src/CMakeFiles/glfw.dir/egl_context.c.o[0m
+[3.023s] [ 23%] [32mBuilding C object src/CMakeFiles/glfw.dir/osmesa_context.c.o[0m
+[3.172s] [ 24%] [32mBuilding C object src/CMakeFiles/glfw.dir/null_init.c.o[0m
+[3.858s] [ 25%] [32mBuilding C object src/CMakeFiles/glfw.dir/null_monitor.c.o[0m
+[3.897s] [ 26%] [32mBuilding C object src/CMakeFiles/glfw.dir/null_window.c.o[0m
+[4.281s] [ 27%] [32mBuilding C object src/CMakeFiles/glfw.dir/null_joystick.c.o[0m
+[4.383s] [ 27%] [32mBuilding C object src/CMakeFiles/glfw.dir/posix_module.c.o[0m
+[4.471s] [ 28%] [32mBuilding C object src/CMakeFiles/glfw.dir/posix_time.c.o[0m
+[4.532s] [ 29%] [32mBuilding C object src/CMakeFiles/glfw.dir/posix_thread.c.o[0m
+[4.813s] [ 30%] [32mBuilding C object src/CMakeFiles/glfw.dir/x11_init.c.o[0m
+[5.029s] [ 31%] [32mBuilding C object src/CMakeFiles/glfw.dir/x11_monitor.c.o[0m
+[5.146s] [ 32%] [32mBuilding C object src/CMakeFiles/glfw.dir/x11_window.c.o[0m
+[5.215s] [ 32%] [32mBuilding C object src/CMakeFiles/glfw.dir/xkb_unicode.c.o[0m
+[5.504s] [ 33%] [32mBuilding C object src/CMakeFiles/glfw.dir/wl_init.c.o[0m
+[5.586s] [ 34%] [32mBuilding C object src/CMakeFiles/glfw.dir/glx_context.c.o[0m
+[5.862s] [ 35%] [32mBuilding C object src/CMakeFiles/glfw.dir/wl_monitor.c.o[0m
+[5.940s] [ 36%] [32mBuilding C object src/CMakeFiles/glfw.dir/wl_window.c.o[0m
+[5.970s] [ 37%] [32mBuilding C object src/CMakeFiles/glfw.dir/linux_joystick.c.o[0m
+[6.724s] [ 37%] [32mBuilding C object src/CMakeFiles/glfw.dir/posix_poll.c.o[0m
+[8.119s] [ 38%] [32m[1mLinking C static library libglfw3.a[0m
+[9.755s] [ 38%] Built target glfw
+[9.915s] [ 39%] [32mBuilding C object examples/CMakeFiles/gears.dir/gears.c.o[0m
+[9.917s] [ 40%] [32mBuilding C object examples/CMakeFiles/boing.dir/boing.c.o[0m
+[10.491s] [ 40%] [32m[1mLinking C executable gears[0m
+[10.575s] [ 41%] [32m[1mLinking C executable boing[0m
+[10.758s] [ 41%] Built target gears
+[10.850s] [ 41%] [32mBuilding C object examples/CMakeFiles/sharing.dir/sharing.c.o[0m
+[10.860s] [ 41%] Built target boing
+[10.919s] [ 41%] [32mBuilding C object examples/CMakeFiles/particles.dir/particles.c.o[0m
+[11.107s] [ 42%] [32mBuilding C object examples/CMakeFiles/splitview.dir/splitview.c.o[0m
+[11.510s] [ 43%] [32m[1mLinking C executable sharing[0m
+[11.841s] [ 43%] Built target sharing
+[11.872s] [ 44%] [32mBuilding C object examples/CMakeFiles/particles.dir/__/deps/tinycthread.c.o[0m
+[11.905s] [ 44%] [32mBuilding C object examples/CMakeFiles/triangle-opengl.dir/triangle-opengl.c.o[0m
+[11.921s] [ 45%] [32m[1mLinking C executable splitview[0m
+[11.944s] [ 46%] [32mBuilding C object examples/CMakeFiles/offscreen.dir/offscreen.c.o[0m
+[12.184s] [ 47%] [32mBuilding C object examples/CMakeFiles/particles.dir/__/deps/getopt.c.o[0m
+[12.341s] [ 47%] Built target splitview
+[12.371s] [ 48%] [32m[1mLinking C executable particles[0m
+[12.485s] [ 49%] [32m[1mLinking C executable triangle-opengl[0m
+[12.544s] [ 50%] [32mBuilding C object examples/CMakeFiles/triangle-opengles.dir/triangle-opengles.c.o[0m
+[12.624s] [ 50%] Built target particles
+[12.740s] [ 51%] [32mBuilding C object examples/CMakeFiles/wave.dir/wave.c.o[0m
+[12.755s] [ 51%] Built target triangle-opengl
+[12.837s] [ 52%] [32mBuilding C object examples/CMakeFiles/heightmap.dir/heightmap.c.o[0m
+[12.873s] [ 53%] [32m[1mLinking C executable triangle-opengles[0m
+[12.910s] [ 54%] [32mBuilding C object examples/CMakeFiles/windows.dir/windows.c.o[0m
+[13.019s] [ 55%] [32m[1mLinking C executable offscreen[0m
+[13.443s] [ 55%] Built target offscreen
+[13.554s] [ 55%] Built target triangle-opengles
+[13.613s] [ 56%] [32m[1mLinking C executable wave[0m
+[13.630s] [ 56%] [32m[1mLinking C executable heightmap[0m
+[13.664s] [ 57%] [32m[1mLinking C executable windows[0m
+[13.807s] [ 57%] Built target heightmap
+[13.812s] [ 57%] Built target wave
+[13.888s] [ 57%] Built target windows
+[13.957s] [ 58%] [32mBuilding C object tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.o[0m
+[14.667s] [ 59%] [32mBuilding C object tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o[0m
+[14.777s] [ 60%] [32m[1mLinking C executable glfwinfo[0m
+[15.007s] [ 60%] Built target glfwinfo
+[15.079s] [ 61%] [32mBuilding C object tests/CMakeFiles/iconify.dir/iconify.c.o[0m
+[15.560s] [ 62%] [32mBuilding C object tests/CMakeFiles/iconify.dir/__/deps/getopt.c.o[0m
+[15.671s] [ 63%] [32m[1mLinking C executable iconify[0m
+[15.892s] [ 63%] Built target iconify
+[15.967s] [ 64%] [32mBuilding C object tests/CMakeFiles/monitors.dir/monitors.c.o[0m
+[16.400s] [ 65%] [32mBuilding C object tests/CMakeFiles/monitors.dir/__/deps/getopt.c.o[0m
+[16.507s] [ 65%] [32m[1mLinking C executable monitors[0m
+[16.663s] [ 65%] Built target monitors
+[16.728s] [ 66%] [32mBuilding C object tests/CMakeFiles/reopen.dir/reopen.c.o[0m
+[17.177s] [ 67%] [32m[1mLinking C executable reopen[0m
+[17.331s] [ 67%] Built target reopen
+[17.392s] [ 68%] [32mBuilding C object tests/CMakeFiles/cursor.dir/cursor.c.o[0m
+[17.860s] [ 69%] [32m[1mLinking C executable cursor[0m
+[18.006s] [ 69%] Built target cursor
+[18.066s] [ 70%] [32mBuilding C object tests/CMakeFiles/empty.dir/empty.c.o[0m
+[18.505s] [ 71%] [32mBuilding C object tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.o[0m
+[18.638s] [ 72%] [32m[1mLinking C executable empty[0m
+[18.825s] [ 72%] Built target empty
+[18.901s] [ 73%] [32mBuilding C object tests/CMakeFiles/gamma.dir/gamma.c.o[0m
+[22.949s] [ 74%] [32m[1mLinking C executable gamma[0m
+[23.132s] [ 74%] Built target gamma
+[23.198s] [ 75%] [32mBuilding C object tests/CMakeFiles/icon.dir/icon.c.o[0m
+[23.586s] [ 76%] [32m[1mLinking C executable icon[0m
+[23.746s] [ 76%] Built target icon
+[23.791s] [ 77%] [32mBuilding C object tests/CMakeFiles/inputlag.dir/inputlag.c.o[0m
+[23.811s] [ 78%] [32mBuilding C object tests/CMakeFiles/msaa.dir/msaa.c.o[0m
+[24.342s] [ 79%] [32mBuilding C object tests/CMakeFiles/msaa.dir/__/deps/getopt.c.o[0m
+[24.474s] [ 80%] [32m[1mLinking C executable msaa[0m
+[24.666s] [ 80%] Built target msaa
+[24.695s] [ 80%] [32mBuilding C object tests/CMakeFiles/inputlag.dir/__/deps/getopt.c.o[0m
+[24.713s] [ 81%] [32mBuilding C object tests/CMakeFiles/joysticks.dir/joysticks.c.o[0m
+[24.768s] [ 81%] [32mBuilding C object tests/CMakeFiles/events.dir/events.c.o[0m
+[25.294s] [ 82%] [32mBuilding C object tests/CMakeFiles/events.dir/__/deps/getopt.c.o[0m
+[25.463s] [ 83%] [32m[1mLinking C executable events[0m
+[25.642s] [ 83%] Built target events
+[25.741s] [ 84%] [32mBuilding C object tests/CMakeFiles/tearing.dir/tearing.c.o[0m
+[25.812s] [ 85%] [32mBuilding C object tests/CMakeFiles/clipboard.dir/clipboard.c.o[0m
+[26.377s] [ 86%] [32m[1mLinking C executable tearing[0m
+[26.386s] [ 87%] [32mBuilding C object tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.o[0m
+[26.596s] [ 87%] [32m[1mLinking C executable clipboard[0m
+[26.710s] [ 87%] Built target tearing
+[26.786s] [ 87%] [32mBuilding C object tests/CMakeFiles/allocator.dir/allocator.c.o[0m
+[26.884s] [ 88%] [32mBuilding C object tests/CMakeFiles/threads.dir/threads.c.o[0m
+[27.005s] [ 88%] Built target clipboard
+[27.083s] [ 88%] [32mBuilding C object tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.o[0m
+[27.191s] [ 89%] [32mBuilding C object tests/CMakeFiles/timeout.dir/timeout.c.o[0m
+[27.289s] [ 90%] [32m[1mLinking C executable allocator[0m
+[27.712s] [ 90%] Built target allocator
+[27.811s] [ 91%] [32mBuilding C object tests/CMakeFiles/title.dir/title.c.o[0m
+[27.942s] [ 92%] [32mBuilding C object tests/CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.o[0m
+[27.955s] [ 93%] [32m[1mLinking C executable timeout[0m
+[28.110s] [ 94%] [32m[1mLinking C executable threads[0m
+[28.446s] [ 94%] Built target timeout
+[28.541s] [ 94%] Built target threads
+[28.570s] [ 95%] [32m[1mLinking C executable title[0m
+[28.738s] [ 95%] Built target title
+[28.781s] [ 96%] [32m[1mLinking C executable triangle-vulkan[0m
+[29.002s] [ 96%] Built target triangle-vulkan
+[29.067s] [ 97%] [32m[1mLinking C executable inputlag[0m
+[29.268s] [ 97%] Built target inputlag
+[29.853s] [ 98%] [32m[1mLinking C executable joysticks[0m
+[30.012s] [ 98%] Built target joysticks
+[30.073s] [ 99%] [32mBuilding C object tests/CMakeFiles/window.dir/window.c.o[0m
+[34.150s] [100%] [32m[1mLinking C executable window[0m
+[34.335s] [100%] Built target window

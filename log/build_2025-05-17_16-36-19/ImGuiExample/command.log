@@ -1,0 +1,2 @@
+Invoking command in '/home/lunabotics/2025-tibalt-bot/build/ImGuiExample': /usr/bin/cmake /home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/imgui/examples/example_android_opengl3 -DCMAKE_INSTALL_PREFIX=/home/lunabotics/2025-tibalt-bot/install/ImGuiExample
+Invoked command in '/home/lunabotics/2025-tibalt-bot/build/ImGuiExample' returned '1': /usr/bin/cmake /home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/imgui/examples/example_android_opengl3 -DCMAKE_INSTALL_PREFIX=/home/lunabotics/2025-tibalt-bot/install/ImGuiExample

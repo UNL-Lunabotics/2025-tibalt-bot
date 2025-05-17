@@ -1,0 +1,11 @@
+prefix=/home/lunabotics/2025-tibalt-bot/install/FMT
+exec_prefix=/home/lunabotics/2025-tibalt-bot/install/FMT
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: fmt
+Description: A modern formatting library
+Version: 7.0.0
+Libs: -L${libdir} -lfmt
+Cflags: -I${includedir}
+

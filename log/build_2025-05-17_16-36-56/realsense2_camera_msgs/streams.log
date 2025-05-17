@@ -1,0 +1,23 @@
+[0.077s] Invoking command in '/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs -- -j6 -l6
+[0.309s] [ 11%] Built target realsense2_camera_msgs__rosidl_generator_c
+[0.329s] [ 12%] Built target realsense2_camera_msgs__cpp
+[0.494s] [ 23%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_c
+[0.548s] [ 34%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_cpp
+[0.572s] [ 46%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp
+[0.622s] [ 46%] Built target ament_cmake_python_copy_realsense2_camera_msgs
+[0.659s] [ 57%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c
+[0.677s] [ 68%] Built target realsense2_camera_msgs__rosidl_typesupport_c
+[0.841s] [ 79%] Built target realsense2_camera_msgs__rosidl_typesupport_cpp
+[1.240s] [ 79%] Built target realsense2_camera_msgs
+[1.588s] [ 80%] Built target realsense2_camera_msgs__py
+[1.904s] [ 90%] Built target realsense2_camera_msgs__rosidl_generator_py
+[2.384s] [ 93%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c__pyext
+[2.385s] [ 96%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_c__pyext
+[2.398s] [100%] Built target realsense2_camera_msgs__rosidl_typesupport_c__pyext
+[3.593s] running egg_info
+[3.621s] writing realsense2_camera_msgs.egg-info/PKG-INFO
+[3.629s] writing dependency_links to realsense2_camera_msgs.egg-info/dependency_links.txt
+[3.629s] writing top-level names to realsense2_camera_msgs.egg-info/top_level.txt
+[3.652s] reading manifest file 'realsense2_camera_msgs.egg-info/SOURCES.txt'
+[3.656s] writing manifest file 'realsense2_camera_msgs.egg-info/SOURCES.txt'
+[3.904s] [100%] Built target ament_cmake_python_build_realsense2_camera_msgs_egg

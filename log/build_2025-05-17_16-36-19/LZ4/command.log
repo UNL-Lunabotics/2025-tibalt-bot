@@ -1,0 +1,1 @@
+Invoking command in '/home/lunabotics/2025-tibalt-bot/build/LZ4': /usr/bin/cmake /home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/lz4/build/cmake -DCMAKE_INSTALL_PREFIX=/home/lunabotics/2025-tibalt-bot/install/LZ4

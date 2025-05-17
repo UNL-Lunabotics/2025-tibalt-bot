@@ -1,0 +1,1 @@
+Invoking command in '/home/lunabotics/2025-tibalt-bot/build/FMT': /usr/bin/cmake /home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/fmt -DCMAKE_INSTALL_PREFIX=/home/lunabotics/2025-tibalt-bot/install/FMT

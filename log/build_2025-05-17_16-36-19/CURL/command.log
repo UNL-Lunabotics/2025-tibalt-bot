@@ -1,0 +1,1 @@
+Invoking command in '/home/lunabotics/2025-tibalt-bot/build/CURL': /usr/bin/cmake /home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/curl -DCMAKE_INSTALL_PREFIX=/home/lunabotics/2025-tibalt-bot/install/CURL

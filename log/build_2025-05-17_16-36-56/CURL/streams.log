@@ -1,0 +1,20 @@
+[0.068s] Invoking command in '/home/lunabotics/2025-tibalt-bot/build/CURL': /usr/bin/cmake /home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/curl -DCMAKE_INSTALL_PREFIX=/home/lunabotics/2025-tibalt-bot/install/CURL
+[0.138s] -- Using CMake version 3.22.1
+[0.138s] -- curl version=[8.12.1]
+[0.138s] -- CMake platform flags: UNIX GCC
+[0.138s] -- Picky compiler options: -Werror-implicit-function-declaration -W -Wall -pedantic -Wbad-function-cast -Wconversion -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Waddress -Wattributes -Wcast-align -Wdeclaration-after-statement -Wdiv-by-zero -Wempty-body -Wendif-labels -Wfloat-equal -Wformat-security -Wignored-qualifiers -Wmissing-field-initializers -Wmissing-noreturn -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wold-style-definition -Wredundant-decls -Wstrict-prototypes -Wtype-limits -Wunreachable-code -Wunused-parameter -Wvla -Wclobbered -Wmissing-parameter-type -Wold-style-declaration -Wpragmas -Wstrict-aliasing=3 -Wdouble-promotion -Wformat=2 -Wtrampolines -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Wunused-const-variable -Walloc-zero -Wduplicated-branches -Wformat-truncation=2 -Wimplicit-fallthrough -Wrestrict -Warith-conversion -Wenum-conversion
+[0.247s] -- Found Brotli (via pkg-config):  (found version "1.0.9")
+[0.301s] -- Found Zstd (via pkg-config):  (found version "1.4.8")
+[0.370s] -- Could NOT find NGHTTP2 (missing: NGHTTP2_INCLUDE_DIR NGHTTP2_LIBRARY) 
+[0.419s] -- Could NOT find Libidn2 (missing: LIBIDN2_INCLUDE_DIR LIBIDN2_LIBRARY) 
+[0.457s] [31mCMake Error at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:230 (message):
+[0.458s]   Could NOT find Libpsl (missing: LIBPSL_INCLUDE_DIR LIBPSL_LIBRARY)
+[0.458s] Call Stack (most recent call first):
+[0.458s]   /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:594 (_FPHSA_FAILURE_MESSAGE)
+[0.459s]   CMake/FindLibpsl.cmake:69 (find_package_handle_standard_args)
+[0.459s]   CMakeLists.txt:1295 (find_package)
+[0.459s] 
+[0.459s] [0m
+[0.482s] -- Configuring incomplete, errors occurred!
+[0.482s] See also "/home/lunabotics/2025-tibalt-bot/build/CURL/CMakeFiles/CMakeOutput.log".
+[0.483s] See also "/home/lunabotics/2025-tibalt-bot/build/CURL/CMakeFiles/CMakeError.log".

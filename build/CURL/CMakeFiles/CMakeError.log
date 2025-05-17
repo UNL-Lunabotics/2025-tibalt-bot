@@ -1,0 +1,113 @@
+Determining if the function connect exists in the socket failed with the following output:
+Change Dir: /home/lunabotics/2025-tibalt-bot/build/CURL/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_39d8e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_39d8e.dir/build.make CMakeFiles/cmTC_39d8e.dir/build
+gmake[1]: Entering directory '/home/lunabotics/2025-tibalt-bot/build/CURL/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_39d8e.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Werror-implicit-function-declaration -W -Wall -pedantic -Wbad-function-cast -Wconversion -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Waddress -Wattributes -Wcast-align -Wdeclaration-after-statement -Wdiv-by-zero -Wempty-body -Wendif-labels -Wfloat-equal -Wformat-security -Wignored-qualifiers -Wmissing-field-initializers -Wmissing-noreturn -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wold-style-definition -Wredundant-decls -Wstrict-prototypes -Wtype-limits -Wunreachable-code -Wunused-parameter -Wvla -Wclobbered -Wmissing-parameter-type -Wold-style-declaration -Wpragmas -Wstrict-aliasing=3 -Wdouble-promotion -Wformat=2 -Wtrampolines -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Wunused-const-variable -Walloc-zero -Wduplicated-branches -Wformat-truncation=2 -Wimplicit-fallthrough -Wrestrict -Warith-conversion -Wenum-conversion -D_GNU_SOURCE -DCHECK_FUNCTION_EXISTS=connect -o CMakeFiles/cmTC_39d8e.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_39d8e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_39d8e.dir/link.txt --verbose=1
+/usr/bin/cc  -Werror-implicit-function-declaration -W -Wall -pedantic -Wbad-function-cast -Wconversion -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Waddress -Wattributes -Wcast-align -Wdeclaration-after-statement -Wdiv-by-zero -Wempty-body -Wendif-labels -Wfloat-equal -Wformat-security -Wignored-qualifiers -Wmissing-field-initializers -Wmissing-noreturn -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wold-style-definition -Wredundant-decls -Wstrict-prototypes -Wtype-limits -Wunreachable-code -Wunused-parameter -Wvla -Wclobbered -Wmissing-parameter-type -Wold-style-declaration -Wpragmas -Wstrict-aliasing=3 -Wdouble-promotion -Wformat=2 -Wtrampolines -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Wunused-const-variable -Walloc-zero -Wduplicated-branches -Wformat-truncation=2 -Wimplicit-fallthrough -Wrestrict -Warith-conversion -Wenum-conversion -D_GNU_SOURCE -DCHECK_FUNCTION_EXISTS=connect CMakeFiles/cmTC_39d8e.dir/CheckFunctionExists.c.o -o cmTC_39d8e  -lsocket 
+/usr/bin/ld: cannot find -lsocket: No such file or directory
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_39d8e.dir/build.make:99: cmTC_39d8e] Error 1
+gmake[1]: Leaving directory '/home/lunabotics/2025-tibalt-bot/build/CURL/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_39d8e/fast] Error 2
+
+
+
+Determining if the OPENSSL_IS_BORINGSSL exist failed with the following output:
+Change Dir: /home/lunabotics/2025-tibalt-bot/build/CURL/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_500de/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_500de.dir/build.make CMakeFiles/cmTC_500de.dir/build
+gmake[1]: Entering directory '/home/lunabotics/2025-tibalt-bot/build/CURL/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_500de.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Werror-implicit-function-declaration -W -Wall -pedantic -Wbad-function-cast -Wconversion -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Waddress -Wattributes -Wcast-align -Wdeclaration-after-statement -Wdiv-by-zero -Wempty-body -Wendif-labels -Wfloat-equal -Wformat-security -Wignored-qualifiers -Wmissing-field-initializers -Wmissing-noreturn -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wold-style-definition -Wredundant-decls -Wstrict-prototypes -Wtype-limits -Wunreachable-code -Wunused-parameter -Wvla -Wclobbered -Wmissing-parameter-type -Wold-style-declaration -Wpragmas -Wstrict-aliasing=3 -Wdouble-promotion -Wformat=2 -Wtrampolines -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Wunused-const-variable -Walloc-zero -Wduplicated-branches -Wformat-truncation=2 -Wimplicit-fallthrough -Wrestrict -Warith-conversion -Wenum-conversion -D_GNU_SOURCE  -o CMakeFiles/cmTC_500de.dir/CheckSymbolExists.c.o -c /home/lunabotics/2025-tibalt-bot/build/CURL/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/lunabotics/2025-tibalt-bot/build/CURL/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: openssl/base.h: No such file or directory
+    2 | #include <openssl/base.h>
+      |          ^~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_500de.dir/build.make:78: CMakeFiles/cmTC_500de.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/lunabotics/2025-tibalt-bot/build/CURL/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_500de/fast] Error 2
+
+
+File /home/lunabotics/2025-tibalt-bot/build/CURL/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <openssl/base.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef OPENSSL_IS_BORINGSSL
+  return ((int*)(&OPENSSL_IS_BORINGSSL))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the OPENSSL_IS_AWSLC exist failed with the following output:
+Change Dir: /home/lunabotics/2025-tibalt-bot/build/CURL/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_80dc3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_80dc3.dir/build.make CMakeFiles/cmTC_80dc3.dir/build
+gmake[1]: Entering directory '/home/lunabotics/2025-tibalt-bot/build/CURL/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_80dc3.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Werror-implicit-function-declaration -W -Wall -pedantic -Wbad-function-cast -Wconversion -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Waddress -Wattributes -Wcast-align -Wdeclaration-after-statement -Wdiv-by-zero -Wempty-body -Wendif-labels -Wfloat-equal -Wformat-security -Wignored-qualifiers -Wmissing-field-initializers -Wmissing-noreturn -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wold-style-definition -Wredundant-decls -Wstrict-prototypes -Wtype-limits -Wunreachable-code -Wunused-parameter -Wvla -Wclobbered -Wmissing-parameter-type -Wold-style-declaration -Wpragmas -Wstrict-aliasing=3 -Wdouble-promotion -Wformat=2 -Wtrampolines -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Wunused-const-variable -Walloc-zero -Wduplicated-branches -Wformat-truncation=2 -Wimplicit-fallthrough -Wrestrict -Warith-conversion -Wenum-conversion -D_GNU_SOURCE  -o CMakeFiles/cmTC_80dc3.dir/CheckSymbolExists.c.o -c /home/lunabotics/2025-tibalt-bot/build/CURL/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/lunabotics/2025-tibalt-bot/build/CURL/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: openssl/base.h: No such file or directory
+    2 | #include <openssl/base.h>
+      |          ^~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_80dc3.dir/build.make:78: CMakeFiles/cmTC_80dc3.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/lunabotics/2025-tibalt-bot/build/CURL/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_80dc3/fast] Error 2
+
+
+File /home/lunabotics/2025-tibalt-bot/build/CURL/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <openssl/base.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef OPENSSL_IS_AWSLC
+  return ((int*)(&OPENSSL_IS_AWSLC))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the LIBRESSL_VERSION_NUMBER exist failed with the following output:
+Change Dir: /home/lunabotics/2025-tibalt-bot/build/CURL/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_71f1e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_71f1e.dir/build.make CMakeFiles/cmTC_71f1e.dir/build
+gmake[1]: Entering directory '/home/lunabotics/2025-tibalt-bot/build/CURL/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_71f1e.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Werror-implicit-function-declaration -W -Wall -pedantic -Wbad-function-cast -Wconversion -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Waddress -Wattributes -Wcast-align -Wdeclaration-after-statement -Wdiv-by-zero -Wempty-body -Wendif-labels -Wfloat-equal -Wformat-security -Wignored-qualifiers -Wmissing-field-initializers -Wmissing-noreturn -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wold-style-definition -Wredundant-decls -Wstrict-prototypes -Wtype-limits -Wunreachable-code -Wunused-parameter -Wvla -Wclobbered -Wmissing-parameter-type -Wold-style-declaration -Wpragmas -Wstrict-aliasing=3 -Wdouble-promotion -Wformat=2 -Wtrampolines -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Wunused-const-variable -Walloc-zero -Wduplicated-branches -Wformat-truncation=2 -Wimplicit-fallthrough -Wrestrict -Warith-conversion -Wenum-conversion -D_GNU_SOURCE  -o CMakeFiles/cmTC_71f1e.dir/CheckSymbolExists.c.o -c /home/lunabotics/2025-tibalt-bot/build/CURL/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/lunabotics/2025-tibalt-bot/build/CURL/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/lunabotics/2025-tibalt-bot/build/CURL/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘LIBRESSL_VERSION_NUMBER’ undeclared (first use in this function); did you mean ‘OPENSSL_VERSION_NUMBER’?
+    8 |   return ((int*)(&LIBRESSL_VERSION_NUMBER))[argc];
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~
+      |                   OPENSSL_VERSION_NUMBER
+/home/lunabotics/2025-tibalt-bot/build/CURL/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+/home/lunabotics/2025-tibalt-bot/build/CURL/CMakeFiles/CMakeTmp/CheckSymbolExists.c:4:14: warning: parameter ‘argc’ set but not used [-Wunused-but-set-parameter]
+    4 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+gmake[1]: *** [CMakeFiles/cmTC_71f1e.dir/build.make:78: CMakeFiles/cmTC_71f1e.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/lunabotics/2025-tibalt-bot/build/CURL/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_71f1e/fast] Error 2
+
+
+File /home/lunabotics/2025-tibalt-bot/build/CURL/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <openssl/opensslv.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef LIBRESSL_VERSION_NUMBER
+  return ((int*)(&LIBRESSL_VERSION_NUMBER))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}

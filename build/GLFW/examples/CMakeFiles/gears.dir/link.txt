@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/gears.dir/gears.c.o -o gears  ../src/libglfw3.a /usr/lib/aarch64-linux-gnu/libm.so /usr/lib/aarch64-linux-gnu/librt.a /usr/lib/aarch64-linux-gnu/libm.so -ldl 

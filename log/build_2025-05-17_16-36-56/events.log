@@ -1,0 +1,1164 @@
+[0.000000] (-) TimerEvent: {}
+[0.000968] (CURL) JobQueued: {'identifier': 'CURL', 'dependencies': OrderedDict()}
+[0.002094] (FMT) JobQueued: {'identifier': 'FMT', 'dependencies': OrderedDict()}
+[0.002438] (GLFW) JobQueued: {'identifier': 'GLFW', 'dependencies': OrderedDict()}
+[0.002765] (ImGuiExample) JobQueued: {'identifier': 'ImGuiExample', 'dependencies': OrderedDict()}
+[0.002907] (LZ4) JobQueued: {'identifier': 'LZ4', 'dependencies': OrderedDict()}
+[0.003021] (base64) JobQueued: {'identifier': 'base64', 'dependencies': OrderedDict()}
+[0.003127] (brotli) JobQueued: {'identifier': 'brotli', 'dependencies': OrderedDict()}
+[0.003232] (cmake_install_test) JobQueued: {'identifier': 'cmake_install_test', 'dependencies': OrderedDict()}
+[0.003338] (cmark-gfm) JobQueued: {'identifier': 'cmark-gfm', 'dependencies': OrderedDict()}
+[0.003443] (control_msgs) JobQueued: {'identifier': 'control_msgs', 'dependencies': OrderedDict()}
+[0.003546] (dragonbox) JobQueued: {'identifier': 'dragonbox', 'dependencies': OrderedDict()}
+[0.003640] (imgui_example_glfw_vulkan) JobQueued: {'identifier': 'imgui_example_glfw_vulkan', 'dependencies': OrderedDict()}
+[0.003755] (imgui_example_glfw_wgpu) JobQueued: {'identifier': 'imgui_example_glfw_wgpu', 'dependencies': OrderedDict()}
+[0.003842] (koffi) JobQueued: {'identifier': 'koffi', 'dependencies': OrderedDict()}
+[0.004115] (libblake3) JobQueued: {'identifier': 'libblake3', 'dependencies': OrderedDict()}
+[0.004198] (libmimalloc) JobQueued: {'identifier': 'libmimalloc', 'dependencies': OrderedDict()}
+[0.004270] (libssh) JobQueued: {'identifier': 'libssh', 'dependencies': OrderedDict()}
+[0.004354] (mbedtls) JobQueued: {'identifier': 'mbedtls', 'dependencies': OrderedDict()}
+[0.004443] (pugixml) JobQueued: {'identifier': 'pugixml', 'dependencies': OrderedDict()}
+[0.004776] (raylib) JobQueued: {'identifier': 'raylib', 'dependencies': OrderedDict()}
+[0.004874] (realsense2_camera_msgs) JobQueued: {'identifier': 'realsense2_camera_msgs', 'dependencies': OrderedDict()}
+[0.004947] (rlbox-sandboxing-api) JobQueued: {'identifier': 'rlbox-sandboxing-api', 'dependencies': OrderedDict()}
+[0.005052] (rlbox_wasm2c) JobQueued: {'identifier': 'rlbox_wasm2c', 'dependencies': OrderedDict()}
+[0.005174] (rover_control) JobQueued: {'identifier': 'rover_control', 'dependencies': OrderedDict()}
+[0.006395] (zstd) JobQueued: {'identifier': 'zstd', 'dependencies': OrderedDict()}
+[0.006748] (realsense2_camera) JobQueued: {'identifier': 'realsense2_camera', 'dependencies': OrderedDict([('realsense2_camera_msgs', '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs')])}
+[0.006853] (realsense2_description) JobQueued: {'identifier': 'realsense2_description', 'dependencies': OrderedDict([('realsense2_camera_msgs', '/home/lunabotics/2025-tibalt-bot/install/realsense2_camera_msgs')])}
+[0.007115] (realsense2_camera_msgs) JobStarted: {'identifier': 'realsense2_camera_msgs'}
+[0.021268] (CURL) JobStarted: {'identifier': 'CURL'}
+[0.032228] (FMT) JobStarted: {'identifier': 'FMT'}
+[0.040815] (GLFW) JobStarted: {'identifier': 'GLFW'}
+[0.050551] (ImGuiExample) JobStarted: {'identifier': 'ImGuiExample'}
+[0.059160] (LZ4) JobStarted: {'identifier': 'LZ4'}
+[0.073841] (realsense2_camera_msgs) JobProgress: {'identifier': 'realsense2_camera_msgs', 'progress': 'cmake'}
+[0.076949] (realsense2_camera_msgs) JobProgress: {'identifier': 'realsense2_camera_msgs', 'progress': 'build'}
+[0.077782] (realsense2_camera_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs', '--', '-j6', '-l6'], 'cwd': '/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lunabotics'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lunabotics'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/lunabotics/2025-tibalt-bot/arduino'), ('TERM_PROGRAM_VERSION', '1.100.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1554'), ('SYSTEMD_EXEC_PID', '2189'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3082'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lunabotics'), ('JOURNAL_STREAM', '8:39722'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lunabotics'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/lunabotics/.local/bin:/home/lunabotics/bin:/opt/ros/humble/bin:/home/lunabotics/.local/bin:/home/lunabotics/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lunabotics-desktop:@/tmp/.ICE-unix/2161,unix/lunabotics-desktop:/tmp/.ICE-unix/2161'), ('INVOCATION_ID', 'da6c2a3773844c3ea69aaff2417075d7'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-371b4ae8bc.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lunabotics/2025-tibalt-bot/build/realsense2_camera_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.086389] (CURL) JobProgress: {'identifier': 'CURL', 'progress': 'cmake'}
+[0.088457] (CURL) Command: {'cmd': ['/usr/bin/cmake', '/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/curl', '-DCMAKE_INSTALL_PREFIX=/home/lunabotics/2025-tibalt-bot/install/CURL'], 'cwd': '/home/lunabotics/2025-tibalt-bot/build/CURL', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lunabotics'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lunabotics'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/lunabotics/2025-tibalt-bot/arduino'), ('TERM_PROGRAM_VERSION', '1.100.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1554'), ('SYSTEMD_EXEC_PID', '2189'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3082'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lunabotics'), ('JOURNAL_STREAM', '8:39722'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lunabotics'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/lunabotics/.local/bin:/home/lunabotics/bin:/opt/ros/humble/bin:/home/lunabotics/.local/bin:/home/lunabotics/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lunabotics-desktop:@/tmp/.ICE-unix/2161,unix/lunabotics-desktop:/tmp/.ICE-unix/2161'), ('INVOCATION_ID', 'da6c2a3773844c3ea69aaff2417075d7'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-371b4ae8bc.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lunabotics/2025-tibalt-bot/build/CURL'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1')]), 'shell': False}
+[0.096781] (FMT) JobProgress: {'identifier': 'FMT', 'progress': 'cmake'}
+[0.097316] (FMT) JobProgress: {'identifier': 'FMT', 'progress': 'build'}
+[0.097971] (FMT) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lunabotics/2025-tibalt-bot/build/FMT', '--', '-j6', '-l6'], 'cwd': '/home/lunabotics/2025-tibalt-bot/build/FMT', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lunabotics'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lunabotics'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/lunabotics/2025-tibalt-bot/arduino'), ('TERM_PROGRAM_VERSION', '1.100.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1554'), ('SYSTEMD_EXEC_PID', '2189'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3082'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lunabotics'), ('JOURNAL_STREAM', '8:39722'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lunabotics'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/lunabotics/.local/bin:/home/lunabotics/bin:/opt/ros/humble/bin:/home/lunabotics/.local/bin:/home/lunabotics/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lunabotics-desktop:@/tmp/.ICE-unix/2161,unix/lunabotics-desktop:/tmp/.ICE-unix/2161'), ('INVOCATION_ID', 'da6c2a3773844c3ea69aaff2417075d7'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-371b4ae8bc.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lunabotics/2025-tibalt-bot/build/FMT'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1')]), 'shell': False}
+[0.099871] (-) TimerEvent: {}
+[0.109604] (GLFW) JobProgress: {'identifier': 'GLFW', 'progress': 'cmake'}
+[0.110967] (GLFW) JobProgress: {'identifier': 'GLFW', 'progress': 'build'}
+[0.111108] (GLFW) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lunabotics/2025-tibalt-bot/build/GLFW', '--', '-j6', '-l6'], 'cwd': '/home/lunabotics/2025-tibalt-bot/build/GLFW', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lunabotics'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lunabotics'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/lunabotics/2025-tibalt-bot/arduino'), ('TERM_PROGRAM_VERSION', '1.100.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1554'), ('SYSTEMD_EXEC_PID', '2189'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3082'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lunabotics'), ('JOURNAL_STREAM', '8:39722'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lunabotics'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/lunabotics/.local/bin:/home/lunabotics/bin:/opt/ros/humble/bin:/home/lunabotics/.local/bin:/home/lunabotics/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lunabotics-desktop:@/tmp/.ICE-unix/2161,unix/lunabotics-desktop:/tmp/.ICE-unix/2161'), ('INVOCATION_ID', 'da6c2a3773844c3ea69aaff2417075d7'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-371b4ae8bc.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lunabotics/2025-tibalt-bot/build/GLFW'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1')]), 'shell': False}
+[0.124838] (ImGuiExample) JobProgress: {'identifier': 'ImGuiExample', 'progress': 'cmake'}
+[0.126181] (ImGuiExample) Command: {'cmd': ['/usr/bin/cmake', '/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/imgui/examples/example_android_opengl3', '-DCMAKE_INSTALL_PREFIX=/home/lunabotics/2025-tibalt-bot/install/ImGuiExample'], 'cwd': '/home/lunabotics/2025-tibalt-bot/build/ImGuiExample', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lunabotics'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lunabotics'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/lunabotics/2025-tibalt-bot/arduino'), ('TERM_PROGRAM_VERSION', '1.100.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1554'), ('SYSTEMD_EXEC_PID', '2189'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3082'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lunabotics'), ('JOURNAL_STREAM', '8:39722'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lunabotics'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/lunabotics/.local/bin:/home/lunabotics/bin:/opt/ros/humble/bin:/home/lunabotics/.local/bin:/home/lunabotics/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lunabotics-desktop:@/tmp/.ICE-unix/2161,unix/lunabotics-desktop:/tmp/.ICE-unix/2161'), ('INVOCATION_ID', 'da6c2a3773844c3ea69aaff2417075d7'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-371b4ae8bc.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lunabotics/2025-tibalt-bot/build/ImGuiExample'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1')]), 'shell': False}
+[0.159832] (CURL) StdoutLine: {'line': b'-- Using CMake version 3.22.1\n'}
+[0.160727] (CURL) StdoutLine: {'line': b'-- curl version=[8.12.1]\n'}
+[0.160950] (CURL) StdoutLine: {'line': b'-- CMake platform flags: UNIX GCC\n'}
+[0.161132] (CURL) StdoutLine: {'line': b'-- Picky compiler options: -Werror-implicit-function-declaration -W -Wall -pedantic -Wbad-function-cast -Wconversion -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wno-long-long -Wno-multichar -Wpointer-arith -Wshadow -Wsign-compare -Wundef -Wunused -Wwrite-strings -Waddress -Wattributes -Wcast-align -Wdeclaration-after-statement -Wdiv-by-zero -Wempty-body -Wendif-labels -Wfloat-equal -Wformat-security -Wignored-qualifiers -Wmissing-field-initializers -Wmissing-noreturn -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wold-style-definition -Wredundant-decls -Wstrict-prototypes -Wtype-limits -Wunreachable-code -Wunused-parameter -Wvla -Wclobbered -Wmissing-parameter-type -Wold-style-declaration -Wpragmas -Wstrict-aliasing=3 -Wdouble-promotion -Wformat=2 -Wtrampolines -Warray-bounds=2 -ftree-vrp -Wduplicated-cond -Wnull-dereference -fdelete-null-pointer-checks -Wshift-negative-value -Wshift-overflow=2 -Wunused-const-variable -Walloc-zero -Wduplicated-branches -Wformat-truncation=2 -Wimplicit-fallthrough -Wrestrict -Warith-conversion -Wenum-conversion\n'}
+[0.201594] (-) TimerEvent: {}
+[0.204170] (ImGuiExample) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.206217] (ImGuiExample) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:9 (add_library):\n'}
+[0.208211] (ImGuiExample) StderrLine: {'line': b'  Cannot find source file:\n'}
+[0.208441] (ImGuiExample) StderrLine: {'line': b'\n'}
+[0.208679] (ImGuiExample) StderrLine: {'line': b'    /sources/android/native_app_glue/android_native_app_glue.c\n'}
+[0.208846] (ImGuiExample) StderrLine: {'line': b'\n'}
+[0.209002] (ImGuiExample) StderrLine: {'line': b'  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h\n'}
+[0.212309] (ImGuiExample) StderrLine: {'line': b'  .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc\n'}
+[0.220950] (ImGuiExample) StderrLine: {'line': b'\n'}
+[0.222974] (ImGuiExample) StderrLine: {'line': b'\x1b[0m\n'}
+[0.223252] (ImGuiExample) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:9 (add_library):\n'}
+[0.223434] (ImGuiExample) StderrLine: {'line': b'  No SOURCES given to target: ImGuiExample\n'}
+[0.223598] (ImGuiExample) StderrLine: {'line': b'\n'}
+[0.235219] (ImGuiExample) StderrLine: {'line': b'\x1b[0m\n'}
+[0.235939] (ImGuiExample) StderrLine: {'line': b'\x1b[0mCMake Generate step failed.  Build files cannot be regenerated correctly.\x1b[0m\n'}
+[0.236160] (LZ4) JobProgress: {'identifier': 'LZ4', 'progress': 'cmake'}
+[0.236236] (LZ4) JobProgress: {'identifier': 'LZ4', 'progress': 'build'}
+[0.236303] (LZ4) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lunabotics/2025-tibalt-bot/build/LZ4', '--', '-j6', '-l6'], 'cwd': '/home/lunabotics/2025-tibalt-bot/build/LZ4', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lunabotics'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lunabotics'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/lunabotics/2025-tibalt-bot/arduino'), ('TERM_PROGRAM_VERSION', '1.100.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1554'), ('SYSTEMD_EXEC_PID', '2189'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3082'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'lunabotics'), ('JOURNAL_STREAM', '8:39722'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lunabotics'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/lunabotics/.local/bin:/home/lunabotics/bin:/opt/ros/humble/bin:/home/lunabotics/.local/bin:/home/lunabotics/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lunabotics-desktop:@/tmp/.ICE-unix/2161,unix/lunabotics-desktop:/tmp/.ICE-unix/2161'), ('INVOCATION_ID', 'da6c2a3773844c3ea69aaff2417075d7'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-371b4ae8bc.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lunabotics/2025-tibalt-bot/build/LZ4'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1')]), 'shell': False}
+[0.259930] (ImGuiExample) CommandEnded: {'returncode': 1}
+[0.261433] (ImGuiExample) JobEnded: {'identifier': 'ImGuiExample', 'rc': 1}
+[0.267578] (CURL) StdoutLine: {'line': b'-- Found Brotli (via pkg-config):  (found version "1.0.9")\n'}
+[0.276002] (GLFW) StdoutLine: {'line': b'[  0%] \x1b[34m\x1b[1mGenerating fractional-scale-v1-client-protocol.h\x1b[0m\n'}
+[0.302006] (-) TimerEvent: {}
+[0.314308] (GLFW) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating idle-inhibit-unstable-v1-client-protocol-code.h\x1b[0m\n'}
+[0.315179] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 11%] Built target realsense2_camera_msgs__rosidl_generator_c\n'}
+[0.316312] (GLFW) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating pointer-constraints-unstable-v1-client-protocol-code.h\x1b[0m\n'}
+[0.322499] (GLFW) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating xdg-shell-client-protocol.h\x1b[0m\n'}
+[0.323286] (CURL) StdoutLine: {'line': b'-- Found Zstd (via pkg-config):  (found version "1.4.8")\n'}
+[0.329838] (GLFW) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating fractional-scale-v1-client-protocol-code.h\x1b[0m\n'}
+[0.335891] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 12%] Built target realsense2_camera_msgs__cpp\n'}
+[0.343555] (FMT) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding CXX object CMakeFiles/fmt.dir/src/os.cc.o\x1b[0m\n'}
+[0.347040] (GLFW) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating idle-inhibit-unstable-v1-client-protocol.h\x1b[0m\n'}
+[0.391759] (CURL) StdoutLine: {'line': b'-- Could NOT find NGHTTP2 (missing: NGHTTP2_INCLUDE_DIR NGHTTP2_LIBRARY) \n'}
+[0.395483] (FMT) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding CXX object CMakeFiles/fmt.dir/src/format.cc.o\x1b[0m\n'}
+[0.397881] (GLFW) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating pointer-constraints-unstable-v1-client-protocol.h\x1b[0m\n'}
+[0.400706] (FMT) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object test/CMakeFiles/gmock.dir/gmock-gtest-all.cc.o\x1b[0m\n'}
+[0.402048] (-) TimerEvent: {}
+[0.437651] (GLFW) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating relative-pointer-unstable-v1-client-protocol-code.h\x1b[0m\n'}
+[0.441581] (CURL) StdoutLine: {'line': b'-- Could NOT find Libidn2 (missing: LIBIDN2_INCLUDE_DIR LIBIDN2_LIBRARY) \n'}
+[0.479334] (CURL) StderrLine: {'line': b'\x1b[31mCMake Error at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:230 (message):\n'}
+[0.480299] (CURL) StderrLine: {'line': b'  Could NOT find Libpsl (missing: LIBPSL_INCLUDE_DIR LIBPSL_LIBRARY)\n'}
+[0.480817] (CURL) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.481051] (CURL) StderrLine: {'line': b'  /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:594 (_FPHSA_FAILURE_MESSAGE)\n'}
+[0.481239] (CURL) StderrLine: {'line': b'  CMake/FindLibpsl.cmake:69 (find_package_handle_standard_args)\n'}
+[0.481409] (CURL) StderrLine: {'line': b'  CMakeLists.txt:1295 (find_package)\n'}
+[0.481569] (CURL) StderrLine: {'line': b'\n'}
+[0.481721] (CURL) StderrLine: {'line': b'\x1b[0m\n'}
+[0.481879] (LZ4) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/lz4cli.dir/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/lz4/programs/bench.c.o\x1b[0m\n'}
+[0.482413] (GLFW) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating viewporter-client-protocol-code.h\x1b[0m\n'}
+[0.500958] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 23%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_c\n'}
+[0.502279] (-) TimerEvent: {}
+[0.504412] (CURL) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.504999] (CURL) StdoutLine: {'line': b'See also "/home/lunabotics/2025-tibalt-bot/build/CURL/CMakeFiles/CMakeOutput.log".\n'}
+[0.505210] (CURL) StdoutLine: {'line': b'See also "/home/lunabotics/2025-tibalt-bot/build/CURL/CMakeFiles/CMakeError.log".\n'}
+[0.507775] (LZ4) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/lz4cli.dir/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/lz4/programs/lorem.c.o\x1b[0m\n'}
+[0.508597] (GLFW) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating viewporter-client-protocol.h\x1b[0m\n'}
+[0.529687] (GLFW) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating wayland-client-protocol.h\x1b[0m\n'}
+[0.544030] (GLFW) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating wayland-client-protocol-code.h\x1b[0m\n'}
+[0.553083] (LZ4) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/lz4cli.dir/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/lz4/programs/lz4cli.c.o\x1b[0m\n'}
+[0.554991] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 34%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.578896] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 46%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.602646] (-) TimerEvent: {}
+[0.608295] (LZ4) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/lz4cli.dir/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/lz4/programs/threadpool.c.o\x1b[0m\n'}
+[0.616851] (CURL) JobEnded: {'identifier': 'CURL', 'rc': 'SIGINT'}
+[0.625721] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 46%] Built target ament_cmake_python_copy_realsense2_camera_msgs\n'}
+[0.630322] (GLFW) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating xdg-activation-v1-client-protocol-code.h\x1b[0m\n'}
+[0.663265] (GLFW) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating relative-pointer-unstable-v1-client-protocol.h\x1b[0m\n'}
+[0.665111] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 57%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.666501] (LZ4) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding C object CMakeFiles/lz4cli.dir/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/lz4/programs/lz4io.c.o\x1b[0m\n'}
+[0.681644] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 68%] Built target realsense2_camera_msgs__rosidl_typesupport_c\n'}
+[0.702947] (-) TimerEvent: {}
+[0.759283] (LZ4) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding C object CMakeFiles/lz4_shared.dir/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/lz4/lib/lz4.c.o\x1b[0m\n'}
+[0.796966] (GLFW) StdoutLine: {'line': b'[ 13%] \x1b[34m\x1b[1mGenerating xdg-activation-v1-client-protocol.h\x1b[0m\n'}
+[0.803208] (-) TimerEvent: {}
+[0.847093] (GLFW) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mGenerating xdg-decoration-unstable-v1-client-protocol-code.h\x1b[0m\n'}
+[0.847960] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 79%] Built target realsense2_camera_msgs__rosidl_typesupport_cpp\n'}
+[0.862918] (GLFW) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating xdg-shell-client-protocol-code.h\x1b[0m\n'}
+[0.867011] (LZ4) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding C object CMakeFiles/lz4cli.dir/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/lz4/programs/timefn.c.o\x1b[0m\n'}
+[0.903583] (-) TimerEvent: {}
+[0.924621] (GLFW) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating xdg-decoration-unstable-v1-client-protocol.h\x1b[0m\n'}
+[0.983830] (LZ4) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding C object CMakeFiles/lz4cli.dir/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/lz4/programs/util.c.o\x1b[0m\n'}
+[1.006443] (-) TimerEvent: {}
+[1.133148] (-) TimerEvent: {}
+[1.234263] (-) TimerEvent: {}
+[1.246612] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 79%] Built target realsense2_camera_msgs\n'}
+[1.270542] (LZ4) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding C object CMakeFiles/lz4cli.dir/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/lz4/lib/lz4.c.o\x1b[0m\n'}
+[1.334664] (-) TimerEvent: {}
+[1.394634] (GLFW) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object src/CMakeFiles/glfw.dir/context.c.o\x1b[0m\n'}
+[1.395479] (GLFW) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object src/CMakeFiles/glfw.dir/init.c.o\x1b[0m\n'}
+[1.402656] (GLFW) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object src/CMakeFiles/glfw.dir/input.c.o\x1b[0m\n'}
+[1.434850] (-) TimerEvent: {}
+[1.457095] (GLFW) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object src/CMakeFiles/glfw.dir/platform.c.o\x1b[0m\n'}
+[1.458046] (GLFW) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object src/CMakeFiles/glfw.dir/monitor.c.o\x1b[0m\n'}
+[1.477827] (GLFW) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding C object src/CMakeFiles/glfw.dir/vulkan.c.o\x1b[0m\n'}
+[1.490239] (LZ4) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding C object CMakeFiles/lz4cli.dir/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/lz4/lib/lz4file.c.o\x1b[0m\n'}
+[1.491089] (LZ4) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding C object CMakeFiles/lz4cli.dir/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/lz4/lib/lz4frame.c.o\x1b[0m\n'}
+[1.542444] (-) TimerEvent: {}
+[1.594562] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 80%] Built target realsense2_camera_msgs__py\n'}
+[1.646388] (-) TimerEvent: {}
+[1.747581] (-) TimerEvent: {}
+[1.848811] (-) TimerEvent: {}
+[1.910677] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 90%] Built target realsense2_camera_msgs__rosidl_generator_py\n'}
+[1.949099] (-) TimerEvent: {}
+[2.051706] (-) TimerEvent: {}
+[2.154357] (-) TimerEvent: {}
+[2.265556] (-) TimerEvent: {}
+[2.294620] (LZ4) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding C object CMakeFiles/lz4cli.dir/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/lz4/lib/lz4hc.c.o\x1b[0m\n'}
+[2.365858] (-) TimerEvent: {}
+[2.391121] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 93%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[2.392090] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 96%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[2.404737] (realsense2_camera_msgs) StdoutLine: {'line': b'[100%] Built target realsense2_camera_msgs__rosidl_typesupport_c__pyext\n'}
+[2.451088] (LZ4) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/lz4cli.dir/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/lz4/lib/xxhash.c.o\x1b[0m\n'}
+[2.466244] (-) TimerEvent: {}
+[2.568969] (-) TimerEvent: {}
+[2.671786] (-) TimerEvent: {}
+[2.774534] (-) TimerEvent: {}
+[2.877208] (-) TimerEvent: {}
+[2.939001] (GLFW) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding C object src/CMakeFiles/glfw.dir/window.c.o\x1b[0m\n'}
+[2.977511] (-) TimerEvent: {}
+[2.987366] (GLFW) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object src/CMakeFiles/glfw.dir/egl_context.c.o\x1b[0m\n'}
+[3.036305] (LZ4) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding C object CMakeFiles/lz4_shared.dir/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/lz4/lib/lz4file.c.o\x1b[0m\n'}
+[3.062841] (GLFW) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding C object src/CMakeFiles/glfw.dir/osmesa_context.c.o\x1b[0m\n'}
+[3.077779] (-) TimerEvent: {}
+[3.179030] (-) TimerEvent: {}
+[3.212782] (GLFW) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding C object src/CMakeFiles/glfw.dir/null_init.c.o\x1b[0m\n'}
+[3.279302] (-) TimerEvent: {}
+[3.380551] (-) TimerEvent: {}
+[3.481904] (-) TimerEvent: {}
+[3.583249] (-) TimerEvent: {}
+[3.599971] (realsense2_camera_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[3.628024] (realsense2_camera_msgs) StdoutLine: {'line': b'writing realsense2_camera_msgs.egg-info/PKG-INFO\n'}
+[3.635602] (realsense2_camera_msgs) StdoutLine: {'line': b'writing dependency_links to realsense2_camera_msgs.egg-info/dependency_links.txt\n'}
+[3.636504] (realsense2_camera_msgs) StdoutLine: {'line': b'writing top-level names to realsense2_camera_msgs.egg-info/top_level.txt\n'}
+[3.659000] (realsense2_camera_msgs) StdoutLine: {'line': b"reading manifest file 'realsense2_camera_msgs.egg-info/SOURCES.txt'\n"}
+[3.662969] (realsense2_camera_msgs) StdoutLine: {'line': b"writing manifest file 'realsense2_camera_msgs.egg-info/SOURCES.txt'\n"}
+[3.683553] (-) TimerEvent: {}
+[3.784892] (-) TimerEvent: {}
+[3.795168] (LZ4) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding C object CMakeFiles/lz4_shared.dir/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/lz4/lib/lz4frame.c.o\x1b[0m\n'}
+[3.885197] (-) TimerEvent: {}
+[3.898565] (GLFW) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding C object src/CMakeFiles/glfw.dir/null_monitor.c.o\x1b[0m\n'}
+[3.910284] (realsense2_camera_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_realsense2_camera_msgs_egg\n'}
+[3.937212] (GLFW) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding C object src/CMakeFiles/glfw.dir/null_window.c.o\x1b[0m\n'}
+[3.985524] (-) TimerEvent: {}
+[4.080455] (realsense2_camera_msgs) JobEnded: {'identifier': 'realsense2_camera_msgs', 'rc': 'SIGINT'}
+[4.086030] (-) TimerEvent: {}
+[4.187248] (-) TimerEvent: {}
+[4.288544] (-) TimerEvent: {}
+[4.321249] (GLFW) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding C object src/CMakeFiles/glfw.dir/null_joystick.c.o\x1b[0m\n'}
+[4.389347] (-) TimerEvent: {}
+[4.423649] (GLFW) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding C object src/CMakeFiles/glfw.dir/posix_module.c.o\x1b[0m\n'}
+[4.489631] (-) TimerEvent: {}
+[4.510841] (GLFW) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding C object src/CMakeFiles/glfw.dir/posix_time.c.o\x1b[0m\n'}
+[4.572378] (GLFW) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding C object src/CMakeFiles/glfw.dir/posix_thread.c.o\x1b[0m\n'}
+[4.589925] (-) TimerEvent: {}
+[4.692374] (-) TimerEvent: {}
+[4.795989] (-) TimerEvent: {}
+[4.853650] (GLFW) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding C object src/CMakeFiles/glfw.dir/x11_init.c.o\x1b[0m\n'}
+[4.896275] (-) TimerEvent: {}
+[4.998644] (-) TimerEvent: {}
+[5.068935] (GLFW) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding C object src/CMakeFiles/glfw.dir/x11_monitor.c.o\x1b[0m\n'}
+[5.098924] (-) TimerEvent: {}
+[5.125130] (LZ4) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding C object CMakeFiles/lz4_shared.dir/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/lz4/lib/xxhash.c.o\x1b[0m\n'}
+[5.185846] (GLFW) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding C object src/CMakeFiles/glfw.dir/x11_window.c.o\x1b[0m\n'}
+[5.199227] (-) TimerEvent: {}
+[5.255141] (GLFW) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding C object src/CMakeFiles/glfw.dir/xkb_unicode.c.o\x1b[0m\n'}
+[5.299509] (-) TimerEvent: {}
+[5.400771] (-) TimerEvent: {}
+[5.501988] (-) TimerEvent: {}
+[5.544017] (GLFW) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding C object src/CMakeFiles/glfw.dir/wl_init.c.o\x1b[0m\n'}
+[5.604539] (-) TimerEvent: {}
+[5.626400] (GLFW) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding C object src/CMakeFiles/glfw.dir/glx_context.c.o\x1b[0m\n'}
+[5.704835] (-) TimerEvent: {}
+[5.806073] (-) TimerEvent: {}
+[5.901928] (GLFW) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding C object src/CMakeFiles/glfw.dir/wl_monitor.c.o\x1b[0m\n'}
+[5.906412] (-) TimerEvent: {}
+[5.980816] (GLFW) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding C object src/CMakeFiles/glfw.dir/wl_window.c.o\x1b[0m\n'}
+[6.010461] (GLFW) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding C object src/CMakeFiles/glfw.dir/linux_joystick.c.o\x1b[0m\n'}
+[6.011405] (-) TimerEvent: {}
+[6.015779] (LZ4) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding C object CMakeFiles/lz4_shared.dir/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/lz4/lib/lz4hc.c.o\x1b[0m\n'}
+[6.126461] (-) TimerEvent: {}
+[6.235355] (-) TimerEvent: {}
+[6.336691] (-) TimerEvent: {}
+[6.438495] (-) TimerEvent: {}
+[6.563701] (-) TimerEvent: {}
+[6.665028] (-) TimerEvent: {}
+[6.763809] (GLFW) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding C object src/CMakeFiles/glfw.dir/posix_poll.c.o\x1b[0m\n'}
+[6.765412] (-) TimerEvent: {}
+[6.866307] (-) TimerEvent: {}
+[6.967509] (-) TimerEvent: {}
+[7.068782] (-) TimerEvent: {}
+[7.170605] (-) TimerEvent: {}
+[7.274490] (-) TimerEvent: {}
+[7.382473] (-) TimerEvent: {}
+[7.484077] (-) TimerEvent: {}
+[7.585753] (-) TimerEvent: {}
+[7.687104] (-) TimerEvent: {}
+[7.788439] (-) TimerEvent: {}
+[7.889752] (-) TimerEvent: {}
+[7.994488] (-) TimerEvent: {}
+[8.095778] (-) TimerEvent: {}
+[8.159351] (GLFW) StdoutLine: {'line': b'[ 38%] \x1b[32m\x1b[1mLinking C static library libglfw3.a\x1b[0m\n'}
+[8.196094] (-) TimerEvent: {}
+[8.297426] (-) TimerEvent: {}
+[8.398874] (-) TimerEvent: {}
+[8.500183] (-) TimerEvent: {}
+[8.540972] (LZ4) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking C shared library liblz4.so\x1b[0m\n'}
+[8.600468] (-) TimerEvent: {}
+[8.694670] (LZ4) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C executable lz4\x1b[0m\n'}
+[8.700724] (-) TimerEvent: {}
+[8.801917] (-) TimerEvent: {}
+[8.903179] (-) TimerEvent: {}
+[8.986189] (LZ4) StdoutLine: {'line': b'[ 90%] Built target lz4_shared\n'}
+[9.003457] (-) TimerEvent: {}
+[9.104769] (-) TimerEvent: {}
+[9.151506] (LZ4) StdoutLine: {'line': b'[ 90%] Built target lz4cli\n'}
+[9.205059] (-) TimerEvent: {}
+[9.306394] (-) TimerEvent: {}
+[9.317979] (LZ4) StdoutLine: {'line': b'[ 95%] \x1b[34m\x1b[1mCreating symlink for unlz4\x1b[0m\n'}
+[9.326316] (LZ4) StdoutLine: {'line': b'[100%] \x1b[34m\x1b[1mCreating symlink for lz4cat\x1b[0m\n'}
+[9.384039] (LZ4) StdoutLine: {'line': b'[100%] Built target create_lz4cat_symlink\n'}
+[9.384859] (LZ4) StdoutLine: {'line': b'[100%] Built target create_unlz4_symlink\n'}
+[9.406660] (-) TimerEvent: {}
+[9.447923] (LZ4) JobEnded: {'identifier': 'LZ4', 'rc': 'SIGINT'}
+[9.506954] (-) TimerEvent: {}
+[9.609439] (-) TimerEvent: {}
+[9.710714] (-) TimerEvent: {}
+[9.795180] (GLFW) StdoutLine: {'line': b'[ 38%] Built target glfw\n'}
+[9.810989] (-) TimerEvent: {}
+[9.912579] (-) TimerEvent: {}
+[9.954874] (GLFW) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding C object examples/CMakeFiles/gears.dir/gears.c.o\x1b[0m\n'}
+[9.957694] (GLFW) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object examples/CMakeFiles/boing.dir/boing.c.o\x1b[0m\n'}
+[10.012968] (-) TimerEvent: {}
+[10.114701] (-) TimerEvent: {}
+[10.215942] (-) TimerEvent: {}
+[10.317170] (-) TimerEvent: {}
+[10.418567] (-) TimerEvent: {}
+[10.519779] (-) TimerEvent: {}
+[10.531582] (GLFW) StdoutLine: {'line': b'[ 40%] \x1b[32m\x1b[1mLinking C executable gears\x1b[0m\n'}
+[10.615670] (GLFW) StdoutLine: {'line': b'[ 41%] \x1b[32m\x1b[1mLinking C executable boing\x1b[0m\n'}
+[10.619958] (-) TimerEvent: {}
+[10.721288] (-) TimerEvent: {}
+[10.798684] (GLFW) StdoutLine: {'line': b'[ 41%] Built target gears\n'}
+[10.821618] (-) TimerEvent: {}
+[10.890247] (GLFW) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding C object examples/CMakeFiles/sharing.dir/sharing.c.o\x1b[0m\n'}
+[10.900714] (GLFW) StdoutLine: {'line': b'[ 41%] Built target boing\n'}
+[10.921883] (-) TimerEvent: {}
+[10.959442] (GLFW) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding C object examples/CMakeFiles/particles.dir/particles.c.o\x1b[0m\n'}
+[11.022446] (-) TimerEvent: {}
+[11.123583] (-) TimerEvent: {}
+[11.147765] (GLFW) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding C object examples/CMakeFiles/splitview.dir/splitview.c.o\x1b[0m\n'}
+[11.223847] (-) TimerEvent: {}
+[11.325011] (-) TimerEvent: {}
+[11.426243] (-) TimerEvent: {}
+[11.527464] (-) TimerEvent: {}
+[11.550541] (GLFW) StdoutLine: {'line': b'[ 43%] \x1b[32m\x1b[1mLinking C executable sharing\x1b[0m\n'}
+[11.627730] (-) TimerEvent: {}
+[11.728914] (-) TimerEvent: {}
+[11.830084] (-) TimerEvent: {}
+[11.880990] (GLFW) StdoutLine: {'line': b'[ 43%] Built target sharing\n'}
+[11.912639] (GLFW) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding C object examples/CMakeFiles/particles.dir/__/deps/tinycthread.c.o\x1b[0m\n'}
+[11.930707] (-) TimerEvent: {}
+[11.945575] (GLFW) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding C object examples/CMakeFiles/triangle-opengl.dir/triangle-opengl.c.o\x1b[0m\n'}
+[11.961110] (GLFW) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking C executable splitview\x1b[0m\n'}
+[11.984252] (GLFW) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding C object examples/CMakeFiles/offscreen.dir/offscreen.c.o\x1b[0m\n'}
+[12.030970] (-) TimerEvent: {}
+[12.132148] (-) TimerEvent: {}
+[12.224290] (GLFW) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding C object examples/CMakeFiles/particles.dir/__/deps/getopt.c.o\x1b[0m\n'}
+[12.232436] (-) TimerEvent: {}
+[12.333560] (-) TimerEvent: {}
+[12.381428] (GLFW) StdoutLine: {'line': b'[ 47%] Built target splitview\n'}
+[12.410867] (GLFW) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking C executable particles\x1b[0m\n'}
+[12.433816] (-) TimerEvent: {}
+[12.525427] (GLFW) StdoutLine: {'line': b'[ 49%] \x1b[32m\x1b[1mLinking C executable triangle-opengl\x1b[0m\n'}
+[12.534111] (-) TimerEvent: {}
+[12.584506] (GLFW) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding C object examples/CMakeFiles/triangle-opengles.dir/triangle-opengles.c.o\x1b[0m\n'}
+[12.634415] (-) TimerEvent: {}
+[12.664830] (GLFW) StdoutLine: {'line': b'[ 50%] Built target particles\n'}
+[12.734652] (-) TimerEvent: {}
+[12.780388] (GLFW) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object examples/CMakeFiles/wave.dir/wave.c.o\x1b[0m\n'}
+[12.795668] (GLFW) StdoutLine: {'line': b'[ 51%] Built target triangle-opengl\n'}
+[12.834913] (-) TimerEvent: {}
+[12.877249] (GLFW) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding C object examples/CMakeFiles/heightmap.dir/heightmap.c.o\x1b[0m\n'}
+[12.912934] (GLFW) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking C executable triangle-opengles\x1b[0m\n'}
+[12.935133] (-) TimerEvent: {}
+[12.950499] (GLFW) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding C object examples/CMakeFiles/windows.dir/windows.c.o\x1b[0m\n'}
+[13.035378] (-) TimerEvent: {}
+[13.059615] (GLFW) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking C executable offscreen\x1b[0m\n'}
+[13.135612] (-) TimerEvent: {}
+[13.236711] (-) TimerEvent: {}
+[13.337820] (-) TimerEvent: {}
+[13.438943] (-) TimerEvent: {}
+[13.483709] (GLFW) StdoutLine: {'line': b'[ 55%] Built target offscreen\n'}
+[13.539192] (-) TimerEvent: {}
+[13.593981] (GLFW) StdoutLine: {'line': b'[ 55%] Built target triangle-opengles\n'}
+[13.639420] (-) TimerEvent: {}
+[13.653133] (GLFW) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking C executable wave\x1b[0m\n'}
+[13.669806] (GLFW) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking C executable heightmap\x1b[0m\n'}
+[13.704765] (GLFW) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking C executable windows\x1b[0m\n'}
+[13.739712] (-) TimerEvent: {}
+[13.840869] (-) TimerEvent: {}
+[13.846857] (GLFW) StdoutLine: {'line': b'[ 57%] Built target heightmap\n'}
+[13.852446] (GLFW) StdoutLine: {'line': b'[ 57%] Built target wave\n'}
+[13.927910] (GLFW) StdoutLine: {'line': b'[ 57%] Built target windows\n'}
+[13.941181] (-) TimerEvent: {}
+[13.997502] (GLFW) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.o\x1b[0m\n'}
+[14.041845] (-) TimerEvent: {}
+[14.142966] (-) TimerEvent: {}
+[14.244705] (-) TimerEvent: {}
+[14.345866] (-) TimerEvent: {}
+[14.447238] (-) TimerEvent: {}
+[14.548561] (-) TimerEvent: {}
+[14.650113] (-) TimerEvent: {}
+[14.707448] (GLFW) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding C object tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o\x1b[0m\n'}
+[14.750426] (-) TimerEvent: {}
+[14.816991] (GLFW) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking C executable glfwinfo\x1b[0m\n'}
+[14.850712] (-) TimerEvent: {}
+[14.951889] (-) TimerEvent: {}
+[15.047580] (GLFW) StdoutLine: {'line': b'[ 60%] Built target glfwinfo\n'}
+[15.052975] (-) TimerEvent: {}
+[15.119246] (GLFW) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object tests/CMakeFiles/iconify.dir/iconify.c.o\x1b[0m\n'}
+[15.153282] (-) TimerEvent: {}
+[15.254507] (-) TimerEvent: {}
+[15.355864] (-) TimerEvent: {}
+[15.457236] (-) TimerEvent: {}
+[15.558456] (-) TimerEvent: {}
+[15.599809] (GLFW) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding C object tests/CMakeFiles/iconify.dir/__/deps/getopt.c.o\x1b[0m\n'}
+[15.658742] (-) TimerEvent: {}
+[15.711351] (GLFW) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking C executable iconify\x1b[0m\n'}
+[15.759019] (-) TimerEvent: {}
+[15.861940] (-) TimerEvent: {}
+[15.931652] (GLFW) StdoutLine: {'line': b'[ 63%] Built target iconify\n'}
+[15.962253] (-) TimerEvent: {}
+[16.006891] (GLFW) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding C object tests/CMakeFiles/monitors.dir/monitors.c.o\x1b[0m\n'}
+[16.062496] (-) TimerEvent: {}
+[16.095495] (FMT) StdoutLine: {'line': b'[  7%] \x1b[32m\x1b[1mLinking CXX static library libfmt.a\x1b[0m\n'}
+[16.162792] (-) TimerEvent: {}
+[16.264036] (-) TimerEvent: {}
+[16.367297] (-) TimerEvent: {}
+[16.370382] (FMT) StdoutLine: {'line': b'[  7%] Built target fmt\n'}
+[16.440794] (GLFW) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding C object tests/CMakeFiles/monitors.dir/__/deps/getopt.c.o\x1b[0m\n'}
+[16.467558] (-) TimerEvent: {}
+[16.547255] (GLFW) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking C executable monitors\x1b[0m\n'}
+[16.567830] (-) TimerEvent: {}
+[16.669063] (-) TimerEvent: {}
+[16.703344] (GLFW) StdoutLine: {'line': b'[ 65%] Built target monitors\n'}
+[16.768452] (GLFW) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding C object tests/CMakeFiles/reopen.dir/reopen.c.o\x1b[0m\n'}
+[16.769294] (-) TimerEvent: {}
+[16.870076] (-) TimerEvent: {}
+[16.971301] (-) TimerEvent: {}
+[17.072454] (-) TimerEvent: {}
+[17.173662] (-) TimerEvent: {}
+[17.217250] (GLFW) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking C executable reopen\x1b[0m\n'}
+[17.273994] (-) TimerEvent: {}
+[17.371344] (GLFW) StdoutLine: {'line': b'[ 67%] Built target reopen\n'}
+[17.374071] (-) TimerEvent: {}
+[17.432559] (GLFW) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding C object tests/CMakeFiles/cursor.dir/cursor.c.o\x1b[0m\n'}
+[17.474408] (-) TimerEvent: {}
+[17.575606] (-) TimerEvent: {}
+[17.677345] (-) TimerEvent: {}
+[17.778613] (-) TimerEvent: {}
+[17.879903] (-) TimerEvent: {}
+[17.900280] (GLFW) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking C executable cursor\x1b[0m\n'}
+[17.980200] (-) TimerEvent: {}
+[18.046801] (GLFW) StdoutLine: {'line': b'[ 69%] Built target cursor\n'}
+[18.080469] (-) TimerEvent: {}
+[18.106209] (GLFW) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding C object tests/CMakeFiles/empty.dir/empty.c.o\x1b[0m\n'}
+[18.180750] (-) TimerEvent: {}
+[18.281972] (-) TimerEvent: {}
+[18.383201] (-) TimerEvent: {}
+[18.484389] (-) TimerEvent: {}
+[18.545156] (GLFW) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding C object tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.o\x1b[0m\n'}
+[18.584708] (-) TimerEvent: {}
+[18.678082] (GLFW) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking C executable empty\x1b[0m\n'}
+[18.684883] (-) TimerEvent: {}
+[18.786162] (-) TimerEvent: {}
+[18.864697] (GLFW) StdoutLine: {'line': b'[ 72%] Built target empty\n'}
+[18.886431] (-) TimerEvent: {}
+[18.941376] (GLFW) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding C object tests/CMakeFiles/gamma.dir/gamma.c.o\x1b[0m\n'}
+[18.986715] (-) TimerEvent: {}
+[19.089145] (-) TimerEvent: {}
+[19.191106] (-) TimerEvent: {}
+[19.292326] (-) TimerEvent: {}
+[19.393585] (-) TimerEvent: {}
+[19.494846] (-) TimerEvent: {}
+[19.596037] (-) TimerEvent: {}
+[19.697195] (-) TimerEvent: {}
+[19.798494] (-) TimerEvent: {}
+[19.899730] (-) TimerEvent: {}
+[20.000938] (-) TimerEvent: {}
+[20.102198] (-) TimerEvent: {}
+[20.203456] (-) TimerEvent: {}
+[20.305829] (-) TimerEvent: {}
+[20.408280] (-) TimerEvent: {}
+[20.510821] (-) TimerEvent: {}
+[20.612114] (-) TimerEvent: {}
+[20.714567] (-) TimerEvent: {}
+[20.815831] (-) TimerEvent: {}
+[20.918194] (-) TimerEvent: {}
+[21.019339] (-) TimerEvent: {}
+[21.120533] (-) TimerEvent: {}
+[21.221701] (-) TimerEvent: {}
+[21.322944] (-) TimerEvent: {}
+[21.424138] (-) TimerEvent: {}
+[21.525314] (-) TimerEvent: {}
+[21.626738] (-) TimerEvent: {}
+[21.728002] (-) TimerEvent: {}
+[21.829191] (-) TimerEvent: {}
+[21.930404] (-) TimerEvent: {}
+[22.031599] (-) TimerEvent: {}
+[22.132780] (-) TimerEvent: {}
+[22.233968] (-) TimerEvent: {}
+[22.335358] (-) TimerEvent: {}
+[22.436590] (-) TimerEvent: {}
+[22.537812] (-) TimerEvent: {}
+[22.639441] (-) TimerEvent: {}
+[22.742250] (-) TimerEvent: {}
+[22.845120] (-) TimerEvent: {}
+[22.946846] (-) TimerEvent: {}
+[22.989164] (GLFW) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking C executable gamma\x1b[0m\n'}
+[23.047129] (-) TimerEvent: {}
+[23.149264] (-) TimerEvent: {}
+[23.172842] (GLFW) StdoutLine: {'line': b'[ 74%] Built target gamma\n'}
+[23.238825] (GLFW) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding C object tests/CMakeFiles/icon.dir/icon.c.o\x1b[0m\n'}
+[23.249552] (-) TimerEvent: {}
+[23.350811] (-) TimerEvent: {}
+[23.451990] (-) TimerEvent: {}
+[23.553231] (-) TimerEvent: {}
+[23.626558] (GLFW) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking C executable icon\x1b[0m\n'}
+[23.653486] (-) TimerEvent: {}
+[23.754771] (-) TimerEvent: {}
+[23.786722] (GLFW) StdoutLine: {'line': b'[ 76%] Built target icon\n'}
+[23.831437] (GLFW) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object tests/CMakeFiles/inputlag.dir/inputlag.c.o\x1b[0m\n'}
+[23.851723] (GLFW) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding C object tests/CMakeFiles/msaa.dir/msaa.c.o\x1b[0m\n'}
+[23.854834] (-) TimerEvent: {}
+[23.955726] (-) TimerEvent: {}
+[24.057024] (-) TimerEvent: {}
+[24.158312] (-) TimerEvent: {}
+[24.259801] (-) TimerEvent: {}
+[24.361162] (-) TimerEvent: {}
+[24.382112] (GLFW) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object tests/CMakeFiles/msaa.dir/__/deps/getopt.c.o\x1b[0m\n'}
+[24.461454] (-) TimerEvent: {}
+[24.514399] (GLFW) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C executable msaa\x1b[0m\n'}
+[24.561737] (-) TimerEvent: {}
+[24.663846] (-) TimerEvent: {}
+[24.705858] (GLFW) StdoutLine: {'line': b'[ 80%] Built target msaa\n'}
+[24.735526] (GLFW) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding C object tests/CMakeFiles/inputlag.dir/__/deps/getopt.c.o\x1b[0m\n'}
+[24.753022] (GLFW) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding C object tests/CMakeFiles/joysticks.dir/joysticks.c.o\x1b[0m\n'}
+[24.764679] (-) TimerEvent: {}
+[24.807694] (GLFW) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding C object tests/CMakeFiles/events.dir/events.c.o\x1b[0m\n'}
+[24.865055] (-) TimerEvent: {}
+[24.970073] (-) TimerEvent: {}
+[25.073324] (-) TimerEvent: {}
+[25.176504] (-) TimerEvent: {}
+[25.280593] (-) TimerEvent: {}
+[25.334362] (GLFW) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object tests/CMakeFiles/events.dir/__/deps/getopt.c.o\x1b[0m\n'}
+[25.380887] (-) TimerEvent: {}
+[25.483880] (-) TimerEvent: {}
+[25.503495] (GLFW) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking C executable events\x1b[0m\n'}
+[25.584172] (-) TimerEvent: {}
+[25.682439] (GLFW) StdoutLine: {'line': b'[ 83%] Built target events\n'}
+[25.684389] (-) TimerEvent: {}
+[25.781095] (GLFW) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object tests/CMakeFiles/tearing.dir/tearing.c.o\x1b[0m\n'}
+[25.784623] (-) TimerEvent: {}
+[25.851405] (GLFW) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object tests/CMakeFiles/clipboard.dir/clipboard.c.o\x1b[0m\n'}
+[25.885073] (-) TimerEvent: {}
+[25.988419] (-) TimerEvent: {}
+[26.091974] (-) TimerEvent: {}
+[26.195456] (-) TimerEvent: {}
+[26.299327] (-) TimerEvent: {}
+[26.404213] (-) TimerEvent: {}
+[26.417411] (GLFW) StdoutLine: {'line': b'[ 86%] \x1b[32m\x1b[1mLinking C executable tearing\x1b[0m\n'}
+[26.426098] (GLFW) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.o\x1b[0m\n'}
+[26.504683] (-) TimerEvent: {}
+[26.609853] (-) TimerEvent: {}
+[26.636457] (GLFW) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking C executable clipboard\x1b[0m\n'}
+[26.710412] (-) TimerEvent: {}
+[26.750325] (GLFW) StdoutLine: {'line': b'[ 87%] Built target tearing\n'}
+[26.810763] (-) TimerEvent: {}
+[26.826055] (GLFW) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object tests/CMakeFiles/allocator.dir/allocator.c.o\x1b[0m\n'}
+[26.911095] (-) TimerEvent: {}
+[26.924145] (GLFW) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object tests/CMakeFiles/threads.dir/threads.c.o\x1b[0m\n'}
+[27.011711] (-) TimerEvent: {}
+[27.045063] (GLFW) StdoutLine: {'line': b'[ 88%] Built target clipboard\n'}
+[27.112194] (-) TimerEvent: {}
+[27.123328] (GLFW) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.o\x1b[0m\n'}
+[27.212478] (-) TimerEvent: {}
+[27.231395] (GLFW) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object tests/CMakeFiles/timeout.dir/timeout.c.o\x1b[0m\n'}
+[27.312878] (-) TimerEvent: {}
+[27.329608] (GLFW) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C executable allocator\x1b[0m\n'}
+[27.413180] (-) TimerEvent: {}
+[27.516349] (-) TimerEvent: {}
+[27.618848] (-) TimerEvent: {}
+[27.720063] (-) TimerEvent: {}
+[27.749821] (GLFW) StdoutLine: {'line': b'[ 90%] Built target allocator\n'}
+[27.821873] (-) TimerEvent: {}
+[27.851092] (GLFW) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object tests/CMakeFiles/title.dir/title.c.o\x1b[0m\n'}
+[27.922244] (-) TimerEvent: {}
+[27.981980] (GLFW) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object tests/CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.o\x1b[0m\n'}
+[27.995658] (GLFW) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C executable timeout\x1b[0m\n'}
+[28.022526] (-) TimerEvent: {}
+[28.125729] (-) TimerEvent: {}
+[28.150696] (GLFW) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C executable threads\x1b[0m\n'}
+[28.226047] (-) TimerEvent: {}
+[28.328936] (-) TimerEvent: {}
+[28.432224] (-) TimerEvent: {}
+[28.486680] (GLFW) StdoutLine: {'line': b'[ 94%] Built target timeout\n'}
+[28.532550] (-) TimerEvent: {}
+[28.580981] (GLFW) StdoutLine: {'line': b'[ 94%] Built target threads\n'}
+[28.610691] (GLFW) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C executable title\x1b[0m\n'}
+[28.632904] (-) TimerEvent: {}
+[28.734335] (-) TimerEvent: {}
+[28.778384] (GLFW) StdoutLine: {'line': b'[ 95%] Built target title\n'}
+[28.821121] (GLFW) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C executable triangle-vulkan\x1b[0m\n'}
+[28.834607] (-) TimerEvent: {}
+[28.936330] (-) TimerEvent: {}
+[29.037492] (-) TimerEvent: {}
+[29.042017] (GLFW) StdoutLine: {'line': b'[ 96%] Built target triangle-vulkan\n'}
+[29.107187] (GLFW) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C executable inputlag\x1b[0m\n'}
+[29.137772] (-) TimerEvent: {}
+[29.239132] (-) TimerEvent: {}
+[29.307850] (GLFW) StdoutLine: {'line': b'[ 97%] Built target inputlag\n'}
+[29.339438] (-) TimerEvent: {}
+[29.440634] (-) TimerEvent: {}
+[29.541792] (-) TimerEvent: {}
+[29.643082] (-) TimerEvent: {}
+[29.744350] (-) TimerEvent: {}
+[29.845650] (-) TimerEvent: {}
+[29.892626] (GLFW) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C executable joysticks\x1b[0m\n'}
+[29.945933] (-) TimerEvent: {}
+[30.047800] (-) TimerEvent: {}
+[30.052308] (GLFW) StdoutLine: {'line': b'[ 98%] Built target joysticks\n'}
+[30.113251] (GLFW) StdoutLine: {'line': b'[ 99%] \x1b[32mBuilding C object tests/CMakeFiles/window.dir/window.c.o\x1b[0m\n'}
+[30.148089] (-) TimerEvent: {}
+[30.249440] (-) TimerEvent: {}
+[30.354037] (-) TimerEvent: {}
+[30.456699] (-) TimerEvent: {}
+[30.558038] (-) TimerEvent: {}
+[30.659327] (-) TimerEvent: {}
+[30.760604] (-) TimerEvent: {}
+[30.857932] (FMT) StdoutLine: {'line': b'[  9%] \x1b[32m\x1b[1mLinking CXX static library libgmock.a\x1b[0m\n'}
+[30.860664] (-) TimerEvent: {}
+[30.961519] (-) TimerEvent: {}
+[31.062743] (-) TimerEvent: {}
+[31.079247] (FMT) StdoutLine: {'line': b'[  9%] Built target gmock\n'}
+[31.142813] (FMT) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object test/CMakeFiles/test-main.dir/test-main.cc.o\x1b[0m\n'}
+[31.163191] (-) TimerEvent: {}
+[31.264532] (-) TimerEvent: {}
+[31.365693] (-) TimerEvent: {}
+[31.466920] (-) TimerEvent: {}
+[31.568266] (-) TimerEvent: {}
+[31.669581] (-) TimerEvent: {}
+[31.770836] (-) TimerEvent: {}
+[31.872398] (-) TimerEvent: {}
+[31.973586] (-) TimerEvent: {}
+[32.075007] (-) TimerEvent: {}
+[32.176306] (-) TimerEvent: {}
+[32.277828] (-) TimerEvent: {}
+[32.379619] (-) TimerEvent: {}
+[32.480832] (-) TimerEvent: {}
+[32.582113] (-) TimerEvent: {}
+[32.683422] (-) TimerEvent: {}
+[32.784681] (-) TimerEvent: {}
+[32.885947] (-) TimerEvent: {}
+[32.899561] (FMT) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object test/CMakeFiles/test-main.dir/util.cc.o\x1b[0m\n'}
+[32.986275] (-) TimerEvent: {}
+[33.087463] (-) TimerEvent: {}
+[33.188728] (-) TimerEvent: {}
+[33.291005] (-) TimerEvent: {}
+[33.393200] (-) TimerEvent: {}
+[33.495305] (-) TimerEvent: {}
+[33.596532] (-) TimerEvent: {}
+[33.697800] (-) TimerEvent: {}
+[33.799417] (-) TimerEvent: {}
+[33.901342] (-) TimerEvent: {}
+[34.003266] (-) TimerEvent: {}
+[34.104766] (-) TimerEvent: {}
+[34.190726] (GLFW) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C executable window\x1b[0m\n'}
+[34.205025] (-) TimerEvent: {}
+[34.306242] (-) TimerEvent: {}
+[34.317995] (FMT) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object test/CMakeFiles/test-main.dir/gtest-extra.cc.o\x1b[0m\n'}
+[34.374968] (GLFW) StdoutLine: {'line': b'[100%] Built target window\n'}
+[34.406503] (-) TimerEvent: {}
+[34.420612] (GLFW) JobEnded: {'identifier': 'GLFW', 'rc': 'SIGINT'}
+[34.506949] (-) TimerEvent: {}
+[34.608118] (-) TimerEvent: {}
+[34.709373] (-) TimerEvent: {}
+[34.810656] (-) TimerEvent: {}
+[34.911893] (-) TimerEvent: {}
+[35.013137] (-) TimerEvent: {}
+[35.114397] (-) TimerEvent: {}
+[35.215617] (-) TimerEvent: {}
+[35.316800] (-) TimerEvent: {}
+[35.418066] (-) TimerEvent: {}
+[35.519346] (-) TimerEvent: {}
+[35.620565] (-) TimerEvent: {}
+[35.721839] (-) TimerEvent: {}
+[35.823549] (-) TimerEvent: {}
+[35.924747] (-) TimerEvent: {}
+[36.025933] (-) TimerEvent: {}
+[36.129240] (-) TimerEvent: {}
+[36.234732] (-) TimerEvent: {}
+[36.338542] (-) TimerEvent: {}
+[36.441967] (-) TimerEvent: {}
+[36.543366] (-) TimerEvent: {}
+[36.645371] (-) TimerEvent: {}
+[36.748727] (-) TimerEvent: {}
+[36.852803] (-) TimerEvent: {}
+[36.954890] (-) TimerEvent: {}
+[37.056327] (-) TimerEvent: {}
+[37.083264] (FMT) StdoutLine: {'line': b'[ 17%] \x1b[32m\x1b[1mLinking CXX static library libtest-main.a\x1b[0m\n'}
+[37.156812] (-) TimerEvent: {}
+[37.259337] (-) TimerEvent: {}
+[37.362991] (-) TimerEvent: {}
+[37.457244] (FMT) StdoutLine: {'line': b'[ 17%] Built target test-main\n'}
+[37.464227] (-) TimerEvent: {}
+[37.542038] (FMT) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object test/CMakeFiles/header-only-test.dir/header-only-test.cc.o\x1b[0m\n'}
+[37.564508] (-) TimerEvent: {}
+[37.574752] (FMT) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object test/CMakeFiles/posix-mock-test.dir/posix-mock-test.cc.o\x1b[0m\n'}
+[37.664889] (-) TimerEvent: {}
+[37.766078] (-) TimerEvent: {}
+[37.867849] (-) TimerEvent: {}
+[37.969057] (-) TimerEvent: {}
+[38.070663] (-) TimerEvent: {}
+[38.172657] (-) TimerEvent: {}
+[38.274064] (-) TimerEvent: {}
+[38.375908] (-) TimerEvent: {}
+[38.477135] (-) TimerEvent: {}
+[38.578781] (-) TimerEvent: {}
+[38.671740] (FMT) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object test/CMakeFiles/header-only-test.dir/header-only-test2.cc.o\x1b[0m\n'}
+[38.679023] (-) TimerEvent: {}
+[38.780168] (-) TimerEvent: {}
+[38.881494] (-) TimerEvent: {}
+[38.982890] (-) TimerEvent: {}
+[39.084238] (-) TimerEvent: {}
+[39.185542] (-) TimerEvent: {}
+[39.286932] (-) TimerEvent: {}
+[39.388781] (-) TimerEvent: {}
+[39.490412] (-) TimerEvent: {}
+[39.591670] (FMT) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object test/CMakeFiles/header-only-test.dir/test-main.cc.o\x1b[0m\n'}
+[39.594771] (-) TimerEvent: {}
+[39.600626] (FMT) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object test/CMakeFiles/core-test.dir/core-test.cc.o\x1b[0m\n'}
+[39.695153] (-) TimerEvent: {}
+[39.798884] (-) TimerEvent: {}
+[39.901055] (-) TimerEvent: {}
+[40.004452] (-) TimerEvent: {}
+[40.108056] (-) TimerEvent: {}
+[40.210479] (-) TimerEvent: {}
+[40.313860] (-) TimerEvent: {}
+[40.416824] (-) TimerEvent: {}
+[40.520764] (-) TimerEvent: {}
+[40.624889] (-) TimerEvent: {}
+[40.728874] (-) TimerEvent: {}
+[40.759215] (FMT) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object test/CMakeFiles/color-test.dir/color-test.cc.o\x1b[0m\n'}
+[40.829475] (-) TimerEvent: {}
+[40.930982] (-) TimerEvent: {}
+[41.033189] (-) TimerEvent: {}
+[41.135351] (-) TimerEvent: {}
+[41.239017] (-) TimerEvent: {}
+[41.341135] (-) TimerEvent: {}
+[41.423886] (FMT) StdoutLine: {'line': b'[ 31%] \x1b[32m\x1b[1mLinking CXX executable ../bin/header-only-test\x1b[0m\n'}
+[41.441530] (-) TimerEvent: {}
+[41.545721] (-) TimerEvent: {}
+[41.648836] (-) TimerEvent: {}
+[41.750394] (-) TimerEvent: {}
+[41.852119] (-) TimerEvent: {}
+[41.953552] (-) TimerEvent: {}
+[42.054925] (-) TimerEvent: {}
+[42.056533] (FMT) StdoutLine: {'line': b'[ 31%] Built target header-only-test\n'}
+[42.155227] (-) TimerEvent: {}
+[42.256511] (-) TimerEvent: {}
+[42.398318] (-) TimerEvent: {}
+[42.499819] (-) TimerEvent: {}
+[42.601950] (-) TimerEvent: {}
+[42.703651] (-) TimerEvent: {}
+[42.804971] (-) TimerEvent: {}
+[42.906231] (-) TimerEvent: {}
+[43.007485] (-) TimerEvent: {}
+[43.108784] (-) TimerEvent: {}
+[43.133904] (FMT) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object test/CMakeFiles/grisu-test.dir/grisu-test.cc.o\x1b[0m\n'}
+[43.209183] (-) TimerEvent: {}
+[43.311210] (-) TimerEvent: {}
+[43.412585] (-) TimerEvent: {}
+[43.513850] (-) TimerEvent: {}
+[43.615207] (-) TimerEvent: {}
+[43.716680] (-) TimerEvent: {}
+[43.819002] (-) TimerEvent: {}
+[43.920342] (-) TimerEvent: {}
+[44.021847] (-) TimerEvent: {}
+[44.125110] (-) TimerEvent: {}
+[44.227249] (-) TimerEvent: {}
+[44.329346] (-) TimerEvent: {}
+[44.432815] (-) TimerEvent: {}
+[44.534703] (-) TimerEvent: {}
+[44.635959] (-) TimerEvent: {}
+[44.737267] (-) TimerEvent: {}
+[44.838554] (-) TimerEvent: {}
+[44.939827] (-) TimerEvent: {}
+[45.041146] (-) TimerEvent: {}
+[45.142470] (-) TimerEvent: {}
+[45.250463] (-) TimerEvent: {}
+[45.351843] (-) TimerEvent: {}
+[45.367714] (FMT) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object test/CMakeFiles/chrono-test.dir/chrono-test.cc.o\x1b[0m\n'}
+[45.452104] (-) TimerEvent: {}
+[45.553382] (-) TimerEvent: {}
+[45.654651] (-) TimerEvent: {}
+[45.756026] (-) TimerEvent: {}
+[45.857284] (-) TimerEvent: {}
+[45.958864] (-) TimerEvent: {}
+[46.062103] (-) TimerEvent: {}
+[46.163849] (-) TimerEvent: {}
+[46.266882] (-) TimerEvent: {}
+[46.368486] (-) TimerEvent: {}
+[46.479563] (-) TimerEvent: {}
+[46.595769] (-) TimerEvent: {}
+[46.697785] (-) TimerEvent: {}
+[46.799766] (-) TimerEvent: {}
+[46.901694] (-) TimerEvent: {}
+[47.002970] (-) TimerEvent: {}
+[47.104272] (-) TimerEvent: {}
+[47.205613] (-) TimerEvent: {}
+[47.310658] (-) TimerEvent: {}
+[47.411982] (-) TimerEvent: {}
+[47.513825] (-) TimerEvent: {}
+[47.575214] (FMT) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object test/CMakeFiles/assert-test.dir/assert-test.cc.o\x1b[0m\n'}
+[47.614234] (-) TimerEvent: {}
+[47.715466] (-) TimerEvent: {}
+[47.816728] (-) TimerEvent: {}
+[47.918483] (-) TimerEvent: {}
+[48.019725] (-) TimerEvent: {}
+[48.121047] (-) TimerEvent: {}
+[48.222330] (-) TimerEvent: {}
+[48.323535] (-) TimerEvent: {}
+[48.424769] (-) TimerEvent: {}
+[48.526181] (-) TimerEvent: {}
+[48.627454] (-) TimerEvent: {}
+[48.729898] (-) TimerEvent: {}
+[48.833260] (-) TimerEvent: {}
+[48.937225] (-) TimerEvent: {}
+[49.039432] (-) TimerEvent: {}
+[49.143316] (-) TimerEvent: {}
+[49.247339] (-) TimerEvent: {}
+[49.351004] (-) TimerEvent: {}
+[49.420228] (FMT) StdoutLine: {'line': b'[ 39%] \x1b[32m\x1b[1mLinking CXX executable ../bin/grisu-test\x1b[0m\n'}
+[49.451308] (-) TimerEvent: {}
+[49.554852] (-) TimerEvent: {}
+[49.656049] (-) TimerEvent: {}
+[49.757385] (-) TimerEvent: {}
+[49.858373] (-) TimerEvent: {}
+[49.959539] (-) TimerEvent: {}
+[50.060940] (-) TimerEvent: {}
+[50.127289] (FMT) StdoutLine: {'line': b'[ 39%] Built target grisu-test\n'}
+[50.161271] (-) TimerEvent: {}
+[50.263289] (-) TimerEvent: {}
+[50.364552] (-) TimerEvent: {}
+[50.465849] (-) TimerEvent: {}
+[50.536131] (FMT) StdoutLine: {'line': b'[ 41%] \x1b[32m\x1b[1mLinking CXX executable ../bin/assert-test\x1b[0m\n'}
+[50.566301] (-) TimerEvent: {}
+[50.667724] (-) TimerEvent: {}
+[50.768935] (-) TimerEvent: {}
+[50.870280] (-) TimerEvent: {}
+[50.971558] (-) TimerEvent: {}
+[51.072834] (-) TimerEvent: {}
+[51.173995] (-) TimerEvent: {}
+[51.250054] (FMT) StdoutLine: {'line': b'[ 41%] Built target assert-test\n'}
+[51.274325] (-) TimerEvent: {}
+[51.375594] (-) TimerEvent: {}
+[51.477648] (-) TimerEvent: {}
+[51.578978] (-) TimerEvent: {}
+[51.680639] (-) TimerEvent: {}
+[51.781938] (-) TimerEvent: {}
+[51.883203] (-) TimerEvent: {}
+[51.984489] (-) TimerEvent: {}
+[52.085801] (-) TimerEvent: {}
+[52.187111] (-) TimerEvent: {}
+[52.288382] (-) TimerEvent: {}
+[52.389785] (-) TimerEvent: {}
+[52.491108] (-) TimerEvent: {}
+[52.593031] (-) TimerEvent: {}
+[52.698487] (-) TimerEvent: {}
+[52.799784] (-) TimerEvent: {}
+[52.901045] (-) TimerEvent: {}
+[53.002515] (-) TimerEvent: {}
+[53.103735] (-) TimerEvent: {}
+[53.204855] (-) TimerEvent: {}
+[53.305774] (-) TimerEvent: {}
+[53.407440] (-) TimerEvent: {}
+[53.509097] (-) TimerEvent: {}
+[53.612371] (-) TimerEvent: {}
+[53.714337] (-) TimerEvent: {}
+[53.816006] (-) TimerEvent: {}
+[53.917662] (-) TimerEvent: {}
+[54.019385] (-) TimerEvent: {}
+[54.120663] (-) TimerEvent: {}
+[54.221920] (-) TimerEvent: {}
+[54.323204] (-) TimerEvent: {}
+[54.424510] (-) TimerEvent: {}
+[54.525941] (-) TimerEvent: {}
+[54.627225] (-) TimerEvent: {}
+[54.728507] (-) TimerEvent: {}
+[54.829880] (-) TimerEvent: {}
+[54.932197] (-) TimerEvent: {}
+[55.034418] (-) TimerEvent: {}
+[55.135756] (-) TimerEvent: {}
+[55.236990] (-) TimerEvent: {}
+[55.338280] (-) TimerEvent: {}
+[55.441427] (-) TimerEvent: {}
+[55.544587] (-) TimerEvent: {}
+[55.587625] (FMT) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object test/CMakeFiles/posix-mock-test.dir/__/src/format.cc.o\x1b[0m\n'}
+[55.644873] (-) TimerEvent: {}
+[55.746809] (-) TimerEvent: {}
+[55.849885] (-) TimerEvent: {}
+[55.953330] (-) TimerEvent: {}
+[56.056374] (-) TimerEvent: {}
+[56.159278] (-) TimerEvent: {}
+[56.262455] (-) TimerEvent: {}
+[56.365890] (-) TimerEvent: {}
+[56.380130] (FMT) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX executable ../bin/color-test\x1b[0m\n'}
+[56.466364] (-) TimerEvent: {}
+[56.568453] (-) TimerEvent: {}
+[56.670447] (-) TimerEvent: {}
+[56.762797] (FMT) StdoutLine: {'line': b'[ 45%] Built target color-test\n'}
+[56.770689] (-) TimerEvent: {}
+[56.871858] (-) TimerEvent: {}
+[56.973130] (-) TimerEvent: {}
+[57.074406] (-) TimerEvent: {}
+[57.177754] (-) TimerEvent: {}
+[57.279359] (-) TimerEvent: {}
+[57.381258] (-) TimerEvent: {}
+[57.482863] (-) TimerEvent: {}
+[57.584058] (-) TimerEvent: {}
+[57.685428] (-) TimerEvent: {}
+[57.787127] (-) TimerEvent: {}
+[57.888547] (-) TimerEvent: {}
+[57.989761] (-) TimerEvent: {}
+[58.091992] (-) TimerEvent: {}
+[58.194573] (-) TimerEvent: {}
+[58.297743] (-) TimerEvent: {}
+[58.400149] (-) TimerEvent: {}
+[58.503032] (-) TimerEvent: {}
+[58.605545] (-) TimerEvent: {}
+[58.706826] (-) TimerEvent: {}
+[58.808074] (-) TimerEvent: {}
+[58.909301] (-) TimerEvent: {}
+[59.010553] (-) TimerEvent: {}
+[59.111788] (-) TimerEvent: {}
+[59.212969] (-) TimerEvent: {}
+[59.316661] (-) TimerEvent: {}
+[59.420667] (-) TimerEvent: {}
+[59.525097] (-) TimerEvent: {}
+[59.627336] (-) TimerEvent: {}
+[59.729977] (-) TimerEvent: {}
+[59.831870] (-) TimerEvent: {}
+[59.933438] (-) TimerEvent: {}
+[60.035590] (-) TimerEvent: {}
+[60.137292] (-) TimerEvent: {}
+[60.242461] (-) TimerEvent: {}
+[60.347295] (-) TimerEvent: {}
+[60.450086] (-) TimerEvent: {}
+[60.552390] (-) TimerEvent: {}
+[60.653678] (-) TimerEvent: {}
+[60.755045] (-) TimerEvent: {}
+[60.857534] (-) TimerEvent: {}
+[60.958992] (-) TimerEvent: {}
+[61.060212] (-) TimerEvent: {}
+[61.161705] (-) TimerEvent: {}
+[61.264712] (-) TimerEvent: {}
+[61.366039] (-) TimerEvent: {}
+[61.468085] (-) TimerEvent: {}
+[61.571130] (-) TimerEvent: {}
+[61.674048] (-) TimerEvent: {}
+[61.776747] (-) TimerEvent: {}
+[61.879533] (-) TimerEvent: {}
+[61.980826] (-) TimerEvent: {}
+[62.082352] (-) TimerEvent: {}
+[62.183696] (-) TimerEvent: {}
+[62.285404] (-) TimerEvent: {}
+[62.386948] (-) TimerEvent: {}
+[62.488184] (-) TimerEvent: {}
+[62.589678] (-) TimerEvent: {}
+[62.692027] (-) TimerEvent: {}
+[62.793231] (-) TimerEvent: {}
+[62.894429] (-) TimerEvent: {}
+[62.995685] (-) TimerEvent: {}
+[63.096893] (-) TimerEvent: {}
+[63.198186] (-) TimerEvent: {}
+[63.299448] (-) TimerEvent: {}
+[63.400709] (-) TimerEvent: {}
+[63.502430] (-) TimerEvent: {}
+[63.604530] (-) TimerEvent: {}
+[63.705981] (-) TimerEvent: {}
+[63.808174] (-) TimerEvent: {}
+[63.914404] (-) TimerEvent: {}
+[64.018421] (-) TimerEvent: {}
+[64.076282] (FMT) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object test/CMakeFiles/posix-mock-test.dir/test-main.cc.o\x1b[0m\n'}
+[64.118718] (-) TimerEvent: {}
+[64.221230] (-) TimerEvent: {}
+[64.322474] (-) TimerEvent: {}
+[64.423702] (-) TimerEvent: {}
+[64.524929] (-) TimerEvent: {}
+[64.626337] (-) TimerEvent: {}
+[64.727826] (-) TimerEvent: {}
+[64.829248] (-) TimerEvent: {}
+[64.930720] (-) TimerEvent: {}
+[65.032326] (-) TimerEvent: {}
+[65.134478] (-) TimerEvent: {}
+[65.238572] (-) TimerEvent: {}
+[65.340908] (-) TimerEvent: {}
+[65.442895] (-) TimerEvent: {}
+[65.545334] (-) TimerEvent: {}
+[65.633373] (FMT) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object test/CMakeFiles/posix-mock-test.dir/gtest-extra.cc.o\x1b[0m\n'}
+[65.645626] (-) TimerEvent: {}
+[65.747631] (-) TimerEvent: {}
+[65.849609] (-) TimerEvent: {}
+[65.950809] (-) TimerEvent: {}
+[66.052535] (-) TimerEvent: {}
+[66.154107] (-) TimerEvent: {}
+[66.255832] (-) TimerEvent: {}
+[66.358011] (-) TimerEvent: {}
+[66.459903] (-) TimerEvent: {}
+[66.561486] (-) TimerEvent: {}
+[66.663116] (-) TimerEvent: {}
+[66.764691] (-) TimerEvent: {}
+[66.866360] (-) TimerEvent: {}
+[66.969320] (-) TimerEvent: {}
+[67.071024] (-) TimerEvent: {}
+[67.172223] (-) TimerEvent: {}
+[67.273459] (-) TimerEvent: {}
+[67.375451] (-) TimerEvent: {}
+[67.477797] (-) TimerEvent: {}
+[67.579284] (-) TimerEvent: {}
+[67.680683] (-) TimerEvent: {}
+[67.782644] (-) TimerEvent: {}
+[67.894490] (-) TimerEvent: {}
+[67.995718] (-) TimerEvent: {}
+[68.096977] (-) TimerEvent: {}
+[68.198367] (-) TimerEvent: {}
+[68.299607] (-) TimerEvent: {}
+[68.400754] (-) TimerEvent: {}
+[68.494460] (FMT) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object test/CMakeFiles/posix-mock-test.dir/util.cc.o\x1b[0m\n'}
+[68.500973] (-) TimerEvent: {}
+[68.602238] (-) TimerEvent: {}
+[68.703473] (-) TimerEvent: {}
+[68.804687] (-) TimerEvent: {}
+[68.905912] (-) TimerEvent: {}
+[69.007715] (-) TimerEvent: {}
+[69.109570] (-) TimerEvent: {}
+[69.210827] (-) TimerEvent: {}
+[69.312100] (-) TimerEvent: {}
+[69.413365] (-) TimerEvent: {}
+[69.514801] (-) TimerEvent: {}
+[69.616066] (-) TimerEvent: {}
+[69.717349] (-) TimerEvent: {}
+[69.760078] (FMT) StdoutLine: {'line': b'[ 52%] \x1b[32m\x1b[1mLinking CXX executable ../bin/posix-mock-test\x1b[0m\n'}
+[69.817652] (-) TimerEvent: {}
+[69.920236] (-) TimerEvent: {}
+[70.021418] (-) TimerEvent: {}
+[70.123334] (-) TimerEvent: {}
+[70.136015] (FMT) StdoutLine: {'line': b'[ 52%] Built target posix-mock-test\n'}
+[70.223597] (-) TimerEvent: {}
+[70.324825] (-) TimerEvent: {}
+[70.426050] (-) TimerEvent: {}
+[70.527319] (-) TimerEvent: {}
+[70.628528] (-) TimerEvent: {}
+[70.729724] (-) TimerEvent: {}
+[70.830924] (-) TimerEvent: {}
+[70.932105] (-) TimerEvent: {}
+[71.033337] (-) TimerEvent: {}
+[71.134730] (-) TimerEvent: {}
+[71.236091] (-) TimerEvent: {}
+[71.337573] (-) TimerEvent: {}
+[71.438742] (-) TimerEvent: {}
+[71.539641] (-) TimerEvent: {}
+[71.640987] (-) TimerEvent: {}
+[71.742460] (-) TimerEvent: {}
+[71.844254] (-) TimerEvent: {}
+[71.945512] (-) TimerEvent: {}
+[72.046891] (-) TimerEvent: {}
+[72.148041] (-) TimerEvent: {}
+[72.249839] (-) TimerEvent: {}
+[72.352916] (-) TimerEvent: {}
+[72.454434] (-) TimerEvent: {}
+[72.555727] (-) TimerEvent: {}
+[72.656747] (-) TimerEvent: {}
+[72.758089] (-) TimerEvent: {}
+[72.859405] (-) TimerEvent: {}
+[72.960361] (-) TimerEvent: {}
+[73.062303] (-) TimerEvent: {}
+[73.163477] (-) TimerEvent: {}
+[73.264642] (-) TimerEvent: {}
+[73.365786] (-) TimerEvent: {}
+[73.467171] (-) TimerEvent: {}
+[73.569552] (-) TimerEvent: {}
+[73.671185] (-) TimerEvent: {}
+[73.772637] (-) TimerEvent: {}
+[73.873951] (-) TimerEvent: {}
+[73.975335] (-) TimerEvent: {}
+[74.076978] (-) TimerEvent: {}
+[74.179856] (-) TimerEvent: {}
+[74.281106] (-) TimerEvent: {}
+[74.382437] (-) TimerEvent: {}
+[74.484162] (-) TimerEvent: {}
+[74.585988] (-) TimerEvent: {}
+[74.687299] (-) TimerEvent: {}
+[74.788567] (-) TimerEvent: {}
+[74.889826] (-) TimerEvent: {}
+[74.991130] (-) TimerEvent: {}
+[75.092434] (-) TimerEvent: {}
+[75.193649] (-) TimerEvent: {}
+[75.294863] (-) TimerEvent: {}
+[75.396076] (-) TimerEvent: {}
+[75.498640] (-) TimerEvent: {}
+[75.602070] (-) TimerEvent: {}
+[75.704475] (-) TimerEvent: {}
+[75.805627] (-) TimerEvent: {}
+[75.906838] (-) TimerEvent: {}
+[76.008015] (-) TimerEvent: {}
+[76.109149] (-) TimerEvent: {}
+[76.210320] (-) TimerEvent: {}
+[76.311464] (-) TimerEvent: {}
+[76.412663] (-) TimerEvent: {}
+[76.513846] (-) TimerEvent: {}
+[76.615085] (-) TimerEvent: {}
+[76.716255] (-) TimerEvent: {}
+[76.817379] (-) TimerEvent: {}
+[76.918719] (-) TimerEvent: {}
+[77.019977] (-) TimerEvent: {}
+[77.121226] (-) TimerEvent: {}
+[77.222424] (-) TimerEvent: {}
+[77.323612] (-) TimerEvent: {}
+[77.424824] (-) TimerEvent: {}
+[77.525996] (-) TimerEvent: {}
+[77.627196] (-) TimerEvent: {}
+[77.728368] (-) TimerEvent: {}
+[77.829571] (-) TimerEvent: {}
+[77.930876] (-) TimerEvent: {}
+[78.032040] (-) TimerEvent: {}
+[78.133318] (-) TimerEvent: {}
+[78.234440] (-) TimerEvent: {}
+[78.335658] (-) TimerEvent: {}
+[78.436800] (-) TimerEvent: {}
+[78.537952] (-) TimerEvent: {}
+[78.639159] (-) TimerEvent: {}
+[78.740274] (-) TimerEvent: {}
+[78.841360] (-) TimerEvent: {}
+[78.943380] (-) TimerEvent: {}
+[79.044719] (-) TimerEvent: {}
+[79.145771] (-) TimerEvent: {}
+[79.246924] (-) TimerEvent: {}
+[79.348434] (-) TimerEvent: {}
+[79.449724] (-) TimerEvent: {}
+[79.550900] (-) TimerEvent: {}
+[79.815486] (FMT) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object test/CMakeFiles/locale-test.dir/locale-test.cc.o\x1b[0m\n'}
+[79.816099] (-) TimerEvent: {}
+[79.916707] (-) TimerEvent: {}
+[80.017992] (-) TimerEvent: {}
+[80.082558] (FMT) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object test/CMakeFiles/format-impl-test.dir/format-impl-test.cc.o\x1b[0m\n'}
+[80.118291] (-) TimerEvent: {}
+[80.219486] (-) TimerEvent: {}
+[80.320707] (-) TimerEvent: {}
+[80.421916] (-) TimerEvent: {}
+[80.523217] (-) TimerEvent: {}
+[80.624460] (-) TimerEvent: {}
+[80.726579] (-) TimerEvent: {}
+[80.827769] (-) TimerEvent: {}
+[80.929020] (-) TimerEvent: {}
+[81.030255] (-) TimerEvent: {}
+[81.124800] (FMT) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object test/CMakeFiles/format-test.dir/format-test.cc.o\x1b[0m\n'}
+[81.130482] (-) TimerEvent: {}
+[81.231619] (-) TimerEvent: {}
+[81.333218] (-) TimerEvent: {}
+[81.434440] (-) TimerEvent: {}
+[81.535636] (-) TimerEvent: {}
+[81.636863] (-) TimerEvent: {}
+[81.658061] (FMT) StderrLine: {'line': b'gmake[2]: *** [test/CMakeFiles/core-test.dir/build.make:76: test/CMakeFiles/core-test.dir/core-test.cc.o] Interrupt\n'}
+[81.659021] (FMT) StderrLine: {'line': b'gmake[2]: *** [test/CMakeFiles/format-impl-test.dir/build.make:76: test/CMakeFiles/format-impl-test.dir/format-impl-test.cc.o] Interrupt\n'}
+[81.663767] (FMT) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:321: test/CMakeFiles/core-test.dir/all] Interrupt\n'}
+[81.664241] (FMT) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:433: test/CMakeFiles/format-impl-test.dir/all] Interrupt\n'}
+[81.664420] (FMT) StderrLine: {'line': b'gmake[2]: *** [test/CMakeFiles/locale-test.dir/build.make:76: test/CMakeFiles/locale-test.dir/locale-test.cc.o] Interrupt\n'}
+[81.664590] (FMT) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:461: test/CMakeFiles/locale-test.dir/all] Interrupt\n'}
+[81.664747] (FMT) StderrLine: {'line': b'gmake[2]: *** wait: No child processes.  Stop.\n'}
+[81.664900] (FMT) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[81.665049] (FMT) StderrLine: {'line': b'gmake[2]: *** wait: No child processes.  Stop.\n'}
+[81.665194] (FMT) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:405: test/CMakeFiles/format-test.dir/all] Error 2\n'}
+[81.665408] (FMT) StderrLine: {'line': b'gmake[2]: *** [test/CMakeFiles/chrono-test.dir/build.make:76: test/CMakeFiles/chrono-test.dir/chrono-test.cc.o] Interrupt\n'}
+[81.665556] (FMT) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:265: test/CMakeFiles/chrono-test.dir/all] Interrupt\n'}
+[81.665700] (FMT) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Interrupt\n'}
+[81.737131] (-) TimerEvent: {}
+[81.830896] (FMT) JobEnded: {'identifier': 'FMT', 'rc': 'SIGINT'}
+[81.837213] (-) TimerEvent: {}
+[81.843462] (base64) JobSkipped: {'identifier': 'base64'}
+[81.843754] (brotli) JobSkipped: {'identifier': 'brotli'}
+[81.843865] (cmake_install_test) JobSkipped: {'identifier': 'cmake_install_test'}
+[81.843947] (cmark-gfm) JobSkipped: {'identifier': 'cmark-gfm'}
+[81.844021] (control_msgs) JobSkipped: {'identifier': 'control_msgs'}
+[81.844092] (dragonbox) JobSkipped: {'identifier': 'dragonbox'}
+[81.844156] (imgui_example_glfw_vulkan) JobSkipped: {'identifier': 'imgui_example_glfw_vulkan'}
+[81.844223] (imgui_example_glfw_wgpu) JobSkipped: {'identifier': 'imgui_example_glfw_wgpu'}
+[81.844289] (koffi) JobSkipped: {'identifier': 'koffi'}
+[81.844354] (libblake3) JobSkipped: {'identifier': 'libblake3'}
+[81.844416] (libmimalloc) JobSkipped: {'identifier': 'libmimalloc'}
+[81.844480] (libssh) JobSkipped: {'identifier': 'libssh'}
+[81.844544] (mbedtls) JobSkipped: {'identifier': 'mbedtls'}
+[81.844609] (pugixml) JobSkipped: {'identifier': 'pugixml'}
+[81.844674] (raylib) JobSkipped: {'identifier': 'raylib'}
+[81.844736] (rlbox-sandboxing-api) JobSkipped: {'identifier': 'rlbox-sandboxing-api'}
+[81.844802] (rlbox_wasm2c) JobSkipped: {'identifier': 'rlbox_wasm2c'}
+[81.844867] (rover_control) JobSkipped: {'identifier': 'rover_control'}
+[81.844931] (zstd) JobSkipped: {'identifier': 'zstd'}
+[81.844996] (realsense2_camera) JobSkipped: {'identifier': 'realsense2_camera'}
+[81.845062] (realsense2_description) JobSkipped: {'identifier': 'realsense2_description'}
+[81.845132] (-) EventReactorShutdown: {}

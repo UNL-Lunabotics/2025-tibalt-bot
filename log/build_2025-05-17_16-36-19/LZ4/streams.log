@@ -1,0 +1,33 @@
+[0.094s] Invoking command in '/home/lunabotics/2025-tibalt-bot/build/LZ4': /usr/bin/cmake /home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/lz4/build/cmake -DCMAKE_INSTALL_PREFIX=/home/lunabotics/2025-tibalt-bot/install/LZ4
+[3.070s] -- Creating build script for LZ4 version: 1.10.0
+[3.071s] -- The C compiler identification is GNU 11.4.0
+[3.071s] -- Detecting C compiler ABI info
+[3.071s] -- Detecting C compiler ABI info - done
+[3.071s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.071s] -- Detecting C compile features
+[3.071s] -- Detecting C compile features - done
+[3.072s] -- Performing Test CFLAG_pedantic_errors
+[3.072s] -- Performing Test CFLAG_pedantic_errors - Success
+[3.072s] -- Performing Test CFLAG_Wall
+[3.339s] -- Performing Test CFLAG_Wall - Success
+[3.339s] -- Performing Test CFLAG_Wextra
+[3.775s] -- Performing Test CFLAG_Wextra - Success
+[3.776s] -- Performing Test CFLAG_Wundef
+[4.069s] -- Performing Test CFLAG_Wundef - Success
+[4.070s] -- Performing Test CFLAG_Wcast_qual
+[4.399s] -- Performing Test CFLAG_Wcast_qual - Success
+[4.424s] -- Performing Test CFLAG_Wcast_align
+[4.636s] -- Performing Test CFLAG_Wcast_align - Success
+[4.637s] -- Performing Test CFLAG_Wshadow
+[4.901s] -- Performing Test CFLAG_Wshadow - Success
+[4.901s] -- Performing Test CFLAG_Wswitch_enum
+[5.268s] -- Performing Test CFLAG_Wswitch_enum - Success
+[5.270s] -- Performing Test CFLAG_Wdeclaration_after_statement
+[5.596s] -- Performing Test CFLAG_Wdeclaration_after_statement - Success
+[5.597s] -- Performing Test CFLAG_Wstrict_prototypes
+[5.843s] -- Performing Test CFLAG_Wstrict_prototypes - Success
+[5.845s] -- Performing Test CFLAG_Wpointer_arith
+[6.084s] -- Performing Test CFLAG_Wpointer_arith - Success
+[6.091s] -- Configuring done
+[6.108s] -- Generating done
+[6.118s] -- Build files have been written to: /home/lunabotics/2025-tibalt-bot/build/LZ4

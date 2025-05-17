@@ -1,0 +1,273 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-31e2e34e22d5387a221e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "doc",
+					"jsonFile" : "directory-doc-Release-00ee67dbe228fd23eb89.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "doc"
+				},
+				{
+					"build" : "test",
+					"jsonFile" : "directory-test-Release-451c0598f41488bb20b9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "test",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "FMT",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "assert-test::@36f028580bb02cc8272a",
+					"jsonFile" : "target-assert-test-Release-bdefc821f8a5951b860a.json",
+					"name" : "assert-test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "chrono-test::@36f028580bb02cc8272a",
+					"jsonFile" : "target-chrono-test-Release-78ef0865b119870d9696.json",
+					"name" : "chrono-test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "color-test::@36f028580bb02cc8272a",
+					"jsonFile" : "target-color-test-Release-191e47efe55450714866.json",
+					"name" : "color-test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "compile-test::@36f028580bb02cc8272a",
+					"jsonFile" : "target-compile-test-Release-138e3bd80fd106f2df62.json",
+					"name" : "compile-test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "core-test::@36f028580bb02cc8272a",
+					"jsonFile" : "target-core-test-Release-0aebc9e797e6ab1e48e4.json",
+					"name" : "core-test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "custom-formatter-test::@36f028580bb02cc8272a",
+					"jsonFile" : "target-custom-formatter-test-Release-7888b25f788749e17743.json",
+					"name" : "custom-formatter-test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fmt::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fmt-Release-c77d99a84e52e5614b0b.json",
+					"name" : "fmt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "format-impl-test::@36f028580bb02cc8272a",
+					"jsonFile" : "target-format-impl-test-Release-c43238850826be4337dc.json",
+					"name" : "format-impl-test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "format-test::@36f028580bb02cc8272a",
+					"jsonFile" : "target-format-test-Release-a95cf78c203f7e98aa18.json",
+					"name" : "format-test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "gmock::@36f028580bb02cc8272a",
+					"jsonFile" : "target-gmock-Release-f55e11f1fbf2e54479bd.json",
+					"name" : "gmock",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "grisu-test::@36f028580bb02cc8272a",
+					"jsonFile" : "target-grisu-test-Release-0a78b7f248d2989dde0d.json",
+					"name" : "grisu-test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "gtest-extra-test::@36f028580bb02cc8272a",
+					"jsonFile" : "target-gtest-extra-test-Release-8f7734ed5c338b3295b8.json",
+					"name" : "gtest-extra-test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "header-only-test::@36f028580bb02cc8272a",
+					"jsonFile" : "target-header-only-test-Release-58c7857f887a21abf8ac.json",
+					"name" : "header-only-test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "locale-test::@36f028580bb02cc8272a",
+					"jsonFile" : "target-locale-test-Release-f5be79b4558581a0c0af.json",
+					"name" : "locale-test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "os-test::@36f028580bb02cc8272a",
+					"jsonFile" : "target-os-test-Release-228418195070e5ae4969.json",
+					"name" : "os-test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ostream-test::@36f028580bb02cc8272a",
+					"jsonFile" : "target-ostream-test-Release-3251b5bae743810b73b8.json",
+					"name" : "ostream-test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "posix-mock-test::@36f028580bb02cc8272a",
+					"jsonFile" : "target-posix-mock-test-Release-71c1fb2f52ad6452b1c8.json",
+					"name" : "posix-mock-test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "printf-test::@36f028580bb02cc8272a",
+					"jsonFile" : "target-printf-test-Release-a484aa77c167556d0aec.json",
+					"name" : "printf-test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ranges-test::@36f028580bb02cc8272a",
+					"jsonFile" : "target-ranges-test-Release-009307a63903fe68910f.json",
+					"name" : "ranges-test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "scan-test::@36f028580bb02cc8272a",
+					"jsonFile" : "target-scan-test-Release-99fd7e4934407b0c9676.json",
+					"name" : "scan-test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "test-main::@36f028580bb02cc8272a",
+					"jsonFile" : "target-test-main-Release-9d3818b05b2595e9a080.json",
+					"name" : "test-main",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/lunabotics/2025-tibalt-bot/build/FMT",
+		"source" : "/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/fmt"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

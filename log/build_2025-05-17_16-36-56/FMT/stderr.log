@@ -1,0 +1,13 @@
+gmake[2]: *** [test/CMakeFiles/core-test.dir/build.make:76: test/CMakeFiles/core-test.dir/core-test.cc.o] Interrupt
+gmake[2]: *** [test/CMakeFiles/format-impl-test.dir/build.make:76: test/CMakeFiles/format-impl-test.dir/format-impl-test.cc.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:321: test/CMakeFiles/core-test.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:433: test/CMakeFiles/format-impl-test.dir/all] Interrupt
+gmake[2]: *** [test/CMakeFiles/locale-test.dir/build.make:76: test/CMakeFiles/locale-test.dir/locale-test.cc.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:461: test/CMakeFiles/locale-test.dir/all] Interrupt
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** wait: No child processes.  Stop.
+gmake[1]: *** [CMakeFiles/Makefile2:405: test/CMakeFiles/format-test.dir/all] Error 2
+gmake[2]: *** [test/CMakeFiles/chrono-test.dir/build.make:76: test/CMakeFiles/chrono-test.dir/chrono-test.cc.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:265: test/CMakeFiles/chrono-test.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

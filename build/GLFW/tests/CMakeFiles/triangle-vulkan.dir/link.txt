@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.o -o triangle-vulkan  ../src/libglfw3.a /usr/lib/aarch64-linux-gnu/libm.so /usr/lib/aarch64-linux-gnu/librt.a /usr/lib/aarch64-linux-gnu/libm.so -ldl 

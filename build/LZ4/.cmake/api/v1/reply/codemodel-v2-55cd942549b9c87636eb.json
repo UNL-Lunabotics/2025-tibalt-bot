@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-b21a3de08d3573502a67.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "LZ4",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "create_lz4cat_symlink::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-create_lz4cat_symlink-3e14c8c527318bdefe74.json",
+					"name" : "create_lz4cat_symlink",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "create_unlz4_symlink::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-create_unlz4_symlink-8ab01aeaa3ee4fdc2ac9.json",
+					"name" : "create_unlz4_symlink",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lz4_shared::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lz4_shared-2d2fb2951c87924d7d7d.json",
+					"name" : "lz4_shared",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lz4cli::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lz4cli-347ea05ef3ad38080ea9.json",
+					"name" : "lz4cli",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/lunabotics/2025-tibalt-bot/build/LZ4",
+		"source" : "/home/lunabotics/2025-tibalt-bot/arduino/tibaltArduino/teensy/rygel/vendor/lz4/build/cmake"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "[STEP] Triggering Teensy bootloader..."
-sudo ./trigger_teensy_bootloader.sh
+sudo python3 trigger_teensy_bootloader.py
 
 echo "[STEP] Waiting for Teensy to enter bootloader mode..."
 
@@ -14,11 +14,11 @@ for i in {1..10}; do
     sleep 0.5
 done
 
-# Optional timeout check
-if ! lsusb | grep -q "16C0:0478"; then
-    echo "[ERROR] Teensy bootloader not detected. Aborting."
-    exit 1
-fi
+# # Optional timeout check
+# if ! lsusb | grep -q "16C0:0478"; then
+#     echo "[ERROR] Teensy bootloader not detected. Aborting."
+#     exit 1
+# fi
 
 echo "[STEP] Cleaning build..."
 pio run --target clean

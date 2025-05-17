@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/tearing.dir/tearing.c.o -o tearing  ../src/libglfw3.a /usr/lib/aarch64-linux-gnu/libm.so /usr/lib/aarch64-linux-gnu/librt.a /usr/lib/aarch64-linux-gnu/libm.so -ldl 
