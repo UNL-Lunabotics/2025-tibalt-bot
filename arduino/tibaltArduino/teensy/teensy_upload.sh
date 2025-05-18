@@ -23,10 +23,19 @@ line.release()
 print("[INFO] Bootloader triggered.")
 END
 
-sleep 1
+# Wait for bootloader to appear (max 5 seconds)
+for i in {1..10}; do
+    if lsusb | grep -q "16C0:0478"; then
+        echo "[INFO] Bootloader active."
+        break
+    fi
+    sleep 0.5
+done
 
-# Upload using teensy_loader_cli (must be installed and in PATH)
-# -w: wait for device
-# -s: reboot after upload
-# -mmcu=TEENSY41: target chip
+# Confirm again or exit if bootloader didn't appear
+if ! lsusb | grep -q "16C0:0478"; then
+    echo "[ERROR] Teensy bootloader not detected. Upload aborted."
+    exit 1
+fi
+
 teensy_loader_cli -v -w -s -mmcu=TEENSY41 "$HEX_PATH"
